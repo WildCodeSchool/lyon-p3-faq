@@ -1,3 +1,9 @@
+# api ignore
+/api/node_modules
+/api/.env
+
+
+
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
 # dependencies
@@ -6,6 +12,9 @@
 .pnp.js
 
 # testing
+
+
+
 /coverage
 
 # next.js
