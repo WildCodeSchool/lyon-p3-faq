@@ -39,10 +39,22 @@ const Users = React.lazy(() => import('./views/users/Users'));
 const User = React.lazy(() => import('./views/users/User'));
 
 const Tags= React.lazy(() => import('./views/pages/tags/Tags'));
+const UsersList= React.lazy(() => import('./views/pages/users/Userlist'));
+const Posts= React.lazy(() => import('./views/pages/posts/Posts'));
+const FormTag= React.lazy(() => import('./views/pages/tags/AddTags'));
+const TagSelect= React.lazy(() => import('./views/pages/tags/TagSelect'));
+const TagModify= React.lazy(() => import('./views/pages/tags/TagModify'));
+const AddUser= React.lazy(() => import('./views/pages/users/AddUser'));
+const UserSelect= React.lazy(() => import('./views/pages/users/UserSelect'));
+const UserModify= React.lazy(() => import('./views/pages/users/UserModify'));
+const PostSelect= React.lazy(() => import('./views/pages/posts/PostSelect'));
+const AddPost= React.lazy(() => import('./views/pages/posts/AddPost'));
+
+
 
 
 const routes = [
-  { path: '/', exact: true, name: 'Home' },
+  { path: '/', exact: true, name: 'Home' , component: Dashboard},
   { path: '/dashboard', name: 'Dashboard', component: Dashboard },
   { path: '/theme', name: 'Theme', component: Colors, exact: true },
   { path: '/theme/colors', name: 'Colors', component: Colors },
@@ -50,6 +62,16 @@ const routes = [
   { path: '/base', name: 'Base', component: Cards, exact: true },
   { path: '/pages', name: 'Pages', component: Tags, exact: true },
   { path: '/pages/tags', name: 'Tags' , component: Tags  ,exact:true},
+  { path: '/pages/tags/addtags', name: 'AddTags' , component: FormTag  ,exact:true},
+  { path: '/pages/tags/TagSelect/:nomtag', name: 'SelectTags' , component: TagSelect  ,exact:true},
+  { path: '/pages/tags/TagModify/:nomtag', name: 'ModifyTags' , component: TagModify  ,exact:true},
+  { path: '/pages/posts', name: 'Posts' , component: Posts  ,exact:true},
+  { path: '/pages/posts/postselect/:idpost', name: 'Select Posts' , component: PostSelect  ,exact:true},
+  { path: '/pages/posts/addpost/:idpost', name: 'Select Posts' , component: AddPost  ,exact:true},
+  { path: '/pages/users', name: 'userList' , component: UsersList  ,exact:true},
+  { path: '/pages/users/adduser', name: 'AddUser' , component: AddUser  ,exact:true},
+  { path: '/pages/users/userselect/:iduser', name: 'SelectUser' , component: UserSelect  ,exact:true},
+  { path: '/pages/users/usermodify/:iduser', name: 'Modify User' , component: UserModify  ,exact:true},
   { path: '/base/breadcrumbs', name: 'Breadcrumbs', component: Breadcrumbs },
   { path: '/base/cards', name: 'Cards', component: Cards },
   { path: '/base/carousels', name: 'Carousel', component: Carousels },

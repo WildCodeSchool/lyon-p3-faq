@@ -23,7 +23,7 @@ export default [
       {
         _tag: 'CSidebarNavItem',
         name: 'Tags',
-        to: '/pages/login',
+        to: '/pages/tags',
 
 
       },
@@ -39,6 +39,7 @@ export default [
         name: 'Posts',
         to: '/pages/posts',
       }
+     
     ],
   },
 

@@ -1,44 +1,87 @@
 import React from 'react'
 import {
-  CButton,
+  CBadge,
+  CCard,
+  CCardBody,
+  CCardHeader,
   CCol,
-  CContainer,
-  CInput,
-  CInputGroup,
-  CInputGroupAppend,
-  CInputGroupPrepend,
-  CInputGroupText,
-  CRow
+  CDataTable,
+  CRow,
+  CButton
 } from '@coreui/react'
-import CIcon from '@coreui/icons-react'
 
-const Page500 = () => {
+import postsData from '../../datas/PostsData'
+import { Link, useHistory} from "react-router-dom";
+
+const getBadge = status => {
+  switch (status) {
+    case 'Active': return 'success'
+    case 'Inactive': return 'secondary'
+    case 'Pending': return 'warning'
+    case 'Banned': return 'danger'
+    default: return 'primary'
+  }
+}
+const fields = ['select','id','question','reponse', 'user']
+
+
+const Tables = () => {
+
+  let history= useHistory();
+  const handleRowClick= e => {
+
+    history.push(`/pages/posts/postselect/${e.id}`)
+
+  }
   return (
-    <div className="c-app c-default-layout flex-row align-items-center">
-      <CContainer>
-        <CRow className="justify-content-center">
-          <CCol md="6">
-            <span className="clearfix">
-              <h1 className="float-left display-3 mr-4">500</h1>
-              <h4 className="pt-3">Houston, we have a problem!</h4>
-              <p className="text-muted float-left">The page you are looking for is temporarily unavailable.</p>
-            </span>
-            <CInputGroup className="input-prepend">
-              <CInputGroupPrepend>
-                <CInputGroupText>
-                  <CIcon name="cil-magnifying-glass" />
-                </CInputGroupText>
-              </CInputGroupPrepend>
-              <CInput size="16" type="text" placeholder="What are you looking for?" />
-              <CInputGroupAppend>
-                <CButton color="info">Search</CButton>
-              </CInputGroupAppend>
-            </CInputGroup>
-          </CCol>
-        </CRow>
-      </CContainer>
-    </div>
+    <>
+
+
+      <CRow>
+        <CCol>
+          <CCard>
+          <CCardHeader>
+              Gestion des posts
+              <CRow className="align-items-center mt-3">
+                <CCol col="6" sm="4" md="2">
+                  <Link to={`/pages/tags/addtags`}>
+                    <CButton active block color="dark" aria-pressed="true">
+                      Ajouter Post
+                    </CButton>
+                  </Link>
+                </CCol>
+              </CRow>
+            </CCardHeader>
+            <CCardBody>
+              <CDataTable
+                items={postsData}
+                fields={fields}
+                hover
+                striped
+                bordered
+                size="sm"
+                itemsPerPage={10}
+                pagination
+                clickableRows
+                onRowClick= { e => handleRowClick(e)}
+                scopedSlots = {{
+                  'status':
+                    (item)=>(
+                      <td>
+                        <CBadge color={getBadge(item.status)}>
+                          {item.status}
+                        </CBadge>
+                      </td>
+                    )
+                }}
+              />
+            </CCardBody>
+          </CCard>
+        </CCol>
+      </CRow>
+
+    </>
   )
 }
 
-export default Page500
+export default Tables
