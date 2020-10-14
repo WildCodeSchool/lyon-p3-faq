@@ -44,7 +44,7 @@ header button {
   height: 40px;
   align-self: center;
   font-size: 14px;
-  margin-left:auto;
+  margin-left: auto;
 }
 
 header h1 {
@@ -80,13 +80,36 @@ header nav > ul li a:hover {
 
 main {
   margin: 30px 0px 30px 0px;
- 
 }
 
-main div.wrapper  {
-background-color: red;
-max-width: 70%;
+main div.wrapper {
+  background-color: red;
+  max-width: 70%;
 }
+
+main div div#modalPost {
+  background-color: #d4d4d4;
+  width: 500px;
+  height: 350px;
+  position: absolute;
+  z-index: 2;
+  margin: 10vh 20vw;
+  border-radius: 20px;
+  padding: 10px;
+}
+main div div#modalPost h3 {
+  text-align: center;
+}
+main div div#modalPost form *{
+width:100%;
+padding:5px;
+}
+main div div#modalPost form div *:valid{
+border:1px solid green;
+}
+main div div#modalPost form div *:invalid{
+  border:1px solid red;
+  }
 
 footer {
   width: 100%;
@@ -96,13 +119,12 @@ footer {
   background: black;
   color: white;
   display: flex;
-  
 }
 footer div {
   align-self: center;
 }
 footer div ul {
-  padding : 15px 0px 15px 75px;
+  padding: 15px 0px 15px 75px;
 }
 
 footer div button {
@@ -208,14 +230,14 @@ footer div button {
   main {
     margin-bottom: 0;
   }
-  main div.wrapper  {
-    background-color:blue;
+  main div.wrapper {
+    background-color: blue;
     max-width: 85%;
     z-index: 0;
-    }
+  }
 
   footer {
-    background-color: transparent ;
+    background-color: transparent;
     z-index: 1;
     position: sticky;
   }
@@ -233,11 +255,9 @@ footer div button {
     width: 300px;
     display: block;
     text-align: center;
-    margin : 15px 0px 15px 0px;
-    
+    margin: 15px 0px 15px 0px;
   }
   footer div ul {
     display: none;
   }
 }
-
