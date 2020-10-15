@@ -8,6 +8,7 @@ body {
   position: relative;
   width: 100%;
   height: max-content;
+  background-color: #eeeeee;
 }
 
 a,
@@ -44,7 +45,7 @@ header button {
   height: 40px;
   align-self: center;
   font-size: 14px;
-  margin-left:auto;
+  margin-left: auto;
 }
 
 header h1 {
@@ -62,30 +63,59 @@ header nav {
   display: none;
 }
 
-header nav > ul li {
+header nav>ul li {
   display: inline;
 }
 
-header nav > ul li:first-child {
+header nav>ul li:first-child {
   display: none;
 }
 
-header nav > ul li a {
+header nav>ul li a {
   margin-left: 10px;
 }
 
-header nav > ul li a:hover {
+header nav>ul li a:hover {
   text-decoration: underline;
 }
 
 main {
   margin: 30px 0px 30px 0px;
- 
+
 }
 
-main div.wrapper  {
-background-color: red;
-max-width: 70%;
+main div.wrapper {
+ 
+  max-width: 70%;
+}
+
+.questionTemplate {
+  background-color: rgb(255, 255, 255);
+  margin-bottom: 30px;
+  min-height: 10vh;
+  padding: 30px;
+  border-radius: 20px;
+}
+
+.questionTemplate > h2 {
+  font-weight: bold;
+  padding-bottom: 15px;
+}
+
+.questionTemplate > span {
+  display : flex;
+  white-space: nowrap;
+  align-content: space-around;
+}
+
+.questionTemplate > span > h5 {
+  font-weight: bold;
+  font-size: 1em;
+  padding-right: 10px;
+}
+
+.questionTemplate > span > p {
+  padding-right: 10px;
 }
 
 footer {
@@ -96,13 +126,15 @@ footer {
   background: black;
   color: white;
   display: flex;
-  
+
 }
+
 footer div {
   align-self: center;
 }
+
 footer div ul {
-  padding : 15px 0px 15px 75px;
+  padding: 15px 0px 15px 75px;
 }
 
 footer div button {
@@ -113,6 +145,7 @@ footer div button {
   header button {
     display: none;
   }
+
   #nav-mobile-overlay {
     width: 100%;
     height: 100vh;
@@ -120,6 +153,7 @@ footer div button {
     display: none;
     background: rgba(0, 0, 0, 0.5);
   }
+
   body.prevent-scroll {
     position: fixed;
     overflow: hidden;
@@ -154,30 +188,30 @@ footer div button {
     right: 0;
   }
 
-  header nav > ul {
+  header nav>ul {
     padding: 20px;
     padding-top: 30px;
   }
 
-  header nav > ul li {
+  header nav>ul li {
     display: block;
     margin-bottom: 20px;
     padding-bottom: 20px;
     border-bottom: 1px solid #ffffff;
   }
 
-  header nav > ul li:first-child {
+  header nav>ul li:first-child {
     display: block;
     border-bottom: 0;
   }
 
-  header nav > ul li:first-child strong {
+  header nav>ul li:first-child strong {
     font-weight: 700;
     font-size: 25px;
     color: #fff;
   }
 
-  header nav > ul li a {
+  header nav>ul li a {
     margin-left: 0;
   }
 
@@ -208,22 +242,25 @@ footer div button {
   main {
     margin-bottom: 0;
   }
-  main div.wrapper  {
-    background-color:blue;
+
+  main div.wrapper {
+   
     max-width: 85%;
     z-index: 0;
-    }
+  }
 
   footer {
-    background-color: transparent ;
+    background-color: transparent;
     z-index: 1;
     position: sticky;
   }
+
   footer div {
     justify-content: space-evenly;
     display: flex;
     margin-bottom: 30px;
   }
+
   footer div button {
     background-color: black;
     color: white;
@@ -233,11 +270,11 @@ footer div button {
     width: 300px;
     display: block;
     text-align: center;
-    margin : 15px 0px 15px 0px;
-    
+    margin: 15px 0px 15px 0px;
+
   }
+
   footer div ul {
     display: none;
   }
 }
-
