@@ -85,6 +85,7 @@ main {
 main div.wrapper {
   background-color: red;
   max-width: 70%;
+  position: relative;
 }
 main div div#modalPost {
   display: none;
@@ -92,13 +93,14 @@ main div div#modalPost {
 main div div#modalPost.show {
   display: block;
   background-color: #d4d4d4;
-  width: 500px;
-  height: 300px;
-  position: absolute;
+  width: 60vw;
+  height: auto;
   z-index: 2;
   margin: 10vh 20vw;
   border-radius: 20px;
   padding: 10px;
+  margin-left: auto;
+  margin-right: auto;
 }
 main div div#modalPost.show h3 {
   text-align: center;
@@ -110,7 +112,7 @@ main div div#modalPost.show button {
   color: black;
   border-radius: 50%;
   float: right;
-  margin-top:-20px;
+  margin-top: -20px;
 }
 main div div#modalPost.show form * {
   width: 100%;
@@ -123,6 +125,9 @@ main div div#modalPost.show form div *:valid {
 }
 main div div#modalPost.show form div *:invalid {
   border: 1px solid red;
+}
+main div div#modalPost.show form div textarea {
+  height: 50vh;
 }
 
 footer {
@@ -253,13 +258,13 @@ footer div button {
     display: block;
     background-color: #d4d4d4;
     width: 70vw;
-    height: 85vh;
+    height: auto;
     position: relative;
     z-index: 2;
     border-radius: 20px;
     padding: 10px;
-    margin-top:-40px;
-    margin-left:auto;
+    margin-top: -40px;
+    margin-left: auto;
     margin-right: auto;
   }
   main div div#modalPost.show h3 {
@@ -272,7 +277,7 @@ footer div button {
     color: black;
     border-radius: 50%;
     float: right;
-    margin-top:-20px;
+    margin-top: -20px;
   }
   main div div#modalPost.show form * {
     width: 100%;
@@ -281,7 +286,7 @@ footer div button {
     resize: none;
   }
   main div div#modalPost.show form div textarea {
-height:50vh;
+    height: 50vh;
   }
   main div div#modalPost.show form div *:valid {
     border: 1px solid green;
@@ -289,9 +294,8 @@ height:50vh;
   main div div#modalPost.show form div *:invalid {
     border: 1px solid red;
   }
-  main div div#modalPost.show form #submit{
+  main div div#modalPost.show form #submit {
     background-color: red;
-    margin-bottom:100px;
   }
   footer {
     background-color: transparent;
