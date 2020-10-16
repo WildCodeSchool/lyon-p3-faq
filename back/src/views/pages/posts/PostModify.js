@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, {useState, useEffect} from "react";
 import {
   CButton,
   CCard,
@@ -34,10 +34,24 @@ import CIcon from "@coreui/icons-react";
 import postsData from "../../datas/PostsData";
 import {Link, useHistory} from "react-router-dom";
 
-const BasicForms = () => {
+
+const BasicForms = (props) => {
   let history = useHistory();
+
+  let idPost= props.match.params.idpost
   const [question, setQuestion] = useState("")
   const [reponse, setReponse] = useState("")
+
+  useEffect(() => {
+
+    const currentPost =postsData.filter( post => post.id == idPost)
+
+    setQuestion(currentPost[0].question)
+    setReponse(currentPost[0].reponse)
+
+
+  },[])
+
 
 
   const handleSubmit = () => {
@@ -59,7 +73,7 @@ const BasicForms = () => {
       <CCol xs="12" md="4">
         <CCard>
           <CCardHeader>
-            Ajout utilisateur
+            Modification Post
           </CCardHeader>
           <CCardBody>
             <CForm action="" method="post" className="form-horizontal">
@@ -67,11 +81,11 @@ const BasicForms = () => {
                 <CCol md="12">
                   <CFormGroup className="pr-1">
                     <CLabel htmlFor="exampleInputName2" className="pr-1">Question</CLabel>
-                    <CInput id="exampleInputName2" placeholder="" onChange={e => setQuestion(e.target.value)} required/>
+                    <CInput id="exampleInputName2"  value={question} placeholder="" onChange={e => setQuestion(e.target.value)} required/>
                   </CFormGroup>
                   <CFormGroup className="pr-1">
                     <CLabel htmlFor="exampleInputName2" className="pr-1">Réponse</CLabel>
-                    <CInput id="exampleInputName2" placeholder="" onChange={e => setReponse(e.target.value)} required/>
+                    <CInput id="exampleInputName2" value={reponse} placeholder="" onChange={e => setReponse(e.target.value)} required/>
                   </CFormGroup>
                 </CCol>
               </CFormGroup>

@@ -49,6 +49,7 @@ const UserSelect= React.lazy(() => import('./views/pages/users/UserSelect'));
 const UserModify= React.lazy(() => import('./views/pages/users/UserModify'));
 const PostSelect= React.lazy(() => import('./views/pages/posts/PostSelect'));
 const AddPost= React.lazy(() => import('./views/pages/posts/AddPost'));
+const PostModify= React.lazy(() => import('./views/pages/posts/PostModify'));
 
 
 
@@ -67,7 +68,8 @@ const routes = [
   { path: '/pages/tags/TagModify/:nomtag', name: 'ModifyTags' , component: TagModify  ,exact:true},
   { path: '/pages/posts', name: 'Posts' , component: Posts  ,exact:true},
   { path: '/pages/posts/postselect/:idpost', name: 'Select Posts' , component: PostSelect  ,exact:true},
-  { path: '/pages/posts/addpost/:idpost', name: 'Select Posts' , component: AddPost  ,exact:true},
+  { path: '/pages/posts/addpost', name: 'Add Posts' , component: AddPost  ,exact:true},
+  { path: '/pages/posts/modifypost/:idpost', name: 'Modify Posts' , component: PostModify  ,exact:true},
   { path: '/pages/users', name: 'userList' , component: UsersList  ,exact:true},
   { path: '/pages/users/adduser', name: 'AddUser' , component: AddUser  ,exact:true},
   { path: '/pages/users/userselect/:iduser', name: 'SelectUser' , component: UserSelect  ,exact:true},

@@ -22,7 +22,7 @@ const getBadge = status => {
     default: return 'primary'
   }
 }
-const fields = ['select','id','question','reponse', 'user']
+const fields = ['question','reponse', 'created_by','created_at']
 
 
 const Tables = () => {
@@ -44,7 +44,7 @@ const Tables = () => {
               Gestion des posts
               <CRow className="align-items-center mt-3">
                 <CCol col="6" sm="4" md="2">
-                  <Link to={`/pages/tags/addtags`}>
+                  <Link to={`/pages/posts/addpost`}>
                     <CButton active block color="dark" aria-pressed="true">
                       Ajouter Post
                     </CButton>

@@ -37,36 +37,36 @@ import { Link, useHistory } from "react-router-dom";
 const BasicForms = (props) => {
 
     let idUser= props.match.params.iduser
-    
-  
+
+
   let history = useHistory();
   const [nom,setNom] = useState("")
   const [prenom,setPrenom] = useState("")
   const [pseudo,setPseudo] = useState("")
   const [email,setEmail] = useState("")
   const [typeCompte,setTypeCompte] = useState("")
-  
-   
+
+
 
   useEffect(() => {
 
     const actualUser =usersData.filter( user => user.id == idUser)
- 
+
     setNom(actualUser[0].nom.split(" ")[0])
     setPrenom(actualUser[0].nom.split(" ")[1])
     setPseudo(actualUser[0].pseudo)
     setEmail(actualUser[0].email)
     setTypeCompte(actualUser[0].created_at)
-    
+
     },[])
 
- 
+
 
   const handleSubmit = () => {
 
     usersData.map( user => {
     if (user.id == idUser) {
-     
+
  user.nom= nom
  user.prenom= prenom
  user.pseudo= pseudo
@@ -77,7 +77,7 @@ const BasicForms = (props) => {
 
 
     })
-   
+
     history.push(`/pages/users/`);
   };
 
@@ -87,7 +87,7 @@ const BasicForms = (props) => {
     setPseudo("")
     setEmail("")
     setTypeCompte("")
-    
+
   };
 
   return (
@@ -131,7 +131,7 @@ const BasicForms = (props) => {
                     </CInputGroup>
                   </CCol>
                 </CFormGroup>
-               
+
                 <CFormGroup row>
                   <CCol md="3">
                     <CLabel htmlFor="select">Type compte</CLabel>
@@ -140,7 +140,7 @@ const BasicForms = (props) => {
                     <CSelect custom name="select" id="select" value={typeCompte} onChange= { e => setTypeCompte( e.target.value)}>
                       <option value="0">Please select</option>
                       <option value="Membre">Membre</option>
-                      <option value="Rédacteur">Rédacteur</option>
+                      <option value="Redacteur">Rédacteur</option>
                       <option value="Admin">Admin</option>
                     </CSelect>
                   </CCol>

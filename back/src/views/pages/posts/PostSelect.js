@@ -21,9 +21,9 @@ const PostSelect = (props) => {
     let idPost= props.match.params.idpost
     let history= useHistory();
     const cancelChoice = (e) => {
-        
+
         history.push("/pages/posts/")
-        
+
       };
 
       const deleteChoice = (e) => {
@@ -34,24 +34,24 @@ const PostSelect = (props) => {
             }
           });
         history.push("/pages/posts/")
-        
+
       };
 
       const modifyChoice = (e) => {
 
-        
-        
-        history.push(`/pages/posts/addpost/${idPost}`)
-        
+
+
+        history.push(`/pages/posts/modifypost/${idPost}`)
+
       };
 
   const [modal, setModal] = useState(true);
- 
+
 
   return (
-    
-        
-            
+
+
+
 
             <CModal show={modal} onClose={setModal}>
               <CModalHeader closeButton>
@@ -67,8 +67,8 @@ const PostSelect = (props) => {
                 </CButton>
               </CModalFooter>
             </CModal>
-         
-    
+
+
   );
 };
 
