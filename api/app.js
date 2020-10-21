@@ -4,20 +4,29 @@ const httpErrors = require('http-errors');
 const logger = require('morgan');
 const path = require('path');
 
+
 const indexRouter = require('./routes/index');
+const frontRouter= require('./routes/front/index')
+const backRouter = require('./routes/backoffice/index')
+
+
+// Router middleware
+
+app.use('/back', backRouter);
+app.use('/front', frontRouter);
 
 const app = express();
 
 app.set('views', path.join(__dirname, 'views'));
+
+
 // view engine setup
 app.set('view engine', 'ejs');
 app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
-
 app.use(express.static(path.join(__dirname, 'public')));
-
 app.use('/', indexRouter);
 
 // catch 404 and forward to error handler
