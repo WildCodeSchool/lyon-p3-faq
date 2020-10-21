@@ -1,0 +1,9 @@
+{
+  "generator-express-es6": {
+    "promptValues": {
+      "viewEngine": "ejs",
+      "cssPreprocessor": "none",
+      "installDependencies": "npm"
+    }
+  }
+}
