@@ -17,4 +17,48 @@ router.get("/test", function (req, res) {
   });
 });
 
+router.get("/questionAnswered", function (req, res) {
+  db.query(
+    "SELECT question.titre, question.contenu FROM question JOIN reponse ON question.id = reponse.question_id",
+    (err, results) => {
+      if (err) {
+        console.log(err);
+        res.status(500).send("Erreur");
+      } else {
+        res.send(results);
+      }
+    }
+  );
+});
+
+router.get("/question-answer", function (req, res) {
+  db.query(
+    "SELECT question.titre, question.contenu, reponse.contenu AS reponse FROM question JOIN reponse ON question.id = reponse.question_id",
+    (err, results) => {
+      if (err) {
+        console.log(err);
+        res.status(500).send("Erreur");
+      } else {
+        res.json(results);
+      }
+    }
+  );
+});
+
+router.post("/ask", function (req,res) {
+  const title=`"${req.body.titre}"`;
+  const contenu=`"${req.body.contenu}"`;
+  db.query("INSERT INTO question (titre, contenu) VALUES (?,?)",[title, contenu], (err, results) => {
+    if (err) {
+      console.log(err);
+      res.status(500).send("Erreur");
+    } else if(req.body.titre.length<100 && req.body.contenu.length<300 ){
+      res.status(200).send("post confirmed");
+    }
+    else{
+      res.send("Mauvais format");
+    }
+  })
+});
+
 module.exports = router;
