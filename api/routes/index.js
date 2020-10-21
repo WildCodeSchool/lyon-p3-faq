@@ -48,15 +48,15 @@ router.get("/question-answer", function (req, res) {
 router.post("/ask", function (req,res) {
   const title=`"${req.body.titre}"`;
   const contenu=`"${req.body.contenu}"`;
-  db.query("INSERT INTO question (titre, contenu) VALUES (?,?)",[title, contenu], (err, results) => {
+  db.query("INSERT INTO question (titre, contenu) VALUES (?)",[[title, contenu]], (err, results) => {
     if (err) {
       console.log(err);
-      res.status(500).send("Erreur");
+      res.status(500).send({message: "Erreur"});
     } else if(req.body.titre.length<100 && req.body.contenu.length<300 ){
-      res.status(200).send("post confirmed");
+      res.status(200).send({message: "post confirmed"});
     }
     else{
-      res.send("Mauvais format");
+      res.status(412).send({message: "Mauvais format"});
     }
   })
 });
