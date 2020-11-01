@@ -1,6 +1,6 @@
 const express = require("express");
 const router = express.Router();
-const db = require("../confMysql/conf");
+const db = require('../../datasource/mysql');
 
 router.get("/", function (req, res) {
   res.send("Hello");

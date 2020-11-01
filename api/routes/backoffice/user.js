@@ -11,7 +11,7 @@ router.get('/all', (req, res) => {
 
     if (err) {
 
-      res.status(400)
+      res.status(500)
         .send({ error: err });
     } else {
       res.status(200)
@@ -32,7 +32,7 @@ router.get('/:id', (req, res) => {
 
   if (!regex[Symbol.match](idUser)) {
 
-    res.status(406)
+    res.status(400)
       .send('Please fill id with a number');
 
   } else {
@@ -41,7 +41,7 @@ router.get('/:id', (req, res) => {
     db.query(' SELECT COUNT(id) as count FROM user WHERE id= ?', idUser, (err, result) => {
 
       if (err) {
-        res.status(400)
+        res.status(500)
           .send({ error: err });
       } else {
 
@@ -53,7 +53,7 @@ router.get('/:id', (req, res) => {
 
             if (err) {
               ;
-              res.status(400)
+              res.status(500)
                 .send({ error: err });
             } else {
               res.status(200)
@@ -82,7 +82,7 @@ router.delete('/:id', (req, res) => {
 
     if (err) {
 
-      res.status(400)
+      res.status(500)
         .send({ error: err });
     } else {
       res.status(200)
@@ -107,7 +107,7 @@ router.post('/add', (req, res) => {
 
     if (err) {
 
-      res.status(400)
+      res.status(500)
         .send({ error: err });
     } else {
       res.status(200)
@@ -135,7 +135,7 @@ router.put('/update/:id', (req, res) => {
 
     if (err) {
 
-      res.status(400)
+      res.status(500)
         .send({ error: err });
     } else {
       res.status(200)

@@ -17,7 +17,7 @@ router.post('/addresponse', (req, res) => {
 
     if (err) {
 
-      res.status(400)
+      res.status(500)
         .send({ error: err });
     } else {
       res.status(200);
@@ -46,7 +46,7 @@ router.put('/archivepost/:id', (req, res) => {
 
     if (err) {
 
-      res.status(400)
+      res.status(500)
         .send({ error: err });
     } else {
       res.status(200)
@@ -60,7 +60,7 @@ router.put('/archivepost/:id', (req, res) => {
 
     if (err) {
 
-      res.status(400)
+      res.status(500)
         .send({ error: err });
     } else {
       res.status(200)
@@ -87,7 +87,7 @@ router.put('/publish/:id', (req, res) => {
 
     if (err) {
 
-      res.status(400)
+      res.status(500)
         .send({ error: err });
     } else {
       res.status(200)
@@ -105,7 +105,7 @@ router.get('/', (req, res) => {
 
     if (err) {
 
-      res.status(400)
+      res.status(500)
         .send({ error: err });
     } else {
       res.status(200)
