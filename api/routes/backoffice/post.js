@@ -65,6 +65,8 @@ router.put("/:id", (req, res) => {
                         "UPDATE reponse SET ? WHERE question_id= ?",
                         [fields, idQuestion],
                         (err, result) => {
+
+                          console.log(result);
                             if (err) {
                                 res.status(500).send({error: err});
                             } else {
