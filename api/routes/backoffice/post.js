@@ -38,62 +38,53 @@ router.put("/:id", (req, res) => {
       .send("JSON incorrect. Champs attendus : idUser et action");
   }
 
-  // Route for publishing a post
-  if (action === "publish") {
-    const fields = {
-      publicated_by: idUser,
-      publicated_at: new Date(),
-    };
-
+    let fields = {};
+    if (action === "publish") {
+        fields = {
+            publicated_by: idUser,
+            publicated_at: new Date(),
+        };
+    } else if (action === "archive") {
+        fields = {
+            disabled_by: idUser,
+            disabled_at: new Date(),
+        };
+    } else {
+        return res.status(400).send("Please type a valid action : publish or archive");
+    }
     db.query(
-      "UPDATE question SET ? WHERE id= ?",
-      [fields, idQuestion],
-      (err, result) => {
-        if (err) {
-          res.status(500).send({ error: err });
-        } else {
-          res.status(200).send("question published");
-        }
-      }
-    );
-  }
-
-  // Route to archive a post
-  if (action === "archive") {
-    const fields = {
-      disabled_by: idUser,
-      disabled_at: new Date(),
-    };
-
-    // We disable a question
-    db.query(
-      "UPDATE question SET ? WHERE id= ?",
-      [fields, idQuestion],
-      (err, result) => {
-        if (err) {
-          res.status(500).send({ error: err });
-        } else {
-          // We disable associated answers
-          db.query(
-            "UPDATE reponse SET ? WHERE question_id= ?",
-            [fields, idQuestion],
-            (err, result) => {
-              if (err) {
+        "UPDATE question SET ? WHERE id= ?",
+        [fields, idQuestion],
+        (err, result) => {
+            if (err) {
                 res.status(500).send({ error: err });
-              } else {
-                res.write("reponse(s) disabled");
-              }
+            } else {
+                // We disable associated answers
+                if (action === "archive") {
+                    db.query(
+                        "UPDATE reponse SET ? WHERE question_id= ?",
+                        [fields, idQuestion],
+                        (err, result) => {
+                            if (err) {
+                                res.status(500).send({error: err});
+                            } else {
+                                res.status(200).write('question disabled');
+                                if (result.affectedRows === 0) {
+                                    res.end();
+                                } else {
+                                    res.end(' and response disabled')
+                                }
+                            }
+                        }
+                    );
+                } else {
+                    res.send("Question published");
+                }
             }
-          );
-          res.status(200);
-          res.end(" and question disabled");
         }
-      }
     );
-  } else {
-    res.status(400).send("Please type a valid action : publish or archive");
-  }
 });
+
 
 // Display all questions & answers (including questions without answers)
 router.get("/", (req, res) => {
