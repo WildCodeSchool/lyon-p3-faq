@@ -50,7 +50,7 @@ router.put('/archivepost/:id', (req, res) => {
         .send({ error: err });
     } else {
       res.status(200)
-        .send('reponse disabled');
+        .send('question disabled');
     }
 
   });
