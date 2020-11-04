@@ -5,7 +5,7 @@ const router = Router();
 /* ********************* Routes for users handling ********************* */
 
 /* GET all users. */
-router.get('/all', (req, res) => {
+router.get('/', (req, res) => {
 
   db.query('SELECT name,mail,pass,ip_adress,role_id FROM user', (err, result) => {
 
@@ -52,7 +52,7 @@ router.get('/:id', (req, res) => {
           db.query('SELECT name,mail,ip_adress,role_id FROM user WHERE id= ?', idUser, (err, result) => {
 
             if (err) {
-              ;
+              
               res.status(500)
                 .send({ error: err });
             } else {
@@ -95,13 +95,13 @@ router.delete('/:id', (req, res) => {
 
 /* add one user */
 
-router.post('/add', (req, res) => {
+router.post('/', (req, res) => {
 
   const { name, mail, role } = req.body;
 
   const pass = 'faqmdp';
-  const ip_adress = '127.0.0.1';
-  const fields = [[name, mail, role, pass, ip_adress]];
+  const ipAdress = req.headers['x-forwarded-for'] || req.connection.remoteAddress;
+  const fields = [[name, mail, role, pass, ipAdress]];
 
   db.query('INSERT INTO user (name,mail,role_id,pass,ip_adress) VALUES ? ', [fields], (err, result) => {
 
@@ -120,7 +120,7 @@ router.post('/add', (req, res) => {
 
 /* UPDATE one user */
 
-router.put('/update/:id', (req, res) => {
+router.put('/:id', (req, res) => {
 
   let idUser = req.params.id;
 
