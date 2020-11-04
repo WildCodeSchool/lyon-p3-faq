@@ -17,6 +17,7 @@ router.post('/', (req, res) => {
   } else {
 
   // We test if we have a result for this tuple of login/password
+
   db.query('SELECT count(id) as count FROM user WHERE mail=? AND pass=?', [login, password], (err, result) => {
 
     if (err) {
