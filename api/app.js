@@ -3,22 +3,31 @@ const express = require('express');
 const httpErrors = require('http-errors');
 const logger = require('morgan');
 const path = require('path');
-
+let cors = require('cors');
+require('dotenv/config');
+let bodyParser = require('body-parser');
 
 const indexRouter = require('./routes/index');
-const frontRouter= require('./routes/front/index')
-const backRouter = require('./routes/backoffice/index')
-
-
-// Router middleware
-
-app.use('/back', backRouter);
-app.use('/front', frontRouter);
+const frontRouter = require('./routes/front/index');
+const userRouter = require('./routes/backoffice/user');
+const postRouter = require('./routes/backoffice/post');
+const loginRouter = require('./routes/backoffice/login');
 
 const app = express();
 
-app.set('views', path.join(__dirname, 'views'));
+// parse application/x-www-form-urlencoded
+app.use(bodyParser.urlencoded({ extended: false }));
 
+// parse application/json
+app.use(bodyParser.json());
+
+// Router middleware
+app.use('/', indexRouter);
+app.use('/back/users', userRouter);
+app.use('/back/posts', postRouter);
+app.use('/back/login', loginRouter);
+
+app.set('views', path.join(__dirname, 'views'));
 
 // view engine setup
 app.set('view engine', 'ejs');
