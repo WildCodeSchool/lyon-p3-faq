@@ -1,0 +1,50 @@
+main {
+    background-color: #EEEEEE;
+    height:auto;
+}
+main div div#container{
+    background-color:white;
+    position:relative;
+    top:100px;
+    border-radius: 15px;
+    position:relative;
+}
+
+main div div h2{
+    position:relative;
+    font-size: x-large;
+    padding:15px 0;
+    display:block;
+    text-align: left;
+
+}
+main div div div#question{
+    margin: 15px 40px;
+    background-color:white;
+}
+main div div div#question span{
+    display: block;
+    text-align:right;
+}
+
+main div div div#answer{
+    background-color:#E4E4E4;
+    border-radius: 0 0 15px 15px;
+    padding:10px 0px 0px 0px
+}
+main div div div#answer p,#author{
+    margin: 15px 40px;
+}
+main div div div#answer #author{
+    text-align: right;
+    display:block;
+    padding:0 0 10px 0;
+}
+main div div div#answer #author img{
+border-radius:50%;
+vertical-align: middle;
+}
+main div div div#answer #author span{
+    line-height: auto;
+    
+    }
