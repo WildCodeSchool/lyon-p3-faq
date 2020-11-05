@@ -9,6 +9,7 @@ body {
   width: 100%;
   background-color: #EEEEEE;
   height: max-content;
+  background-color: #eeeeee;
 }
 
 a,
@@ -63,25 +64,26 @@ header nav {
   display: none;
 }
 
-header nav > ul li {
+header nav>ul li {
   display: inline;
 }
 
-header nav > ul li:first-child {
+header nav>ul li:first-child {
   display: none;
 }
 
-header nav > ul li a {
+header nav>ul li a {
   margin-left: 10px;
 }
 
-header nav > ul li a:hover {
+header nav>ul li a:hover {
   text-decoration: underline;
 }
 
 
 main {
   margin: 30px 0px 30px 0px;
+
 }
 
 main div.wrapper {
@@ -142,9 +144,11 @@ footer {
   color: white;
   display: flex;
 }
+
 footer div {
   align-self: center;
 }
+
 footer div ul {
   padding: 15px 0px 15px 75px;
 }
@@ -157,6 +161,7 @@ footer div button {
   header button {
     display: none;
   }
+
   #nav-mobile-overlay {
     width: 100%;
     height: 100vh;
@@ -164,6 +169,7 @@ footer div button {
     display: none;
     background: rgba(0, 0, 0, 0.5);
   }
+
   body.prevent-scroll {
     position: fixed;
     overflow: hidden;
@@ -198,30 +204,30 @@ footer div button {
     right: 0;
   }
 
-  header nav > ul {
+  header nav>ul {
     padding: 20px;
     padding-top: 30px;
   }
 
-  header nav > ul li {
+  header nav>ul li {
     display: block;
     margin-bottom: 20px;
     padding-bottom: 20px;
     border-bottom: 1px solid #ffffff;
   }
 
-  header nav > ul li:first-child {
+  header nav>ul li:first-child {
     display: block;
     border-bottom: 0;
   }
 
-  header nav > ul li:first-child strong {
+  header nav>ul li:first-child strong {
     font-weight: 700;
     font-size: 25px;
     color: #fff;
   }
 
-  header nav > ul li a {
+  header nav>ul li a {
     margin-left: 0;
   }
 
@@ -252,6 +258,7 @@ footer div button {
   main {
     margin-bottom: 0;
   }
+
 
   main div.wrapper  {
     background-color:#EEEEEE;
@@ -307,11 +314,13 @@ footer div button {
     z-index: 1;
     position: sticky;
   }
+
   footer div {
     justify-content: space-evenly;
     display: flex;
     margin-bottom: 30px;
   }
+
   footer div button {
     background-color: black;
     color: white;
@@ -322,8 +331,10 @@ footer div button {
     display: block;
     text-align: center;
     margin: 15px 0px 15px 0px;
+
   }
+
   footer div ul {
     display: none;
   }
-}
+
