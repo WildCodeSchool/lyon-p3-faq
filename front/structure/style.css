@@ -45,7 +45,7 @@ header button {
   height: 40px;
   align-self: center;
   font-size: 14px;
-  margin-left:auto;
+  margin-left: auto;
 }
 
 header h1 {
@@ -79,14 +79,58 @@ header nav > ul li a:hover {
   text-decoration: underline;
 }
 
-/* main {
-  margin: 0px 0px 30px 0px;
- 
-} */
 
-main div.wrapper  {
+main {
+  margin: 30px 0px 30px 0px;
+}
 
-max-width: 70%;
+main div.wrapper {
+  background-color: red;
+  max-width: 70%;
+  position: relative;
+}
+main div div#modalPost {
+  display: none;
+}
+main div div#modalPost.show {
+  display: block;
+  background-color: #d4d4d4;
+  width: 60vw;
+  height: auto;
+  z-index: 2;
+  margin: 10vh 20vw;
+  border-radius: 20px;
+  padding: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+main div div#modalPost.show h3 {
+  text-align: center;
+  width: fit-content;
+  margin: auto;
+}
+main div div#modalPost.show button {
+  background-color: grey;
+  color: black;
+  border-radius: 50%;
+  float: right;
+  margin-top: -20px;
+}
+main div div#modalPost.show form * {
+  width: 100%;
+  padding: 5px;
+  border-radius: 10px;
+  resize: none;
+}
+main div div#modalPost.show form div *:valid {
+  border: 1px solid green;
+}
+main div div#modalPost.show form div *:invalid {
+  border: 1px solid red;
+}
+main div div#modalPost.show form div textarea {
+  height: 50vh;
+
 }
 
 footer {
@@ -97,13 +141,12 @@ footer {
   background: black;
   color: white;
   display: flex;
-  
 }
 footer div {
   align-self: center;
 }
 footer div ul {
-  padding : 15px 0px 15px 75px;
+  padding: 15px 0px 15px 75px;
 }
 
 footer div button {
@@ -209,14 +252,58 @@ footer div button {
   main {
     margin-bottom: 0;
   }
+
   main div.wrapper  {
     background-color:#EEEEEE;
+
     max-width: 85%;
     z-index: 0;
-    }
-
+  }
+  main div div#modalPost.show {
+    display: block;
+    background-color: #d4d4d4;
+    width: 70vw;
+    height: auto;
+    position: relative;
+    z-index: 2;
+    border-radius: 20px;
+    padding: 10px;
+    margin-top: -40px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  main div div#modalPost.show h3 {
+    text-align: center;
+    width: fit-content;
+    margin: auto;
+  }
+  main div div#modalPost.show button {
+    background-color: grey;
+    color: black;
+    border-radius: 50%;
+    float: right;
+    margin-top: -20px;
+  }
+  main div div#modalPost.show form * {
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    resize: none;
+  }
+  main div div#modalPost.show form div textarea {
+    height: 50vh;
+  }
+  main div div#modalPost.show form div *:valid {
+    border: 1px solid green;
+  }
+  main div div#modalPost.show form div *:invalid {
+    border: 1px solid red;
+  }
+  main div div#modalPost.show form #submit {
+    background-color: red;
+  }
   footer {
-    background-color: transparent ;
+    background-color: transparent;
     z-index: 1;
     position: sticky;
   }
@@ -234,11 +321,9 @@ footer div button {
     width: 300px;
     display: block;
     text-align: center;
-    margin : 15px 0px 15px 0px;
-    
+    margin: 15px 0px 15px 0px;
   }
   footer div ul {
     display: none;
   }
 }
-
