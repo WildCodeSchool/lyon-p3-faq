@@ -7,6 +7,7 @@ body {
   overflow-x: hidden;
   position: relative;
   width: 100%;
+  background-color: #EEEEEE;
   height: max-content;
   background-color: #eeeeee;
 }
@@ -79,43 +80,59 @@ header nav>ul li a:hover {
   text-decoration: underline;
 }
 
+
 main {
   margin: 30px 0px 30px 0px;
 
 }
 
 main div.wrapper {
- 
+  background-color: red;
   max-width: 70%;
+  position: relative;
 }
-
-.questionTemplate {
-  background-color: rgb(255, 255, 255);
-  margin-bottom: 30px;
-  min-height: 10vh;
-  padding: 30px;
+main div div#modalPost {
+  display: none;
+}
+main div div#modalPost.show {
+  display: block;
+  background-color: #d4d4d4;
+  width: 60vw;
+  height: auto;
+  z-index: 2;
+  margin: 10vh 20vw;
   border-radius: 20px;
+  padding: 10px;
+  margin-left: auto;
+  margin-right: auto;
 }
-
-.questionTemplate > h2 {
-  font-weight: bold;
-  padding-bottom: 15px;
+main div div#modalPost.show h3 {
+  text-align: center;
+  width: fit-content;
+  margin: auto;
 }
-
-.questionTemplate > span {
-  display : flex;
-  white-space: nowrap;
-  align-content: space-around;
+main div div#modalPost.show button {
+  background-color: grey;
+  color: black;
+  border-radius: 50%;
+  float: right;
+  margin-top: -20px;
 }
-
-.questionTemplate > span > h5 {
-  font-weight: bold;
-  font-size: 1em;
-  padding-right: 10px;
+main div div#modalPost.show form * {
+  width: 100%;
+  padding: 5px;
+  border-radius: 10px;
+  resize: none;
 }
+main div div#modalPost.show form div *:valid {
+  border: 1px solid green;
+}
+main div div#modalPost.show form div *:invalid {
+  border: 1px solid red;
+}
+main div div#modalPost.show form div textarea {
+  height: 50vh;
 
-.questionTemplate > span > p {
-  padding-right: 10px;
 }
 
 footer {
@@ -126,7 +143,6 @@ footer {
   background: black;
   color: white;
   display: flex;
-
 }
 
 footer div {
@@ -243,12 +259,56 @@ footer div button {
     margin-bottom: 0;
   }
 
-  main div.wrapper {
-   
+
+  main div.wrapper  {
+    background-color:#EEEEEE;
+
     max-width: 85%;
     z-index: 0;
   }
-
+  main div div#modalPost.show {
+    display: block;
+    background-color: #d4d4d4;
+    width: 70vw;
+    height: auto;
+    position: relative;
+    z-index: 2;
+    border-radius: 20px;
+    padding: 10px;
+    margin-top: -40px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  main div div#modalPost.show h3 {
+    text-align: center;
+    width: fit-content;
+    margin: auto;
+  }
+  main div div#modalPost.show button {
+    background-color: grey;
+    color: black;
+    border-radius: 50%;
+    float: right;
+    margin-top: -20px;
+  }
+  main div div#modalPost.show form * {
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    resize: none;
+  }
+  main div div#modalPost.show form div textarea {
+    height: 50vh;
+  }
+  main div div#modalPost.show form div *:valid {
+    border: 1px solid green;
+  }
+  main div div#modalPost.show form div *:invalid {
+    border: 1px solid red;
+  }
+  main div div#modalPost.show form #submit {
+    background-color: red;
+  }
   footer {
     background-color: transparent;
     z-index: 1;
@@ -277,4 +337,4 @@ footer div button {
   footer div ul {
     display: none;
   }
-}
+
