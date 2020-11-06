@@ -7,7 +7,7 @@ const router = Router();
 /* GET all users. */
 router.get('/', (req, res) => {
 
-  db.query('SELECT name,mail,pass,ip_adress,role_id FROM user', (err, result) => {
+  db.query('SELECT name,mail,pass,ip_address,role_id FROM user', (err, result) => {
 
     if (err) {
 
@@ -49,7 +49,7 @@ router.get('/:id', (req, res) => {
         if (result[0].count > 0) {
 
           // On renvoie les informations de l'utilisateur
-          db.query('SELECT name,mail,ip_adress,role_id FROM user WHERE id= ?', idUser, (err, result) => {
+          db.query('SELECT name,mail,ip_address,role_id FROM user WHERE id= ?', idUser, (err, result) => {
 
             if (err) {
               
@@ -78,6 +78,8 @@ router.get('/:id', (req, res) => {
 /* delete one user */
 router.delete('/:id', (req, res) => {
 
+  let idUser = req.params.id;
+
   db.query('DELETE  FROM user WHERE id= ?', idUser, (err, result) => {
 
     if (err) {
@@ -103,7 +105,7 @@ router.post('/', (req, res) => {
   const ipAdress = req.headers['x-forwarded-for'] || req.connection.remoteAddress;
   const fields = [[name, mail, role, pass, ipAdress]];
 
-  db.query('INSERT INTO user (name,mail,role_id,pass,ip_adress) VALUES ? ', [fields], (err, result) => {
+  db.query('INSERT INTO user (name,mail,role_id,pass,ip_address) VALUES ? ', [fields], (err, result) => {
 
     if (err) {
 

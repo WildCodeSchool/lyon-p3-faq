@@ -18,9 +18,7 @@ router.post("/addresponse", (req, res) => {
       if (err) {
         res.status(500).send({ error: err });
       } else {
-        res.status(200);
-        res.write(JSON.stringify(req.body));
-        res.end("Reponse successfully added");
+        res.status(201).send("Reponse successfully added");
       }
     }
   );
@@ -66,7 +64,7 @@ router.put("/:id", (req, res) => {
                         [fields, idQuestion],
                         (err, result) => {
 
-                          console.log(result);
+                         
                             if (err) {
                                 res.status(500).send({error: err});
                             } else {
