@@ -6,6 +6,7 @@ const UserController = require("../../controllers/user.controller");
 /* ********************* Routes for users handling ********************* */
 
 /* GET all users. */
+
 router.get("/", UserController.getUsers);
 
 /* GET one user */

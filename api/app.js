@@ -23,6 +23,7 @@ app.use(bodyParser.json());
 
 // Router middleware
 app.use("/", indexRouter);
+app.use("/front", frontRouter);
 app.use("/back/users", userRouter);
 app.use("/back/posts", postRouter);
 app.use("/back/login", loginRouter);
