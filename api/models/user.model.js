@@ -16,7 +16,7 @@ class UserModel {
 
   static one(id, method, fields) {
     return new Promise((resolve, reject) => {
-      if (method === "delete") {
+      if (method === "DELETE") {
         const queryField = "DELETE  FROM user WHERE id= ?";
         db.query(queryField, id, (err, result) => {
           if (err) {
@@ -27,7 +27,7 @@ class UserModel {
         });
       }
 
-      if (method === "get") {
+      if (method === "GET") {
         const queryField =
           "SELECT name,mail,pass,ip_address,role_id FROM user WHERE id=?";
         db.query(queryField, id, (err, result) => {
@@ -39,7 +39,7 @@ class UserModel {
         });
       }
 
-      if (method === "put") {
+      if (method === "PUT") {
         const queryField = "UPDATE user SET ? WHERE id= ?";
         db.query(queryField, [fields, id], (err, result) => {
           if (err) {

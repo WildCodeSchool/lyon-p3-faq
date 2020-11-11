@@ -1,55 +1,48 @@
 const db = require("../datasource/mysql");
 const userModel = require("../models/user.model");
 class UserController {
-  static async Users(req, res, action, method) {
+  // Actions on one user
+  static async one(req, res) {
     try {
-      if (action === "all") {
-        const queryResult = await userModel.getAll(method);
-        res.send(queryResult);
-      }
+      let idUser = req.params.id;
+      const regex = new RegExp("^[0-9]+$");
 
-      if (action === "one") {
-        let idUser = req.params.id;
-        const regex = new RegExp("^[0-9]+$");
+      // On vérifie si l'id saisi est bien un chiffre
 
-        // On vérifie si l'id saisi est bien un chiffre
+      if (!regex[Symbol.match](idUser)) {
+        res.status(400).send("Please fill id with a number");
+      } else {
+        // On vérifie si l'utilisateur existe en base de données
+        const countResult = await userModel.match(idUser);
 
-        if (!regex[Symbol.match](idUser)) {
-          res.status(400).send("Please fill id with a number");
-        } else {
-          // On vérifie si l'utilisateur existe en base de données
-          const countResult = await userModel.match(idUser);
+        // L'utilisateur a bien été trouvé dans la base de données
+        if (countResult[0].count > 0) {
+          // On renvoie les informations de l'utilisateur
 
-          // L'utilisateur a bien été trouvé dans la base de données
-          if (countResult[0].count > 0) {
-            // On renvoie les informations de l'utilisateur
-
-            if (method === "delete") {
-              const queryResult = await userModel.one(idUser, method);
-              res.send("User deleted");
-            }
-
-            if (method === "get") {
-              const queryResult = await userModel.one(idUser, method);
-              res.send(queryResult);
-            }
-
-            if (method === "put") {
-              const { name, mail, role } = req.body;
-              const fields = {
-                name: name,
-                mail: mail,
-                role_id: role,
-              };
-
-              const queryResult = await userModel.one(idUser, method, fields);
-              // res.write(queryResult);
-              // res.end("User successfully updated")
-              res.send("User successfully updated");
-            }
-          } else {
-            res.status(406).send({ "No result for user :": idUser });
+          if (req.method === "DELETE") {
+            const queryResult = await userModel.one(idUser, req.method);
+            res.send("User deleted");
           }
+
+          if (req.method == "GET") {
+            const queryResult = await userModel.one(idUser, req.method);
+            res.send(queryResult);
+          }
+
+          if (req.method === "PUT") {
+            const { name, mail, role } = req.body;
+            const fields = {
+              name: name,
+              mail: mail,
+              role_id: role,
+            };
+
+            const queryResult = await userModel.one(idUser, req.method, fields);
+
+            res.send("User successfully updated");
+          }
+        } else {
+          res.status(406).send({ "No result for user :": idUser });
         }
       }
     } catch (err) {
@@ -58,7 +51,17 @@ class UserController {
       res.json({ message: err });
     }
   }
+  // display all users
+  static async getUsers(req, res) {
+    try {
+      const queryResult = await userModel.getAll();
+      res.send(queryResult);
+    } catch (err) {
+      res.json({ message: err });
+    }
+  }
 
+  //add a User
   static async addUser(req, res) {
     try {
       const { name, mail, role } = req.body;

@@ -6,32 +6,23 @@ const UserController = require("../../controllers/user.controller");
 /* ********************* Routes for users handling ********************* */
 
 /* GET all users. */
-router.get("/", (req, res, next) => {
-  UserController.Users(req, res, "all", "get");
-});
+router.get("/", UserController.getUsers);
 
 /* GET one user */
 
-router.get("/:id", (req, res, next) => {
-  UserController.Users(req, res, "one", "get");
-});
+router.get("/:id", UserController.one)
 
 /* delete one user */
 
-router.delete("/:id", (req, res, next) => {
-  UserController.Users(req, res, "one", "delete");
-});
+router.delete("/:id", UserController.one);
 
 /* Update one user */
 
-router.put("/:id", (req, res, next) => {
-  UserController.Users(req, res, "one", "put");
-});
+router.put("/:id", UserController.one);
 
 /* add one user */
 
-router.post("/", (req, res, next) => {
-  UserController.addUser(req, res);
-});
+router.post("/",  UserController.addUser);
+
 
 module.exports = router;
