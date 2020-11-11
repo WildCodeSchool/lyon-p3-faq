@@ -45,6 +45,30 @@ class PostController {
     }
   }
 
+  static async updatePost(req, res) {
+    try {
+      let idQuestion = req.params.id;
+      const { titre_question, contenu_question, contenu_reponse } = req.body;
+
+     
+        const fields = {
+          titre: titre_question,
+          "question.contenu": contenu_question,
+          "reponse.contenu": contenu_reponse,
+        };
+
+        const queryResult = await postModel.update(idQuestion, fields);
+
+        res.status(201).send("Post successfully updated");
+      
+        
+    } catch (err) {
+      // fin du try
+
+      res.status(400).json({ message: err });
+    }
+  }
+
   static async addResponse(req, res) {
     try {
       const { question_id, contenu, created_by } = req.body;
