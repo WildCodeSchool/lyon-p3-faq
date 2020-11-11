@@ -1,0 +1,341 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: "Open Sans", sans-serif;
+    overflow-x: hidden;
+    position: relative;
+    width: 100%;
+    background-color: #EEEEEE;
+    height: max-content;
+    background-color: #eeeeee;
+  }
+  
+  a,
+  a:visited,
+  a:hover {
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  div.wrapper {
+    max-width: 1080px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+  }
+  
+  main div.wrapper {
+    display: block;
+  }
+  
+  header {
+    position: relative;
+    width: 100%;
+    height: 80px;
+    background: black;
+    display: flex;
+    padding: 0 50px;
+  }
+  
+  header button {
+    background-color: white;
+    color: black;
+    border-radius: 30px;
+    height: 40px;
+    align-self: center;
+    font-size: 14px;
+    margin-left: auto;
+  }
+  
+  header h1 {
+    position: relative;
+    align-self: center;
+  }
+  
+  header h1 a span {
+    align-self: center;
+    margin-left: 15px;
+    font-size: 20px;
+  }
+  
+  header nav {
+    display: none;
+  }
+  
+  header nav>ul li {
+    display: inline;
+  }
+  
+  header nav>ul li:first-child {
+    display: none;
+  }
+  
+  header nav>ul li a {
+    margin-left: 10px;
+  }
+  
+  header nav>ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  
+  main {
+    margin: 30px 0px 30px 0px;
+  
+  }
+  
+  main div.wrapper {
+    background-color: red;
+    max-width: 70%;
+    position: relative;
+  }
+  main div div#modalPost {
+    display: none;
+  }
+  main div div#modalPost.show {
+    display: block;
+    background-color: #d4d4d4;
+    width: 60vw;
+    height: auto;
+    z-index: 2;
+    margin: 10vh 20vw;
+    border-radius: 20px;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  main div div#modalPost.show h3 {
+    text-align: center;
+    width: fit-content;
+    margin: auto;
+  }
+  main div div#modalPost.show button {
+    background-color: grey;
+    color: black;
+    border-radius: 50%;
+    float: right;
+    margin-top: -20px;
+  }
+  main div div#modalPost.show form * {
+    width: 100%;
+    padding: 5px;
+    border-radius: 10px;
+    resize: none;
+  }
+  main div div#modalPost.show form div *:valid {
+    border: 1px solid green;
+  }
+  main div div#modalPost.show form div *:invalid {
+    border: 1px solid red;
+  }
+  main div div#modalPost.show form div textarea {
+    height: 50vh;
+  
+  }
+  
+  footer {
+    width: 100%;
+    height: auto;
+    position: relative;
+    bottom: 0;
+    background: black;
+    color: white;
+    display: flex;
+  }
+  
+  footer div {
+    align-self: center;
+  }
+  
+  
+  footer div ul {
+    padding: 15px 0px 15px 75px;
+  
+  }
+  
+  footer div button {
+    display: none;
+  }
+  
+  @media screen and (max-width: 768px) {
+    header button {
+      display: none;
+    }
+  
+    #nav-mobile-overlay {
+      width: 100%;
+      height: 100vh;
+      position: absolute;
+      display: none;
+      background: rgba(0, 0, 0, 0.5);
+    }
+  
+    body.prevent-scroll {
+      position: fixed;
+      overflow: hidden;
+      width: 100%;
+      height: 100%;
+    }
+  
+    #nav-mobile-overlay.show {
+      display: block;
+    }
+  
+    header nav {
+      display: block;
+      min-width: 250px;
+      height: 100vh;
+      position: absolute;
+      right: -100%;
+      top: 0;
+      align-self: auto;
+      margin-left: 0;
+      background: black;
+      z-index: 3;
+      box-shadow: -3px 0px 21px -9px rgba(0, 0, 0, 0.68);
+      -webkit-transition: all 1s ease;
+      -moz-transition: all 1s ease;
+      -o-transition: all 1s ease;
+      -ms-transition: all 1s ease;
+      transition: all 1s ease;
+    }
+  
+    header nav.open {
+      right: 0;
+    }
+  
+    header nav>ul {
+      padding: 20px;
+      padding-top: 30px;
+    }
+  
+    header nav>ul li {
+      display: block;
+      margin-bottom: 20px;
+      padding-bottom: 20px;
+      border-bottom: 1px solid #ffffff;
+    }
+  
+    header nav>ul li:first-child {
+      display: block;
+      border-bottom: 0;
+    }
+  
+    header nav>ul li:first-child strong {
+      font-weight: 700;
+      font-size: 25px;
+      color: #fff;
+    }
+  
+    header nav>ul li a {
+      margin-left: 0;
+    }
+  
+    header #hamburger {
+      width: 30px;
+      height: 35px;
+      display: block;
+      position: relative;
+      left: 0;
+      top: 0;
+      padding-top: 5px;
+      align-self: center;
+      margin-left: auto;
+    }
+  
+    header #hamburger span {
+      width: 100%;
+      height: 4px;
+      position: relative;
+      display: block;
+      margin: 0 0 5px;
+      border-radius: 2px;
+      border-radius: 2px;
+      background-clip: padding-box;
+      background: #fff;
+    }
+  
+    main {
+      margin-bottom: 0;
+    }
+  
+  
+    main div.wrapper  {
+      background-color:#EEEEEE;
+  
+      max-width: 85%;
+      z-index: 0;
+    }
+    main div div#modalPost.show {
+      display: block;
+      background-color: #d4d4d4;
+      width: 70vw;
+      height: auto;
+      position: relative;
+      z-index: 2;
+      border-radius: 20px;
+      padding: 10px;
+      margin-top: -40px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    main div div#modalPost.show h3 {
+      text-align: center;
+      width: fit-content;
+      margin: auto;
+    }
+    main div div#modalPost.show button {
+      background-color: grey;
+      color: black;
+      border-radius: 50%;
+      float: right;
+      margin-top: -20px;
+    }
+    main div div#modalPost.show form * {
+      width: 100%;
+      padding: 10px;
+      border-radius: 10px;
+      resize: none;
+    }
+    main div div#modalPost.show form div textarea {
+      height: 50vh;
+    }
+    main div div#modalPost.show form div *:valid {
+      border: 1px solid green;
+    }
+    main div div#modalPost.show form div *:invalid {
+      border: 1px solid red;
+    }
+    main div div#modalPost.show form #submit {
+      background-color: red;
+    }
+    footer {
+      background-color: transparent;
+      z-index: 1;
+      position: sticky;
+    }
+  
+    footer div {
+      justify-content: space-evenly;
+      display: flex;
+      margin-bottom: 30px;
+    }
+  
+    footer div button {
+      background-color: black;
+      color: white;
+      border-radius: 5px;
+      height: 70px;
+      font-size: 1.25em;
+      width: 300px;
+      display: block;
+      text-align: center;
+      margin: 15px 0px 15px 0px;
+  
+    }
+  
+    footer div ul {
+      display: none;
+    }
