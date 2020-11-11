@@ -77,6 +77,27 @@ class UserController {
       res.json({ message: err });
     }
   }
+
+  //login a User
+  static async login(req, res) {
+    try {
+      const { login, password } = req.body;
+
+      if (login === undefined || password === undefined) {
+        res.status(400).send("JSON incorrect. Champs attendus : login et mdp");
+      } else {
+        const queryResult = await userModel.checkLogin(login, password);
+
+        if (queryResult[0].count !== 0) {
+          res.status(200).json("Identifiants ok");
+        } else {
+          res.status(406).json("Identifiants incorrects");
+        }
+      }
+    } catch (err) {
+      res.status(406).json("Identifiants incorrects");
+    }
+  }
 }
 
 module.exports = UserController;

@@ -78,6 +78,22 @@ class UserModel {
       });
     });
   }
+
+  static checkLogin(login,password) {
+    return new Promise((resolve, reject) => {
+      const query = 'SELECT count(id) as count FROM user WHERE mail=? AND pass=?';
+      db.query(query, [login,password], (err, result) => {
+        if (err) {
+          reject(err);
+        } else {
+          resolve(result);
+        }
+      });
+    });
+  }
+
+
+
 }
 
 module.exports = UserModel;
