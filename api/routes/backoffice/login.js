@@ -1,7 +1,7 @@
 const { Router } = require('express');
 const db = require('../../datasource/mysql');
 const router = Router();
-const routerResponse = require('../../lib/utils');
+ 
 
 /* ********************* Routes for login ********************* */
 

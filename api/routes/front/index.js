@@ -8,3 +8,4 @@ router.get("/answered", QuestionController.getAllAnswered);
 router.post("/", QuestionController.postQuestion);
 
 module.exports = router;
+
