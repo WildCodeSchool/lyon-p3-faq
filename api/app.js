@@ -1,3 +1,4 @@
+//  Third-party middleware
 const cookieParser = require("cookie-parser");
 const express = require("express");
 const httpErrors = require("http-errors");
@@ -7,6 +8,20 @@ let cors = require("cors");
 require("dotenv/config");
 let bodyParser = require("body-parser");
 
+// Security middleware
+const helmet = require("helmet");
+var hpp = require("hpp");
+const mongoSanitize = require("express-mongo-sanitize");
+const xss = require("xss-clean");
+const rateLimit = require("express-rate-limit");
+
+const limit = rateLimit({
+  max: 100, // max requests
+  windowMs: 60 * 60 * 1000, // 1 Hour of 'ban' / lockout
+  message: "Too many requests", // message to send
+});
+
+// Routing
 const indexRouter = require("./routes/index");
 const frontRouter = require("./routes/front/index");
 const userRouter = require("./routes/backoffice/user");
@@ -15,8 +30,17 @@ const loginRouter = require("./routes/backoffice/login");
 
 const app = express();
 
+// Secure API
+app.use(helmet());
+app.use(limit);
+
 // parse application/x-www-form-urlencoded
 app.use(bodyParser.urlencoded({ extended: false }));
+
+//HTTP Parameters Pollution
+app.use(hpp());
+app.use(xss());
+app.use(mongoSanitize());
 
 // parse application/json
 app.use(bodyParser.json());
@@ -32,8 +56,8 @@ app.set("views", path.join(__dirname, "views"));
 // view engine setup
 app.set("view engine", "ejs");
 app.use(logger("dev"));
-app.use(express.json());
-app.use(express.urlencoded({ extended: false }));
+app.use(express.json({ limit: "1kb" }));
+app.use(express.urlencoded({ extended: false, limit: "1kb" }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, "public")));
 app.use("/", indexRouter);

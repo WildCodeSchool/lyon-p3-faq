@@ -2,6 +2,7 @@ const { Router } = require("express");
 const db = require("../../datasource/mysql");
 const router = Router();
 const UserController = require("../../controllers/user.controller");
+const validator = require('../../lib/utils')
 
 /* ********************* Routes for users handling ********************* */
 
@@ -10,19 +11,19 @@ router.get("/", UserController.getUsers);
 
 /* GET one user */
 
-router.get("/:id", UserController.one)
+router.get("/:id",validator.checkIdUser, UserController.one)
 
 /* delete one user */
 
-router.delete("/:id", UserController.one);
+router.delete("/:id", validator.checkIdUser,UserController.one);
 
 /* Update one user */
 
-router.put("/:id", UserController.one);
+router.put("/:id",validator.checkIdUser,validator.checkUser, UserController.one);
 
 /* add one user */
 
-router.post("/",  UserController.addUser);
+router.post("/", validator.checkUser, UserController.addUser);
 
 
 module.exports = router;
