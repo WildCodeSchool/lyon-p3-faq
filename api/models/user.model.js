@@ -3,7 +3,7 @@ const DB = require("../library/mysql.js");
 const table = "user";
 const fields = " name,mail,pass,ip_address,role_id";
 
-class UserModel extends DB {
+class User extends DB {
   constructor(...args) {
     super(...args);
   }
@@ -23,4 +23,4 @@ class UserModel extends DB {
   }
 }
 
-module.exports = new UserModel(db, table, fields);
+module.exports = new User(db, table, fields);

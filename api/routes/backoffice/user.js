@@ -4,8 +4,6 @@ const router = Router();
 const UserController = require("../../controllers/user.controller");
 const validator = require('../../middleware/validator')
 
-const validator = require('../../middleware/validator')
-
 
 /* ********************* Routes for users handling ********************* */
 
@@ -24,6 +22,7 @@ router.delete("/:id", validator.checkId,UserController.deleteOne);
 /* Update one user */
 
 router.put("/:id",validator.checkId,validator.checkUser, UserController.updateOne);
+
 
 /* add one user */
 

@@ -3,14 +3,13 @@ const router = Router();
 const PostController = require('../../controllers/post.controller');
 const validator = require('../../middleware/validator');
 
-const validator = require("../../middleware/validator");
 //const {checkResponse,checkIdUser} = require("../../middleware/validator");
 
 /* ********************* Routes for Posts handling ********************* */
 
 /* Add a response*/
 
-router.post('/', validator.checkResponse, PostController.addResponse);
+router.post('/', validator.checkAddResponse, PostController.addResponse);
 
 /* Display all questions & answers (including questions without answers)*/
 

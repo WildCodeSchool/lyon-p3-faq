@@ -1,73 +1,29 @@
 const db = require("../datasource/mysql");
+const DB = require("../library/mysql.js");
+const table = "question";
 
-class PostModel {
-  static getAll() {
-    return new Promise((resolve, reject) => {
-      const query =
-        "SELECT q.titre,q.contenu as contenu_question,q.created_by,q.created_at, reponse.contenu as contenu_reponse from question as q  LEFT JOIN reponse ON q.id=reponse.question_id";
-      db.query(query, (err, result) => {
-        if (err) {
-          reject(err);
-        } else {
-          resolve(result);
-        }
-      });
-    });
+class Post extends DB {
+  constructor(...args) {
+    super(...args);
   }
 
-  static addOne(fields) {
-    return new Promise((resolve, reject) => {
-      const query =
-        "INSERT INTO reponse (question_id,contenu,created_by) VALUES ? ";
-      db.query(query, [fields], (err, result) => {
-        if (err) {
-          reject(err);
-        } else {
-          resolve(result);
-        }
-      });
-    });
+  getAll() {
+    const query =
+      "SELECT q.titre,q.contenu as contenu_question,q.created_by,q.created_at, reponse.contenu as contenu_reponse from question as q  LEFT JOIN reponse ON q.id=reponse.question_id";
+    return this.query(query);
   }
 
-  static archivePost(fields, idQuestion) {
-    return new Promise((resolve, reject) => {
-      const query = "UPDATE question SET ? WHERE id= ?";
-      db.query(query, [fields, idQuestion], (err, result) => {
-        if (err) {
-          reject(err);
-        } else {
-          resolve(result);
-        }
-      });
-    });
+  addOne(fields) {
+    const query =
+      "INSERT INTO reponse (question_id,contenu,created_by) VALUES ? ";
+    return this.query(query, fields);
   }
 
-  static publishPost(fields, idQuestion) {
-    return new Promise((resolve, reject) => {
-      const query = "UPDATE question SET ? WHERE id= ?";
-      db.query(query, [fields, idQuestion], (err, result) => {
-        if (err) {
-          reject(err);
-        } else {
-          resolve(result);
-        }
-      });
-    });
-  }
-
-  static update(idQuestion, fields) {
-    return new Promise((resolve, reject) => {
-      const query =
-        "UPDATE question  LEFT JOIN reponse  ON question.id = reponse.question_id SET ? WHERE question.id= ?";
-      db.query(query, [fields, idQuestion], (err, result) => {
-        if (err) {
-          reject(err);
-        } else {
-          resolve(result);
-        }
-      });
-    });
+  updatePost(idQuestion, fields) {
+    const query =
+      "UPDATE question  LEFT JOIN reponse  ON question.id = reponse.question_id SET ? WHERE question.id= ?";
+    return this.query(query, fields, idQuestion);
   }
 }
 
-module.exports = PostModel;
+module.exports = new Post(db, table);

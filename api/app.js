@@ -3,11 +3,13 @@ const express = require("express");
 const app = express();
 const cookieParser = require("cookie-parser");
 const httpErrors = require("http-errors");
-const logger = require("morgan");
+const morgan = require("morgan");
+const logger = require('./library/logger')
 const path = require("path");
 let cors = require("cors");
 require("dotenv/config");
 let bodyParser = require("body-parser");
+
 
 // Security middleware
 const helmet = require("helmet");
@@ -29,10 +31,12 @@ const userRouter = require("./routes/backoffice/user");
 const postRouter = require("./routes/backoffice/post");
 const loginRouter = require("./routes/backoffice/login");
 
-app.use(cors());
+
+
 // Secure API
 app.use(helmet());
 app.use(limit);
+
 // parse application/x-www-form-urlencoded
 app.use(bodyParser.urlencoded({ extended: false }));
 
@@ -43,7 +47,9 @@ app.use(mongoSanitize());
 
 // parse application/json
 app.use(bodyParser.json());
-
+app.use(cors());
+//app.use(morgan('tiny', {stream: logger.stream}))
+app.use(morgan('tiny', {stream: logger.stream}))
 // Router middleware
 app.use("/", indexRouter);
 app.use("/front", frontRouter);
@@ -55,7 +61,8 @@ app.set("views", path.join(__dirname, "views"));
 
 // view engine setup
 app.set("view engine", "ejs");
-app.use(logger("dev"));
+
+
 app.use(express.json({ limit: "1kb" }));
 app.use(express.urlencoded({ extended: false, limit: "1kb" }));
 app.use(cookieParser());

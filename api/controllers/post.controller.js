@@ -1,9 +1,26 @@
-const PostModel = require("../models/post.model");
+const Post = require("../models/post.model");
 const validator = require("../middleware/validator");
+const logger = require("../library/logger");
 class PostController {
+  static async update(req, res) {
+    try {
+      if (req.body.action === "update") {
+        validator.checkResponse;
 
+        PostController.updatePost(req, res);
+      } else {
+        validator.checkIdUser;
+        PostController.updatePostStatus(req, res);
+      }
+    } catch (err) {
+      // fin du try
 
+      logger.error(err);
+      res.sendStatus(500);
+    }
+  }
 
+  // Archive or Publish a post
   static async updatePostStatus(req, res) {
     try {
       let idQuestion = req.params.id;
@@ -18,7 +35,7 @@ class PostController {
           disabled_at: null,
         };
 
-        const queryResult = await PostModel.publishPost(fields, idQuestion);
+        const queryResult = await Post.update(idQuestion, fields);
         res.send("post published");
       } else if (action === "archive") {
         fields = {
@@ -28,7 +45,7 @@ class PostController {
           publicated_at: null,
         };
 
-        const queryResult = await PostModel.archivePost(fields, idQuestion);
+        const queryResult = await Post.update(idQuestion, fields);
         res.send("post archived");
       } else {
         return res
@@ -38,9 +55,11 @@ class PostController {
     } catch (err) {
       // fin du try
 
-      res.json({ message: err });
+      logger.error(err);
+      res.sendStatus(500);
     }
   }
+
 
   static async updatePost(req, res) {
     try {
@@ -53,13 +72,18 @@ class PostController {
         "reponse.contenu": contenu_reponse,
       };
 
-      const queryResult = await PostModel.update(idQuestion, fields);
+      const queryResult = await Post.updatePost(idQuestion, fields);
 
-      res.status(201).send("Post successfully updated");
+      if (queryResult.affectedRows > 0) {
+        res.send("Post successfully updated");
+      } else {
+        res.status(204).send({ error: "Nothing updated" });
+      }
     } catch (err) {
       // fin du try
 
-      res.status(400).json({ message: err });
+      logger.error(err);
+      res.sendStatus(500);
     }
   }
 
@@ -69,42 +93,31 @@ class PostController {
 
       const fields = [[question_id, contenu, created_by]];
 
-      const queryResult = await PostModel.addOne(fields);
+      const queryResult = await Post.addOne(fields);
 
-      res.status(201).send("Reponse successfully added");
+      if (queryResult.affectedRows > 0) {
+        res.send("Reponse successfully added");
+      } else {
+        res.status(204).send({ error: "Nothing added" });
+      }
     } catch (err) {
       // fin du try
 
-      res.json({ message: err });
+      logger.error(err);
+      res.sendStatus(500);
     }
   }
 
   static async getPosts(req, res) {
     try {
-      const queryResult = await PostModel.getAll();
+      const queryResult = await Post.getAll();
 
       res.send(queryResult);
     } catch (err) {
       // fin du try
 
-      res.json({ message: err });
-    }
-  }
-
-  static async update(req, res) {
-    try {
-      if (req.body.action === "update") {
-        validator.checkResponse;
-
-        PostController.updatePost(req, res);
-      } else {
-        validator.checkIdUser;
-        PostController.updatePostStatus(req, res);
-      }
-    } catch (err) {
-      // fin du try
-
-      res.status(400).json({ message: err });
+      logger.error(err);
+      res.sendStatus(500);
     }
   }
 }
