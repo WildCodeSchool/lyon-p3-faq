@@ -1,5 +1,6 @@
 const db = require("../datasource/mysql");
 const postModel = require("../models/post.model");
+const { body, validationResult } = require('express-validator');
 class PostController {
   static async updatePostStatus(req, res) {
     try {
