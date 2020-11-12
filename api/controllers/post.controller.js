@@ -7,11 +7,7 @@ class PostController {
       let idQuestion = req.params.id;
       const { idUser, action } = req.body;
 
-      if (idUser === undefined || action === undefined) {
-        return res
-          .status(400)
-          .send("JSON incorrect. Champs attendus : idUser et action");
-      }
+     
 
       let fields = {};
       if (action === "publish") {
