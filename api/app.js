@@ -1,6 +1,7 @@
 //  Third-party middleware
-const cookieParser = require("cookie-parser");
 const express = require("express");
+const app = express();
+const cookieParser = require("cookie-parser");
 const httpErrors = require("http-errors");
 const logger = require("morgan");
 const path = require("path");
@@ -10,9 +11,9 @@ let bodyParser = require("body-parser");
 
 // Security middleware
 const helmet = require("helmet");
-var hpp = require("hpp");
-const mongoSanitize = require("express-mongo-sanitize");
+const hpp = require("hpp");
 const xss = require("xss-clean");
+const mongoSanitize = require('express-mongo-sanitize');  // Uncomment if you use mongodb
 const rateLimit = require("express-rate-limit");
 
 const limit = rateLimit({
@@ -28,7 +29,7 @@ const userRouter = require("./routes/backoffice/user");
 const postRouter = require("./routes/backoffice/post");
 const loginRouter = require("./routes/backoffice/login");
 
-const app = express();
+
 
 // Secure API
 app.use(helmet());

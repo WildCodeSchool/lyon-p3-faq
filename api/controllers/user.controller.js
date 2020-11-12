@@ -1,5 +1,5 @@
 const db = require("../datasource/mysql");
-const userModel = require("../models/user.model");
+const UserModel = require("../models/user.model");
 
 class UserController {
   // Actions on one user
@@ -8,19 +8,19 @@ class UserController {
       let idUser = req.params.id;
 
       // On vérifie si l'utilisateur existe en base de données
-      const countResult = await userModel.match(idUser);
+      const countResult = await UserModel.matchDB(idUser);
 
       // L'utilisateur a bien été trouvé dans la base de données
       if (countResult[0].count > 0) {
         // On renvoie les informations de l'utilisateur
 
         if (req.method === "DELETE") {
-          const queryResult = await userModel.one(idUser, req.method);
+          const queryResult = await UserModel.one(idUser, req.method);
           res.send("User deleted");
         }
 
         if (req.method == "GET") {
-          const queryResult = await userModel.one(idUser, req.method);
+          const queryResult = await UserModel.one(idUser, req.method);
           res.send(queryResult);
         }
 
@@ -32,7 +32,7 @@ class UserController {
             role_id: role,
           };
 
-          const queryResult = await userModel.one(idUser, req.method, fields);
+          const queryResult = await UserModel.one(idUser, req.method, fields);
 
           res.send("User successfully updated");
         }
@@ -48,7 +48,7 @@ class UserController {
   // display all users
   static async getUsers(req, res) {
     try {
-      const queryResult = await userModel.getAll();
+      const queryResult = await UserModel.getAll();
       res.send(queryResult);
     } catch (err) {
       res.json({ message: err });
@@ -65,7 +65,7 @@ class UserController {
         req.headers["x-forwarded-for"] || req.connection.remoteAddress;
       const fields = [[name, mail, role, pass, ipAdress]];
 
-      const queryResult = await userModel.addOne(fields);
+      const queryResult = await UserModel.addOne(fields);
       res.send("User successfully added");
     } catch (err) {
       res.json({ message: err });
@@ -80,12 +80,12 @@ class UserController {
       if (login === undefined || password === undefined) {
         res.status(400).send("JSON incorrect. Champs attendus : login et mdp");
       } else {
-        const queryResult = await userModel.checkLogin(login, password);
+        const queryResult = await UserModel.checkLogin(login, password);
 
         if (queryResult[0].count !== 0) {
           res.status(200).json("Identifiants ok");
         } else {
-          res.status(406).json("Identifiants incorrects");
+          res.status(401).json("Identifiants incorrects");
         }
       }
     } catch (err) {
