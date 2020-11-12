@@ -1,0 +1,23 @@
+.body {
+  position: relative;
+  width: 100%;
+  background-color: #EEEEEE;
+  height: max-content;
+  background-color: #eeeeee;
+}
+
+.body .main {
+    display : flex; 
+    flex-direction: column;
+   justify-content: center;
+
+}
+
+.wrapper {
+  max-width: 1080px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  display: block;
+
+}
