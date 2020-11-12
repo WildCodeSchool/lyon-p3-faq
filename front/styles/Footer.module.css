@@ -19,13 +19,6 @@
   display: none;
 }
 
-.wrapper {
-  max-width: 1080px;
-  width: 100%;
-  margin: 0 auto;
-  display: flex;
-}
-
 @media screen and (max-width: 768px) {
   .footer {
     background-color: transparent;

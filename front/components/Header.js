@@ -1,9 +1,9 @@
 import Link from "next/link";
-import header from "../styles/header.module.css";
+import styles from "../styles/Header.module.css";
 
 
 const Header = () => (
-    <header className={header.header}>
+    <header className={styles.header}>
         <h1> Les Freelances Lyonnais</h1>
         <button>Poser une question</button>
     </header>
