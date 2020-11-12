@@ -1,0 +1,36 @@
+.body {
+    position: relative;
+    width: 100%;
+    background-color: #2b07f8;
+    min-height: 100vh;
+    padding-top: 25px;
+  }
+
+.wrapper {
+    max-width: 1080px;
+    width: 100%;
+    margin: 0 auto;
+    display: block;
+  }
+  
+  .box  {
+    background-color: green;
+    min-height: 70vh;
+    max-width: 80vw;
+    margin: 0 auto;
+    display: ;
+  }
+
+  .question, .answer{
+    padding: 45px;
+    height: 50%;
+  }
+
+  .question {
+      background-color: yellow;
+  }
+  
+  .answer {
+    background-color: pink;
+  }
+
