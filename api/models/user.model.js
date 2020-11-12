@@ -61,9 +61,9 @@ class UserModel {
         } else {
           resolve(result);
         }
-      });
     });
-  }
+  });
+}
 
   static addOne(fields) {
     return new Promise((resolve, reject) => {
