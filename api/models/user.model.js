@@ -52,7 +52,7 @@ class UserModel {
     });
   }
 
-  static match(id) {
+  static matchDB(id) {
     return new Promise((resolve, reject) => {
       const query = " SELECT COUNT(id) as count FROM user WHERE id= ?";
       db.query(query, id, (err, result) => {

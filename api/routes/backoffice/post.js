@@ -2,7 +2,7 @@ const { Router } = require("express");
 const db = require("../../datasource/mysql");
 const router = Router();
 const PostController = require("../../controllers/post.controller");
-const validator = require("../../lib/validator");
+const validator = require("../../middleware/validator");
 
 /* ********************* Routes for Posts handling ********************* */
 
@@ -16,14 +16,11 @@ router.get("/", PostController.getPosts);
 
 /* Archive or publish question */
 
-router.put("/:id", validator.checkId,validator.checkAction, (req, res) => {
+router.put("/:id", validator.checkId, validator.checkAction, (req, res) => {
   if (req.body.action === "update") {
-    validator.checkResponse, 
-  
-    PostController.updatePost(req, res);
+    validator.checkResponse, PostController.updatePost(req, res);
   } else {
-    validator.checkIdUser, 
-    PostController.updatePostStatus(req, res);
+    validator.checkIdUser, PostController.updatePostStatus(req, res);
   }
 });
 

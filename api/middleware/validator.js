@@ -9,7 +9,7 @@ exports.signup = [
     const errors = validationResult(req);
 
     if (!errors.isEmpty()) {
-      return res.status(400).json({ errors: errors.array() });
+       res.status(400).json({ errors: errors.array() });
     } else next();
   },
 ];
@@ -23,7 +23,7 @@ exports.checkUser = [
     const errors = validationResult(req);
 
     if (!errors.isEmpty()) {
-      return res.status(400).json({ errors: errors.array() });
+       res.status(400).json({ errors: errors.array() });
     } else next();
   },
 ];
@@ -34,7 +34,7 @@ exports.checkId = [
     const errors = validationResult(req);
 
     if (!errors.isEmpty()) {
-      return res.status(400).json({ errors: errors.array() });
+       res.status(400).json({ errors: errors.array() });
     } else next();
   },
 ];
@@ -48,7 +48,7 @@ exports.checkResponse = [
     const errors = validationResult(req);
 
     if (!errors.isEmpty()) {
-      return res.status(400).json({ errors: errors.array() });
+       res.status(400).json({ errors: errors.array() });
     } else next();
   },
 ];
@@ -60,7 +60,7 @@ exports.checkAction = [
     const errors = validationResult(req);
 
     if (!errors.isEmpty()) {
-      return res.status(400).json({ errors: errors.array() });
+       res.status(400).json({ errors: errors.array() });
     } else next();
   },
 ];
@@ -72,7 +72,7 @@ exports.checkIdUser = [
     const errors = validationResult(req);
 
     if (!errors.isEmpty()) {
-      return res.status(400).json({ errors: errors.array() });
+       res.status(400).json({ errors: errors.array() });
     } else next();
   },
 ];
