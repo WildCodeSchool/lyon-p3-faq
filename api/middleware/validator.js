@@ -1,101 +1,88 @@
-const { param, body, validationResult } = require("express-validator");
+const {param, body, validationResult} = require("express-validator");
 //const { param } = require("../routes");
 
 exports.signup = [
-  body("login").isEmail().normalizeEmail(),
-  body("password").isLength({ min: 5, max: 100 }),
+    body("login").isEmail().normalizeEmail(),
+    body("password").isLength({min: 5, max: 100}),
 
-  (req, res, next) => {
-    const errors = validationResult(req);
+    (req, res, next) => {
+        const errors = validationResult(req);
 
-    if (!errors.isEmpty()) {
-       res.status(400).json({ errors: errors.array() });
-    } else next();
-  },
+        if (!errors.isEmpty()) {
+            res.status(400).json({errors: errors.array()});
+        } else next();
+    },
 ]
 
 exports.checkUser = [
-  body("name").exists().notEmpty().isLength({ max: 100 }),
-  body("mail").isEmail().normalizeEmail(),
+    body("name").exists().notEmpty().isLength({max: 100}),
+    body("mail").isEmail().normalizeEmail(),
 
-  body("role").isLength({ max: 100 }).isNumeric(),
-  (req, res, next) => {
-    const errors = validationResult(req);
+    body("role").isLength({max: 100}).isNumeric(),
+    (req, res, next) => {
+        const errors = validationResult(req);
 
-    if (!errors.isEmpty()) {
-       res.status(400).json({ errors: errors.array() });
-    } else next();
-  },
+        if (!errors.isEmpty()) {
+            res.status(400).json({errors: errors.array()});
+        } else next();
+    },
 ];
 
 exports.checkId = [
-  param("id").exists().isNumeric(),
-  (req, res, next) => {
-    const errors = validationResult(req);
+    param("id").exists().isNumeric(),
+    (req, res, next) => {
+        const errors = validationResult(req);
 
-    if (!errors.isEmpty()) {
-       res.status(400).json({ errors: errors.array() });
-    } else next();
-  },
+        if (!errors.isEmpty()) {
+            res.status(400).json({errors: errors.array()});
+        } else next();
+    },
 ];
 
-exports.checkResponse = [
+exports.checkAction = [
+    body("action").exists().notEmpty().isAlpha(),
+
+    (req, res, next) => {
+        const errors = validationResult(req);
+
+        if (!errors.isEmpty()) {
+            res.status(400).json({errors: errors.array()});
+        } else next();
+    },
+];
+
+
+
+const checkResponse = [
   body("question_id").exists().notEmpty().isNumeric(),
-  body("contenu").exists().notEmpty().isLength({ max: 1000 }),
+  body("contenu").exists().notEmpty().isLength({max: 1000}),
   body("created_by").exists().notEmpty().isNumeric(),
   body("idUser").exists().notEmpty().isNumeric(),
   (req, res, next) => {
+    if (req.body.action !== 'update' || req.body.action === undefined) {
+      return next();
+    }
     console.log("validator")
     const errors = validationResult(req);
 
     if (!errors.isEmpty()) {
-       res.status(400).json({ errors: errors.array() });
+      res.status(400).json({errors: errors.array()});
     } else next();
   },
-];
+]
+exports.checkResponse = checkResponse;
+const checkIdUser = [
+    body("idUser").exists().notEmpty().isNumeric(),
 
-exports.checkAction = [
-  body("action").exists().notEmpty().isAlpha(),
- 
-  (req, res, next) => {
-    const errors = validationResult(req);
+    (req, res, next) => {
+        if (req.body.action === 'update') {
+            return next();
+        }
+        const errors = validationResult(req);
 
-    if (!errors.isEmpty()) {
-       res.status(400).json({ errors: errors.array() });
-    } else next();
-  },
-];
-
-exports.checkIdUser = [
-  body("idUser").exists().notEmpty().isNumeric(),
- 
-  (req, res, next) => {
-    const errors = validationResult(req);
-
-    if (!errors.isEmpty()) {
-       res.status(400).json({ errors: errors.array() });
-    } else next();
-  },
-];
-
-
-exports.dispatch = [
-
-  
-  (req, res, next) => {
-  if (req.body.action === "update") {
-       
-    console.log(update),
-    validator.checkResponse 
-  
-  } else {
-    validator.checkIdUser
-  
-  } 
- 
-      
-  }
-];
-
-
- 
+        if (!errors.isEmpty()) {
+            res.status(400).json({errors: errors.array()});
+        } else next();
+    },
+]
+exports.checkIdUser = checkIdUser;
