@@ -16,12 +16,8 @@ router.get("/", PostController.getPosts);
 
 /* Archive or publish question */
 
-router.put("/:id", validator.checkId, validator.checkAction, (req, res) => {
-  if (req.body.action === "update") {
-    validator.checkResponse, PostController.updatePost(req, res);
-  } else {
-    validator.checkIdUser, PostController.updatePostStatus(req, res);
-  }
-});
+router.put("/:id", validator.checkId, validator.checkAction, validator.checkResponse,validator.checkIdUser, PostController.update);
 
 module.exports = router;
+
+

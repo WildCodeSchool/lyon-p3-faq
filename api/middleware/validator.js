@@ -12,7 +12,7 @@ exports.signup = [
        res.status(400).json({ errors: errors.array() });
     } else next();
   },
-];
+]
 
 exports.checkUser = [
   body("name").exists().notEmpty().isLength({ max: 100 }),
@@ -45,6 +45,7 @@ exports.checkResponse = [
   body("created_by").exists().notEmpty().isNumeric(),
   body("idUser").exists().notEmpty().isNumeric(),
   (req, res, next) => {
+    console.log("validator")
     const errors = validationResult(req);
 
     if (!errors.isEmpty()) {
@@ -77,3 +78,24 @@ exports.checkIdUser = [
   },
 ];
 
+
+exports.dispatch = [
+
+  
+  (req, res, next) => {
+  if (req.body.action === "update") {
+       
+    console.log(update),
+    validator.checkResponse 
+  
+  } else {
+    validator.checkIdUser
+  
+  } 
+ 
+      
+  }
+];
+
+
+ 

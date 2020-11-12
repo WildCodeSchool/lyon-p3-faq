@@ -1,4 +1,5 @@
 const PostModel = require("../models/post.model");
+const validator = require("../middleware/validator");
 class PostController {
 
 
@@ -44,6 +45,7 @@ class PostController {
   }
 
   static async updatePost(req, res) {
+   
     try {
       let idQuestion = req.params.id;
       const { titre_question, contenu_question, contenu_reponse } = req.body;
@@ -92,6 +94,31 @@ class PostController {
       // fin du try
 
       res.json({ message: err });
+    }
+  }
+
+
+
+  static async update(req, res) {
+    try {
+      
+      if (req.body.action === "update") {
+       
+     
+        validator.checkResponse, 
+        PostController.updatePost(req, res);
+      } else {
+        validator.checkIdUser, 
+        PostController.updatePostStatus(req, res);
+      }
+       
+        
+      
+        
+    } catch (err) {
+      // fin du try
+
+      res.status(400).json({ message: err });
     }
   }
 }
