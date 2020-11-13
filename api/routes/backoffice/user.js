@@ -9,6 +9,7 @@ const validator = require('../../middleware/validator')
 /* ********************* Routes for users handling ********************* */
 
 /* GET all users. */
+
 router.get("/", UserController.getUsers);
 
 /* GET one user */
