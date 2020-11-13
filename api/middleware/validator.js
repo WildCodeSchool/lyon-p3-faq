@@ -9,10 +9,10 @@ exports.signup = [
     const errors = validationResult(req);
 
     if (!errors.isEmpty()) {
-       res.status(400).json({ errors: errors.array() });
+      res.status(400).json({ errors: errors.array() });
     } else next();
   },
-]
+];
 
 exports.checkUser = [
   body("name").exists().notEmpty().isLength({ max: 100 }),
@@ -23,7 +23,7 @@ exports.checkUser = [
     const errors = validationResult(req);
 
     if (!errors.isEmpty()) {
-       res.status(400).json({ errors: errors.array() });
+      res.status(400).json({ errors: errors.array() });
     } else next();
   },
 ];
@@ -34,68 +34,58 @@ exports.checkId = [
     const errors = validationResult(req);
 
     if (!errors.isEmpty()) {
-       res.status(400).json({ errors: errors.array() });
-    } else next();
-  },
-];
-
-exports.checkResponse = [
-  body("question_id").exists().notEmpty().isNumeric(),
-  body("contenu").exists().notEmpty().isLength({ max: 1000 }),
-  body("created_by").exists().notEmpty().isNumeric(),
-  body("idUser").exists().notEmpty().isNumeric(),
-  (req, res, next) => {
-    console.log("validator")
-    const errors = validationResult(req);
-
-    if (!errors.isEmpty()) {
-       res.status(400).json({ errors: errors.array() });
+      res.status(400).json({ errors: errors.array() });
     } else next();
   },
 ];
 
 exports.checkAction = [
   body("action").exists().notEmpty().isAlpha(),
- 
+
   (req, res, next) => {
     const errors = validationResult(req);
 
     if (!errors.isEmpty()) {
-       res.status(400).json({ errors: errors.array() });
+      res.status(400).json({ errors: errors.array() });
+    } else next();
+  },
+];
+
+exports.checkAddResponse = [
+  body("question_id").exists().notEmpty().isNumeric(),
+  body("contenu").exists().notEmpty().isLength({ max: 1000 }),
+  body("created_by").exists().notEmpty().isNumeric(),
+
+  (req, res, next) => {
+    const errors = validationResult(req);
+
+    if (!errors.isEmpty()) {
+      res.status(400).json({ errors: errors.array() });
+    } else next();
+  },
+];
+
+exports.checkResponse = [
+  body("titre_question").exists().notEmpty().isLength({ max: 1000 }),
+  body("contenu_question").exists().notEmpty().isLength({ max: 1000 }),
+  body("contenu_reponse").exists().notEmpty().isLength({ max: 1000 }),
+
+  (req, res, next) => {
+    const errors = validationResult(req);
+
+    if (!errors.isEmpty()) {
+      res.status(400).json({ errors: errors.array() });
     } else next();
   },
 ];
 
 exports.checkIdUser = [
   body("idUser").exists().notEmpty().isNumeric(),
- 
   (req, res, next) => {
-    const errors = validationResult(req);
+    errors = validationResult(req);
 
     if (!errors.isEmpty()) {
-       res.status(400).json({ errors: errors.array() });
+      res.status(400).json({ errors: errors.array() });
     } else next();
   },
 ];
-
-
-exports.dispatch = [
-
-  
-  (req, res, next) => {
-  if (req.body.action === "update") {
-       
-    console.log(update),
-    validator.checkResponse 
-  
-  } else {
-    validator.checkIdUser
-  
-  } 
- 
-      
-  }
-];
-
-
- 

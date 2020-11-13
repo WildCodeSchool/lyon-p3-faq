@@ -3,7 +3,59 @@ const UserModel = require("../models/user.model");
 
 class UserController {
   // Actions on one user
-  static async one(req, res) {
+  static async updateOne(req, res) {
+    try {
+      let idUser = req.params.id;
+
+      // On vérifie si l'utilisateur existe en base de données
+      const countResult = await UserModel.matchDB(idUser);
+
+      // L'utilisateur a bien été trouvé dans la base de données
+      if (countResult[0].count > 0) {
+        // On renvoie les informations de l'utilisateur
+        const { name, mail, role } = req.body;
+        const fields = {
+          name: name,
+          mail: mail,
+          role_id: role,
+        };
+
+        const queryResult = await UserModel.one(idUser, req.method, fields);
+
+        res.send("User successfully updated");
+      } else {
+        res.status(406).send({ "No result for user :": idUser });
+      }
+    } catch (err) {
+      // fin du try
+
+      res.json({ message: err });
+    }
+  }
+
+  // get One user
+  static async getOne(req, res) {
+    try {
+      let idUser = req.params.id;
+
+      // On vérifie si l'utilisateur existe en base de données
+      const countResult = await UserModel.matchDB(idUser);
+
+      // L'utilisateur a bien été trouvé dans la base de données
+      if (countResult[0].count > 0) {
+        // On renvoie les informations de l'utilisateur
+        const queryResult = await UserModel.one(idUser, req.method);
+        res.send(queryResult);
+      } else {
+        res.status(406).send({ "No result for user :": idUser });
+      }
+    } catch (err) {
+      res.json({ message: err });
+    }
+  }
+
+  // delete one user
+  static async deleteOne(req, res) {
     try {
       let idUser = req.params.id;
 
@@ -14,37 +66,16 @@ class UserController {
       if (countResult[0].count > 0) {
         // On renvoie les informations de l'utilisateur
 
-        if (req.method === "DELETE") {
-          const queryResult = await UserModel.one(idUser, req.method);
-          res.send("User deleted");
-        }
-
-        if (req.method == "GET") {
-          const queryResult = await UserModel.one(idUser, req.method);
-          res.send(queryResult);
-        }
-
-        if (req.method === "PUT") {
-          const { name, mail, role } = req.body;
-          const fields = {
-            name: name,
-            mail: mail,
-            role_id: role,
-          };
-
-          const queryResult = await UserModel.one(idUser, req.method, fields);
-
-          res.send("User successfully updated");
-        }
+        const queryResult = await UserModel.one(idUser, req.method);
+        res.send("User deleted");
       } else {
         res.status(406).send({ "No result for user :": idUser });
       }
     } catch (err) {
-      // fin du try
-
       res.json({ message: err });
     }
   }
+
   // display all users
   static async getUsers(req, res) {
     try {
