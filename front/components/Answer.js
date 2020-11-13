@@ -6,15 +6,19 @@ const Answer = () => (
   <div className={styles.wrapper}>
     <div className={styles.box}>
       <div className={styles.question}>
-        <h2>Taux horaire débutant</h2>
-        <p>
+        <button className={styles.buttonQuestion}>
+          <span><img></img></span>
+          <span>Revenir à la liste</span>
+        </button>
+        <h2 className={styles.h2}>Taux horaire débutant</h2>
+        <p className={styles.p}>
           Salut à tous, je débute mon activité de frelance et la question que je
           me pose est : comment calculer mon taux horaire ( ou journalier ).
           Quelles sont pour vous les éléments ( techno, frais etc... ) qui font
           fluctuer ce taux?
         </p>
         <span>
-          <p>Mathias</p>
+          <p className={styles.author}>Mathias</p>
         </span>
       </div>
       <div className={styles.answer}>

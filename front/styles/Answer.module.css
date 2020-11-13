@@ -22,7 +22,27 @@
     display : flex ; 
     flex-direction: column;
     border-radius: 15px;
-    box-shadow: 10px 10px 35px rgba(58, 44, 44, 0.24);
+    box-shadow: 10px 10px 35px rgba(131, 115, 115, 0.24);
+  }
+
+  .buttonQuestion {
+    background-color: black;
+    color: white;
+    width: 13%;
+    height: 10%;
+    border-radius: 10px;
+    
+  }
+
+  .h2 {
+    font-weight: bold;
+    font-size: 1.5em;
+    padding-top: 10px ;
+    padding-bottom: 10px;
+  }
+
+  .p {
+    text-align: justify;
   }
 
   .question, .answer{
@@ -51,7 +71,8 @@
   }
 
   .author {
-    color : green ; 
+    color :black ; 
+    font-weight: 600;
     text-align: right;
     padding-top: 20px;
   }
