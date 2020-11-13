@@ -27,7 +27,7 @@ const Answer = () => (
           de pois chiches à la place des œufs: 3 cuillères à soupe d'aquafaba =
           1 œuf.
         </p>
-        <span>
+        <span className={styles.author}>
           <p>Caroline</p>
         </span>
       </div>
