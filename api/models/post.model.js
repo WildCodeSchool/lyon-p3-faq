@@ -54,6 +54,20 @@ class PostModel {
       });
     });
   }
+
+  static update(idQuestion, fields) {
+    return new Promise((resolve, reject) => {
+      const query =
+        "UPDATE question  LEFT JOIN reponse  ON question.id = reponse.question_id SET ? WHERE question.id= ?";
+      db.query(query, [fields, idQuestion], (err, result) => {
+        if (err) {
+          reject(err);
+        } else {
+          resolve(result);
+        }
+      });
+    });
+  }
 }
 
 module.exports = PostModel;

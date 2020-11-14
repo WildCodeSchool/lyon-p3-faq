@@ -1,16 +1,10 @@
-const db = require("../datasource/mysql");
-const postModel = require("../models/post.model");
+const PostModel = require("../models/post.model");
+const validator = require("../middleware/validator");
 class PostController {
   static async updatePostStatus(req, res) {
     try {
       let idQuestion = req.params.id;
       const { idUser, action } = req.body;
-
-      if (idUser === undefined || action === undefined) {
-        return res
-          .status(400)
-          .send("JSON incorrect. Champs attendus : idUser et action");
-      }
 
       let fields = {};
       if (action === "publish") {
@@ -21,7 +15,7 @@ class PostController {
           disabled_at: null,
         };
 
-        const queryResult = await postModel.publishPost(fields, idQuestion);
+        const queryResult = await PostModel.publishPost(fields, idQuestion);
         res.send("post published");
       } else if (action === "archive") {
         fields = {
@@ -31,7 +25,7 @@ class PostController {
           publicated_at: null,
         };
 
-        const queryResult = await postModel.archivePost(fields, idQuestion);
+        const queryResult = await PostModel.archivePost(fields, idQuestion);
         res.send("post archived");
       } else {
         return res
@@ -45,13 +39,34 @@ class PostController {
     }
   }
 
+  static async updatePost(req, res) {
+    try {
+      let idQuestion = req.params.id;
+      const { titre_question, contenu_question, contenu_reponse } = req.body;
+
+      const fields = {
+        titre: titre_question,
+        "question.contenu": contenu_question,
+        "reponse.contenu": contenu_reponse,
+      };
+
+      const queryResult = await PostModel.update(idQuestion, fields);
+
+      res.status(201).send("Post successfully updated");
+    } catch (err) {
+      // fin du try
+
+      res.status(400).json({ message: err });
+    }
+  }
+
   static async addResponse(req, res) {
     try {
       const { question_id, contenu, created_by } = req.body;
 
       const fields = [[question_id, contenu, created_by]];
 
-      const queryResult = await postModel.addOne(fields);
+      const queryResult = await PostModel.addOne(fields);
 
       res.status(201).send("Reponse successfully added");
     } catch (err) {
@@ -63,13 +78,30 @@ class PostController {
 
   static async getPosts(req, res) {
     try {
-      const queryResult = await postModel.getAll();
+      const queryResult = await PostModel.getAll();
 
       res.send(queryResult);
     } catch (err) {
       // fin du try
 
       res.json({ message: err });
+    }
+  }
+
+  static async update(req, res) {
+    try {
+      if (req.body.action === "update") {
+        validator.checkResponse;
+
+        PostController.updatePost(req, res);
+      } else {
+        validator.checkIdUser;
+        PostController.updatePostStatus(req, res);
+      }
+    } catch (err) {
+      // fin du try
+
+      res.status(400).json({ message: err });
     }
   }
 }

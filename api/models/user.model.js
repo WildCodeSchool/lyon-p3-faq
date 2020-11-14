@@ -52,7 +52,7 @@ class UserModel {
     });
   }
 
-  static match(id) {
+  static matchDB(id) {
     return new Promise((resolve, reject) => {
       const query = " SELECT COUNT(id) as count FROM user WHERE id= ?";
       db.query(query, id, (err, result) => {
@@ -61,9 +61,9 @@ class UserModel {
         } else {
           resolve(result);
         }
-      });
     });
-  }
+  });
+}
 
   static addOne(fields) {
     return new Promise((resolve, reject) => {
@@ -78,6 +78,22 @@ class UserModel {
       });
     });
   }
+
+  static checkLogin(login,password) {
+    return new Promise((resolve, reject) => {
+      const query = 'SELECT count(id) as count FROM user WHERE mail=? AND pass=?';
+      db.query(query, [login,password], (err, result) => {
+        if (err) {
+          reject(err);
+        } else {
+          resolve(result);
+        }
+      });
+    });
+  }
+
+
+
 }
 
 module.exports = UserModel;
