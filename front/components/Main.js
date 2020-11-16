@@ -1,8 +1,11 @@
 import React from "react";
 import styles from "../styles/Main.module.css";
+import Link from 'next/link';
+
 export default function Main() {
   return (
     <body className={styles.body}>
+	  <div></div>
       <main className={styles.main}>
 	  <h2 className={styles.texth2}>Question récentes</h2>
         <div className={styles.wrapper}>
@@ -19,7 +22,10 @@ export default function Main() {
               <p>
                 <strong>Jules Faber Castell</strong> a répondu
               </p>
+				<Link href="./pages/question"><a>
               <button className={styles.RMbutton}> Lire la réponse</button>
+			  </a>
+				</Link>
             </span>
           </div>
 
