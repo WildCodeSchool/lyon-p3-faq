@@ -1,18 +1,29 @@
 const db = require("../datasource/mysql");
+const {DB} = require('../datasource/mysql')
+
 
 class UserModel {
-  static getAll() {
-    return new Promise((resolve, reject) => {
-      const query = "SELECT name,mail,pass,ip_address,role_id FROM user";
-      db.query(query, (err, result) => {
-        if (err) {
-          reject(err);
-        } else {
-          resolve(result);
-        }
-      });
-    });
-  }
+  
+  // static getAll() {
+  //   return new Promise((resolve, reject) => {
+  //     const query = "SELECT name,mail,pass,ip_address,role_id FROM user";
+  //     db.query(query, (err, result) => {
+  //       if (err) {
+  //         reject(err);
+  //       } else {
+  //         resolve(result);
+  //       }
+  //     });
+  //   });
+  // }
+
+  static async getAll() {
+  const query = "SELECT name,mail,pass,ip_address,role_id FROM user";
+   resultQuery= await DB.query(query)
+   return resultQuery;
+
+}
+
 
   static one(id, method, fields) {
     return new Promise((resolve, reject) => {
