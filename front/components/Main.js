@@ -4,8 +4,8 @@ export default function Main() {
   return (
     <body className={styles.body}>
       <main className={styles.main}>
+	  <h2 className={styles.texth2}>Question récentes</h2>
         <div className={styles.wrapper}>
-          <h2>Question récentes</h2>
           <div className={styles.question}>
             <p className={styles.p}>
               Lorstrong ipsum dolor sit amet, consectetur adipiscing elit.
@@ -35,7 +35,7 @@ export default function Main() {
             </p>
             <span>
               <p>
-                <strong>Jules Faber Castell</strong> à répondu
+                <strong>Julien Bord</strong> à répondu
               </p>
               <button className={styles.RMbutton}> Lire la réponse</button>
             </span>
@@ -52,7 +52,7 @@ export default function Main() {
             </p>
             <span>
               <p>
-                <strong>Jules Faber Castell</strong> à répondu
+                <strong>Antoine Vicard</strong> à répondu
               </p>
               <button className={styles.RMbutton}> Lire la réponse</button>
             </span>
