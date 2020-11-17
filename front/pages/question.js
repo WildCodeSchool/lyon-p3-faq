@@ -2,8 +2,6 @@ import Head from 'next/head'
 import Header from '../components/Header'
 import Answer from '../components/Answer'
 
-import styles from '../styles/Home.module.css'
-
 
 export default function Question() {
   return (
