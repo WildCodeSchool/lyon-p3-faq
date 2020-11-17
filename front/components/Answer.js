@@ -9,7 +9,12 @@ const Answer = () => (
     <div className={styles.box}>
       <div className={styles.question}>
         <button className={styles.buttonQuestion}>
-          <span><img /></span>
+          <span><img
+              src="/leftarrowwhite.png"
+              height="200px"
+              alt="loading image"
+              className={styles.loading}
+            /></span>
           <span>Revenir à la liste</span>
         </button>
         <h2 className={styles.h2}>Taux horaire débutant</h2>
