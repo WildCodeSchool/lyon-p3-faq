@@ -7,7 +7,7 @@ export default function Main() {
     <body className={styles.body}>
 	  <div></div>
       <main className={styles.main}>
-	  <h2 className={styles.texth2}>Question récentes</h2>
+	  <h2 className={styles.texth2}>Questions récentes</h2>
         <div className={styles.wrapper}>
           <div className={styles.question}>
             <p className={styles.p}>

@@ -17,6 +17,7 @@
   font-size: 14px;
   font-weight: bolder;
   margin-left: auto;
+  cursor: pointer;
 }
 
 .header h1 {
