@@ -31,6 +31,7 @@ export default function Main() {
           </div>
 
           <div className={styles.question}>
+            <div>
             <p className={styles.p}>
               LDuis at tristique lorem, consequat lacinia arcu. Phasellus mollis
               orci ac eleifend gravida. Donec vestibulum nisi congue, egestas
@@ -40,16 +41,21 @@ export default function Main() {
               accumsan at. Quisque malesuada lorem et magna commodo, vel dictum
               diam faucibus. [...]
             </p>
+            </div>
+            <div className={styles.wrapperAuthor}>
             <span>
               <p>
                 <strong>Julien Bord</strong> à répondu
               </p>
+              </span>
+              <span>
               <Link as="answer" href="/question">
-          <a>
-              <button className={styles.RMbutton}> Lire la réponse</button>
+          <a className={styles.RMbutton}>
+              Lire la réponse
 			  </a>
 				</Link>
             </span>
+            </div>
           </div>
 
           <div className={styles.question}>
