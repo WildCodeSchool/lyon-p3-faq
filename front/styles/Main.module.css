@@ -2,7 +2,7 @@
   position: relative;
   width: 100%;
   background-color: #ffffff;
-  min-height: 100vh;
+  min-height: 85vh;
   margin-bottom: 20px;
 }
 
@@ -12,7 +12,6 @@
   margin-top: 20px;
   text-align: left;
   padding-left: 100px;
-  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.178);
  }
 
 .wrapper {
@@ -40,12 +39,8 @@
 .wrapperAuthor {
   display: flex;
   flex-direction: row;
-  align-content: flex-end;
-}
-
-.question span {
-  text-align: right;
   margin-top: 15px;
+  justify-content: flex-end;
 }
 
 .RMbutton {
@@ -58,7 +53,10 @@
   padding-bottom: 5px;
   padding-left: 10px;
   padding-right: 10px;
+  margin-left: 10px;
   margin-top: 15px;
+  font-size: 0.90em;
+  white-space: nowrap;
   cursor: pointer;
 }
 
@@ -73,6 +71,23 @@
    }
 }
 
+@media (max-width: 450px) {
+  .question span {
+    text-align: center;
+    margin-top: 10px;
+    display: block ;
+  }
+
+  .wrapperAuthor {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5px;
+    justify-content: flex-end;
+    font-size : 0.80em;
+  }
+
+}
+
 @media (max-width: 400px) {
 
   .body h2 {
@@ -81,10 +96,5 @@
     margin-top: 20px;
     white-space: nowrap;
   }
-
-  .question span {
-    text-align: center;
-    margin-top: 10px;
-    display: block ;
-  }
 }
+

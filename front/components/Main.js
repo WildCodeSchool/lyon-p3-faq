@@ -18,16 +18,21 @@ export default function Main() {
               Phasellus venenatis nibh lacus, ut euismod dui aliquam vitae. Duis
               tstrongpor quam at consequat lacinia ?
             </p>
+            <div className={styles.wrapperAuthor}>
             <span>
               <p>
-                <strong>Jules Faber Castell</strong> a répondu
+                <strong>Julien Bord</strong> à répondu
               </p>
-				<Link as="answer" href="/question">
-          <a>
-              <button className={styles.RMbutton}> Lire la réponse</button>
-			  </a>
-				</Link>
+              </span>
+
+              <span>
+              <Link as="answer" href="/question">
+              <a className={styles.RMbutton}>
+                Lire la réponse
+			        </a>
+				      </Link>
             </span>
+            </div>
           </div>
 
           <div className={styles.question}>
@@ -41,19 +46,21 @@ export default function Main() {
               accumsan at. Quisque malesuada lorem et magna commodo, vel dictum
               diam faucibus. [...]
             </p>
+
             </div>
             <div className={styles.wrapperAuthor}>
             <span>
               <p>
-                <strong>Julien Bord</strong> à répondu
+                <strong>Faber Castell</strong> à répondu
               </p>
               </span>
+
               <span>
               <Link as="answer" href="/question">
-          <a className={styles.RMbutton}>
-              Lire la réponse
-			  </a>
-				</Link>
+              <a className={styles.RMbutton}>
+                Lire la réponse
+			        </a>
+				      </Link>
             </span>
             </div>
           </div>
@@ -67,21 +74,26 @@ export default function Main() {
               Phasellus venenatis nibh lacus, ut euismod dui aliquam vitae. Duis
               tstrongpor quam at consequat lacinia ? 
             </p>
+            <div className={styles.wrapperAuthor}>
             <span>
               <p>
                 <strong>Antoine Vicard</strong> à répondu
               </p>
+              </span>
+
+              <span>
               <Link as="answer" href="/question">
-          <a>
-              <button className={styles.RMbutton}> Lire la réponse</button>
-			  </a>
-				</Link>
+              <a className={styles.RMbutton}>
+                Lire la réponse
+			        </a>
+				      </Link>
             </span>
+            </div>
           </div>
 
           <div className={styles.question}>
             <p className={styles.p}>
-			LDuis at tristique lorem, consequat lacinia arcu. Phasellus mollis
+			        LDuis at tristique lorem, consequat lacinia arcu. Phasellus mollis
               orci ac eleifend gravida. Donec vestibulum nisi congue, egestas
               massa non, molestie nulla. Integer ac sodales justo. In euismod
               consectetur tellus vel congue. Sed nisl nunc, fringilla nec est a,
@@ -89,16 +101,21 @@ export default function Main() {
               accumsan at. Quisque malesuada lorem et magna commodo, vel dictum
               diam faucibus. [...]
             </p>
+            <div className={styles.wrapperAuthor}>
             <span>
               <p>
-                <strong>Jules Faber Castell</strong> à répondu
+                <strong>Amélie Buchanan</strong> à répondu
               </p>
+              </span>
+
+              <span>
               <Link as="answer" href="/question">
-          <a>
-              <button className={styles.RMbutton}> Lire la réponse</button>
-			  </a>
-				</Link>
+              <a className={styles.RMbutton}>
+                Lire la réponse
+			        </a>
+				      </Link>
             </span>
+            </div>
           </div>
         </div>
       </main>
