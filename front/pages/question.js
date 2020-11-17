@@ -5,7 +5,7 @@ import Answer from '../components/Answer'
 
 export default function Question() {
   return (
-    <div>
+    <>
       <Head>
         <title>La FAQ</title>
         <link rel="icon" href="/favicon.ico" />
@@ -13,7 +13,6 @@ export default function Question() {
       </Head>
       <Header/>
       <Answer/>
-      
-    </div>
+    </>
   )
 }
