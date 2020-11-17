@@ -1,13 +1,15 @@
 import react from "react";
 import styles from "../styles/Answer.module.css";
 
+
+
 const Answer = () => (
 <body className={styles.body}>
   <div className={styles.wrapper}>
     <div className={styles.box}>
       <div className={styles.question}>
         <button className={styles.buttonQuestion}>
-          <span><img></img></span>
+          <span><img /></span>
           <span>Revenir à la liste</span>
         </button>
         <h2 className={styles.h2}>Taux horaire débutant</h2>
