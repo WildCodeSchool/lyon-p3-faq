@@ -4,7 +4,7 @@ import styles from "../styles/Header.module.css";
 
 const Header = () => (
     <header className={styles.header}>
-        <h1> Les Freelances Lyonnais</h1>
+        <Link href="/"><h1> Les Freelances Lyonnais</h1></Link>
         <button>Poser une question</button>
     </header>
 )

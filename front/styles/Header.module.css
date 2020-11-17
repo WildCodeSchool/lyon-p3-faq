@@ -25,6 +25,7 @@
     font-weight: bold;
     font-size: x-large;
     white-space: nowrap;
+    cursor: pointer;
   }
 
   @media screen and (max-width: 768px) {
