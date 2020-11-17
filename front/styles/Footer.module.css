@@ -1,11 +1,10 @@
 .footer {
   width: 100%;
   height: auto;
-  position: absolute;
+  position: relative;
   bottom:0;
   background: black;
   color: white;
-  position: fixed;
 }
 .footer div {
   align-self: center;
