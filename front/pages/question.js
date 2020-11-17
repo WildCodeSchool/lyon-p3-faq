@@ -5,7 +5,7 @@ import Answer from '../components/Answer'
 
 export default function Question() {
   return (
-    <div className={styles.container}>
+    <div>
       <Head>
         <title>La FAQ</title>
         <link rel="icon" href="/favicon.ico" />
