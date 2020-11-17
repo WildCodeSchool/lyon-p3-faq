@@ -1,8 +1,8 @@
 .footer {
+  padding:0;
   width: 100%;
   height: auto;
-  position: relative;
-  bottom: 0;
+  position: absolute;
   background: black;
   color: white;
   display: flex;
@@ -12,13 +12,11 @@
 }
 .footer div ul {
   padding: 15px 0px 15px 75px;
-  list-style-type: none;
 }
 
 .footer div button {
   display: none;
 }
-
 @media screen and (max-width: 768px) {
   .footer {
     background-color: transparent;
@@ -26,9 +24,7 @@
     position: sticky;
   }
   .footer div {
-    justify-content: space-evenly;
-    display: flex;
-    margin-bottom: 30px;
+    margin:10px auto;
   }
   .footer div button {
     background-color: black;
@@ -38,8 +34,7 @@
     font-size: 1.25em;
     width: 300px;
     display: block;
-    text-align: center;
-    margin: 15px 0px 15px 0px;
+    margin: 15px ;
   }
   .footer div ul {
     display: none;
