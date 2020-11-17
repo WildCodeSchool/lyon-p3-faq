@@ -9,17 +9,20 @@ const Answer = () => (
     <div className={styles.box}>
       <div className={styles.question}>
         <button className={styles.buttonQuestion}>
-          <span><img
+          <span>
+            <img
               src="/leftarrowwhite.png"
-              height="200px"
+              height="25px"
+              width="25x"
               alt="loading image"
-              className={styles.loading}
-            /></span>
+              className={styles.iconArrow}
+            />
+          </span>
           <span>Revenir à la liste</span>
         </button>
         <h2 className={styles.h2}>Taux horaire débutant</h2>
         <p className={styles.p}>
-          Salut à tous, je débute mon activité de frelance et la question que je
+          Salut à tous, je débute mon activité de freelance et la question que je
           me pose est : comment calculer mon taux horaire ( ou journalier ).
           Quelles sont pour vous les éléments ( techno, frais etc... ) qui font
           fluctuer ce taux?
