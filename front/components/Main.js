@@ -22,7 +22,8 @@ export default function Main() {
               <p>
                 <strong>Jules Faber Castell</strong> a répondu
               </p>
-				<Link href="./pages/question"><a>
+				<Link as="answer" href="/question">
+          <a>
               <button className={styles.RMbutton}> Lire la réponse</button>
 			  </a>
 				</Link>
@@ -43,7 +44,11 @@ export default function Main() {
               <p>
                 <strong>Julien Bord</strong> à répondu
               </p>
+              <Link as="answer" href="/question">
+          <a>
               <button className={styles.RMbutton}> Lire la réponse</button>
+			  </a>
+				</Link>
             </span>
           </div>
 
@@ -60,7 +65,11 @@ export default function Main() {
               <p>
                 <strong>Antoine Vicard</strong> à répondu
               </p>
+              <Link as="answer" href="/question">
+          <a>
               <button className={styles.RMbutton}> Lire la réponse</button>
+			  </a>
+				</Link>
             </span>
           </div>
 
@@ -78,7 +87,11 @@ export default function Main() {
               <p>
                 <strong>Jules Faber Castell</strong> à répondu
               </p>
+              <Link as="answer" href="/question">
+          <a>
               <button className={styles.RMbutton}> Lire la réponse</button>
+			  </a>
+				</Link>
             </span>
           </div>
         </div>

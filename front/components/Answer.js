@@ -1,4 +1,5 @@
 import react from "react";
+import Link from "next/link";
 import styles from "../styles/Answer.module.css";
 
 
@@ -8,6 +9,8 @@ const Answer = () => (
   <div className={styles.wrapper}>
     <div className={styles.box}>
       <div className={styles.question}>
+        <Link as="/index" href="/">
+        <a>
         <button className={styles.buttonQuestion}>
           <span>
             <img
@@ -20,6 +23,8 @@ const Answer = () => (
           </span>
           <span>Revenir à la liste</span>
         </button>
+        </a>
+        </Link>
         <h2 className={styles.h2}>Taux horaire débutant</h2>
         <p className={styles.p}>
           Salut à tous, je débute mon activité de freelance et la question que je
