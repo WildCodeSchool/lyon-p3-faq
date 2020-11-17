@@ -7,7 +7,7 @@ import Footer from '../components/Footer';
 
 export default function Home() {
   return (
-    <div>
+    <>
       <Head>
         <title>La FAQ</title>
         <link rel="icon" href="/favicon.ico" />
@@ -17,6 +17,6 @@ export default function Home() {
       <Main/>
       <Footer/>
       
-    </div>
+    </>
   )
 }
