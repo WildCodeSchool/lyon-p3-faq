@@ -26,20 +26,15 @@
   }
 
   .buttonQuestion {
-    display: flex;
-    flex-direction: row;
+    display: inline-block;
     background-color: black;
     color: white;
-    text-align: left;
-    width: 100px;
+    text-align: center;
+    width: 50px;
     height: 45px;
     border-radius: 10px;
     padding: 5px;
-  }
-
-  .iconArrow {
-    padding-right: 5px;
-    transform: translate(0,15%);
+    cursor: pointer;
   }
 
   .h2 {
@@ -86,4 +81,11 @@
   }
 
 
+  @media (max-width: 768px) {
   
+    .body h2 {
+      font-weight: bold;
+      font-size: 1.3em ;
+      margin-top: 20px;
+    }
+  }
