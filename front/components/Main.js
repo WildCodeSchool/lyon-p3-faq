@@ -5,7 +5,6 @@ import Link from 'next/link';
 export default function Main() {
   return (
     <body className={styles.body}>
-	  <div></div>
       <main className={styles.main}>
       <h2 className={styles.texth2}>Questions récentes</h2>
         <div className={styles.wrapper}>
