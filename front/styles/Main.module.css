@@ -8,10 +8,9 @@
 
 .texth2 {
   font-weight: bold;
-  font-size: 2em ;
+  font-size: 1.5em ;
   margin-top: 20px;
-  text-align: left;
-  padding-left: 100px;
+  text-align: center;
  }
 
 .wrapper {
@@ -64,7 +63,7 @@
 
   .texth2 {
     font-weight: bold;
-    font-size: 2em ;
+    font-size: 1.5em ;
     margin-top: 20px;
     padding-left: 0px;
     text-align: center;
