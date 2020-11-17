@@ -1,7 +1,10 @@
 import React from 'react';
 import styles from '../styles/Footer.module.css';
 import Link from "next/link";
+import useModal from "../lib/useModal";
+import Modal from "./ButtonAsk";
 export default function Footer() {
+  const { isShowing, toggle } = useModal();
 	return (
 	<footer className={styles.footer}>
       <div>
@@ -9,7 +12,8 @@ export default function Footer() {
           <Link href="/about-us"><li>A propos</li></Link>
           <Link href="/mentions"><li>Mentions légales</li></Link>
         </ul>
-        <button>Poser une question</button>
+        <button onClick={toggle}>Poser une question</button>
+        <Modal isShowing={isShowing} hide={toggle} />
       </div>
     </footer>
     );

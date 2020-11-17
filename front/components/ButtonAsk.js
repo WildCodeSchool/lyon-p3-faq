@@ -4,6 +4,7 @@ import styles from "../styles/Modal.module.css";
 export default function Modal({ isShowing, hide }) {
   return isShowing
     ? ReactDOM.createPortal(
+      <div className={styles.overlay} onClick={hide}>
         <div className={styles.modalPost}>
           <h3>Poser une question</h3>
           <button type="button" onClick={hide}>
@@ -11,11 +12,11 @@ export default function Modal({ isShowing, hide }) {
           </button>
           <form>
             <div>
-              <input placeholder="Pseudo" type="text" name="name" required />
+              <input placeholder="Votre pseudo" type="text" name="name" required />
             </div>
             <div>
               <input
-                placeholder="Enter adress mail"
+                placeholder="Votre adresse mail"
                 type="email"
                 name="email"
                 required
@@ -23,7 +24,7 @@ export default function Modal({ isShowing, hide }) {
             </div>
             <div>
               <input
-                placeholder="Type your question"
+                placeholder="Votre question"
                 type="text"
                 name="questionTitle"
                 required
@@ -32,12 +33,13 @@ export default function Modal({ isShowing, hide }) {
             <div>
               <textarea
                 name="comment"
-                placeholder="Start typing here"
+                placeholder="Explicitez votre question"
                 required
               ></textarea>
             </div>
-            <input id="submit" type="submit" value="Submit" />
+            <input id="submit" type="submit" value="Envoyer" />
           </form>
+        </div>
         </div>,
         document.body
       )

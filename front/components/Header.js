@@ -1,6 +1,6 @@
 import Link from "next/link";
 import styles from "../styles/Header.module.css";
-import useModal from "./use";
+import useModal from "../lib/useModal";
 import Modal from "./ButtonAsk";
 
 export default function Header() {
