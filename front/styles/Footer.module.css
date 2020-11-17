@@ -32,12 +32,13 @@
   .footer div button {
     background-color: black;
     color: white;
-    border-radius: 5px;
+    border-radius: 15px;
     height: 70px;
     font-size: 1.25em;
     width: 300px;
     display: block;
     margin: 15px ;
+    box-shadow: 10px 10px 35px rgba(131, 115, 115, 0.24);
   }
   .footer div ul {
     display: none;

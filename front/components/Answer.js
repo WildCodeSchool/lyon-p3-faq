@@ -9,21 +9,19 @@ const Answer = () => (
   <div className={styles.wrapper}>
     <div className={styles.box}>
       <div className={styles.question}>
-        <Link as="/index" href="/">
-        <a>
+        <Link as="/" href="/">
         <button className={styles.buttonQuestion}>
+        <a>
           <span>
             <img
               src="/leftarrowwhite.png"
               height="25px"
               width="25x"
-              alt="loading image"
-              className={styles.iconArrow}
+              alt="left white arrow"
             />
           </span>
-          <span>Revenir à la liste</span>
+          </a>
         </button>
-        </a>
         </Link>
         <h2 className={styles.h2}>Taux horaire débutant</h2>
         <p className={styles.p}>
