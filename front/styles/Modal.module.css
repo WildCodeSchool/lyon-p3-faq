@@ -1,0 +1,42 @@
+.modalPost {
+    display: flex;
+    background-color: #d4d4d4;
+    width: 60vw;
+    height: auto;
+    z-index: 2;
+    margin: 10vh auto;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.modalPost h3 {
+    text-align: center;
+    width: fit-content;
+    margin: auto;
+}
+
+.modalPost button {
+    background-color: grey;
+    color: black;
+    float: right;
+    margin-top: -20px;
+    cursor: pointer;
+}
+
+.modalPost form * {
+    width: 100%;
+    padding: 5px;
+    border-radius: 10px;
+    resize: none;
+}
+
+.modalPost form div *:valid {
+    border: 1px solid green;
+}
+.modalPost form div *:invalid {
+    border: 1px solid red;
+}
+
+.modalPost form div textarea {
+    height: 50vh;
+}
