@@ -68,5 +68,6 @@
     .menuHam{
       display: flex;
       transform: translate(75%, 20px);
+      cursor: pointer;
     }
 }
