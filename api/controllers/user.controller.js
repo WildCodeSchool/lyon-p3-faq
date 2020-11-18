@@ -4,6 +4,7 @@ const UserModel = require("../models/user.model");
 class UserController {
   // Actions on one user
   static async updateOne(req, res) {
+  
     try {
       let idUser = req.params.id;
 
@@ -11,6 +12,7 @@ class UserController {
       const countResult = await UserModel.matchDB(idUser);
 
       // L'utilisateur a bien été trouvé dans la base de données
+   
       if (countResult[0].count > 0) {
         // On renvoie les informations de l'utilisateur
         const { name, mail, role } = req.body;
@@ -40,12 +42,14 @@ class UserController {
 
       // On vérifie si l'utilisateur existe en base de données
       const countResult = await UserModel.matchDB(idUser);
+     
 
       // L'utilisateur a bien été trouvé dans la base de données
       if (countResult[0].count > 0) {
         // On renvoie les informations de l'utilisateur
         const queryResult = await UserModel.one(idUser, req.method);
         res.send(queryResult);
+        
       } else {
         res.status(406).send({ "No result for user :": idUser });
       }
