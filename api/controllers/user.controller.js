@@ -1,4 +1,4 @@
-const db = require("../datasource/mysql");
+
 const UserModel = require("../models/user.model");
 
 class UserController {
@@ -11,7 +11,7 @@ class UserController {
       const countResult = await UserModel.matchDB(idUser);
 
       // L'utilisateur a bien été trouvé dans la base de données
-   
+
       if (countResult[0].count > 0) {
         // On renvoie les informations de l'utilisateur
 
@@ -33,9 +33,20 @@ class UserController {
             role_id: role,
           };
 
-          const queryResult = await UserModel.one(idUser, req.method, fields);
+  // get One user
+  static async getOne(req, res) {
+    console.log("getOne");
+    try {
+      let idUser = req.params.id;
+
+      // On vérifie si l'utilisateur existe en base de données
+      const countResult = await UserModel.matchDB(idUser);
 
       // L'utilisateur a bien été trouvé dans la base de données
+      if (countResult[0].count > 0) {
+        // On renvoie les informations de l'utilisateur
+        const queryResult = await UserModel.one(idUser, req.method);
+        res.send(queryResult);
       } else {
         res.status(406).send({ "No result for user :": idUser });
       }

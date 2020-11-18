@@ -1,5 +1,5 @@
-const { connection } = require("../datasource/mysql");
-const { DB } = require("../datasource/mysql");
+const DB = require("../datasource/mysql");
+
 
 class UserModel {
   static async getAll() {
