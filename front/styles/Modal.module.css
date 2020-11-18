@@ -1,0 +1,124 @@
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.75);
+}
+
+.modalPost {
+    display: block;
+    background-color: #ffffff;
+    width: 60vw;
+    height: auto;
+    z-index: 3;
+    margin-top: 10vh;
+    border-radius: 15px;
+    padding: 15px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    top: 0;
+}
+
+.modalPost h3 {
+    text-align: center;
+    width: fit-content;
+    margin: auto;
+    font-weight: 600;
+}
+
+.modalPost button {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    float: right;
+    cursor: pointer;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    transform: translate(-20%, -80%);
+    font-size: 1em;
+}
+
+.modalPost form * {
+    width: 100%;
+    padding: 5px;
+    border-radius: 10px;
+    resize: none;
+}
+
+.modalPost form div *:valid {
+    border: 1px solid green;
+}
+
+.modalPost form div *:invalid {
+    border: 1px solid red;
+}
+
+.modalPost form div textarea {
+    height: 50vh;
+}
+
+
+@media screen and (max-width: 768px) {
+    .overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        z-index: 2;
+        background-color: rgba(0, 0, 0, 0.75);
+    }
+
+    .modalPost {
+        display: block;
+        background-color: white;
+        width: 70vw;
+        height: auto;
+        position: absolute;
+        z-index: 3;
+        border-radius: 20px;
+        padding: 10px;
+        margin-left: auto;
+        margin-right: auto;
+        top:10%;
+    }
+
+    .modalPost h3 {
+        text-align: center;
+        width: fit-content;
+        margin: auto;
+    }
+
+    .modalPost button {
+        background-color: black;
+        color: white;
+        float: right;
+    }
+
+    .modalPost form * {
+        width: 100%;
+        padding: 10px;
+        border-radius: 10px;
+        resize: none;
+    }
+
+    .modalPost form div textarea {
+        height: 20vh;
+    }
+
+    .modalPost form div *:valid {
+        border: 1px solid green;
+    }
+
+    .modalPost form div *:invalid {
+        border: 1px solid red;
+    }
+
+    .modalPost form #submit {
+        background-color: red;
+    }
+}
