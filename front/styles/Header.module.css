@@ -12,8 +12,9 @@
     width: 1400px;
     max-width: 1400px;
     display: flex;
+    flex-direction: row;
   }
-  
+
   .headerWrapper button {
     background-color: white;
     color: black;
@@ -29,7 +30,7 @@
     padding-bottom: 5px;
     cursor: pointer;
   }
-  
+
   .headerWrapper h1 {
     position: relative;
     align-self: center;
@@ -43,14 +44,29 @@
     display : none;
   }
 
-  
+
   @media screen and (max-width: 768px) {
+
+    .header {
+      width: 100%;
+      height: 80px;
+      background: black;
+      color : white;
+      display: flex;
+    }
+  
+    .headerWrapper {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+    }
+
     .header button {
       display: none;
     }
 
-
     .menuHam{
-      display: inline;
+      display: flex;
+      transform: translate(75%, 20px);
     }
 }
