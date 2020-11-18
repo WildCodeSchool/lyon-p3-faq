@@ -39,8 +39,18 @@
     cursor: pointer;
   }
 
+  .menuHam {
+    display : none;
+  }
+
+  
   @media screen and (max-width: 768px) {
     .header button {
       display: none;
+    }
+
+
+    .menuHam{
+      display: inline;
     }
 }

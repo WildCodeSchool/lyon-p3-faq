@@ -13,7 +13,15 @@ export default function Header() {
         </h1>
         <button onClick={toggle}>Poser une question</button>
         <Modal isShowing={isShowing} hide={toggle} />
-      </span>
+        <span>
+        <img className={styles.menuHam}
+              src="/sqaure_ham_menu_white.png"
+              height="25px"
+              width="25x"
+              alt="Hamburger_menu_white"
+            />
+        </span>
+        </span>
     </header>
   );
 }
