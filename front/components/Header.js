@@ -9,16 +9,14 @@ export default function Header() {
     <header className={styles.header}>
         <span className={styles.headerWrapper}>
         <Link href="/"><h1> Les Freelances Lyonnais</h1></Link>
-        <button onClick={toggle}>Poser une question</button>
-        <Modal isShowing={isShowing} hide={toggle} />
-        <span>
         <img className={styles.menuHam}
-              src="/sqaure_ham_menu_white.png"
-              height="25px"
-              width="25x"
+              src="/square_ham_menu_white.png"
+              height="42"
+              width="42"
               alt="Hamburger_menu_white"
             />
-        </span>
+        <button onClick={toggle}>Poser une question</button>
+        <Modal isShowing={isShowing} hide={toggle} />
         </span>
     </header>
   );
