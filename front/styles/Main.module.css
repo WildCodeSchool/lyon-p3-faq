@@ -1,8 +1,8 @@
-.body {
+.section {
   position: relative;
   width: 100%;
   background-color: #ffffff;
-  min-height: 85vh;
+  min-height: 100vh;
   margin-bottom: 20px;
 }
 

@@ -1,4 +1,4 @@
-.body {
+.section {
     position: relative;
     width: 100%;
     background-color:white;
@@ -83,7 +83,7 @@
 
   @media (max-width: 768px) {
   
-    .body h2 {
+    .section h2 {
       font-weight: bold;
       font-size: 1.3em ;
       margin-top: 20px;

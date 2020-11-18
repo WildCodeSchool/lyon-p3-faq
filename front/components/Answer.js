@@ -5,7 +5,7 @@ import styles from "../styles/Answer.module.css";
 
 
 const Answer = () => (
-<body className={styles.body}>
+<section className={styles.section}>
   <div className={styles.wrapper}>
     <div className={styles.box}>
       <div className={styles.question}>
@@ -50,7 +50,7 @@ const Answer = () => (
       </div>
     </div>
   </div>
-</body>
+</section>
 );
 
 export default Answer;
