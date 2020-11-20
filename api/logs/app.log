@@ -1,0 +1,120 @@
+{
+  message: 'GET /back/users/ 200 759 - 22.641 ms\n',
+  level: 'info',
+  timestamp: '2020-11-19T08:18:54.104Z'
+}
+{
+  message: 'GET /back/users/ 200 759 - 25.194 ms\n',
+  level: 'info',
+  timestamp: '2020-11-19T08:31:18.533Z'
+}
+{
+  message: '::ffff:89.86.76.89 - - [20/Nov/2020:22:28:08 +0000] "GET / HTTP/1.1" 200 207 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36"\n',
+  level: 'info',
+  timestamp: '2020-11-20T22:28:08.118Z'
+}
+{
+  message: '::ffff:89.86.76.89 - - [20/Nov/2020:22:28:28 +0000] "GET /back/users HTTP/1.1" 200 759 "-" "PostmanRuntime/7.26.8"\n',
+  level: 'info',
+  timestamp: '2020-11-20T22:28:28.189Z'
+}
+{
+  message: 'GET /back/users 200 759 - 30.332 ms\n',
+  level: 'info',
+  timestamp: '2020-11-20T22:32:59.375Z'
+}
+{
+  message: 'GET /back/usersger 404 1143 - 13.220 ms\n',
+  level: 'info',
+  timestamp: '2020-11-20T22:34:41.413Z'
+}
+{
+  message: 'GET /back/usersgerli 404 1143 - 12.755 ms\n',
+  level: 'info',
+  timestamp: '2020-11-20T22:38:22.783Z'
+}
+{
+  message: 'GET /back/usersgerli 404 1143 - 12.768 ms\n',
+  level: 'info',
+  timestamp: '2020-11-20T22:42:59.117Z'
+}
+{
+  message: 'GET /back/usersge 404 1143 - 3.298 ms\n',
+  level: 'info',
+  timestamp: '2020-11-20T22:43:17.283Z'
+}
+{
+  message: 'GET / 304 - - 8.160 ms\n',
+  level: 'info',
+  timestamp: '2020-11-20T22:45:05.081Z'
+}
+{
+  message: 'GET /back/users 200 759 - 24.458 ms\n',
+  level: 'info',
+  timestamp: '2020-11-20T22:45:13.743Z'
+}
+{
+  message: 'GET /back/users 200 759 - 29.332 ms\n',
+  level: 'info',
+  timestamp: '2020-11-20T22:45:37.783Z'
+}
+{
+  level: 'info',
+  message: 'world',
+  timestamp: '2020-11-20T22:46:28.849Z'
+}
+{
+  message: '500 - UserModel.getAllI is not a function - /back/users - GET - ::ffff:89.86.76.89 YOUPI',
+  level: 'error',
+  timestamp: '2020-11-20T22:46:28.859Z'
+}
+{
+  message: 'GET /back/users 200 14 - 15.908 ms\n',
+  level: 'info',
+  timestamp: '2020-11-20T22:46:28.866Z'
+}
+{
+  level: 'info',
+  message: 'world',
+  timestamp: '2020-11-20T22:47:10.315Z'
+}
+{
+  message: '500 - UserModel.getAllI is not a function - /back/users - GET - ::ffff:89.86.76.89 YOUPI',
+  level: 'error',
+  timestamp: '2020-11-20T22:47:10.322Z'
+}
+{
+  message: 'GET /back/users 200 14 - 9.926 ms\n',
+  level: 'info',
+  timestamp: '2020-11-20T22:47:10.325Z'
+}
+{
+  level: 'info',
+  message: 'world',
+  timestamp: '2020-11-20T22:49:38.904Z'
+}
+{
+  message: '500 - UserModel.getAllI is not a function - /back/users - GET - ::ffff:89.86.76.89 YOUPI',
+  level: 'error',
+  timestamp: '2020-11-20T22:49:38.915Z'
+}
+{
+  message: 'GET /back/users 400 14 - 16.920 ms\n',
+  level: 'info',
+  timestamp: '2020-11-20T22:49:38.923Z'
+}
+{
+  level: 'info',
+  message: 'world',
+  timestamp: '2020-11-20T22:50:10.690Z'
+}
+{
+  message: '500 - UserModel.getAllI is not a function - /back/users - GET - ::ffff:89.86.76.89 YOUPI',
+  level: 'error',
+  timestamp: '2020-11-20T22:50:10.702Z'
+}
+{
+  message: 'GET /back/users 404 14 - 18.481 ms\n',
+  level: 'info',
+  timestamp: '2020-11-20T22:50:10.710Z'
+}

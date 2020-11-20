@@ -1,5 +1,6 @@
 
 const UserModel = require("../models/user.model");
+const logger = require("../library/logger")
 
 class UserController {
   // Actions on one user
@@ -60,7 +61,8 @@ class UserController {
   static async deleteOne(req, res) {
     try {
       let idUser = req.params.id;
-
+      
+      
       // On vérifie si l'utilisateur existe en base de données
       const countResult = await UserModel.matchDB(idUser);
 
@@ -74,17 +76,21 @@ class UserController {
         res.status(406).send({ "No result for user :": idUser });
       }
     } catch (err) {
+      
       res.json({ message: err });
     }
   }
 
   // display all users
   static async getUsers(req, res) {
+    
     try {
-      const queryResult = await UserModel.getAll();
+      const queryResult = await UserModel.getAllI();
       res.send(queryResult);
     } catch (err) {
-      res.json({ message: err });
+      
+      logger.error(`${err.status || 500} - ${err.message} - ${req.originalUrl} - ${req.method} - ${req.ip} YOUPI`);
+      res.status(404).json({ message: err });
     }
   }
 

@@ -2,6 +2,7 @@ const PostModel = require("../models/post.model");
 const validator = require("../middleware/validator");
 class PostController {
   static async updatePostStatus(req, res) {
+    console.log("updatepostStatus")
     try {
       let idQuestion = req.params.id;
       const { idUser, action } = req.body;
