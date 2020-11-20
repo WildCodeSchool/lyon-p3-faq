@@ -88,7 +88,7 @@ class UserController {
       const queryResult = await UserModel.getAllI();
       res.send(queryResult);
     } catch (err) {
-      
+
       logger.error(`${err.status || 500} - ${err.message} - ${req.originalUrl} - ${req.method} - ${req.ip} YOUPI`);
       res.status(404).json({ message: err });
     }
