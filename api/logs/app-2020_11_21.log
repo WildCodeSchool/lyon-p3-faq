@@ -1,0 +1,70 @@
+{
+  message: 'GET / 200 207 - 14.610 ms\n',
+  level: 'info',
+  timestamp: '2020-11-21T15:35:51.628Z'
+}
+{
+  message: 'GET /stylesheets/style.css 404 1143 - 6.581 ms\n',
+  level: 'info',
+  timestamp: '2020-11-21T15:35:51.778Z'
+}
+{
+  message: 'GET /favicon.ico 404 1143 - 2.756 ms\n',
+  level: 'info',
+  timestamp: '2020-11-21T15:35:51.902Z'
+}
+{
+  message: 'GET / 200 207 - 1.781 ms\n',
+  level: 'info',
+  timestamp: '2020-11-21T16:31:06.909Z'
+}
+{
+  message: 'GET /stylesheets/style.css 404 1143 - 2.001 ms\n',
+  level: 'info',
+  timestamp: '2020-11-21T16:31:07.087Z'
+}
+{
+  message: 'GET / 200 207 - 2.435 ms\n',
+  level: 'info',
+  timestamp: '2020-11-21T23:17:46.841Z'
+}
+{
+  message: 'GET /stylesheets/style.css 404 1143 - 6.237 ms\n',
+  level: 'info',
+  timestamp: '2020-11-21T23:17:46.883Z'
+}
+{
+  message: 'GET /favicon.ico 404 1143 - 1.804 ms\n',
+  level: 'info',
+  timestamp: '2020-11-21T23:17:47.047Z'
+}
+{
+  message: 'GET / 200 207 - 1.391 ms\n',
+  level: 'info',
+  timestamp: '2020-11-21T23:17:53.852Z'
+}
+{
+  message: 'GET / 200 207 - 0.775 ms\n',
+  level: 'info',
+  timestamp: '2020-11-21T23:18:01.557Z'
+}
+{
+  message: 'GET /stylesheets/style.css 404 1143 - 1.175 ms\n',
+  level: 'info',
+  timestamp: '2020-11-21T23:18:01.633Z'
+}
+{
+  message: 'GET /favicon.ico 404 1143 - 1.507 ms\n',
+  level: 'info',
+  timestamp: '2020-11-21T23:18:01.675Z'
+}
+{
+  message: 'GET /front 200 789 - 88.706 ms\n',
+  level: 'info',
+  timestamp: '2020-11-21T23:18:05.029Z'
+}
+{
+  message: 'GET /front 200 789 - 3.808 ms\n',
+  level: 'info',
+  timestamp: '2020-11-21T23:20:45.486Z'
+}
