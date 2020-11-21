@@ -1,12 +1,10 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import Head from "next/head";
 import Header from "../components/Header";
 import Main from "../components/Main";
 import Footer from "../components/Footer";
 
 export default function Home({ data }) {
-  // console.log(data);
-
   return (
     <>
       <Head>
@@ -18,7 +16,7 @@ export default function Home({ data }) {
         ></meta>
       </Head>
       <Header />
-      <Main questions={data}/>
+      <Main questions={data} />
       <Footer />
     </>
   );
