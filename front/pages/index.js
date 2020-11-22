@@ -3,21 +3,9 @@ import Head from "next/head";
 import Header from "../components/Header";
 import Main from "../components/Main";
 import Footer from "../components/Footer";
-import axios from 'axios'
-
-const fetchData = async () => await axios.get('http://localhost:3000/front')
-.then(res => ({
-  error: false,
-  users: res.data,
-}))
-.catch(() => ({
-    error: true,
-    users: null,
-  }),
-);
+const Fetch = require("../utils/test");
 
 export default function Home({ data }) {
-
   return (
     <>
       <Head>
@@ -36,7 +24,6 @@ export default function Home({ data }) {
 }
 
 export async function getServerSideProps() {
-  const data = await fetchData();
-
+  const data = await Fetch.fetchData("http://localhost:3000/front");
   return { props: { data } };
 }
