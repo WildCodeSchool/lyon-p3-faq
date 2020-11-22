@@ -16,7 +16,7 @@ export default function Main(props) {
           <h2 className={styles.texth2}>Questions récentes</h2>
           <div className={styles.wrapper}>
             {props.questions.error && <p>Quelque chose à déconné fo kon répare</p>}
-            {props.questions.error!==true && props.questions.users && (
+            {!props.questions.error && props.questions.users && (
               <>
             {Object.entries(questions).map(([key]) => {
               return (
