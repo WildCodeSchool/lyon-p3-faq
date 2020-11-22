@@ -22,7 +22,7 @@ class UserController {
           role_id: role,
         };
 
-        const queryResult = await UserModel.one(idUser, req.method, fields);
+        const queryResult = await UserModel.updateOne(idUser, req.method, fields);
 
         res.send("User successfully updated");
       } else {
@@ -37,7 +37,7 @@ class UserController {
 
   // get One user
   static async getOne(req, res) {
-    console.log("getOne");
+  
     try {
       let idUser = req.params.id;
 
@@ -47,7 +47,7 @@ class UserController {
       // L'utilisateur a bien été trouvé dans la base de données
       if (countResult[0].count > 0) {
         // On renvoie les informations de l'utilisateur
-        const queryResult = await UserModel.one(idUser, req.method);
+        const queryResult = await UserModel.getOne(idUser);
         res.send(queryResult);
       } else {
         res.status(406).send({ "No result for user :": idUser });
@@ -70,7 +70,7 @@ class UserController {
       if (countResult[0].count > 0) {
         // On renvoie les informations de l'utilisateur
 
-        const queryResult = await UserModel.one(idUser, req.method);
+        const queryResult = await UserModel.deleteOne(idUser, req.method);
         res.send("User deleted");
       } else {
         res.status(406).send({ "No result for user :": idUser });
@@ -85,7 +85,7 @@ class UserController {
   static async getUsers(req, res) {
     
     try {
-      const queryResult = await UserModel.getAllI();
+      const queryResult = await UserModel.getAll();
       res.send(queryResult);
     } catch (err) {
 

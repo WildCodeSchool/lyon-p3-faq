@@ -68,3 +68,13 @@
   level: 'info',
   timestamp: '2020-11-21T23:20:45.486Z'
 }
+{
+  message: 'GET / 200 207 - 24.737 ms\n',
+  level: 'info',
+  timestamp: '2020-11-21T23:56:43.765Z'
+}
+{
+  message: 'GET /stylesheets/style.css 404 1143 - 8.173 ms\n',
+  level: 'info',
+  timestamp: '2020-11-21T23:56:43.795Z'
+}

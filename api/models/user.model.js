@@ -1,6 +1,5 @@
 const DB = require("../datasource/mysql");
 
-
 class UserModel {
   static async getAll() {
     const query = "SELECT name,mail,pass,ip_address,role_id FROM user";
@@ -8,25 +7,23 @@ class UserModel {
     return resultQuery;
   }
 
-  static async one(id, method, fields) {
-    if (method === "DELETE") {
-      const query = "DELETE  FROM user WHERE id= ?";
-      let resultQuery = await DB.query(query, id);
-      return resultQuery;
-    }
+  static async getOne(id) {
+    const query =
+      "SELECT name,mail,pass,ip_address,role_id FROM user WHERE id=?";
+    let resultQuery = await DB.query(query, id);
+    return resultQuery;
+  }
 
-    if (method === "GET") {
-      const query =
-        "SELECT name,mail,pass,ip_address,role_id FROM user WHERE id=?";
-      let resultQuery = await DB.query(query, id);
-      return resultQuery;
-    }
+  static async deleteOne(id) {
+    const query = "DELETE  FROM user WHERE id= ?";
+    let resultQuery = await DB.query(query, id);
+    return resultQuery;
+  }
 
-    if (method === "PUT") {
-      const query = "UPDATE user SET ? WHERE id= ?";
-      let resultQuery = await DB.query(query, fields, id);
-      return resultQuery;
-    }
+  static async updateOne(id, fields) {
+    const query = "UPDATE user SET ? WHERE id= ?";
+    let resultQuery = await DB.query(query, fields, id);
+    return resultQuery;
   }
 
   static async matchDB(id) {

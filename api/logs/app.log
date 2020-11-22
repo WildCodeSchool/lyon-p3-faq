@@ -118,3 +118,23 @@
   level: 'info',
   timestamp: '2020-11-20T22:50:10.710Z'
 }
+{
+  message: 'GET / 200 207 - 24.737 ms\n',
+  level: 'info',
+  timestamp: '2020-11-21T23:56:43.765Z'
+}
+{
+  message: 'GET /stylesheets/style.css 404 1143 - 8.173 ms\n',
+  level: 'info',
+  timestamp: '2020-11-21T23:56:43.795Z'
+}
+{
+  message: 'GET /back/users 200 759 - 24.176 ms\n',
+  level: 'info',
+  timestamp: '2020-11-22T00:29:11.569Z'
+}
+{
+  message: 'GET /back/users/2 200 124 - 24.774 ms\n',
+  level: 'info',
+  timestamp: '2020-11-22T00:31:08.624Z'
+}
