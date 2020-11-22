@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import styles from "../styles/Main.module.css";
 import Link from "next/link";
-
+import Error from "./Error"
 export default function Main(props) {
   const [questions, setQuestions] = useState({});
 
@@ -15,9 +15,9 @@ export default function Main(props) {
         <main className={styles.main}>
           <h2 className={styles.texth2}>Questions récentes</h2>
           <div className={styles.wrapper}>
-            {props.questions.error && (
-              <p>Quelque chose à déconné fo kon répare</p>
-            )}
+            {props.questions.error && 
+              <Error/>
+            }
             {!props.questions.error && props.questions.users && (
               <>
                 {Object.entries(questions).map(([key]) => {
