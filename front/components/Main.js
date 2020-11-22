@@ -3,10 +3,10 @@ import styles from "../styles/Main.module.css";
 import Link from "next/link";
 
 export default function Main(props) {
-  const [test, setTest] = useState({});
+  const [questions, setQuestions] = useState({});
 
   useEffect(() => {
-    setTest(props.questions);
+    setQuestions(props.questions.users);
   }, []);
 
   return (
@@ -15,15 +15,18 @@ export default function Main(props) {
         <main className={styles.main}>
           <h2 className={styles.texth2}>Questions récentes</h2>
           <div className={styles.wrapper}>
-            {Object.entries(test).map(([key]) => {
+            {props.questions.error && <p>Quelque chose à déconné fo kon répare</p>}
+            {props.questions.error!==true && props.questions.users && (
+              <>
+            {Object.entries(questions).map(([key]) => {
               return (
-                <div className={styles.question}>
-                  <h3>{test[key]["titre"]}</h3>
-                  <p className={styles.p}>{test[key]["contenu"]}</p>
+                <div key={key} className={styles.question}>
+                  <h3>{questions[key]["titre"]}</h3>
+                  <p className={styles.p}>{questions[key]["contenu"]}</p>
                   <div className={styles.wrapperAuthor}>
                     <span>
                       <p>
-                        <strong>Julien Bord</strong> à répondu
+                        <strong>{questions[key]["created_by"]}</strong> à répondu
                       </p>
                     </span>
                     <span>
@@ -34,7 +37,7 @@ export default function Main(props) {
                   </div>
                 </div>
               );
-            })}
+            })}</>)}
           </div>
         </main>
       </section>
