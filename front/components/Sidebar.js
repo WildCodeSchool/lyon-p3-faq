@@ -1,10 +1,16 @@
+import React, {useState} from "react";
+import Link from "next/link";
 
 function Sidebar () {
+
+    const[sidebar, setSidebar] = useState(false);
+    const ShowSidebar = () => setSidebar(!sidebar)
+
     return (
         <>
             <div className="navbar">
                 <Link to='#' className="menu-bar">
-                    <img 
+                    <img onClick={ShowSidebar}
                         src="/menu.png"
                         className="menu-icons"
                         alt="menu icon"
@@ -16,7 +22,11 @@ function Sidebar () {
                 <ul className="nav-menu-items">
                     <li className="navbar-toggle">
                         <Link to ="#" className="menu-bar">
-                            
+                            <img
+                                src="/close.png"
+                                className="menu-icons"
+                                alt="close icon"
+                            />
                         </Link>
                     </li>
                 </ul>
