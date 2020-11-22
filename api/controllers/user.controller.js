@@ -15,15 +15,16 @@ class UserController {
       if (countResult[0].count > 0) {
         // On renvoie les informations de l'utilisateur
 
-        if (req.method === "DELETE") {
-          const queryResult = await UserModel.one(idUser, req.method);
-          res.send("User deleted");
-        }
 
-        if (req.method == "GET") {
-          const queryResult = await UserModel.one(idUser, req.method);
-          res.send(queryResult);
-        }
+        const queryResult = await UserModel.updateOne(idUser,fields);
+
+
+        res.send("User successfully updated");
+      } else {
+        res.status(406).send({ "No result for user :": idUser });
+      }
+    } catch (err) {
+      // fin du try
 
         if (req.method === "PUT") {
           const { name, mail, role } = req.body;
@@ -45,7 +46,7 @@ class UserController {
       // L'utilisateur a bien été trouvé dans la base de données
       if (countResult[0].count > 0) {
         // On renvoie les informations de l'utilisateur
-        const queryResult = await UserModel.one(idUser, req.method);
+        const queryResult = await UserModel.getOne(idUser, req.method);
         res.send(queryResult);
       } else {
         res.status(406).send({ "No result for user :": idUser });
@@ -53,6 +54,27 @@ class UserController {
     } catch (err) {
       // fin du try
 
+  // delete one user
+  static async deleteOne(req, res) {
+    try {
+      let idUser = req.params.id;
+
+      // On vérifie si l'utilisateur existe en base de données
+      const countResult = await UserModel.matchDB(idUser);
+
+      // L'utilisateur a bien été trouvé dans la base de données
+      if (countResult[0].count > 0) {
+        console.log("user trouvé")
+        // On renvoie les informations de l'utilisateur
+
+
+        const queryResult = await UserModel.deleteOne(idUser);
+
+        res.send("User deleted");
+      } else {
+        res.status(406).send({ "No result for user :": idUser });
+      }
+    } catch (err) {
       res.json({ message: err });
     }
   }

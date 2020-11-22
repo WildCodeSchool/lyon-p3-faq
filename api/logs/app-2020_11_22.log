@@ -1,0 +1,325 @@
+{
+  message: 'GET /back/users 200 759 - 24.176 ms\n',
+  level: 'info',
+  timestamp: '2020-11-22T00:29:11.569Z'
+}
+{
+  message: 'GET /back/users/2 200 124 - 24.774 ms\n',
+  level: 'info',
+  timestamp: '2020-11-22T00:31:08.624Z'
+}
+{
+  message: '500 - query is not defined - /back/users - GET - ::ffff:127.0.0.1 YOUPI',
+  level: 'error',
+  timestamp: '2020-11-22T01:52:33.642Z'
+}
+{
+  message: 'GET /back/users 404 14 - 26.290 ms\n',
+  level: 'info',
+  timestamp: '2020-11-22T01:52:33.666Z'
+}
+{
+  message: 'GET /back/users 200 759 - 72.211 ms\n',
+  level: 'info',
+  timestamp: '2020-11-22T01:53:27.452Z'
+}
+{
+  message: 'GET /back/users/15 200 115 - 49.213 ms\n',
+  level: 'info',
+  timestamp: '2020-11-22T02:06:14.261Z'
+}
+{
+  message: 'GET /back/users/15 200 115 - 23.353 ms\n',
+  level: 'info',
+  timestamp: '2020-11-22T02:08:26.146Z'
+}
+{
+  message: 'GET /back/users/15 200 115 - 23.099 ms\n',
+  level: 'info',
+  timestamp: '2020-11-22T02:09:17.254Z'
+}
+{
+  message: 'GET /back/users/15 200 115 - 5.614 ms\n',
+  level: 'info',
+  timestamp: '2020-11-22T02:10:05.942Z'
+}
+{
+  message: 'GET /back/users/15 200 115 - 24.517 ms\n',
+  level: 'info',
+  timestamp: '2020-11-22T02:11:01.353Z'
+}
+{
+  message: 'GET /back/users/15 200 115 - 24.175 ms\n',
+  level: 'info',
+  timestamp: '2020-11-22T02:12:22.860Z'
+}
+{
+  message: 'GET /back/users/15 200 14 - 21.566 ms\n',
+  level: 'info',
+  timestamp: '2020-11-22T02:12:51.215Z'
+}
+{
+  message: 'GET /back/users/15 200 115 - 52.816 ms\n',
+  level: 'info',
+  timestamp: '2020-11-22T02:15:01.628Z'
+}
+{
+  message: 'GET / 200 207 - 9.945 ms\n',
+  level: 'info',
+  timestamp: '2020-11-22T02:15:08.929Z'
+}
+{
+  message: 'GET / 200 207 - 3.130 ms\n',
+  level: 'info',
+  timestamp: '2020-11-22T02:15:09.155Z'
+}
+{
+  message: 'GET / 304 - - 2.362 ms\n',
+  level: 'info',
+  timestamp: '2020-11-22T02:18:28.789Z'
+}
+{
+  message: 'GET /back/users 200 759 - 8.398 ms\n',
+  level: 'info',
+  timestamp: '2020-11-22T02:18:44.402Z'
+}
+{
+  message: 'DELETE /back/users/15 200 282 - 9.546 ms\n',
+  level: 'info',
+  timestamp: '2020-11-22T02:18:53.681Z'
+}
+{
+  message: 'DELETE /back/users/15 200 12 - 37.436 ms\n',
+  level: 'info',
+  timestamp: '2020-11-22T02:19:50.919Z'
+}
+{
+  message: 'POST /back/users/ 400 69 - 19.013 ms\n',
+  level: 'info',
+  timestamp: '2020-11-22T02:28:40.577Z'
+}
+{
+  message: 'POST /back/users/ 200 14 - 2.343 ms\n',
+  level: 'info',
+  timestamp: '2020-11-22T02:29:20.423Z'
+}
+{
+  message: 'POST /back/users/ 200 14 - 2.626 ms\n',
+  level: 'info',
+  timestamp: '2020-11-22T02:29:55.914Z'
+}
+{
+  message: 'POST /back/users/ 200 458 - 30.947 ms\n',
+  level: 'info',
+  timestamp: '2020-11-22T02:30:27.488Z'
+}
+{
+  message: 'POST /back/users/ 200 431 - 28.544 ms\n',
+  level: 'info',
+  timestamp: '2020-11-22T02:31:02.435Z'
+}
+{
+  message: 'POST /back/users/ 200 431 - 72.112 ms\n',
+  level: 'info',
+  timestamp: '2020-11-22T02:36:20.339Z'
+}
+{
+  message: 'POST /back/users/ 200 23 - 36.630 ms\n',
+  level: 'info',
+  timestamp: '2020-11-22T02:39:37.346Z'
+}
+{
+  message: 'POST /back/users/ 200 430 - 34.103 ms\n',
+  level: 'info',
+  timestamp: '2020-11-22T02:59:48.935Z'
+}
+{
+  message: 'POST /back/users/ 200 23 - 44.805 ms\n',
+  level: 'info',
+  timestamp: '2020-11-22T03:01:28.973Z'
+}
+{
+  message: 'PUT /back/users/17 200 306 - 14.766 ms\n',
+  level: 'info',
+  timestamp: '2020-11-22T03:06:55.679Z'
+}
+{
+  message: 'PUT /back/users/17 200 14 - 32.163 ms\n',
+  level: 'info',
+  timestamp: '2020-11-22T03:08:17.255Z'
+}
+{
+  message: 'PUT /back/users/17 200 14 - 40.027 ms\n',
+  level: 'info',
+  timestamp: '2020-11-22T03:08:59.042Z'
+}
+{
+  message: 'PUT /back/users/17 200 14 - 31.626 ms\n',
+  level: 'info',
+  timestamp: '2020-11-22T03:09:24.742Z'
+}
+{
+  message: 'PUT /back/users/17 200 14 - 26.223 ms\n',
+  level: 'info',
+  timestamp: '2020-11-22T03:10:09.790Z'
+}
+{
+  message: 'PUT /back/users/17 200 14 - 35.548 ms\n',
+  level: 'info',
+  timestamp: '2020-11-22T03:10:45.009Z'
+}
+{
+  message: 'PUT /back/users/17 200 14 - 32.296 ms\n',
+  level: 'info',
+  timestamp: '2020-11-22T03:11:21.173Z'
+}
+{
+  message: 'PUT /back/users/17 200 14 - 32.636 ms\n',
+  level: 'info',
+  timestamp: '2020-11-22T03:12:08.563Z'
+}
+{
+  message: 'PUT /back/users/16 200 14 - 13.967 ms\n',
+  level: 'info',
+  timestamp: '2020-11-22T03:13:18.253Z'
+}
+{
+  message: 'PUT /back/users/16 200 432 - 33.348 ms\n',
+  level: 'info',
+  timestamp: '2020-11-22T03:15:21.053Z'
+}
+{
+  message: 'PUT /back/users/16 200 25 - 33.730 ms\n',
+  level: 'info',
+  timestamp: '2020-11-22T03:16:16.425Z'
+}
+{
+  message: 'PUT /back/users/16 200 25 - 82.298 ms\n',
+  level: 'info',
+  timestamp: '2020-11-22T03:16:42.896Z'
+}
+{
+  message: 'PUT /back/users/16 200 324 - 29.547 ms\n',
+  level: 'info',
+  timestamp: '2020-11-22T03:17:12.663Z'
+}
+{
+  message: "500 - ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'table  name,mail,pass,ip_address,role_id' at line 1 - /back/users/ - GET - ::ffff:89.86.76.89 YOUPI",
+  level: 'error',
+  timestamp: '2020-11-22T03:23:59.111Z'
+}
+{
+  message: 'GET /back/users/ 404 352 - 26.189 ms\n',
+  level: 'info',
+  timestamp: '2020-11-22T03:23:59.128Z'
+}
+{
+  message: "500 - ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'table undefined' at line 1 - /back/users/ - GET - ::ffff:89.86.76.89 YOUPI",
+  level: 'error',
+  timestamp: '2020-11-22T03:24:34.773Z'
+}
+{
+  message: 'GET /back/users/ 404 327 - 23.834 ms\n',
+  level: 'info',
+  timestamp: '2020-11-22T03:24:34.787Z'
+}
+{
+  message: 'GET /back/users/ 200 870 - 24.981 ms\n',
+  level: 'info',
+  timestamp: '2020-11-22T03:25:02.235Z'
+}
+{
+  message: 'GET /back/users/16 200 14 - 9.595 ms\n',
+  level: 'info',
+  timestamp: '2020-11-22T03:25:07.669Z'
+}
+{
+  message: 'GET /back/users/16 200 319 - 30.100 ms\n',
+  level: 'info',
+  timestamp: '2020-11-22T03:26:34.556Z'
+}
+{
+  message: 'GET /back/users/16 200 112 - 29.233 ms\n',
+  level: 'info',
+  timestamp: '2020-11-22T03:26:50.326Z'
+}
+{
+  message: 'POST /back/users/login 404 1143 - 14.211 ms\n',
+  level: 'info',
+  timestamp: '2020-11-22T03:30:20.634Z'
+}
+{
+  message: 'POST /back/login 400 131 - 11.079 ms\n',
+  level: 'info',
+  timestamp: '2020-11-22T03:30:36.367Z'
+}
+{
+  message: 'POST /back/login 200 17 - 23.378 ms\n',
+  level: 'info',
+  timestamp: '2020-11-22T03:31:05.143Z'
+}
+{
+  message: 'POST /back/login 401 25 - 4.107 ms\n',
+  level: 'info',
+  timestamp: '2020-11-22T03:31:11.034Z'
+}
+{
+  message: 'POST /back/login 400 99 - 1.349 ms\n',
+  level: 'info',
+  timestamp: '2020-11-22T03:31:16.365Z'
+}
+{
+  message: 'POST /back/login 400 99 - 15.049 ms\n',
+  level: 'info',
+  timestamp: '2020-11-22T03:31:57.096Z'
+}
+{
+  message: 'POST /back/login 401 25 - 22.022 ms\n',
+  level: 'info',
+  timestamp: '2020-11-22T03:32:04.839Z'
+}
+{
+  message: 'POST /back/login 200 17 - 6.055 ms\n',
+  level: 'info',
+  timestamp: '2020-11-22T03:32:09.635Z'
+}
+{
+  message: 'DELETE /back/lusers/18 404 1143 - 11.052 ms\n',
+  level: 'info',
+  timestamp: '2020-11-22T03:33:10.144Z'
+}
+{
+  message: 'DELETE /back/users/18 200 310 - 5.127 ms\n',
+  level: 'info',
+  timestamp: '2020-11-22T03:33:16.386Z'
+}
+{
+  message: 'DELETE /back/users/17 200 310 - 3.034 ms\n',
+  level: 'info',
+  timestamp: '2020-11-22T03:33:25.796Z'
+}
+{
+  message: 'DELETE /back/users/17 200 297 - 18.903 ms\n',
+  level: 'info',
+  timestamp: '2020-11-22T03:33:49.525Z'
+}
+{
+  message: 'DELETE /back/users/17 200 12 - 26.937 ms\n',
+  level: 'info',
+  timestamp: '2020-11-22T03:34:12.917Z'
+}
+{
+  message: 'DELETE /back/login 404 1143 - 9.722 ms\n',
+  level: 'info',
+  timestamp: '2020-11-22T03:38:02.426Z'
+}
+{
+  message: 'POST /back/login 200 17 - 12.291 ms\n',
+  level: 'info',
+  timestamp: '2020-11-22T03:38:10.399Z'
+}
+{
+  message: 'POST /back/login 401 25 - 3.763 ms\n',
+  level: 'info',
+  timestamp: '2020-11-22T03:38:14.907Z'
+}
