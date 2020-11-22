@@ -10,7 +10,6 @@ export default function Answer(props) {
       ? setQA(props.questionAnswered.users["res"][0])
       : setQA(props.questionAnswered.users);
   }, []);
-  console.log(props.questionAnswered.users);
   return (
     <section className={styles.section}>
       <div className={styles.wrapper}>
