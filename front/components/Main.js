@@ -1,23 +1,20 @@
 import React, { useEffect, useState } from "react";
 import styles from "../styles/Main.module.css";
 import Link from "next/link";
-import Error from "./Error"
+import Error from "./Error";
 export default function Main(props) {
   const [questions, setQuestions] = useState({});
 
   useEffect(() => {
     setQuestions(props.questions.users);
   }, []);
-
   return (
     <>
       <section className={styles.section}>
         <main className={styles.main}>
           <h2 className={styles.texth2}>Questions récentes</h2>
           <div className={styles.wrapper}>
-            {props.questions.error && 
-              <Error/>
-            }
+            {props.questions.error && <Error />}
             {!props.questions.error && props.questions.users && (
               <>
                 {Object.entries(questions).map(([key]) => {
@@ -33,7 +30,7 @@ export default function Main(props) {
                           </p>
                         </span>
                         <span>
-                          <Link as="answer" href="/question">
+                          <Link href={"/questions/" + questions[key]["id"]}>
                             <a className={styles.RMbutton}>Lire la réponse</a>
                           </Link>
                         </span>
