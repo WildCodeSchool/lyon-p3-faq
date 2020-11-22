@@ -1,50 +1,45 @@
 const DB = require("../datasource/mysql");
-
+const table = "user";
+const fields = " name,mail,pass,ip_address,role_id";
 
 class UserModel {
   static async getAll() {
-    const query = "SELECT name,mail,pass,ip_address,role_id FROM user";
-    let resultQuery = await DB.query(query);
+    let resultQuery = await DB.read(table, fields);
     return resultQuery;
   }
 
-  static async one(id, method, fields) {
-    if (method === "DELETE") {
-      const query = "DELETE  FROM user WHERE id= ?";
-      let resultQuery = await DB.query(query, id);
-      return resultQuery;
-    }
+  static async getOne(id) {
+    const WHERE_CLAUSE = "WHERE id=";
+    let resultQuery = await DB.read(table, fields, WHERE_CLAUSE, id);
+    return resultQuery;
+  }
 
-    if (method === "GET") {
-      const query =
-        "SELECT name,mail,pass,ip_address,role_id FROM user WHERE id=?";
-      let resultQuery = await DB.query(query, id);
-      return resultQuery;
-    }
+  static async deleteOne(id) {
+    let resultQuery = await DB.delete(table, id);
+    return resultQuery;
+  }
 
-    if (method === "PUT") {
-      const query = "UPDATE user SET ? WHERE id= ?";
-      let resultQuery = await DB.query(query, fields, id);
-      return resultQuery;
-    }
+  static async updateOne(id, fields) {
+    let resultQuery = await DB.update(table, id, fields);
+    return resultQuery;
   }
 
   static async matchDB(id) {
-    const query = " SELECT COUNT(id) as count FROM user WHERE id= ?";
-    let resultQuery = await DB.query(query, id);
+    const fields = " COUNT(id) as count";
+    const WHERE_CLAUSE = `WHERE id=`;
+    let resultQuery = await DB.read(table, fields, WHERE_CLAUSE,id);
     return resultQuery;
   }
 
   static async addOne(fields) {
-    const query =
-      "INSERT INTO user (name,mail,role_id,pass,ip_address) VALUES ? ";
-    let resultQuery = await DB.query(query, fields);
+    let resultQuery = await DB.create(table, fields_table, fields);
     return resultQuery;
   }
 
   static async checkLogin(login, password) {
-    const query = "SELECT count(id) as count FROM user WHERE mail=? AND pass=?";
-    let resultQuery = await DB.query(query, login, password);
+    const fields = " count(id) as count   ";
+    const WHERE_CLAUSE = `WHERE mail=${login} AND pass=${password}`;
+    let resultQuery = await DB.read(table, fields, WHERE_CLAUSE);
     return resultQuery;
   }
 }
