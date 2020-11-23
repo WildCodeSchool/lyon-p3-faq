@@ -20,12 +20,12 @@ export default function Main(props) {
                 {Object.entries(questions).map(([key]) => {
                   return (
                     <div key={key} className={styles.question}>
-                      <h3>{questions[key]["titre"]}</h3>
-                      <p className={styles.p}>{questions[key]["contenu"]}</p>
+                      <h3>{questions[key].titre}</h3>
+                      <p className={styles.p}>{questions[key].contenu}</p>
                       <div className={styles.wrapperAuthor}>
                         <span>
                           <p>
-                            <strong>{questions[key]["created_by"]}</strong> à
+                            <strong>{questions[key].created_by}</strong> à
                             répondu
                           </p>
                         </span>

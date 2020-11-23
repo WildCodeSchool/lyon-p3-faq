@@ -8,9 +8,9 @@ export default function Header() {
   return (
     <header className={styles.header}>
       <span className={styles.headerWrapper}>
-        <Link href="/">
-          <h1> Les Freelances Lyonnais</h1>
-        </Link>
+        <h1>
+          <Link href="/">Les Freelances Lyonnais</Link>
+        </h1>
         <button onClick={toggle}>Poser une question</button>
         <Modal isShowing={isShowing} hide={toggle} />
       </span>

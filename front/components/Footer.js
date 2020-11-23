@@ -9,12 +9,12 @@ export default function Footer() {
     <footer className={styles.footer}>
       <div>
         <ul>
-          <Link href="/about-us">
-            <li>A propos</li>
-          </Link>
-          <Link href="/mentions">
-            <li>Mentions légales</li>
-          </Link>
+          <li>
+            <Link href="/about-us">A propos</Link>
+          </li>
+          <li>
+            <Link href="/mentions">Mentions légales</Link>
+          </li>
         </ul>
         <button onClick={toggle}>Poser une question</button>
         <Modal isShowing={isShowing} hide={toggle} />
