@@ -4,6 +4,7 @@ import styles from "../styles/Header.module.css";
 import useModal from "../utils/useModal";
 import Modal from "./ButtonAsk";
 import * as FaIcons from "react-icons/fa";
+import {HeaderData} from "../components/HeaderData";
 
 export default function Header() {
   
@@ -32,6 +33,18 @@ export default function Header() {
                 <FaIcons.FaRegTimesCircle/>
               </Link>
             </li>
+
+            {HeaderData.map((item, index) => {
+              return (
+                <li key={index} className={item.cName}>
+                  {item.icon}
+                  <Link as="" href={item.path}>
+                    <span>{item.title}</span>
+                  </Link>
+                </li>
+              );
+            })}
+
         </ul>
       </nav>
     </header>
