@@ -13,6 +13,12 @@ class UserController {
 
       if (countResult[0].count > 0) {
         // On renvoie les informations de l'utilisateur
+        const { name, mail, role } = req.body;
+        const fields = {
+          name: name,
+          mail: mail,
+          role_id: role,
+        };
 
         const queryResult = await UserModel.update(idUser, fields);
 
@@ -23,13 +29,9 @@ class UserController {
     } catch (err) {
       // fin du try
 
-        if (req.method === "PUT") {
-          const { name, mail, role } = req.body;
-          const fields = {
-            name: name,
-            mail: mail,
-            role_id: role,
-          };
+      res.json({ message: err });
+    }
+  }
 
   // get One user
   static async getOne(req, res) {
@@ -48,7 +50,9 @@ class UserController {
         res.status(406).send({ "No result for user :": idUser });
       }
     } catch (err) {
-      // fin du try
+      res.json({ message: err });
+    }
+  }
 
   // delete one user
   static async deleteOne(req, res) {
@@ -73,6 +77,7 @@ class UserController {
       res.json({ message: err });
     }
   }
+
   // display all users
   static async getUsers(req, res) {
     try {

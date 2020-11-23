@@ -3,7 +3,7 @@ const router = Router();
 const UserController = require("../../controllers/user.controller");
 const validator = require('../../middleware/validator')
 
-/* ********************* Routes for login ********************* */
+const validator = require('../../middleware/validator')
 
 router.post("/",validator.signup, UserController.login);
 

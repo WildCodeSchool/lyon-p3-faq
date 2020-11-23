@@ -9,8 +9,6 @@ class PostController {
       let idQuestion = req.params.id;
       const { idUser, action } = req.body;
 
-     
-
       let fields = {};
       if (action === "publish") {
         fields = {
@@ -45,23 +43,19 @@ class PostController {
   }
 
   static async updatePost(req, res) {
-   
     try {
       let idQuestion = req.params.id;
       const { titre_question, contenu_question, contenu_reponse } = req.body;
 
-     
-        const fields = {
-          titre: titre_question,
-          "question.contenu": contenu_question,
-          "reponse.contenu": contenu_reponse,
-        };
+      const fields = {
+        titre: titre_question,
+        "question.contenu": contenu_question,
+        "reponse.contenu": contenu_reponse,
+      };
 
-        const queryResult = await PostModel.update(idQuestion, fields);
+      const queryResult = await PostModel.update(idQuestion, fields);
 
-        res.status(201).send("Post successfully updated");
-      
-        
+      res.status(201).send("Post successfully updated");
     } catch (err) {
       // fin du try
 
@@ -97,24 +91,16 @@ class PostController {
     }
   }
 
-
-
   static async update(req, res) {
     try {
-      
       if (req.body.action === "update") {
-       
-     
-        validator.checkResponse, 
+        validator.checkResponse;
+
         PostController.updatePost(req, res);
       } else {
-        validator.checkIdUser, 
+        validator.checkIdUser;
         PostController.updatePostStatus(req, res);
       }
-       
-        
-      
-        
     } catch (err) {
       // fin du try
 
