@@ -25,7 +25,7 @@ export default function Header() {
             />
         <button onClick={toggle}>Poser une question</button>
         <Modal isShowing={isShowing} hide={toggle} />
-        
+
         </span>
         <span className={styles.navbar}>
           <Link as="Home" href="/" className={styles.menu_bar}>
@@ -43,8 +43,10 @@ export default function Header() {
                 return (
                   <li key={index} className={item.cName}>
                     <Link as={item.title} href={item.path}>
-                      {item.icon}
-                      <span className={styles.spantext}>{item.title}</span>
+                        <>
+                          {item.icon}
+                          <span className={styles.spantext}>{item.title}</span>
+                        </>
                     </Link>
                   </li>
                 )
