@@ -18,11 +18,6 @@ export default function Header() {
   return (
     <header className={styles.header}>
         <span className={styles.headerWrapper}>
-              src="/square_ham_menu_white.png"
-              height="42"
-              width="42"
-              alt="Hamburger_menu_white"
-            />
         <button onClick={toggle}>Poser une question</button>
         <Modal isShowing={isShowing} hide={toggle} />
 
