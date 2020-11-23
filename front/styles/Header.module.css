@@ -39,6 +39,7 @@
     cursor: pointer;
   }
 
+
   @media screen and (max-width: 768px) {
     .header button {
       display: none;
