@@ -13,7 +13,6 @@ export default function Header() {
 
     const { isShowing, toggle } = useModal();
     const [sidebar, setSidebar] = useState(false);
-
     const showSidebar = () => setSidebar(!sidebar);
 
   return (
@@ -45,7 +44,7 @@ export default function Header() {
                   <li key={index} className={item.cName}>
                     <Link as={item.title} href={item.path}>
                       {item.icon}
-                      <span>{item.title}</span>
+                      <span className={styles.spantext}>{item.title}</span>
                     </Link>
                   </li>
                 )
