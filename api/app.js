@@ -14,7 +14,7 @@ const postRouter = require("./routes/backoffice/post");
 const loginRouter = require("./routes/backoffice/login");
 
 const app = express();
-
+app.use(cors());
 // parse application/x-www-form-urlencoded
 app.use(bodyParser.urlencoded({ extended: false }));
 

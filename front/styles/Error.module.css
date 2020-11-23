@@ -1,0 +1,14 @@
+.div{
+    position: relative;
+    margin:0 auto;
+}
+.image{
+    margin:15px auto;
+    display:block;
+}
+
+.text{
+text-align:center;
+font-size:large;
+height:fit-content;
+}
