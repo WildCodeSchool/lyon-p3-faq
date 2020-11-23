@@ -1,4 +1,3 @@
-
 const UserModel = require("../models/user.model");
 
 class UserController {
@@ -8,7 +7,7 @@ class UserController {
       let idUser = req.params.id;
 
       // On vérifie si l'utilisateur existe en base de données
-      const countResult = await UserModel.matchDB(idUser);
+      const countResult = await UserModel.matchUser(idUser);
 
       // L'utilisateur a bien été trouvé dans la base de données
 
@@ -21,9 +20,7 @@ class UserController {
           role_id: role,
         };
 
-
-        const queryResult = await UserModel.updateOne(idUser,fields);
-
+        const queryResult = await UserModel.update(idUser, fields);
 
         res.send("User successfully updated");
       } else {
@@ -38,17 +35,16 @@ class UserController {
 
   // get One user
   static async getOne(req, res) {
-    console.log("getOne");
     try {
       let idUser = req.params.id;
 
       // On vérifie si l'utilisateur existe en base de données
-      const countResult = await UserModel.matchDB(idUser);
-
+      const countResult = await UserModel.matchUser(idUser);
       // L'utilisateur a bien été trouvé dans la base de données
       if (countResult[0].count > 0) {
+        console.log("utilisateur trouvé");
         // On renvoie les informations de l'utilisateur
-        const queryResult = await UserModel.getOne(idUser, req.method);
+        const queryResult = await UserModel.read("where id=", idUser);
         res.send(queryResult);
       } else {
         res.status(406).send({ "No result for user :": idUser });
@@ -64,15 +60,14 @@ class UserController {
       let idUser = req.params.id;
 
       // On vérifie si l'utilisateur existe en base de données
-      const countResult = await UserModel.matchDB(idUser);
+      const countResult = await UserModel.matchUser(idUser);
 
       // L'utilisateur a bien été trouvé dans la base de données
       if (countResult[0].count > 0) {
-        console.log("user trouvé")
+        console.log("user trouvé");
         // On renvoie les informations de l'utilisateur
 
-
-        const queryResult = await UserModel.deleteOne(idUser);
+        const queryResult = await UserModel.delete(idUser);
 
         res.send("User deleted");
       } else {
@@ -86,7 +81,8 @@ class UserController {
   // display all users
   static async getUsers(req, res) {
     try {
-      const queryResult = await UserModel.getAll();
+      const queryResult = await UserModel.read();
+
       res.send(queryResult);
     } catch (err) {
       res.json({ message: err });
@@ -101,9 +97,9 @@ class UserController {
       const pass = "faqmdp";
       const ipAdress =
         req.headers["x-forwarded-for"] || req.connection.remoteAddress;
-      const fields = [[name, mail, role, pass, ipAdress]];
+      const fields_table = [[name, mail, pass, ipAdress, role]];
 
-      const queryResult = await UserModel.addOne(fields);
+      const queryResult = await UserModel.create(fields_table);
       res.send("User successfully added");
     } catch (err) {
       res.json({ message: err });
@@ -119,15 +115,17 @@ class UserController {
         res.status(400).send("JSON incorrect. Champs attendus : login et mdp");
       } else {
         const queryResult = await UserModel.checkLogin(login, password);
-
+console.log("queryResult : ",queryResult)
         if (queryResult[0].count !== 0) {
           res.status(200).json("Identifiants ok");
         } else {
+         
           res.status(401).json("Identifiants incorrects");
         }
       }
     } catch (err) {
-      res.status(406).json("Identifiants incorrects");
+     
+      res.status(404);
     }
   }
 }
