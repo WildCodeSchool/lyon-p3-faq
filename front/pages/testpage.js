@@ -3,6 +3,6 @@ import Header from "../components/Header";
 
 export default function Testpage() {
     return (
-        <Header/>
+            <h1>HELLO</h1>
     )
 };
