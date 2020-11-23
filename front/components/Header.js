@@ -7,7 +7,10 @@ import * as AiIcons from "react-icons/ai";
 import { useState } from "react";
 import {SidebarData} from "./SidebarData";
 
+
+
 export default function Header() {
+
     const { isShowing, toggle } = useModal();
     const [sidebar, setSidebar] = useState(false);
     const showSidebar = () => setSidebar(!sidebar);
@@ -16,8 +19,16 @@ export default function Header() {
     <header className={styles.header}>
         <span className={styles.headerWrapper}>
         <Link href="/"><h1> Les Freelances Lyonnais</h1></Link>
+        <img 
+              className={styles.menuHam}
+              src="/square_ham_menu_white.png"
+              height="42"
+              width="42"
+              alt="Hamburger_menu_white"
+            />
         <button onClick={toggle}>Poser une question</button>
         <Modal isShowing={isShowing} hide={toggle} />
+        
         </span>
         <span className={styles.navbar}>
           <Link as="Home" href="/" className={styles.menu_bar}>
