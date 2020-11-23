@@ -30,7 +30,7 @@ export default function Main(props) {
                           </p>
                         </span>
                         <span>
-                          <Link href={"/questions/" + questions[key]["id"]}>
+                          <Link href={"/questions/" + questions[key].id}>
                             <a className={styles.RMbutton}>Lire la réponse</a>
                           </Link>
                         </span>
