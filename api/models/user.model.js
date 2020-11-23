@@ -1,47 +1,26 @@
-const DB = require("../datasource/mysql");
+const db = require("../datasource/mysql");
+const DB = require("../library/mysql.js");
 const table = "user";
 const fields = " name,mail,pass,ip_address,role_id";
 
-class UserModel {
-  static async getAll() {
-    let resultQuery = await DB.read(table, fields);
+class UserModel extends DB {
+  constructor(...args) {
+    super(...args);
+  }
+
+  // Customized methods
+  async matchUser(id) {
+    let resultQuery = await this.query(`SELECT COUNT(id) as count FROM user where id=${id}`);
     return resultQuery;
   }
 
-  static async getOne(id) {
-    const WHERE_CLAUSE = "WHERE id=";
-    let resultQuery = await DB.read(table, fields, WHERE_CLAUSE, id);
-    return resultQuery;
-  }
-
-  static async deleteOne(id) {
-    let resultQuery = await DB.delete(table, id);
-    return resultQuery;
-  }
-
-  static async updateOne(id, fields) {
-    let resultQuery = await DB.update(table, id, fields);
-    return resultQuery;
-  }
-
-  static async matchDB(id) {
-    const fields = " COUNT(id) as count";
-    const WHERE_CLAUSE = `WHERE id=`;
-    let resultQuery = await DB.read(table, fields, WHERE_CLAUSE,id);
-    return resultQuery;
-  }
-
-  static async addOne(fields) {
-    let resultQuery = await DB.create(table, fields_table, fields);
-    return resultQuery;
-  }
-
-  static async checkLogin(login, password) {
+  async checkLogin(login, password) {
     const fields = " count(id) as count   ";
-    const WHERE_CLAUSE = `WHERE mail=${login} AND pass=${password}`;
-    let resultQuery = await DB.read(table, fields, WHERE_CLAUSE);
+    const WHERE_CLAUSE = `WHERE mail='${login}' AND pass='${password}'`;
+    let resultQuery = await this.query(
+      `SELECT COUNT(id) as count FROM ${this.table} ${WHERE_CLAUSE}`);
     return resultQuery;
   }
 }
 
-module.exports = UserModel;
+module.exports = new UserModel(db, table, fields);
