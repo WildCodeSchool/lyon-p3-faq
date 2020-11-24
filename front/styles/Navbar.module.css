@@ -1,5 +1,46 @@
+.header {
+  width: 100%;
+  height: 380px;
+  background: black;
+  padding: 0 50px;
+  color : white;
+  display: flex;
+  justify-content: center;
+}
+
+.headerWrapper {
+  width: 1400px;
+  max-width: 1400px;
+  display: flex;
+}
+
+.headerWrapper button {
+  background-color: white;
+  color: black;
+  border-radius: 30px;
+  height: 40px;
+  align-self: center;
+  font-size: 14px;
+  font-weight: bolder;
+  margin-left: auto;
+  padding-right: 10px;
+  padding-left: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  cursor: pointer;
+}
+
+.headerWrapper h1 {
+  position: relative;
+  align-self: center;
+  font-weight: bold;
+  font-size: x-large;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
 .navbar {
-    background-color: blue;
+    background-color:green;
     height: 80px;
     display: flex;
     justify-content: flex-end;
@@ -13,7 +54,7 @@
   }
 
   .navmenu {
-    background-color:green;
+    background-color:rgb(128, 0, 70);
     width : 250px;
     height : 100vh;
     display : flex;
@@ -25,7 +66,7 @@
 
   .navmenu.active {
     right : 0;
-    transition: 350ms;
+    transition :350ms;
   }
 
   .nav-text {
