@@ -17,14 +17,14 @@ export default function Header() {
         </h1>
       </div>
       <div className={styles.navbar}>
-        <Link as="" href="" className="menubar"> 
+        <Link as="" href="" className={styles.menubar}> 
           <FaIcons.FaBars onClick={showSidebar} />
         </Link>
       </div>
-      <nav className={ sidebar ? "navmenu active": "styles.navmenu"  }>
-        <ul className="navmenuitems" onClick={showSidebar}>
-            <li className="navbar-toggle">
-              <Link as="" href="" className="menubar">
+      <nav className={ sidebar ? `${styles.navmenu}` : `${styles.navmenu}`}>
+        <ul className={styles.navmenuitems} onClick={showSidebar}>
+            <li className="styles.navbar-toggle">
+              <Link as="" href="" className={styles.menubar}>
                 <FaIcons.FaRegTimesCircle/>
               </Link>
             </li>

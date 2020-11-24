@@ -2,7 +2,7 @@
     background-color: blue;
     height: 80px;
     display: flex;
-    justify-content: flex-start;
+    justify-content: flex-end;
     align-items: center;
 }
 
@@ -12,8 +12,8 @@
     background: none;
   }
 
-  .navmenu {
-    background-color: blue;
+  .navmenua {
+    background-color:green;
     width : 250px;
     height : 100vh;
     display : flex;
@@ -23,7 +23,7 @@
     transition: 850ms;
   }
 
-  .navmenu.active {
+  .navmenua {
     right : 0;
     transition: 350ms;
   }
