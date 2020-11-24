@@ -1,15 +1,12 @@
 import {useState} from "react";
 import Link from "next/link";
-import styles from "../styles/Header.module.css";
-import useModal from "../utils/useModal";
-import Modal from "./ButtonAsk";
+import styles from "../styles/Navbar.module.css";
 import * as FaIcons from "react-icons/fa";
 import {HeaderData} from "../components/HeaderData";
 
 export default function Header() {
   
   const [sidebar, setSidebar] = useState(false);
-  const { isShowing, toggle } = useModal();
   const showSidebar = () => setSidebar(!sidebar);
   
   return (
@@ -18,10 +15,8 @@ export default function Header() {
         <h1>
           <Link href="/">Les Freelances Lyonnais</Link>
         </h1>
-        <button onClick={toggle}>Poser une question</button>
-        <Modal isShowing={isShowing} hide={toggle} />
       </div>
-      <div className="navbar">
+      <div className={styles.navbar}>
         <Link as="" href="" className="menubar"> 
           <FaIcons.FaBars onClick={showSidebar} />
         </Link>
