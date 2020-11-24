@@ -26,8 +26,8 @@ export default function Header() {
           <FaIcons.FaBars onClick={showSidebar} />
         </Link>
       </div>
-      <nav className={ sidebar ? "navmenu active" : "navmenu"  }>
-        <ul className={styles.navmenuitems}>
+      <nav className={ sidebar ? `{styles.navmenu active}`: `{styles.navmenu}`  }>
+        <ul className={styles.navmenuitems} onClick={showSidebar}>
             <li className={styles.navbar-toggle}>
               <Link as="" href="" className={styles.menubar}>
                 <FaIcons.FaRegTimesCircle/>
@@ -37,9 +37,12 @@ export default function Header() {
             {HeaderData.map((item, index) => {
               return (
                 <li key={index} className={item.cName}>
-                  {item.icon}
-                  <Link as="" href={item.path}>
+                  
+                  <Link as={item.path} href={item.path}>
+                    <div>
+                    {item.icon}
                     <span>{item.title}</span>
+                    </div>
                   </Link>
                 </li>
               );
