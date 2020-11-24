@@ -1,6 +1,6 @@
 import {useState} from "react";
 import Link from "next/link";
-import styles from "../styles/Navbar.module.css";
+import styles from "../styles/Header.module.css";
 import * as FaIcons from "react-icons/fa";
 import {HeaderData} from "../components/HeaderData";
 
@@ -20,10 +20,11 @@ export default function Header() {
         <Link as="" href="" className={styles.menubar}> 
           <FaIcons.FaBars onClick={showSidebar} />
         </Link>
+    
       </div>
-      <nav className={ sidebar ? `${styles.navmenu}` : `${styles.navmenu}`}>
+      <nav className={'navmenu '+ (sidebar ? 'active':'') }>
         <ul className={styles.navmenuitems} onClick={showSidebar}>
-            <li className="styles.navbar-toggle">
+            <li className={styles['navbar-toogle']}>
               <Link as="" href="" className={styles.menubar}>
                 <FaIcons.FaRegTimesCircle/>
               </Link>
@@ -44,6 +45,8 @@ export default function Header() {
             })}
 
         </ul>
+
+        
       </nav>
     </header>
   );

@@ -12,7 +12,7 @@
     background: none;
   }
 
-  .navmenua {
+  .navmenu {
     background-color:green;
     width : 250px;
     height : 100vh;
@@ -23,7 +23,7 @@
     transition: 850ms;
   }
 
-  .navmenua {
+  .navmenu.active {
     right : 0;
     transition: 350ms;
   }
