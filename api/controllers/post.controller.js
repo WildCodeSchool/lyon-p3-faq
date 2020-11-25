@@ -46,11 +46,11 @@ class PostController {
         };
 
         const queryResult = await Post.update(idQuestion, fields);
-        res.send("post archived");
+        res.send({ message : "post archived"});
       } else {
         return res
           .status(400)
-          .send("Please type a valid action : publish or archive");
+          .send({ message : "Please type a valid action : publish or archive"});
       }
     } catch (err) {
       // fin du try
@@ -75,9 +75,9 @@ class PostController {
       const queryResult = await Post.updatePost(idQuestion, fields);
 
       if (queryResult.affectedRows > 0) {
-        res.send("Post successfully updated");
+        res.send({ message : "Post successfully updated" });
       } else {
-        res.status(204).send({ error: "Nothing updated" });
+        res.status(404).send({ error: "Nothing updated" });
       }
     } catch (err) {
       // fin du try
@@ -96,9 +96,9 @@ class PostController {
       const queryResult = await Post.addOne(fields);
 
       if (queryResult.affectedRows > 0) {
-        res.send("Reponse successfully added");
+        res.send({ message : "Reponse successfully added"});
       } else {
-        res.status(204).send({ error: "Nothing added" });
+        res.status(404).send({ error: "Nothing added" });
       }
     } catch (err) {
       // fin du try

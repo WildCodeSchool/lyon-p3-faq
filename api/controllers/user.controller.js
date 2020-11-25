@@ -23,7 +23,7 @@ class UserController {
 
         const queryResult = await User.update(idUser, fields);
         if (queryResult.affectedRows > 0) {
-          res.send("User successfully updated");
+          res.send({message : "User successfully updated"});
         } else {
           res.status(404).send({ error: "Nothing updated" });
         }
@@ -46,12 +46,12 @@ class UserController {
       const countResult = await User.matchUser(idUser);
       // L'utilisateur a bien été trouvé dans la base de données
       if (countResult[0].count > 0) {
-        console.log("utilisateur trouvé");
+        
         // On renvoie les informations de l'utilisateur
         const queryResult = await User.read("where id=", idUser);
         res.send(queryResult);
       } else {
-        res.status(204).send({ "No result for user :": idUser });
+        res.status(404).send({ "No result for user :": idUser });
       }
     } catch (err) {
       logger.error(err);
@@ -69,19 +69,19 @@ class UserController {
 
       // L'utilisateur a bien été trouvé dans la base de données
       if (countResult[0].count > 0) {
-        console.log("user trouvé");
+        
         // On renvoie les informations de l'utilisateur
 
         const queryResult = await User.delete(idUser);
         if (queryResult.affectedRows > 0) {
-          res.send("User successfully deleted");
+          res.send({ message : "User successfully deleted"});
         } else {
           res.status(404).send({ error: "Nothing deleted" });
         }
 
         res.send("User deleted");
       } else {
-        res.status(204).send({ "No result for user :": idUser });
+        res.status(404).send({ "No result for user :": idUser });
       }
     } catch (err) {
       logger.error(err);
@@ -116,7 +116,7 @@ class UserController {
       if (queryResult.affectedRows > 0) {
         res.send("User successfully added");
       } else {
-        res.status(204).send({ error: "Nothing added" });
+        res.status(404).send({ error: "Nothing added" });
       }
     } catch (err) {
       logger.error(err);

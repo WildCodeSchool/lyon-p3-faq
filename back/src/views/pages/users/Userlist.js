@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect,useState} from "react";
 import { Link, useHistory } from "react-router-dom";
 import {
   CBadge,
@@ -11,8 +11,12 @@ import {
   CButton,
 } from "@coreui/react";
 
-import usersData from "../../users/UsersData";
+import usersDatas from "../../users/UsersData";
 import tagsData from "../../datas/Tags";
+import { indexOf } from "core-js/fn/array";
+const axios = require('axios');
+
+
 
 const getBadge = (status) => {
   switch (status) {
@@ -38,14 +42,39 @@ const fields = [
   "pseudo",
 ];
 
-const addUser = () => {};
+
 
 const Tables = () => {
+
+  // States
+const [usersData,setUsersData] = useState();
+const [tableFields,setTableFields] = useState();
+
+
   let history = useHistory();
 
   const selectUser = (e) => {
     history.push(`/pages/users/userselect/${e.id}`);
   };
+
+
+
+  useEffect(() => {
+    axios
+      .get("http://51.210.47.134:3002/back/users")
+      .then(function (response) {
+        // handle success
+        
+        setUsersData(response.data);
+       
+        setTableFields(Object.keys(response.data[0]).filter( user => user.name <3));
+
+      })
+      .catch(function (error) {
+        // handle error
+        console.log(error);
+      });
+  }, []);
   return (
     <>
       <CRow>
@@ -61,7 +90,7 @@ const Tables = () => {
                     block
                     color="dark"
                     aria-pressed="true"
-                    onClick={addUser}
+                   
                   >
                     Add User
                   </CButton>
@@ -72,7 +101,7 @@ const Tables = () => {
             <CCardBody>
               <CDataTable
                 items={usersData}
-                fields={fields}
+                fields={tableFields}
                 hover
                 striped
                 bordered
