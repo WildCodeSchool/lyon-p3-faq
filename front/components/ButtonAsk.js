@@ -1,7 +1,25 @@
-import React from "react";
+import React, { useState } from "react";
 import ReactDOM from "react-dom";
 import styles from "../styles/Modal.module.css";
 export default function Modal({ isShowing, hide }) {
+  const [form, setForm] = useState({
+    pseudo: null,
+    mail: null,
+    titre: null,
+    question: null,
+  });
+
+  const handleSubmit = (e) => {
+    fetch("http://localhost:3000/front", {
+      method: "POST",
+      body: form,
+    }).then(function (response) {
+      console.log(response);
+      return response;
+    });
+    e.preventDefault();
+  };
+
   return isShowing
     ? ReactDOM.createPortal(
         <>
@@ -11,13 +29,14 @@ export default function Modal({ isShowing, hide }) {
             <button type="button" onClick={hide}>
               <span>&times;</span>
             </button>
-            <form>
+            <form onSubmit={handleSubmit}>
               <div>
                 <input
                   placeholder="Votre pseudo"
                   type="text"
                   name="name"
                   required
+                  onChange={(e) => setForm({ ...form, pseudo: e.target.value })}
                 />
               </div>
               <div>
@@ -26,6 +45,7 @@ export default function Modal({ isShowing, hide }) {
                   type="email"
                   name="email"
                   required
+                  onChange={(e) => setForm({ ...form, mail: e.target.value })}
                 />
               </div>
               <div>
@@ -34,13 +54,18 @@ export default function Modal({ isShowing, hide }) {
                   type="text"
                   name="questionTitle"
                   required
+                  onChange={(e) => setForm({ ...form, titre: e.target.value })}
                 />
               </div>
               <div>
                 <textarea
                   name="comment"
+                  type="text"
                   placeholder="Explicitez votre question"
                   required
+                  onChange={(e) =>
+                    setForm({ ...form, question: e.target.value })
+                  }
                 ></textarea>
               </div>
               <input id="submit" type="submit" value="Envoyer" />
