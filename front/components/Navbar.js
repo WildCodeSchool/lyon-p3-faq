@@ -23,7 +23,7 @@ export default function Navbar() {
 
         <ul className={styles["navmenuitems"]} onClick={showSidebar}>
 
-            <li className={styles["navbartoogle"]}>
+            <li className={styles["navbartoggle"]}>
               <Link as="" href="" className={styles["menubar"]}>
                 <FaIcons.FaRegTimesCircle/>
               </Link>
@@ -31,12 +31,12 @@ export default function Navbar() {
 
             {HeaderData.map((item, index) => {
               return (
-                <li key={index} className={item.cName}>
+                <li key={index} className={styles["navtextA"]}>
                   
                   <Link as={item.path} href={item.path}>
                     <div>
                     {item.icon}
-                    <span>{item.title}</span>
+                    <span className={styles["myspan"]}>{item.title}</span>
                     </div>
                   </Link>
                 </li>
