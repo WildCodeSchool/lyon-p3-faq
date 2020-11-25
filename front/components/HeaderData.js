@@ -6,24 +6,24 @@ export const HeaderData = [
         title:"Home",
         path:"/",
         icon: <FaIcons.FaCampground/>,
-        cName : "navtext"
+        cName : "navtextA"
     },
     {
         title:"About-us",
         path:"/about-us",
         icon: <FaIcons.FaFeather/>,
-        cName : "navtext"
+        cName : "navtextA"
     },
     {
         title:"Mentions legales",
         path:"/mentions",
         icon: <FaIcons.FaBalanceScale/>,
-        cName : "navtext"
+        cName : "navtextA"
     },
     {
         title:"Sandbox",
         path:"/test",
         icon: <FaIcons.FaBug/>,
-        cName : "navtext"
+        cName : "navtextA"
     },
 ]

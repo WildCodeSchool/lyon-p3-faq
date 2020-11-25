@@ -5,22 +5,25 @@ import * as FaIcons from "react-icons/fa";
 import {HeaderData} from "../components/HeaderData";
 
 
-export default function Header() {
+export default function Navbar() {
   
   const [sidebar, setSidebar] = useState(false);
   const showSidebar = () => setSidebar(!sidebar);
   
   return (
-    <header className={styles.header}>
-     
+    <header>
       <div className={styles.navbar}>
         <Link as="" href="" className={styles.menubar}> 
           <FaIcons.FaBars onClick={showSidebar} />
         </Link>
       </div>
-      <nav className={sidebar ? styles["navmenu active"]: styles["navmenu"] }>
+
+
+      <nav className={sidebar ? styles["navmenuactive"] : styles["navmenu"] }>
+
         <ul className={styles["navmenuitems"]} onClick={showSidebar}>
-            <li className={styles['navbar-toogle']}>
+
+            <li className={styles["navbartoogle"]}>
               <Link as="" href="" className={styles["menubar"]}>
                 <FaIcons.FaRegTimesCircle/>
               </Link>
@@ -40,10 +43,9 @@ export default function Header() {
               );
             })}
 
-        </ul>
-
-        
+        </ul>        
       </nav>
+
     </header>
   );
 }
