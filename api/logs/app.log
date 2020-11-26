@@ -1,0 +1,1766 @@
+{
+  message: 'GET /back/users/ 200 759 - 22.641 ms\n',
+  level: 'info',
+  timestamp: '2020-11-19T08:18:54.104Z'
+}
+{
+  message: 'GET /back/users/ 200 759 - 25.194 ms\n',
+  level: 'info',
+  timestamp: '2020-11-19T08:31:18.533Z'
+}
+{
+  message: '::ffff:89.86.76.89 - - [20/Nov/2020:22:28:08 +0000] "GET / HTTP/1.1" 200 207 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36"\n',
+  level: 'info',
+  timestamp: '2020-11-20T22:28:08.118Z'
+}
+{
+  message: '::ffff:89.86.76.89 - - [20/Nov/2020:22:28:28 +0000] "GET /back/users HTTP/1.1" 200 759 "-" "PostmanRuntime/7.26.8"\n',
+  level: 'info',
+  timestamp: '2020-11-20T22:28:28.189Z'
+}
+{
+  message: 'GET /back/users 200 759 - 30.332 ms\n',
+  level: 'info',
+  timestamp: '2020-11-20T22:32:59.375Z'
+}
+{
+  message: 'GET /back/usersger 404 1143 - 13.220 ms\n',
+  level: 'info',
+  timestamp: '2020-11-20T22:34:41.413Z'
+}
+{
+  message: 'GET /back/usersgerli 404 1143 - 12.755 ms\n',
+  level: 'info',
+  timestamp: '2020-11-20T22:38:22.783Z'
+}
+{
+  message: 'GET /back/usersgerli 404 1143 - 12.768 ms\n',
+  level: 'info',
+  timestamp: '2020-11-20T22:42:59.117Z'
+}
+{
+  message: 'GET /back/usersge 404 1143 - 3.298 ms\n',
+  level: 'info',
+  timestamp: '2020-11-20T22:43:17.283Z'
+}
+{
+  message: 'GET / 304 - - 8.160 ms\n',
+  level: 'info',
+  timestamp: '2020-11-20T22:45:05.081Z'
+}
+{
+  message: 'GET /back/users 200 759 - 24.458 ms\n',
+  level: 'info',
+  timestamp: '2020-11-20T22:45:13.743Z'
+}
+{
+  message: 'GET /back/users 200 759 - 29.332 ms\n',
+  level: 'info',
+  timestamp: '2020-11-20T22:45:37.783Z'
+}
+{
+  level: 'info',
+  message: 'world',
+  timestamp: '2020-11-20T22:46:28.849Z'
+}
+{
+  message: '500 - UserModel.getAllI is not a function - /back/users - GET - ::ffff:89.86.76.89 YOUPI',
+  level: 'error',
+  timestamp: '2020-11-20T22:46:28.859Z'
+}
+{
+  message: 'GET /back/users 200 14 - 15.908 ms\n',
+  level: 'info',
+  timestamp: '2020-11-20T22:46:28.866Z'
+}
+{
+  level: 'info',
+  message: 'world',
+  timestamp: '2020-11-20T22:47:10.315Z'
+}
+{
+  message: '500 - UserModel.getAllI is not a function - /back/users - GET - ::ffff:89.86.76.89 YOUPI',
+  level: 'error',
+  timestamp: '2020-11-20T22:47:10.322Z'
+}
+{
+  message: 'GET /back/users 200 14 - 9.926 ms\n',
+  level: 'info',
+  timestamp: '2020-11-20T22:47:10.325Z'
+}
+{
+  level: 'info',
+  message: 'world',
+  timestamp: '2020-11-20T22:49:38.904Z'
+}
+{
+  message: '500 - UserModel.getAllI is not a function - /back/users - GET - ::ffff:89.86.76.89 YOUPI',
+  level: 'error',
+  timestamp: '2020-11-20T22:49:38.915Z'
+}
+{
+  message: 'GET /back/users 400 14 - 16.920 ms\n',
+  level: 'info',
+  timestamp: '2020-11-20T22:49:38.923Z'
+}
+{
+  level: 'info',
+  message: 'world',
+  timestamp: '2020-11-20T22:50:10.690Z'
+}
+{
+  message: '500 - UserModel.getAllI is not a function - /back/users - GET - ::ffff:89.86.76.89 YOUPI',
+  level: 'error',
+  timestamp: '2020-11-20T22:50:10.702Z'
+}
+{
+  message: 'GET /back/users 404 14 - 18.481 ms\n',
+  level: 'info',
+  timestamp: '2020-11-20T22:50:10.710Z'
+}
+{
+  message: 'GET / 200 207 - 24.737 ms\n',
+  level: 'info',
+  timestamp: '2020-11-21T23:56:43.765Z'
+}
+{
+  message: 'GET /stylesheets/style.css 404 1143 - 8.173 ms\n',
+  level: 'info',
+  timestamp: '2020-11-21T23:56:43.795Z'
+}
+{
+  message: 'GET /back/users 200 759 - 24.176 ms\n',
+  level: 'info',
+  timestamp: '2020-11-22T00:29:11.569Z'
+}
+{
+  message: 'GET /back/users/2 200 124 - 24.774 ms\n',
+  level: 'info',
+  timestamp: '2020-11-22T00:31:08.624Z'
+}
+{
+  message: '500 - query is not defined - /back/users - GET - ::ffff:127.0.0.1 YOUPI',
+  level: 'error',
+  timestamp: '2020-11-22T01:52:33.642Z'
+}
+{
+  message: 'GET /back/users 404 14 - 26.290 ms\n',
+  level: 'info',
+  timestamp: '2020-11-22T01:52:33.666Z'
+}
+{
+  message: 'GET /back/users 200 759 - 72.211 ms\n',
+  level: 'info',
+  timestamp: '2020-11-22T01:53:27.452Z'
+}
+{
+  message: 'GET /back/users/15 200 115 - 49.213 ms\n',
+  level: 'info',
+  timestamp: '2020-11-22T02:06:14.261Z'
+}
+{
+  message: 'GET /back/users/15 200 115 - 23.353 ms\n',
+  level: 'info',
+  timestamp: '2020-11-22T02:08:26.146Z'
+}
+{
+  message: 'GET /back/users/15 200 115 - 23.099 ms\n',
+  level: 'info',
+  timestamp: '2020-11-22T02:09:17.254Z'
+}
+{
+  message: 'GET /back/users/15 200 115 - 5.614 ms\n',
+  level: 'info',
+  timestamp: '2020-11-22T02:10:05.942Z'
+}
+{
+  message: 'GET /back/users/15 200 115 - 24.517 ms\n',
+  level: 'info',
+  timestamp: '2020-11-22T02:11:01.353Z'
+}
+{
+  message: 'GET /back/users/15 200 115 - 24.175 ms\n',
+  level: 'info',
+  timestamp: '2020-11-22T02:12:22.860Z'
+}
+{
+  message: 'GET /back/users/15 200 14 - 21.566 ms\n',
+  level: 'info',
+  timestamp: '2020-11-22T02:12:51.215Z'
+}
+{
+  error: /home/ubuntu/Projets/Projet3/lyon-p3-faq/api/datasource/mysql.js:52
+        logger.info("err :" err)
+                    ^^^^^^^
+  
+  SyntaxError: missing ) after argument list
+      at wrapSafe (internal/modules/cjs/loader.js:1072:16)
+      at Module._compile (internal/modules/cjs/loader.js:1122:27)
+      at Object.Module._extensions..js (internal/modules/cjs/loader.js:1178:10)
+      at Module.load (internal/modules/cjs/loader.js:1002:32)
+      at Function.Module._load (internal/modules/cjs/loader.js:901:14)
+      at Module.require (internal/modules/cjs/loader.js:1044:19)
+      at require (internal/modules/cjs/helpers.js:77:18)
+      at Object.<anonymous> (/home/ubuntu/Projets/Projet3/lyon-p3-faq/api/routes/front/index.js:3:12)
+      at Module._compile (internal/modules/cjs/loader.js:1158:30)
+      at Object.Module._extensions..js (internal/modules/cjs/loader.js:1178:10),
+  level: 'error',
+  message: 'uncaughtException: missing ) after argument list\n' +
+    '/home/ubuntu/Projets/Projet3/lyon-p3-faq/api/datasource/mysql.js:52\n' +
+    '      logger.info("err :" err)\n' +
+    '                  ^^^^^^^\n' +
+    '\n' +
+    'SyntaxError: missing ) after argument list\n' +
+    '    at wrapSafe (internal/modules/cjs/loader.js:1072:16)\n' +
+    '    at Module._compile (internal/modules/cjs/loader.js:1122:27)\n' +
+    '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1178:10)\n' +
+    '    at Module.load (internal/modules/cjs/loader.js:1002:32)\n' +
+    '    at Function.Module._load (internal/modules/cjs/loader.js:901:14)\n' +
+    '    at Module.require (internal/modules/cjs/loader.js:1044:19)\n' +
+    '    at require (internal/modules/cjs/helpers.js:77:18)\n' +
+    '    at Object.<anonymous> (/home/ubuntu/Projets/Projet3/lyon-p3-faq/api/routes/front/index.js:3:12)\n' +
+    '    at Module._compile (internal/modules/cjs/loader.js:1158:30)\n' +
+    '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1178:10)',
+  stack: '/home/ubuntu/Projets/Projet3/lyon-p3-faq/api/datasource/mysql.js:52\n' +
+    '      logger.info("err :" err)\n' +
+    '                  ^^^^^^^\n' +
+    '\n' +
+    'SyntaxError: missing ) after argument list\n' +
+    '    at wrapSafe (internal/modules/cjs/loader.js:1072:16)\n' +
+    '    at Module._compile (internal/modules/cjs/loader.js:1122:27)\n' +
+    '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1178:10)\n' +
+    '    at Module.load (internal/modules/cjs/loader.js:1002:32)\n' +
+    '    at Function.Module._load (internal/modules/cjs/loader.js:901:14)\n' +
+    '    at Module.require (internal/modules/cjs/loader.js:1044:19)\n' +
+    '    at require (internal/modules/cjs/helpers.js:77:18)\n' +
+    '    at Object.<anonymous> (/home/ubuntu/Projets/Projet3/lyon-p3-faq/api/routes/front/index.js:3:12)\n' +
+    '    at Module._compile (internal/modules/cjs/loader.js:1158:30)\n' +
+    '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1178:10)',
+  exception: true,
+  date: 'Sun Nov 22 2020 02:14:43 GMT+0000 (Coordinated Universal Time)',
+  process: {
+    pid: 20598,
+    uid: 0,
+    gid: 0,
+    cwd: '/home/ubuntu/Projets/Projet3/lyon-p3-faq/api',
+    execPath: '/root/.nvm/versions/node/v12.16.1/bin/node',
+    version: 'v12.16.1',
+    argv: [
+      '/root/.nvm/versions/node/v12.16.1/bin/node',
+      '/home/ubuntu/Projets/Projet3/lyon-p3-faq/api/bin/start'
+    ],
+    memoryUsage: {
+      rss: 49545216,
+      heapTotal: 16416768,
+      heapUsed: 10916984,
+      external: 1485362
+    }
+  },
+  os: {
+    loadavg: [ 8.69970703125, 3.66748046875, 2.72314453125 ],
+    uptime: 38808
+  },
+  trace: [
+    {
+      column: 16,
+      file: 'internal/modules/cjs/loader.js',
+      function: 'wrapSafe',
+      line: 1072,
+      method: null,
+      native: false
+    },
+    {
+      column: 27,
+      file: 'internal/modules/cjs/loader.js',
+      function: 'Module._compile',
+      line: 1122,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'internal/modules/cjs/loader.js',
+      function: 'Module._extensions..js',
+      line: 1178,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'internal/modules/cjs/loader.js',
+      function: 'Module.load',
+      line: 1002,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 14,
+      file: 'internal/modules/cjs/loader.js',
+      function: 'Module._load',
+      line: 901,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'internal/modules/cjs/loader.js',
+      function: 'Module.require',
+      line: 1044,
+      method: 'require',
+      native: false
+    },
+    {
+      column: 18,
+      file: 'internal/modules/cjs/helpers.js',
+      function: 'require',
+      line: 77,
+      method: null,
+      native: false
+    },
+    {
+      column: 12,
+      file: '/home/ubuntu/Projets/Projet3/lyon-p3-faq/api/routes/front/index.js',
+      function: null,
+      line: 3,
+      method: null,
+      native: false
+    },
+    {
+      column: 30,
+      file: 'internal/modules/cjs/loader.js',
+      function: 'Module._compile',
+      line: 1158,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'internal/modules/cjs/loader.js',
+      function: 'Module._extensions..js',
+      line: 1178,
+      method: '.js',
+      native: false
+    }
+  ],
+  timestamp: '2020-11-22T02:14:43.783Z'
+}
+{
+  message: 'GET /back/users/15 200 115 - 52.816 ms\n',
+  level: 'info',
+  timestamp: '2020-11-22T02:15:01.628Z'
+}
+{
+  message: 'GET / 200 207 - 9.945 ms\n',
+  level: 'info',
+  timestamp: '2020-11-22T02:15:08.929Z'
+}
+{
+  message: 'GET / 200 207 - 3.130 ms\n',
+  level: 'info',
+  timestamp: '2020-11-22T02:15:09.155Z'
+}
+{
+  message: 'GET / 304 - - 2.362 ms\n',
+  level: 'info',
+  timestamp: '2020-11-22T02:18:28.789Z'
+}
+{
+  message: 'GET /back/users 200 759 - 8.398 ms\n',
+  level: 'info',
+  timestamp: '2020-11-22T02:18:44.402Z'
+}
+{
+  message: 'DELETE /back/users/15 200 282 - 9.546 ms\n',
+  level: 'info',
+  timestamp: '2020-11-22T02:18:53.681Z'
+}
+{
+  message: 'DELETE /back/users/15 200 12 - 37.436 ms\n',
+  level: 'info',
+  timestamp: '2020-11-22T02:19:50.919Z'
+}
+{
+  message: 'POST /back/users/ 400 69 - 19.013 ms\n',
+  level: 'info',
+  timestamp: '2020-11-22T02:28:40.577Z'
+}
+{
+  message: 'POST /back/users/ 200 14 - 2.343 ms\n',
+  level: 'info',
+  timestamp: '2020-11-22T02:29:20.423Z'
+}
+{
+  message: 'POST /back/users/ 200 14 - 2.626 ms\n',
+  level: 'info',
+  timestamp: '2020-11-22T02:29:55.914Z'
+}
+{
+  message: 'POST /back/users/ 200 458 - 30.947 ms\n',
+  level: 'info',
+  timestamp: '2020-11-22T02:30:27.488Z'
+}
+{
+  message: 'POST /back/users/ 200 431 - 28.544 ms\n',
+  level: 'info',
+  timestamp: '2020-11-22T02:31:02.435Z'
+}
+{
+  message: 'POST /back/users/ 200 431 - 72.112 ms\n',
+  level: 'info',
+  timestamp: '2020-11-22T02:36:20.339Z'
+}
+{
+  error: /home/ubuntu/Projets/Projet3/lyon-p3-faq/api/models/user.model.js:42
+      const fields=
+            ^
+  
+  SyntaxError: Identifier 'fields' has already been declared
+      at wrapSafe (internal/modules/cjs/loader.js:1072:16)
+      at Module._compile (internal/modules/cjs/loader.js:1122:27)
+      at Object.Module._extensions..js (internal/modules/cjs/loader.js:1178:10)
+      at Module.load (internal/modules/cjs/loader.js:1002:32)
+      at Function.Module._load (internal/modules/cjs/loader.js:901:14)
+      at Module.require (internal/modules/cjs/loader.js:1044:19)
+      at require (internal/modules/cjs/helpers.js:77:18)
+      at Object.<anonymous> (/home/ubuntu/Projets/Projet3/lyon-p3-faq/api/controllers/user.controller.js:2:19)
+      at Module._compile (internal/modules/cjs/loader.js:1158:30)
+      at Object.Module._extensions..js (internal/modules/cjs/loader.js:1178:10),
+  level: 'error',
+  message: "uncaughtException: Identifier 'fields' has already been declared\n" +
+    '/home/ubuntu/Projets/Projet3/lyon-p3-faq/api/models/user.model.js:42\n' +
+    '    const fields=\n' +
+    '          ^\n' +
+    '\n' +
+    "SyntaxError: Identifier 'fields' has already been declared\n" +
+    '    at wrapSafe (internal/modules/cjs/loader.js:1072:16)\n' +
+    '    at Module._compile (internal/modules/cjs/loader.js:1122:27)\n' +
+    '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1178:10)\n' +
+    '    at Module.load (internal/modules/cjs/loader.js:1002:32)\n' +
+    '    at Function.Module._load (internal/modules/cjs/loader.js:901:14)\n' +
+    '    at Module.require (internal/modules/cjs/loader.js:1044:19)\n' +
+    '    at require (internal/modules/cjs/helpers.js:77:18)\n' +
+    '    at Object.<anonymous> (/home/ubuntu/Projets/Projet3/lyon-p3-faq/api/controllers/user.controller.js:2:19)\n' +
+    '    at Module._compile (internal/modules/cjs/loader.js:1158:30)\n' +
+    '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1178:10)',
+  stack: '/home/ubuntu/Projets/Projet3/lyon-p3-faq/api/models/user.model.js:42\n' +
+    '    const fields=\n' +
+    '          ^\n' +
+    '\n' +
+    "SyntaxError: Identifier 'fields' has already been declared\n" +
+    '    at wrapSafe (internal/modules/cjs/loader.js:1072:16)\n' +
+    '    at Module._compile (internal/modules/cjs/loader.js:1122:27)\n' +
+    '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1178:10)\n' +
+    '    at Module.load (internal/modules/cjs/loader.js:1002:32)\n' +
+    '    at Function.Module._load (internal/modules/cjs/loader.js:901:14)\n' +
+    '    at Module.require (internal/modules/cjs/loader.js:1044:19)\n' +
+    '    at require (internal/modules/cjs/helpers.js:77:18)\n' +
+    '    at Object.<anonymous> (/home/ubuntu/Projets/Projet3/lyon-p3-faq/api/controllers/user.controller.js:2:19)\n' +
+    '    at Module._compile (internal/modules/cjs/loader.js:1158:30)\n' +
+    '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1178:10)',
+  exception: true,
+  date: 'Sun Nov 22 2020 02:38:26 GMT+0000 (Coordinated Universal Time)',
+  process: {
+    pid: 28669,
+    uid: 0,
+    gid: 0,
+    cwd: '/home/ubuntu/Projets/Projet3/lyon-p3-faq/api',
+    execPath: '/root/.nvm/versions/node/v12.16.1/bin/node',
+    version: 'v12.16.1',
+    argv: [
+      '/root/.nvm/versions/node/v12.16.1/bin/node',
+      '/home/ubuntu/Projets/Projet3/lyon-p3-faq/api/bin/start'
+    ],
+    memoryUsage: {
+      rss: 52592640,
+      heapTotal: 18694144,
+      heapUsed: 12917024,
+      external: 1421960
+    }
+  },
+  os: {
+    loadavg: [ 0.26123046875, 0.38037109375, 0.8623046875 ],
+    uptime: 40231
+  },
+  trace: [
+    {
+      column: 16,
+      file: 'internal/modules/cjs/loader.js',
+      function: 'wrapSafe',
+      line: 1072,
+      method: null,
+      native: false
+    },
+    {
+      column: 27,
+      file: 'internal/modules/cjs/loader.js',
+      function: 'Module._compile',
+      line: 1122,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'internal/modules/cjs/loader.js',
+      function: 'Module._extensions..js',
+      line: 1178,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'internal/modules/cjs/loader.js',
+      function: 'Module.load',
+      line: 1002,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 14,
+      file: 'internal/modules/cjs/loader.js',
+      function: 'Module._load',
+      line: 901,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'internal/modules/cjs/loader.js',
+      function: 'Module.require',
+      line: 1044,
+      method: 'require',
+      native: false
+    },
+    {
+      column: 18,
+      file: 'internal/modules/cjs/helpers.js',
+      function: 'require',
+      line: 77,
+      method: null,
+      native: false
+    },
+    {
+      column: 19,
+      file: '/home/ubuntu/Projets/Projet3/lyon-p3-faq/api/controllers/user.controller.js',
+      function: null,
+      line: 2,
+      method: null,
+      native: false
+    },
+    {
+      column: 30,
+      file: 'internal/modules/cjs/loader.js',
+      function: 'Module._compile',
+      line: 1158,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'internal/modules/cjs/loader.js',
+      function: 'Module._extensions..js',
+      line: 1178,
+      method: '.js',
+      native: false
+    }
+  ],
+  timestamp: '2020-11-22T02:38:26.829Z'
+}
+{
+  message: 'POST /back/users/ 200 23 - 36.630 ms\n',
+  level: 'info',
+  timestamp: '2020-11-22T02:39:37.346Z'
+}
+{
+  message: 'POST /back/users/ 200 430 - 34.103 ms\n',
+  level: 'info',
+  timestamp: '2020-11-22T02:59:48.935Z'
+}
+{
+  message: 'POST /back/users/ 200 23 - 44.805 ms\n',
+  level: 'info',
+  timestamp: '2020-11-22T03:01:28.973Z'
+}
+{
+  message: 'PUT /back/users/17 200 306 - 14.766 ms\n',
+  level: 'info',
+  timestamp: '2020-11-22T03:06:55.679Z'
+}
+{
+  message: 'PUT /back/users/17 200 14 - 32.163 ms\n',
+  level: 'info',
+  timestamp: '2020-11-22T03:08:17.255Z'
+}
+{
+  message: 'PUT /back/users/17 200 14 - 40.027 ms\n',
+  level: 'info',
+  timestamp: '2020-11-22T03:08:59.042Z'
+}
+{
+  message: 'PUT /back/users/17 200 14 - 31.626 ms\n',
+  level: 'info',
+  timestamp: '2020-11-22T03:09:24.742Z'
+}
+{
+  message: 'PUT /back/users/17 200 14 - 26.223 ms\n',
+  level: 'info',
+  timestamp: '2020-11-22T03:10:09.790Z'
+}
+{
+  message: 'PUT /back/users/17 200 14 - 35.548 ms\n',
+  level: 'info',
+  timestamp: '2020-11-22T03:10:45.009Z'
+}
+{
+  message: 'PUT /back/users/17 200 14 - 32.296 ms\n',
+  level: 'info',
+  timestamp: '2020-11-22T03:11:21.173Z'
+}
+{
+  message: 'PUT /back/users/17 200 14 - 32.636 ms\n',
+  level: 'info',
+  timestamp: '2020-11-22T03:12:08.563Z'
+}
+{
+  message: 'PUT /back/users/16 200 14 - 13.967 ms\n',
+  level: 'info',
+  timestamp: '2020-11-22T03:13:18.253Z'
+}
+{
+  message: 'PUT /back/users/16 200 432 - 33.348 ms\n',
+  level: 'info',
+  timestamp: '2020-11-22T03:15:21.053Z'
+}
+{
+  message: 'PUT /back/users/16 200 25 - 33.730 ms\n',
+  level: 'info',
+  timestamp: '2020-11-22T03:16:16.425Z'
+}
+{
+  message: 'PUT /back/users/16 200 25 - 82.298 ms\n',
+  level: 'info',
+  timestamp: '2020-11-22T03:16:42.896Z'
+}
+{
+  message: 'PUT /back/users/16 200 324 - 29.547 ms\n',
+  level: 'info',
+  timestamp: '2020-11-22T03:17:12.663Z'
+}
+{
+  error: ReferenceError: Cannot access 'table' before initialization
+      at Object.<anonymous> (/home/ubuntu/Projets/Projet3/lyon-p3-faq/api/models/user.model.js:2:13)
+      at Module._compile (internal/modules/cjs/loader.js:1158:30)
+      at Object.Module._extensions..js (internal/modules/cjs/loader.js:1178:10)
+      at Module.load (internal/modules/cjs/loader.js:1002:32)
+      at Function.Module._load (internal/modules/cjs/loader.js:901:14)
+      at Module.require (internal/modules/cjs/loader.js:1044:19)
+      at require (internal/modules/cjs/helpers.js:77:18)
+      at Object.<anonymous> (/home/ubuntu/Projets/Projet3/lyon-p3-faq/api/controllers/user.controller.js:2:19)
+      at Module._compile (internal/modules/cjs/loader.js:1158:30)
+      at Object.Module._extensions..js (internal/modules/cjs/loader.js:1178:10),
+  level: 'error',
+  message: "uncaughtException: Cannot access 'table' before initialization\n" +
+    "ReferenceError: Cannot access 'table' before initialization\n" +
+    '    at Object.<anonymous> (/home/ubuntu/Projets/Projet3/lyon-p3-faq/api/models/user.model.js:2:13)\n' +
+    '    at Module._compile (internal/modules/cjs/loader.js:1158:30)\n' +
+    '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1178:10)\n' +
+    '    at Module.load (internal/modules/cjs/loader.js:1002:32)\n' +
+    '    at Function.Module._load (internal/modules/cjs/loader.js:901:14)\n' +
+    '    at Module.require (internal/modules/cjs/loader.js:1044:19)\n' +
+    '    at require (internal/modules/cjs/helpers.js:77:18)\n' +
+    '    at Object.<anonymous> (/home/ubuntu/Projets/Projet3/lyon-p3-faq/api/controllers/user.controller.js:2:19)\n' +
+    '    at Module._compile (internal/modules/cjs/loader.js:1158:30)\n' +
+    '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1178:10)',
+  stack: "ReferenceError: Cannot access 'table' before initialization\n" +
+    '    at Object.<anonymous> (/home/ubuntu/Projets/Projet3/lyon-p3-faq/api/models/user.model.js:2:13)\n' +
+    '    at Module._compile (internal/modules/cjs/loader.js:1158:30)\n' +
+    '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1178:10)\n' +
+    '    at Module.load (internal/modules/cjs/loader.js:1002:32)\n' +
+    '    at Function.Module._load (internal/modules/cjs/loader.js:901:14)\n' +
+    '    at Module.require (internal/modules/cjs/loader.js:1044:19)\n' +
+    '    at require (internal/modules/cjs/helpers.js:77:18)\n' +
+    '    at Object.<anonymous> (/home/ubuntu/Projets/Projet3/lyon-p3-faq/api/controllers/user.controller.js:2:19)\n' +
+    '    at Module._compile (internal/modules/cjs/loader.js:1158:30)\n' +
+    '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1178:10)',
+  exception: true,
+  date: 'Sun Nov 22 2020 03:23:10 GMT+0000 (Coordinated Universal Time)',
+  process: {
+    pid: 6312,
+    uid: 0,
+    gid: 0,
+    cwd: '/home/ubuntu/Projets/Projet3/lyon-p3-faq/api',
+    execPath: '/root/.nvm/versions/node/v12.16.1/bin/node',
+    version: 'v12.16.1',
+    argv: [
+      '/root/.nvm/versions/node/v12.16.1/bin/node',
+      '/home/ubuntu/Projets/Projet3/lyon-p3-faq/api/bin/start'
+    ],
+    memoryUsage: {
+      rss: 53751808,
+      heapTotal: 19218432,
+      heapUsed: 13087896,
+      external: 1421960
+    }
+  },
+  os: {
+    loadavg: [ 0.16162109375, 0.14306640625, 0.09765625 ],
+    uptime: 1738
+  },
+  trace: [
+    {
+      column: 13,
+      file: '/home/ubuntu/Projets/Projet3/lyon-p3-faq/api/models/user.model.js',
+      function: null,
+      line: 2,
+      method: null,
+      native: false
+    },
+    {
+      column: 30,
+      file: 'internal/modules/cjs/loader.js',
+      function: 'Module._compile',
+      line: 1158,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'internal/modules/cjs/loader.js',
+      function: 'Module._extensions..js',
+      line: 1178,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'internal/modules/cjs/loader.js',
+      function: 'Module.load',
+      line: 1002,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 14,
+      file: 'internal/modules/cjs/loader.js',
+      function: 'Module._load',
+      line: 901,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'internal/modules/cjs/loader.js',
+      function: 'Module.require',
+      line: 1044,
+      method: 'require',
+      native: false
+    },
+    {
+      column: 18,
+      file: 'internal/modules/cjs/helpers.js',
+      function: 'require',
+      line: 77,
+      method: null,
+      native: false
+    },
+    {
+      column: 19,
+      file: '/home/ubuntu/Projets/Projet3/lyon-p3-faq/api/controllers/user.controller.js',
+      function: null,
+      line: 2,
+      method: null,
+      native: false
+    },
+    {
+      column: 30,
+      file: 'internal/modules/cjs/loader.js',
+      function: 'Module._compile',
+      line: 1158,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'internal/modules/cjs/loader.js',
+      function: 'Module._extensions..js',
+      line: 1178,
+      method: '.js',
+      native: false
+    }
+  ],
+  timestamp: '2020-11-22T03:23:10.193Z'
+}
+{
+  message: "500 - ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'table  name,mail,pass,ip_address,role_id' at line 1 - /back/users/ - GET - ::ffff:89.86.76.89 YOUPI",
+  level: 'error',
+  timestamp: '2020-11-22T03:23:59.111Z'
+}
+{
+  message: 'GET /back/users/ 404 352 - 26.189 ms\n',
+  level: 'info',
+  timestamp: '2020-11-22T03:23:59.128Z'
+}
+{
+  message: "500 - ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'table undefined' at line 1 - /back/users/ - GET - ::ffff:89.86.76.89 YOUPI",
+  level: 'error',
+  timestamp: '2020-11-22T03:24:34.773Z'
+}
+{
+  message: 'GET /back/users/ 404 327 - 23.834 ms\n',
+  level: 'info',
+  timestamp: '2020-11-22T03:24:34.787Z'
+}
+{
+  message: 'GET /back/users/ 200 870 - 24.981 ms\n',
+  level: 'info',
+  timestamp: '2020-11-22T03:25:02.235Z'
+}
+{
+  message: 'GET /back/users/16 200 14 - 9.595 ms\n',
+  level: 'info',
+  timestamp: '2020-11-22T03:25:07.669Z'
+}
+{
+  message: 'GET /back/users/16 200 319 - 30.100 ms\n',
+  level: 'info',
+  timestamp: '2020-11-22T03:26:34.556Z'
+}
+{
+  message: 'GET /back/users/16 200 112 - 29.233 ms\n',
+  level: 'info',
+  timestamp: '2020-11-22T03:26:50.326Z'
+}
+{
+  message: 'POST /back/users/login 404 1143 - 14.211 ms\n',
+  level: 'info',
+  timestamp: '2020-11-22T03:30:20.634Z'
+}
+{
+  message: 'POST /back/login 400 131 - 11.079 ms\n',
+  level: 'info',
+  timestamp: '2020-11-22T03:30:36.367Z'
+}
+{
+  message: 'POST /back/login 200 17 - 23.378 ms\n',
+  level: 'info',
+  timestamp: '2020-11-22T03:31:05.143Z'
+}
+{
+  message: 'POST /back/login 401 25 - 4.107 ms\n',
+  level: 'info',
+  timestamp: '2020-11-22T03:31:11.034Z'
+}
+{
+  message: 'POST /back/login 400 99 - 1.349 ms\n',
+  level: 'info',
+  timestamp: '2020-11-22T03:31:16.365Z'
+}
+{
+  message: 'POST /back/login 400 99 - 15.049 ms\n',
+  level: 'info',
+  timestamp: '2020-11-22T03:31:57.096Z'
+}
+{
+  message: 'POST /back/login 401 25 - 22.022 ms\n',
+  level: 'info',
+  timestamp: '2020-11-22T03:32:04.839Z'
+}
+{
+  message: 'POST /back/login 200 17 - 6.055 ms\n',
+  level: 'info',
+  timestamp: '2020-11-22T03:32:09.635Z'
+}
+{
+  message: 'DELETE /back/lusers/18 404 1143 - 11.052 ms\n',
+  level: 'info',
+  timestamp: '2020-11-22T03:33:10.144Z'
+}
+{
+  message: 'DELETE /back/users/18 200 310 - 5.127 ms\n',
+  level: 'info',
+  timestamp: '2020-11-22T03:33:16.386Z'
+}
+{
+  message: 'DELETE /back/users/17 200 310 - 3.034 ms\n',
+  level: 'info',
+  timestamp: '2020-11-22T03:33:25.796Z'
+}
+{
+  message: 'DELETE /back/users/17 200 297 - 18.903 ms\n',
+  level: 'info',
+  timestamp: '2020-11-22T03:33:49.525Z'
+}
+{
+  message: 'DELETE /back/users/17 200 12 - 26.937 ms\n',
+  level: 'info',
+  timestamp: '2020-11-22T03:34:12.917Z'
+}
+{
+  message: 'DELETE /back/login 404 1143 - 9.722 ms\n',
+  level: 'info',
+  timestamp: '2020-11-22T03:38:02.426Z'
+}
+{
+  message: 'POST /back/login 200 17 - 12.291 ms\n',
+  level: 'info',
+  timestamp: '2020-11-22T03:38:10.399Z'
+}
+{
+  message: 'POST /back/login 401 25 - 3.763 ms\n',
+  level: 'info',
+  timestamp: '2020-11-22T03:38:14.907Z'
+}
+{ level: 'error', timestamp: '2020-11-24T01:39:05.753Z' }
+{
+  message: 'GET /back/posts/ 500 21 - 16.703 ms\n',
+  level: 'info',
+  timestamp: '2020-11-24T01:39:05.772Z'
+}
+{ level: 'error', timestamp: '2020-11-24T01:39:44.920Z' }
+{
+  message: 'GET /back/posts/ 500 21 - 4.177 ms\n',
+  level: 'info',
+  timestamp: '2020-11-24T01:39:44.923Z'
+}
+{ level: 'error', timestamp: '2020-11-24T01:40:34.602Z' }
+{
+  message: 'GET /back/posts/ 500 21 - 17.211 ms\n',
+  level: 'info',
+  timestamp: '2020-11-24T01:40:34.619Z'
+}
+{ level: 'error', timestamp: '2020-11-24T01:41:10.562Z' }
+{
+  message: 'GET /back/posts/ 500 21 - 17.106 ms\n',
+  level: 'info',
+  timestamp: '2020-11-24T01:41:10.580Z'
+}
+{
+  message: 'GET /back/posts/ 200 2167 - 20.118 ms\n',
+  level: 'info',
+  timestamp: '2020-11-24T01:42:22.229Z'
+}
+{
+  message: 'GET /back/posts/ 200 2167 - 18.712 ms\n',
+  level: 'info',
+  timestamp: '2020-11-24T01:50:44.679Z'
+}
+{
+  message: 'GET /back/posts/ 200 2167 - 18.094 ms\n',
+  level: 'info',
+  timestamp: '2020-11-24T01:51:24.803Z'
+}
+{
+  message: 'GET /back/posts/ 200 2167 - 26.443 ms\n',
+  level: 'info',
+  timestamp: '2020-11-24T01:51:45.094Z'
+}
+{
+  message: 'POST /back/posts/ 400 420 - 8.097 ms\n',
+  level: 'info',
+  timestamp: '2020-11-24T02:03:07.089Z'
+}
+{
+  message: 'POST /back/posts/1 404 1143 - 2.708 ms\n',
+  level: 'info',
+  timestamp: '2020-11-24T02:06:36.338Z'
+}
+{ level: 'error', timestamp: '2020-11-24T02:07:02.846Z' }
+{
+  message: 'POST /back/posts/ 500 21 - 4.105 ms\n',
+  level: 'info',
+  timestamp: '2020-11-24T02:07:02.848Z'
+}
+{
+  code: 'ER_PARSE_ERROR',
+  errno: 1064,
+  sqlMessage: "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'reponse (undefined) VALUES (NULL, NULL, NULL)' at line 1",
+  sqlState: '42000',
+  index: 0,
+  sql: ' INSERT INTO  question,reponse (undefined) VALUES (NULL, NULL, NULL)  ',
+  level: 'error',
+  timestamp: '2020-11-24T12:57:55.052Z'
+}
+{
+  message: 'POST /back/posts/ 500 21 - 39.886 ms\n',
+  level: 'info',
+  timestamp: '2020-11-24T12:57:55.068Z'
+}
+{
+  code: 'ER_WRONG_VALUE_COUNT_ON_ROW',
+  errno: 1136,
+  sqlMessage: "Column count doesn't match value count at row 1",
+  sqlState: '21S01',
+  index: 0,
+  sql: ' INSERT INTO  reponse (undefined) VALUES (NULL, NULL, NULL)  ',
+  level: 'error',
+  timestamp: '2020-11-24T13:37:31.456Z'
+}
+{
+  message: 'POST /back/posts/ 500 21 - 39.909 ms\n',
+  level: 'info',
+  timestamp: '2020-11-24T13:37:31.470Z'
+}
+{ level: 'error', timestamp: '2020-11-24T13:41:44.960Z' }
+{
+  message: 'POST /back/posts/ 500 21 - 26.342 ms\n',
+  level: 'info',
+  timestamp: '2020-11-24T13:41:44.979Z'
+}
+{ level: 'error', timestamp: '2020-11-24T13:42:46.369Z' }
+{
+  message: 'POST /back/posts/ 500 21 - 19.997 ms\n',
+  level: 'info',
+  timestamp: '2020-11-24T13:42:46.384Z'
+}
+{ level: 'error', timestamp: '2020-11-24T13:43:33.145Z' }
+{
+  message: 'POST /back/posts/ 500 21 - 21.037 ms\n',
+  level: 'info',
+  timestamp: '2020-11-24T13:43:33.162Z'
+}
+{
+  code: 'ER_WRONG_VALUE_COUNT_ON_ROW',
+  errno: 1136,
+  sqlMessage: "Column count doesn't match value count at row 1",
+  sqlState: '21S01',
+  index: 0,
+  sql: ' INSERT INTO  reponse (undefined) VALUES (NULL, NULL, NULL)  ',
+  level: 'error',
+  timestamp: '2020-11-24T13:43:53.437Z'
+}
+{
+  message: 'POST /back/posts/ 500 21 - 45.945 ms\n',
+  level: 'info',
+  timestamp: '2020-11-24T13:43:53.454Z'
+}
+{
+  code: 'ER_WRONG_VALUE_COUNT_ON_ROW',
+  errno: 1136,
+  sqlMessage: "Column count doesn't match value count at row 1",
+  sqlState: '21S01',
+  index: 0,
+  sql: ' INSERT INTO  reponse (undefined) VALUES (NULL, NULL, NULL)  ',
+  level: 'error',
+  timestamp: '2020-11-24T13:50:37.651Z'
+}
+{
+  message: 'POST /back/posts/ 500 21 - 40.854 ms\n',
+  level: 'info',
+  timestamp: '2020-11-24T13:50:37.664Z'
+}
+{
+  code: 'ER_PARSE_ERROR',
+  errno: 1064,
+  sqlMessage: "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ',) VALUES '(question_id,contenu,created_by)'' at line 1",
+  sqlState: '42000',
+  index: 0,
+  sql: " INSERT INTO  reponse (,,) VALUES '(question_id,contenu,created_by)'  ",
+  level: 'error',
+  timestamp: '2020-11-24T13:51:02.335Z'
+}
+{
+  message: 'POST /back/posts/ 500 21 - 39.508 ms\n',
+  level: 'info',
+  timestamp: '2020-11-24T13:51:02.351Z'
+}
+{ level: 'error', timestamp: '2020-11-24T13:52:30.178Z' }
+{
+  message: 'POST /back/posts/ 500 21 - 20.920 ms\n',
+  level: 'info',
+  timestamp: '2020-11-24T13:52:30.193Z'
+}
+{ level: 'error', timestamp: '2020-11-24T13:52:42.066Z' }
+{
+  message: 'POST /back/posts/ 500 21 - 23.505 ms\n',
+  level: 'info',
+  timestamp: '2020-11-24T13:52:42.081Z'
+}
+{
+  code: 'ER_PARSE_ERROR',
+  errno: 1064,
+  sqlMessage: "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ',) VALUES '(question_id,contenu,created_by)'' at line 1",
+  sqlState: '42000',
+  index: 0,
+  sql: " INSERT INTO  reponse (,,) VALUES '(question_id,contenu,created_by)'  ",
+  level: 'error',
+  timestamp: '2020-11-24T13:52:52.266Z'
+}
+{
+  message: 'POST /back/posts/ 500 21 - 47.769 ms\n',
+  level: 'info',
+  timestamp: '2020-11-24T13:52:52.281Z'
+}
+{ level: 'error', timestamp: '2020-11-24T14:38:46.713Z' }
+{
+  message: 'POST /back/posts/ 500 21 - 24.376 ms\n',
+  level: 'info',
+  timestamp: '2020-11-24T14:38:46.733Z'
+}
+{ level: 'error', timestamp: '2020-11-24T14:39:12.691Z' }
+{
+  message: 'POST /back/posts/ 500 21 - 21.601 ms\n',
+  level: 'info',
+  timestamp: '2020-11-24T14:39:12.706Z'
+}
+{
+  code: 'ER_BAD_NULL_ERROR',
+  errno: 1048,
+  sqlMessage: "Column 'question_id' cannot be null",
+  sqlState: '23000',
+  index: 0,
+  sql: 'INSERT INTO reponse (question_id,contenu,created_by) VALUES (NULL, NULL, NULL) ',
+  level: 'error',
+  timestamp: '2020-11-24T14:39:31.988Z'
+}
+{
+  message: 'POST /back/posts/ 500 21 - 39.609 ms\n',
+  level: 'info',
+  timestamp: '2020-11-24T14:39:32.004Z'
+}
+{
+  code: 'ER_BAD_NULL_ERROR',
+  errno: 1048,
+  sqlMessage: "Column 'question_id' cannot be null",
+  sqlState: '23000',
+  index: 0,
+  sql: 'INSERT INTO reponse (question_id,contenu,created_by) VALUES (NULL, NULL, NULL) ',
+  level: 'error',
+  timestamp: '2020-11-24T14:40:11.206Z'
+}
+{
+  message: 'POST /back/posts/ 500 21 - 49.131 ms\n',
+  level: 'info',
+  timestamp: '2020-11-24T14:40:11.219Z'
+}
+{
+  message: 'POST /back/posts/1 404 1143 - 11.566 ms\n',
+  level: 'info',
+  timestamp: '2020-11-24T14:40:37.437Z'
+}
+{
+  message: 'POST /back/posts/ 201 26 - 47.182 ms\n',
+  level: 'info',
+  timestamp: '2020-11-24T14:50:03.410Z'
+}
+{ level: 'error', timestamp: '2020-11-24T14:55:01.274Z' }
+{
+  message: 'PUT /back/posts/1 500 21 - 7.189 ms\n',
+  level: 'info',
+  timestamp: '2020-11-24T14:55:01.277Z'
+}
+{ level: 'error', timestamp: '2020-11-24T14:55:33.341Z' }
+{
+  message: 'PUT /back/posts/1 500 21 - 26.229 ms\n',
+  level: 'info',
+  timestamp: '2020-11-24T14:55:33.359Z'
+}
+{ level: 'error', timestamp: '2020-11-24T14:55:45.093Z' }
+{
+  message: 'PUT /back/posts/1 500 21 - 5.803 ms\n',
+  level: 'info',
+  timestamp: '2020-11-24T14:55:45.097Z'
+}
+{
+  message: 'PUT /back/posts/1 200 14 - 50.748 ms\n',
+  level: 'info',
+  timestamp: '2020-11-24T14:57:13.744Z'
+}
+{
+  message: 'PUT /back/posts/1 200 14 - 28.415 ms\n',
+  level: 'info',
+  timestamp: '2020-11-24T14:57:55.949Z'
+}
+{
+  message: 'PUT /back/posts/1 200 13 - 30.786 ms\n',
+  level: 'info',
+  timestamp: '2020-11-24T14:58:37.341Z'
+}
+{
+  message: 'PUT /back/posts/1 400 189 - 6.286 ms\n',
+  level: 'info',
+  timestamp: '2020-11-24T15:14:11.732Z'
+}
+{
+  code: 'ER_BAD_FIELD_ERROR',
+  errno: 1054,
+  sqlMessage: "Unknown column 'reponse.contenu' in 'field list'",
+  sqlState: '42S22',
+  index: 0,
+  sql: " UPDATE question SET `titre` = 'my title', `question`.`contenu` = '', `reponse`.`contenu` = 'reponse du 24/11 bis' WHERE id= '1' ",
+  level: 'error',
+  timestamp: '2020-11-24T15:14:25.619Z'
+}
+{
+  message: 'PUT /back/posts/1 500 21 - 10.145 ms\n',
+  level: 'info',
+  timestamp: '2020-11-24T15:14:25.623Z'
+}
+{
+  code: 'ER_BAD_FIELD_ERROR',
+  errno: 1054,
+  sqlMessage: "Unknown column 'reponse.contenu' in 'field list'",
+  sqlState: '42S22',
+  index: 0,
+  sql: " UPDATE question SET `titre` = 'my title', `question`.`contenu` = 'heyhey', `reponse`.`contenu` = 'reponse du 24/11 bis' WHERE id= '1' ",
+  level: 'error',
+  timestamp: '2020-11-24T15:15:19.568Z'
+}
+{
+  message: 'PUT /back/posts/1 500 21 - 6.400 ms\n',
+  level: 'info',
+  timestamp: '2020-11-24T15:15:19.570Z'
+}
+{
+  message: 'PUT /back/posts/1 201 25 - 35.742 ms\n',
+  level: 'info',
+  timestamp: '2020-11-24T15:16:50.940Z'
+}
+{
+  code: 'ER_PARSE_ERROR',
+  errno: 1064,
+  sqlMessage: "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '[object Object] WHERE question.id= 1' at line 1",
+  sqlState: '42000',
+  index: 0,
+  sql: 'UPDATE question  LEFT JOIN reponse  ON question.id = reponse.question_id SET [object Object] WHERE question.id= 1',
+  level: 'error',
+  timestamp: '2020-11-24T15:18:49.494Z'
+}
+{
+  message: 'PUT /back/posts/1 500 21 - 38.078 ms\n',
+  level: 'info',
+  timestamp: '2020-11-24T15:18:49.506Z'
+}
+{
+  message: 'PUT /back/posts/1 201 25 - 38.405 ms\n',
+  level: 'info',
+  timestamp: '2020-11-24T15:23:57.009Z'
+}
+{
+  message: 'PUT /back/posts/1 201 25 - 7.290 ms\n',
+  level: 'info',
+  timestamp: '2020-11-24T15:24:34.934Z'
+}
+{
+  code: 'ER_BAD_NULL_ERROR',
+  errno: 1048,
+  sqlMessage: "Column 'titre' cannot be null",
+  sqlState: '23000',
+  index: 0,
+  sql: "UPDATE question  LEFT JOIN reponse  ON question.id = reponse.question_id SET `titre` = NULL, `question`.`contenu` = 'réponse pour le CA ', `reponse`.`contenu` = 'reponse du 24/11 bis' WHERE question.id= '1'",
+  level: 'error',
+  timestamp: '2020-11-24T15:25:00.205Z'
+}
+{
+  message: 'PUT /back/posts/1 500 21 - 8.365 ms\n',
+  level: 'info',
+  timestamp: '2020-11-24T15:25:00.208Z'
+}
+{
+  message: 'PUT /back/posts/1 201 25 - 4.550 ms\n',
+  level: 'info',
+  timestamp: '2020-11-24T15:25:30.193Z'
+}
+{
+  message: 'PUT /back/posts/1 200 25 - 39.312 ms\n',
+  level: 'info',
+  timestamp: '2020-11-24T15:36:11.063Z'
+}
+{
+  message: 'POST /back/posts/ 201 26 - 9.363 ms\n',
+  level: 'info',
+  timestamp: '2020-11-24T15:37:06.164Z'
+}
+{
+  message: 'POST /back/posts/ 201 26 - 10.735 ms\n',
+  level: 'info',
+  timestamp: '2020-11-24T15:38:24.458Z'
+}
+{
+  message: 'POST /back/posts/ 201 26 - 4.352 ms\n',
+  level: 'info',
+  timestamp: '2020-11-24T15:38:30.099Z'
+}
+{
+  message: 'POST /back/posts/ 201 26 - 37.390 ms\n',
+  level: 'info',
+  timestamp: '2020-11-24T15:38:46.211Z'
+}
+{
+  message: 'POST /back/posts/ 201 26 - 55.363 ms\n',
+  level: 'info',
+  timestamp: '2020-11-24T15:39:40.246Z'
+}
+{
+  error: /home/ubuntu/Projets/Projet3/lyon-p3-faq/api/routes/backoffice/user.js:5
+  <<<<<<< HEAD
+  ^^
+  
+  SyntaxError: Unexpected token '<<'
+      at wrapSafe (internal/modules/cjs/loader.js:1072:16)
+      at Module._compile (internal/modules/cjs/loader.js:1122:27)
+      at Object.Module._extensions..js (internal/modules/cjs/loader.js:1178:10)
+      at Module.load (internal/modules/cjs/loader.js:1002:32)
+      at Function.Module._load (internal/modules/cjs/loader.js:901:14)
+      at Module.require (internal/modules/cjs/loader.js:1044:19)
+      at require (internal/modules/cjs/helpers.js:77:18)
+      at Object.<anonymous> (/home/ubuntu/Projets/Projet3/lyon-p3-faq/api/app.js:30:20)
+      at Module._compile (internal/modules/cjs/loader.js:1158:30)
+      at Object.Module._extensions..js (internal/modules/cjs/loader.js:1178:10),
+  level: 'error',
+  message: "uncaughtException: Unexpected token '<<'\n" +
+    '/home/ubuntu/Projets/Projet3/lyon-p3-faq/api/routes/backoffice/user.js:5\n' +
+    '<<<<<<< HEAD\n' +
+    '^^\n' +
+    '\n' +
+    "SyntaxError: Unexpected token '<<'\n" +
+    '    at wrapSafe (internal/modules/cjs/loader.js:1072:16)\n' +
+    '    at Module._compile (internal/modules/cjs/loader.js:1122:27)\n' +
+    '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1178:10)\n' +
+    '    at Module.load (internal/modules/cjs/loader.js:1002:32)\n' +
+    '    at Function.Module._load (internal/modules/cjs/loader.js:901:14)\n' +
+    '    at Module.require (internal/modules/cjs/loader.js:1044:19)\n' +
+    '    at require (internal/modules/cjs/helpers.js:77:18)\n' +
+    '    at Object.<anonymous> (/home/ubuntu/Projets/Projet3/lyon-p3-faq/api/app.js:30:20)\n' +
+    '    at Module._compile (internal/modules/cjs/loader.js:1158:30)\n' +
+    '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1178:10)',
+  stack: '/home/ubuntu/Projets/Projet3/lyon-p3-faq/api/routes/backoffice/user.js:5\n' +
+    '<<<<<<< HEAD\n' +
+    '^^\n' +
+    '\n' +
+    "SyntaxError: Unexpected token '<<'\n" +
+    '    at wrapSafe (internal/modules/cjs/loader.js:1072:16)\n' +
+    '    at Module._compile (internal/modules/cjs/loader.js:1122:27)\n' +
+    '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1178:10)\n' +
+    '    at Module.load (internal/modules/cjs/loader.js:1002:32)\n' +
+    '    at Function.Module._load (internal/modules/cjs/loader.js:901:14)\n' +
+    '    at Module.require (internal/modules/cjs/loader.js:1044:19)\n' +
+    '    at require (internal/modules/cjs/helpers.js:77:18)\n' +
+    '    at Object.<anonymous> (/home/ubuntu/Projets/Projet3/lyon-p3-faq/api/app.js:30:20)\n' +
+    '    at Module._compile (internal/modules/cjs/loader.js:1158:30)\n' +
+    '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1178:10)',
+  exception: true,
+  date: 'Tue Nov 24 2020 15:55:27 GMT+0000 (Coordinated Universal Time)',
+  process: {
+    pid: 18174,
+    uid: 0,
+    gid: 0,
+    cwd: '/home/ubuntu/Projets/Projet3/lyon-p3-faq/api',
+    execPath: '/root/.nvm/versions/node/v12.16.1/bin/node',
+    version: 'v12.16.1',
+    argv: [
+      '/root/.nvm/versions/node/v12.16.1/bin/node',
+      '/home/ubuntu/Projets/Projet3/lyon-p3-faq/api/bin/start'
+    ],
+    memoryUsage: {
+      rss: 52584448,
+      heapTotal: 19218432,
+      heapUsed: 13210736,
+      external: 1430152
+    }
+  },
+  os: {
+    loadavg: [ 0.57958984375, 0.2861328125, 0.1484375 ],
+    uptime: 219675
+  },
+  trace: [
+    {
+      column: 16,
+      file: 'internal/modules/cjs/loader.js',
+      function: 'wrapSafe',
+      line: 1072,
+      method: null,
+      native: false
+    },
+    {
+      column: 27,
+      file: 'internal/modules/cjs/loader.js',
+      function: 'Module._compile',
+      line: 1122,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'internal/modules/cjs/loader.js',
+      function: 'Module._extensions..js',
+      line: 1178,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'internal/modules/cjs/loader.js',
+      function: 'Module.load',
+      line: 1002,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 14,
+      file: 'internal/modules/cjs/loader.js',
+      function: 'Module._load',
+      line: 901,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'internal/modules/cjs/loader.js',
+      function: 'Module.require',
+      line: 1044,
+      method: 'require',
+      native: false
+    },
+    {
+      column: 18,
+      file: 'internal/modules/cjs/helpers.js',
+      function: 'require',
+      line: 77,
+      method: null,
+      native: false
+    },
+    {
+      column: 20,
+      file: '/home/ubuntu/Projets/Projet3/lyon-p3-faq/api/app.js',
+      function: null,
+      line: 30,
+      method: null,
+      native: false
+    },
+    {
+      column: 30,
+      file: 'internal/modules/cjs/loader.js',
+      function: 'Module._compile',
+      line: 1158,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'internal/modules/cjs/loader.js',
+      function: 'Module._extensions..js',
+      line: 1178,
+      method: '.js',
+      native: false
+    }
+  ],
+  timestamp: '2020-11-24T15:55:27.947Z'
+}
+{
+  error: /home/ubuntu/Projets/Projet3/lyon-p3-faq/api/routes/backoffice/post.js:3
+  <<<<<<< HEAD
+  ^^
+  
+  SyntaxError: Unexpected token '<<'
+      at wrapSafe (internal/modules/cjs/loader.js:1072:16)
+      at Module._compile (internal/modules/cjs/loader.js:1122:27)
+      at Object.Module._extensions..js (internal/modules/cjs/loader.js:1178:10)
+      at Module.load (internal/modules/cjs/loader.js:1002:32)
+      at Function.Module._load (internal/modules/cjs/loader.js:901:14)
+      at Module.require (internal/modules/cjs/loader.js:1044:19)
+      at require (internal/modules/cjs/helpers.js:77:18)
+      at Object.<anonymous> (/home/ubuntu/Projets/Projet3/lyon-p3-faq/api/app.js:31:20)
+      at Module._compile (internal/modules/cjs/loader.js:1158:30)
+      at Object.Module._extensions..js (internal/modules/cjs/loader.js:1178:10),
+  level: 'error',
+  message: "uncaughtException: Unexpected token '<<'\n" +
+    '/home/ubuntu/Projets/Projet3/lyon-p3-faq/api/routes/backoffice/post.js:3\n' +
+    '<<<<<<< HEAD\n' +
+    '^^\n' +
+    '\n' +
+    "SyntaxError: Unexpected token '<<'\n" +
+    '    at wrapSafe (internal/modules/cjs/loader.js:1072:16)\n' +
+    '    at Module._compile (internal/modules/cjs/loader.js:1122:27)\n' +
+    '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1178:10)\n' +
+    '    at Module.load (internal/modules/cjs/loader.js:1002:32)\n' +
+    '    at Function.Module._load (internal/modules/cjs/loader.js:901:14)\n' +
+    '    at Module.require (internal/modules/cjs/loader.js:1044:19)\n' +
+    '    at require (internal/modules/cjs/helpers.js:77:18)\n' +
+    '    at Object.<anonymous> (/home/ubuntu/Projets/Projet3/lyon-p3-faq/api/app.js:31:20)\n' +
+    '    at Module._compile (internal/modules/cjs/loader.js:1158:30)\n' +
+    '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1178:10)',
+  stack: '/home/ubuntu/Projets/Projet3/lyon-p3-faq/api/routes/backoffice/post.js:3\n' +
+    '<<<<<<< HEAD\n' +
+    '^^\n' +
+    '\n' +
+    "SyntaxError: Unexpected token '<<'\n" +
+    '    at wrapSafe (internal/modules/cjs/loader.js:1072:16)\n' +
+    '    at Module._compile (internal/modules/cjs/loader.js:1122:27)\n' +
+    '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1178:10)\n' +
+    '    at Module.load (internal/modules/cjs/loader.js:1002:32)\n' +
+    '    at Function.Module._load (internal/modules/cjs/loader.js:901:14)\n' +
+    '    at Module.require (internal/modules/cjs/loader.js:1044:19)\n' +
+    '    at require (internal/modules/cjs/helpers.js:77:18)\n' +
+    '    at Object.<anonymous> (/home/ubuntu/Projets/Projet3/lyon-p3-faq/api/app.js:31:20)\n' +
+    '    at Module._compile (internal/modules/cjs/loader.js:1158:30)\n' +
+    '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1178:10)',
+  exception: true,
+  date: 'Tue Nov 24 2020 15:56:38 GMT+0000 (Coordinated Universal Time)',
+  process: {
+    pid: 18397,
+    uid: 0,
+    gid: 0,
+    cwd: '/home/ubuntu/Projets/Projet3/lyon-p3-faq/api',
+    execPath: '/root/.nvm/versions/node/v12.16.1/bin/node',
+    version: 'v12.16.1',
+    argv: [
+      '/root/.nvm/versions/node/v12.16.1/bin/node',
+      '/home/ubuntu/Projets/Projet3/lyon-p3-faq/api/bin/start'
+    ],
+    memoryUsage: {
+      rss: 56958976,
+      heapTotal: 29990912,
+      heapUsed: 17529784,
+      external: 1371103
+    }
+  },
+  os: { loadavg: [ 0.513671875, 0.3046875, 0.1630859375 ], uptime: 219746 },
+  trace: [
+    {
+      column: 16,
+      file: 'internal/modules/cjs/loader.js',
+      function: 'wrapSafe',
+      line: 1072,
+      method: null,
+      native: false
+    },
+    {
+      column: 27,
+      file: 'internal/modules/cjs/loader.js',
+      function: 'Module._compile',
+      line: 1122,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'internal/modules/cjs/loader.js',
+      function: 'Module._extensions..js',
+      line: 1178,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'internal/modules/cjs/loader.js',
+      function: 'Module.load',
+      line: 1002,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 14,
+      file: 'internal/modules/cjs/loader.js',
+      function: 'Module._load',
+      line: 901,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'internal/modules/cjs/loader.js',
+      function: 'Module.require',
+      line: 1044,
+      method: 'require',
+      native: false
+    },
+    {
+      column: 18,
+      file: 'internal/modules/cjs/helpers.js',
+      function: 'require',
+      line: 77,
+      method: null,
+      native: false
+    },
+    {
+      column: 20,
+      file: '/home/ubuntu/Projets/Projet3/lyon-p3-faq/api/app.js',
+      function: null,
+      line: 31,
+      method: null,
+      native: false
+    },
+    {
+      column: 30,
+      file: 'internal/modules/cjs/loader.js',
+      function: 'Module._compile',
+      line: 1158,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'internal/modules/cjs/loader.js',
+      function: 'Module._extensions..js',
+      line: 1178,
+      method: '.js',
+      native: false
+    }
+  ],
+  timestamp: '2020-11-24T15:56:38.076Z'
+}
+{
+  error: /home/ubuntu/Projets/Projet3/lyon-p3-faq/api/routes/backoffice/post.js:3
+  <<<<<<< HEAD
+  ^^
+  
+  SyntaxError: Unexpected token '<<'
+      at wrapSafe (internal/modules/cjs/loader.js:1072:16)
+      at Module._compile (internal/modules/cjs/loader.js:1122:27)
+      at Object.Module._extensions..js (internal/modules/cjs/loader.js:1178:10)
+      at Module.load (internal/modules/cjs/loader.js:1002:32)
+      at Function.Module._load (internal/modules/cjs/loader.js:901:14)
+      at Module.require (internal/modules/cjs/loader.js:1044:19)
+      at require (internal/modules/cjs/helpers.js:77:18)
+      at Object.<anonymous> (/home/ubuntu/Projets/Projet3/lyon-p3-faq/api/app.js:31:20)
+      at Module._compile (internal/modules/cjs/loader.js:1158:30)
+      at Object.Module._extensions..js (internal/modules/cjs/loader.js:1178:10),
+  level: 'error',
+  message: "uncaughtException: Unexpected token '<<'\n" +
+    '/home/ubuntu/Projets/Projet3/lyon-p3-faq/api/routes/backoffice/post.js:3\n' +
+    '<<<<<<< HEAD\n' +
+    '^^\n' +
+    '\n' +
+    "SyntaxError: Unexpected token '<<'\n" +
+    '    at wrapSafe (internal/modules/cjs/loader.js:1072:16)\n' +
+    '    at Module._compile (internal/modules/cjs/loader.js:1122:27)\n' +
+    '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1178:10)\n' +
+    '    at Module.load (internal/modules/cjs/loader.js:1002:32)\n' +
+    '    at Function.Module._load (internal/modules/cjs/loader.js:901:14)\n' +
+    '    at Module.require (internal/modules/cjs/loader.js:1044:19)\n' +
+    '    at require (internal/modules/cjs/helpers.js:77:18)\n' +
+    '    at Object.<anonymous> (/home/ubuntu/Projets/Projet3/lyon-p3-faq/api/app.js:31:20)\n' +
+    '    at Module._compile (internal/modules/cjs/loader.js:1158:30)\n' +
+    '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1178:10)',
+  stack: '/home/ubuntu/Projets/Projet3/lyon-p3-faq/api/routes/backoffice/post.js:3\n' +
+    '<<<<<<< HEAD\n' +
+    '^^\n' +
+    '\n' +
+    "SyntaxError: Unexpected token '<<'\n" +
+    '    at wrapSafe (internal/modules/cjs/loader.js:1072:16)\n' +
+    '    at Module._compile (internal/modules/cjs/loader.js:1122:27)\n' +
+    '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1178:10)\n' +
+    '    at Module.load (internal/modules/cjs/loader.js:1002:32)\n' +
+    '    at Function.Module._load (internal/modules/cjs/loader.js:901:14)\n' +
+    '    at Module.require (internal/modules/cjs/loader.js:1044:19)\n' +
+    '    at require (internal/modules/cjs/helpers.js:77:18)\n' +
+    '    at Object.<anonymous> (/home/ubuntu/Projets/Projet3/lyon-p3-faq/api/app.js:31:20)\n' +
+    '    at Module._compile (internal/modules/cjs/loader.js:1158:30)\n' +
+    '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1178:10)',
+  exception: true,
+  date: 'Tue Nov 24 2020 15:57:41 GMT+0000 (Coordinated Universal Time)',
+  process: {
+    pid: 18598,
+    uid: 0,
+    gid: 0,
+    cwd: '/home/ubuntu/Projets/Projet3/lyon-p3-faq/api',
+    execPath: '/root/.nvm/versions/node/v12.16.1/bin/node',
+    version: 'v12.16.1',
+    argv: [
+      '/root/.nvm/versions/node/v12.16.1/bin/node',
+      '/home/ubuntu/Projets/Projet3/lyon-p3-faq/api/bin/start'
+    ],
+    memoryUsage: {
+      rss: 56418304,
+      heapTotal: 29728768,
+      heapUsed: 17527864,
+      external: 1371103
+    }
+  },
+  os: {
+    loadavg: [ 0.2275390625, 0.26123046875, 0.1572265625 ],
+    uptime: 219809
+  },
+  trace: [
+    {
+      column: 16,
+      file: 'internal/modules/cjs/loader.js',
+      function: 'wrapSafe',
+      line: 1072,
+      method: null,
+      native: false
+    },
+    {
+      column: 27,
+      file: 'internal/modules/cjs/loader.js',
+      function: 'Module._compile',
+      line: 1122,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'internal/modules/cjs/loader.js',
+      function: 'Module._extensions..js',
+      line: 1178,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'internal/modules/cjs/loader.js',
+      function: 'Module.load',
+      line: 1002,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 14,
+      file: 'internal/modules/cjs/loader.js',
+      function: 'Module._load',
+      line: 901,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'internal/modules/cjs/loader.js',
+      function: 'Module.require',
+      line: 1044,
+      method: 'require',
+      native: false
+    },
+    {
+      column: 18,
+      file: 'internal/modules/cjs/helpers.js',
+      function: 'require',
+      line: 77,
+      method: null,
+      native: false
+    },
+    {
+      column: 20,
+      file: '/home/ubuntu/Projets/Projet3/lyon-p3-faq/api/app.js',
+      function: null,
+      line: 31,
+      method: null,
+      native: false
+    },
+    {
+      column: 30,
+      file: 'internal/modules/cjs/loader.js',
+      function: 'Module._compile',
+      line: 1158,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'internal/modules/cjs/loader.js',
+      function: 'Module._extensions..js',
+      line: 1178,
+      method: '.js',
+      native: false
+    }
+  ],
+  timestamp: '2020-11-24T15:57:41.767Z'
+}
+{
+  message: 'POST /back/posts/ 200 26 - 34.663 ms\n',
+  level: 'info',
+  timestamp: '2020-11-24T16:02:08.389Z'
+}
+{
+  message: 'GET /back/users/ 200 972 - 7.827 ms\n',
+  level: 'info',
+  timestamp: '2020-11-24T16:02:19.071Z'
+}

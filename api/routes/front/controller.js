@@ -4,6 +4,7 @@ class QuestionController {
   static async getAll(req, res) {
     try {
       const listQuestions = await Question.getQuestions();
+      
       res.send(listQuestions);
     } catch (err) {
       console.log(err);
@@ -13,7 +14,10 @@ class QuestionController {
 
   static async getAllAnswered(req, res) {
     try {
-      const listQuestionsAnswered = await Question.getQuestionsAnswered();
+      const listQuestionsAnswered = await Question.getQuestionsAnswered(
+        req.query.id
+      );
+
       res.send(listQuestionsAnswered);
     } catch (err) {
       console.log(err);

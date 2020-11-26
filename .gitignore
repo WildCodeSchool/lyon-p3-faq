@@ -32,8 +32,15 @@ yarn-error.log*
 .env.development.local
 .env.test.local
 .env.production.local
+/back/.env
 
 # vercel
 .vercel
+.idea
+/back/.idea
+/api/.idea
 
 /.vscode
+
+# Logs
+*.log
