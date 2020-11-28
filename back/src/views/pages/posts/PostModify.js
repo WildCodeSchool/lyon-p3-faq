@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from "react";
+import React, { useState, useEffect } from "react";
 import {
   CButton,
   CCard,
@@ -6,96 +6,197 @@ import {
   CCardFooter,
   CCardHeader,
   CCol,
-  CCollapse,
-  CDropdownItem,
-  CDropdownMenu,
-  CDropdownToggle,
-  CFade,
   CForm,
   CFormGroup,
-  CFormText,
-  CValidFeedback,
-  CInvalidFeedback,
   CTextarea,
   CInput,
-  CInputFile,
-  CInputCheckbox,
-  CInputRadio,
-  CInputGroup,
-  CInputGroupAppend,
-  CInputGroupPrepend,
-  CDropdown,
-  CInputGroupText,
   CLabel,
-  CSelect,
-  CRow,
+  CModal,
+  CModalBody,
+  CModalFooter,
+  CModalHeader,
+  CModalTitle,
 } from "@coreui/react";
 import CIcon from "@coreui/icons-react";
-import postsData from "../../datas/PostsData";
-import {Link, useHistory} from "react-router-dom";
+
+import { Link, useHistory } from "react-router-dom";
+import BackButton from "../../../components/BackButton"
+import ValidateButton from "../../../components/validateButton";
+import DeleteButton from "../../../components/deleteButton";
+const axios = require("axios");
+
+
 
 
 const BasicForms = (props) => {
+  const postsDatas = props.location.datas;
+  const [danger, setDanger] = useState(false);
   let history = useHistory();
 
-  let idPost= props.match.params.idpost
-  const [question, setQuestion] = useState("")
-  const [reponse, setReponse] = useState("")
+  let idPost = props.match.params.idpost;
+ 
+  const [titreQuestion, setTitreQuestion] = useState("");
+  const [question, setQuestion] = useState("");
+  const [reponse, setReponse] = useState("");
 
   useEffect(() => {
+    setTitreQuestion(postsDatas["titre"]);
+    setQuestion(postsDatas["contenu_question"]);
+    setReponse(postsDatas["contenu_reponse"]);
+  }, []);
 
-    const currentPost =postsData.filter( post => post.id == idPost)
+  const handleUpdatePost = () => {
 
-    setQuestion(currentPost[0].question)
-    setReponse(currentPost[0].reponse)
-
-
-  },[])
-
-
-
-  const handleSubmit = () => {
-    postsData.push({
-      id: "21",
-      question: `${question}`,
-      reponse: `${reponse}`,
-      user: "2",
-      created_at: new Date(),
-      created_by: "Pierre Ammeloot",
-
-
+    axios
+    .put(`http://51.210.47.134:3003/back/posts/${idPost}`, {
+      //data to update
+      action:"update",
+      titre_question: `${titreQuestion}`,
+      contenu_question: `${question}`,
+      contenu_reponse: `${reponse}`,
+    })
+    .then(function (response) {
+      console.log(response);
+    })
+    .catch(function (error) {
+      console.log(error);
     });
+
+
+      history.push(`/pages/posts/`);
+  };
+
+
+  const handleDelete = () => {
+    setDanger(!danger);
+
+    axios
+      .put(`http://51.210.47.134:3003/back/posts/${idPost}` ,{
+action:"archive"
+
+      })
+      .then(function (response) {
+        console.log(response);
+      })
+      .catch(function (error) {
+        console.log(error);
+      });
     history.push(`/pages/posts/`);
   };
 
   return (
     <>
-      <CCol xs="12" md="4">
+      <Link to="/pages/posts/">
+        <div class="mb-5 col-6 col-sm-4 col-md-3 col-xl-2">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 512 512"
+            class="c-icon c-icon-2xl"
+            role="img"
+          >
+            <path
+              fill="var(--ci-primary-color, currentColor)"
+              d="M294.637,496l-38.688-.035L16,255.729,256.334,16.048h38.277l.008,143.937H494.636v192H294.629ZM61.271,255.773l201.364,201.6-.008-137.391H462.636v-128H262.621l-.008-137.006Z"
+              class="ci-primary"
+            >
+              {" "}
+            </path>
+          </svg>
+          <BackButton>
+          <span className="ml-3">Retour</span>
+          </BackButton>
+        </div>
+        
+      </Link>
+
+
+
+      <CModal show={danger} onClose={() => setDanger(!danger)} color="danger">
+        <CModalHeader closeButton>
+          <CModalTitle>Warning</CModalTitle>
+        </CModalHeader>
+        <CModalBody>
+          Vous allez supprimer le post numéro {idPost}  Titre question : {titreQuestion}. 
+          Souhaitez-vous continuer ?
+        </CModalBody>
+        <CModalFooter>
+          <CButton color="danger" onClick={handleDelete}>
+            Valider
+          </CButton>{" "}
+          <CButton color="secondary" onClick={() => setDanger(!danger)}>
+            Annuler
+          </CButton>
+        </CModalFooter>
+      </CModal>
+
+      <CCol xs="12" md="8">
         <CCard>
-          <CCardHeader>
-            Modification Post
-          </CCardHeader>
+          <CCardHeader>Modification Post</CCardHeader>
           <CCardBody>
             <CForm action="" method="post" className="form-horizontal">
               <CFormGroup row>
                 <CCol md="12">
                   <CFormGroup className="pr-1">
-                    <CLabel htmlFor="exampleInputName2" className="pr-1">Question</CLabel>
-                    <CInput id="exampleInputName2"  value={question} placeholder="" onChange={e => setQuestion(e.target.value)} required/>
+                    <CLabel htmlFor="exampleInputName2" className="pr-1">
+                      Question
+                    </CLabel>
+                    <CInput
+                      placeholder="Contenu"
+                      className="pr-1"
+                      value={titreQuestion}
+                      onChange={(e) => setQuestion(e.target.value)}
+                      required
+                    />
                   </CFormGroup>
                   <CFormGroup className="pr-1">
-                    <CLabel htmlFor="exampleInputName2" className="pr-1">Réponse</CLabel>
-                    <CInput id="exampleInputName2" value={reponse} placeholder="" onChange={e => setReponse(e.target.value)} required/>
+                    <CLabel htmlFor="exampleInputName2" className="pr-1">
+                      Question
+                    </CLabel>
+                    <CTextarea
+                      name="textarea-input"
+                      id="textarea-input"
+                      placeholder="Contenu"
+                      className="pr-1"
+                      value={question}
+                      onChange={(e) => setQuestion(e.target.value)}
+                      required
+                    />
+                  </CFormGroup>
+                  <CFormGroup className="pr-1">
+                    <CLabel htmlFor="exampleInputName2" className="pr-1">
+                      Réponse
+                    </CLabel>
+
+                    <CTextarea
+                      name="textarea-input"
+                      id="textarea-input"
+                      placeholder="Contenu"
+                      className="pr-1"
+                      value={reponse}
+                      onChange={(e) => setReponse(e.target.value)}
+                      required
+                    />
                   </CFormGroup>
                 </CCol>
               </CFormGroup>
-
-
             </CForm>
           </CCardBody>
           <CCardFooter>
-            <CButton type="submit" size="sm" color="success" onClick={handleSubmit}><CIcon name="cil-scrubber"/> Valider</CButton>
-            <CButton type="reset" size="sm" color="danger"><CIcon name="cil-ban"/> Reset</CButton>
+            <ValidateButton>
+            <CButton
+              type="submit"
+              size="sm"
+              color="success"
+              onClick={handleUpdatePost}
+            >
+              <CIcon name="cil-scrubber" /> Valider
+            </CButton>
+            </ValidateButton>
+            <DeleteButton>
+            <CButton type="reset" size="sm" color="danger" onClick={() => setDanger(!danger)} >
+              <CIcon name="cil-ban" /> Supprimer
+            </CButton>
+            </DeleteButton>
           </CCardFooter>
         </CCard>
       </CCol>

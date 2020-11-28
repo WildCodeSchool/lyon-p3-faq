@@ -1764,3 +1764,28 @@
   level: 'info',
   timestamp: '2020-11-24T16:02:19.071Z'
 }
+{
+  message: 'GET / 200 207 - 14.676 ms\n',
+  level: 'info',
+  timestamp: '2020-11-26T15:13:25.976Z'
+}
+{
+  message: 'POST /back/users/ 200 23 - 54.323 ms\n',
+  level: 'info',
+  timestamp: '2020-11-26T15:13:29.992Z'
+}
+{
+  message: 'POST /back/users/ 200 23 - 19.055 ms\n',
+  level: 'info',
+  timestamp: '2020-11-26T15:13:45.510Z'
+}
+{
+  message: 'GET / 304 - - 1.471 ms\n',
+  level: 'info',
+  timestamp: '2020-11-26T15:13:49.839Z'
+}
+{
+  message: 'GET /back/users/ 200 2070 - 5.931 ms\n',
+  level: 'info',
+  timestamp: '2020-11-26T15:14:10.585Z'
+}

@@ -1,4 +1,4 @@
-import React, {useEffect,useState} from "react";
+import React, { useEffect, useState } from "react";
 import { Link, useHistory } from "react-router-dom";
 import {
   CBadge,
@@ -11,13 +11,7 @@ import {
   CButton,
 } from "@coreui/react";
 
-import usersDatas from "../../users/UsersData";
-import tagsData from "../../datas/Tags";
-import { indexOf } from "core-js/fn/array";
-const axios = require('axios');
-
-
-
+const axios = require("axios");
 const getBadge = (status) => {
   switch (status) {
     case "Active":
@@ -42,55 +36,65 @@ const fields = [
   "pseudo",
 ];
 
-
-
 const Tables = () => {
+  //Style
 
   // States
-const [usersData,setUsersData] = useState();
-const [tableFields,setTableFields] = useState();
 
+  const [usersData, setUsersData] = useState();
+  const [nbUsers, setNbUsers] = useState();
+  const [tableFields, setTableFields] = useState();
 
   let history = useHistory();
 
   const selectUser = (e) => {
-    history.push(`/pages/users/userselect/${e.id}`);
+    history.push({
+      pathname: `/pages/users/usermodify/${e.id}`,
+      state: e,
+    });
   };
 
-
+  // Change filter label
+  const filterTitle = {
+    label: "Filtre",
+  };
 
   useEffect(() => {
     axios
-      .get("http://51.210.47.134:3002/back/users")
+      .get("http://51.210.47.134:3003/back/users")
       .then(function (response) {
         // handle success
-        
         setUsersData(response.data);
-       
-        setTableFields(Object.keys(response.data[0]).filter( user => user.name <3));
-
+        setNbUsers(response.data.length);
+        setTableFields(
+          Object.keys(response.data[0]).filter(
+            (user) => user == "name" || user == "mail" || user == "role"
+          )
+        );
       })
       .catch(function (error) {
         // handle error
         console.log(error);
       });
-  }, []);
+  }, [nbUsers]);
   return (
     <>
       <CRow>
-        <CCol>
+        <CCol className="text-center" >
           <CCard>
             <CCardHeader>Gestion des utilisateurs</CCardHeader>
 
-            <CRow className="align-items-center mt-3">
-              <CCol col="6" sm="4" md="2">
+            <CRow className="mt-3" style={{  justifyContent:"center" }} >
+              <CCol  lg="2" md="3" xs="6" className="text-center" >
                 <Link to={`/pages/users/adduser`}>
                   <CButton
                     active
                     block
                     color="dark"
                     aria-pressed="true"
+                    style={{ display:"flex", justifyContent:"center" }}
                    
+                  
                   >
                     Add User
                   </CButton>
@@ -107,8 +111,11 @@ const [tableFields,setTableFields] = useState();
                 bordered
                 size="sm"
                 itemsPerPage={10}
+                tableFilter={filterTitle}
                 pagination
                 clickableRows
+                columnFilter
+                
                 onRowClick={(e) => selectUser(e)}
                 scopedSlots={{
                   status: (item) => (

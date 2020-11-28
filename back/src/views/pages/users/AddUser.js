@@ -33,6 +33,7 @@ import {
 import CIcon from "@coreui/icons-react";
 import usersData from "../../users/UsersData";
 import { Link, useHistory } from "react-router-dom";
+const axios = require('axios');
 
 const BasicForms = () => {
   let history = useHistory();
@@ -46,18 +47,21 @@ const BasicForms = () => {
  
 
   const handleSubmit = () => {
-    usersData.push({
-    id:"21",
-    nom:`${nom} ${prenom}`,
-    created_at:`${typeCompte}`,
-    created_by :"2018/01/05",
-    email:{email},
-    pseudo: {pseudo},
-    status: "Pending"
-    
 
-      
+
+    axios.post('http://51.210.47.134:3003/back/users', {
+      name: `${nom} ${prenom}`,
+      mail: `${email}`,
+      role: `${typeCompte}`
+
+    })
+    .then(function (response) {
+      console.log(response);
+    })
+    .catch(function (error) {
+      console.log(error);
     });
+    
     history.push(`/pages/users/`);
   };
 
@@ -110,9 +114,9 @@ const BasicForms = () => {
                   <CCol xs="12" md="9">
                     <CSelect custom name="select" id="select" onChange= { e => setTypeCompte( e.target.value)}>
                       <option value="0">Please select</option>
-                      <option value="Membre">Membre</option>
-                      <option value="Rédacteur">Rédacteur</option>
-                      <option value="Admin">Admin</option>
+                      <option value="1">Membre</option>
+                      <option value="2">Rédacteur</option>
+                      <option value="3">Admin</option>
                     </CSelect>
                   </CCol>
                 </CFormGroup>
