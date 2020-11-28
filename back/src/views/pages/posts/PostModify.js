@@ -20,21 +20,19 @@ import {
 import CIcon from "@coreui/icons-react";
 
 import { Link, useHistory } from "react-router-dom";
-import BackButton from "../../../components/BackButton"
+import BackButton from "../../../components/BackButton";
 import ValidateButton from "../../../components/validateButton";
 import DeleteButton from "../../../components/deleteButton";
 const axios = require("axios");
 
-
-
-
 const BasicForms = (props) => {
-  const postsDatas = props.location.datas;
+  
+  const postsDatas = props.location.state;
   const [danger, setDanger] = useState(false);
   let history = useHistory();
 
   let idPost = props.match.params.idpost;
- 
+
   const [titreQuestion, setTitreQuestion] = useState("");
   const [question, setQuestion] = useState("");
   const [reponse, setReponse] = useState("");
@@ -46,34 +44,30 @@ const BasicForms = (props) => {
   }, []);
 
   const handleUpdatePost = () => {
-
     axios
-    .put(`http://51.210.47.134:3003/back/posts/${idPost}`, {
-      //data to update
-      action:"update",
-      titre_question: `${titreQuestion}`,
-      contenu_question: `${question}`,
-      contenu_reponse: `${reponse}`,
-    })
-    .then(function (response) {
-      console.log(response);
-    })
-    .catch(function (error) {
-      console.log(error);
-    });
+      .put(`http://51.210.47.134:3003/back/posts/${idPost}`, {
+        //data to update
+        action: "update",
+        titre_question: `${titreQuestion}`,
+        contenu_question: `${question}`,
+        contenu_reponse: `${reponse}`,
+      })
+      .then(function (response) {
+        console.log(response);
+      })
+      .catch(function (error) {
+        console.log(error);
+      });
 
-
-      history.push(`/pages/posts/`);
+    history.push(`/pages/posts/`);
   };
-
 
   const handleDelete = () => {
     setDanger(!danger);
 
     axios
-      .put(`http://51.210.47.134:3003/back/posts/${idPost}` ,{
-action:"archive"
-
+      .put(`http://51.210.47.134:3003/back/posts/${idPost}`, {
+        action: "archive",
       })
       .then(function (response) {
         console.log(response);
@@ -103,21 +97,18 @@ action:"archive"
             </path>
           </svg>
           <BackButton>
-          <span className="ml-3">Retour</span>
+            <span className="ml-3">Retour</span>
           </BackButton>
         </div>
-        
       </Link>
-
-
 
       <CModal show={danger} onClose={() => setDanger(!danger)} color="danger">
         <CModalHeader closeButton>
           <CModalTitle>Warning</CModalTitle>
         </CModalHeader>
         <CModalBody>
-          Vous allez supprimer le post numéro {idPost}  Titre question : {titreQuestion}. 
-          Souhaitez-vous continuer ?
+          Vous allez supprimer le post numéro {idPost} Titre question :{" "}
+          {titreQuestion}. Souhaitez-vous continuer ?
         </CModalBody>
         <CModalFooter>
           <CButton color="danger" onClick={handleDelete}>
@@ -183,19 +174,24 @@ action:"archive"
           </CCardBody>
           <CCardFooter>
             <ValidateButton>
-            <CButton
-              type="submit"
-              size="sm"
-              color="success"
-              onClick={handleUpdatePost}
-            >
-              <CIcon name="cil-scrubber" /> Valider
-            </CButton>
+              <CButton
+                type="submit"
+                size="sm"
+                color="success"
+                onClick={handleUpdatePost}
+              >
+                <CIcon name="cil-scrubber" /> Valider
+              </CButton>
             </ValidateButton>
             <DeleteButton>
-            <CButton type="reset" size="sm" color="danger" onClick={() => setDanger(!danger)} >
-              <CIcon name="cil-ban" /> Supprimer
-            </CButton>
+              <CButton
+                type="reset"
+                size="sm"
+                color="danger"
+                onClick={() => setDanger(!danger)}
+              >
+                <CIcon name="cil-ban" /> Supprimer
+              </CButton>
             </DeleteButton>
           </CCardFooter>
         </CCard>

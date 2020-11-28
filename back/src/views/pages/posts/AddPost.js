@@ -34,10 +34,11 @@ import CIcon from "@coreui/icons-react";
 import postsData from "../../datas/PostsData";
 import {Link, useHistory} from "react-router-dom";
 
-const BasicForms = () => {
+const BasicForms = (props) => {
   let history = useHistory();
   const [question, setQuestion] = useState("")
   const [reponse, setReponse] = useState("")
+  const [titre, setTitre] = useState("")
 
 
   const handleSubmit = () => {
@@ -65,6 +66,10 @@ const BasicForms = () => {
             <CForm action="" method="post" className="form-horizontal">
               <CFormGroup row>
                 <CCol md="12">
+                <CFormGroup className="pr-1">
+                    <CLabel htmlFor="exampleInputName2" className="pr-1">Titre</CLabel>
+                    <CInput id="exampleInputName2" placeholder="" onChange={e => setTitre(e.target.value)} required/>
+                  </CFormGroup>
                   <CFormGroup className="pr-1">
                     <CLabel htmlFor="exampleInputName2" className="pr-1">Question</CLabel>
                     <CInput id="exampleInputName2" placeholder="" onChange={e => setQuestion(e.target.value)} required/>
