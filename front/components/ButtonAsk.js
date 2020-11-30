@@ -4,23 +4,25 @@ import styles from "../styles/Modal.module.css";
 export default function Modal({ isShowing, hide }) {
   const [form, setForm] = useState({
     pseudo: null,
-    // mail: null, PAS DE COMPTE UTILISATEUR MVP
     titre: null,
     contenu: null,
   });
   const handleSubmit = (e) => {
+    e.preventDefault();
     fetch("http://localhost:3000/front", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
       },
       body: JSON.stringify({ form }),
-    }).then(function (response) {
-      // console.log(form)
-      // console.log(response);
-      return response;
-    }).then(res=>res.status=200?alert("Message envoyé"):alert("Problème"));
-    e.preventDefault();
+    })
+      .then(function (response) {
+        return response;
+      })
+      .then(
+        (res) =>
+          (res.status = 201 ? alert("Message envoyé") : alert("Problème"))
+      );
   };
 
   return isShowing
@@ -42,15 +44,6 @@ export default function Modal({ isShowing, hide }) {
                   onChange={(e) => setForm({ ...form, pseudo: e.target.value })}
                 />
               </div>
-              {/* <div>              Pas de compte pour utilisateur en MVP
-                <input
-                  placeholder="Votre adresse mail"
-                  type="email"
-                  name="email"
-                  required
-                  onChange={(e) => setForm({ ...form, mail: e.target.value })}
-                />
-              </div> */}
               <div>
                 <input
                   placeholder="Votre question"

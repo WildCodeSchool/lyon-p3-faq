@@ -21,7 +21,7 @@ export default function Footer(props) {
           </li>
         </ul>
         <>
-          {APIWork != true && props.displayButton === true ? (
+          {!APIWork && props.displayButton ? (
             <button onClick={toggle}>Poser une question</button>
           ) : null}
         </>

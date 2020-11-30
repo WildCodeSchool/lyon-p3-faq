@@ -17,7 +17,7 @@ export default function Header(props) {
           <Link href="/">Les Freelances Lyonnais</Link>
         </h1>
         <>
-          {APIWork != true && props.displayButton === true ? (
+          {!APIWork && props.displayButton ? (
             <button onClick={toggle}>Poser une question</button>
           ) : null}
         </>
