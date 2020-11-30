@@ -17,7 +17,7 @@ export default function Question({ data }) {
           content="width=device-width, initial-scale=1.0"
         ></meta>
       </Head>
-      <Header />
+      <Header displayButton={false} errorHandler={data} />
       <Answer questionAnswered={data} />
     </>
   );
