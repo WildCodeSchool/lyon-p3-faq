@@ -29,7 +29,6 @@ class DB {
 
   async read(WHERE_CLAUSE, id) {
     if (WHERE_CLAUSE !== undefined || id !== undefined) {
-      console.log("AVEW CLAUSE WHERE");
       const query = `SELECT ${this.fields} FROM ${this.table} ${WHERE_CLAUSE} ${id}`;
 
       return this.query(query);

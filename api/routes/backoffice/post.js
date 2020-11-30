@@ -7,9 +7,11 @@ const validator = require('../../middleware/validator');
 
 /* ********************* Routes for Posts handling ********************* */
 
+
+
 /* Add a response*/
 
-router.post('/', validator.checkAddResponse, PostController.addResponse);
+router.post('/',  PostController.addPost); //TODO : Add express-validator on this route
 
 /* Display all questions & answers (including questions without answers)*/
 

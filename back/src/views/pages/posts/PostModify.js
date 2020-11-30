@@ -26,12 +26,13 @@ import DeleteButton from "../../../components/deleteButton";
 const axios = require("axios");
 
 const BasicForms = (props) => {
-  
   const postsDatas = props.location.state;
+
   const [danger, setDanger] = useState(false);
   let history = useHistory();
 
   let idPost = props.match.params.idpost;
+  console.log("idpost :", idPost);
 
   const [titreQuestion, setTitreQuestion] = useState("");
   const [question, setQuestion] = useState("");
@@ -45,20 +46,39 @@ const BasicForms = (props) => {
 
   const handleUpdatePost = () => {
     axios
+
       .put(`http://51.210.47.134:3003/back/posts/${idPost}`, {
         //data to update
         action: "update",
         titre_question: `${titreQuestion}`,
         contenu_question: `${question}`,
+
         contenu_reponse: `${reponse}`,
       })
       .then(function (response) {
-        console.log(response);
+        console.log(response.data);
       })
       .catch(function (error) {
         console.log(error);
       });
 
+    //No exisiting answer before updating this field in the form
+    if (postsDatas.contenu_reponse === null) {
+      axios
+
+        .post(`http://51.210.47.134:3003/back/posts/`, {
+          //data to update
+          type: "reponse",
+          question_id: `${idPost}`,
+          contenu: `${reponse}`,
+        })
+        .then(function (response) {
+          console.log(response.data);
+        })
+        .catch(function (error) {
+          console.log(error);
+        });
+    }
     history.push(`/pages/posts/`);
   };
 
@@ -129,13 +149,13 @@ const BasicForms = (props) => {
                 <CCol md="12">
                   <CFormGroup className="pr-1">
                     <CLabel htmlFor="exampleInputName2" className="pr-1">
-                      Question
+                      Titre Question
                     </CLabel>
                     <CInput
                       placeholder="Contenu"
                       className="pr-1"
                       value={titreQuestion}
-                      onChange={(e) => setQuestion(e.target.value)}
+                      onChange={(e) => setTitreQuestion(e.target.value)}
                       required
                     />
                   </CFormGroup>

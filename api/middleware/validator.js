@@ -54,7 +54,7 @@ exports.checkAction = [
 exports.checkAddResponse = [
   body("question_id").exists().notEmpty().isNumeric(),
   body("contenu").exists().notEmpty().isLength({ max: 1000 }),
-  body("created_by").exists().notEmpty().isNumeric(),
+  //body("created_by").exists().notEmpty().isNumeric(),
 
   (req, res, next) => {
     const errors = validationResult(req);
