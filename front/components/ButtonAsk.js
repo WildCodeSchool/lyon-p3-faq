@@ -4,17 +4,21 @@ import styles from "../styles/Modal.module.css";
 export default function Modal({ isShowing, hide }) {
   const [form, setForm] = useState({
     pseudo: null,
-    mail: null,
+    // mail: null, PAS DE COMPTE UTILISATEUR MVP
     titre: null,
-    question: null,
+    contenu: null,
   });
 
   const handleSubmit = (e) => {
     fetch("http://localhost:3000/front", {
       method: "POST",
-      body: form,
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({ form }),
     }).then(function (response) {
-      console.log(response);
+      // console.log(form)
+      // console.log(response);
       return response;
     });
     e.preventDefault();
@@ -34,12 +38,12 @@ export default function Modal({ isShowing, hide }) {
                 <input
                   placeholder="Votre pseudo"
                   type="text"
-                  name="name"
+                  name="pseudo"
                   required
                   onChange={(e) => setForm({ ...form, pseudo: e.target.value })}
                 />
               </div>
-              <div>
+              {/* <div>              Pas de compte pour utilisateur en MVP
                 <input
                   placeholder="Votre adresse mail"
                   type="email"
@@ -47,24 +51,24 @@ export default function Modal({ isShowing, hide }) {
                   required
                   onChange={(e) => setForm({ ...form, mail: e.target.value })}
                 />
-              </div>
+              </div> */}
               <div>
                 <input
                   placeholder="Votre question"
                   type="text"
-                  name="questionTitle"
+                  name="title"
                   required
                   onChange={(e) => setForm({ ...form, titre: e.target.value })}
                 />
               </div>
               <div>
                 <textarea
-                  name="comment"
+                  name="contenu"
                   type="text"
                   placeholder="Explicitez votre question"
                   required
                   onChange={(e) =>
-                    setForm({ ...form, question: e.target.value })
+                    setForm({ ...form, contenu: e.target.value })
                   }
                 ></textarea>
               </div>

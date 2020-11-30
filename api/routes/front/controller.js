@@ -6,7 +6,6 @@ class QuestionController {
       const listQuestions = await Question.getQuestions();
       res.send(listQuestions);
     } catch (err) {
-      console.log(err);
       res.sendStatus(500);
     }
   }
@@ -16,27 +15,41 @@ class QuestionController {
       const listQuestionsAnswered = await Question.getQuestionsAnswered(
         req.query.id
       );
-
       res.send(listQuestionsAnswered);
     } catch (err) {
-      console.log(err);
       res.sendStatus(500);
     }
   }
 
   static async postQuestion(req, res) {
     try {
-      if (req.body.titre.length <= 100 && req.body.contenu.length <= 300) {
-        const postedQuestion = await Question.postQuestion(
-          req.body.titre,
-          req.body.contenu
-        );
-        res.send(postedQuestion);
-      } else if (req.body.titre.length > 100 || req.body.contenu.length > 300) {
-        res.sendStatus(412);
+      if (
+        req.body.form.titre != undefined &&
+        req.body.form.contenu != undefined &&
+        req.body.form.pseudo != undefined
+      ) {
+        if (
+          req.body.form.titre.length <= 100 &&
+          req.body.form.contenu.length <= 300 &&
+          req.body.form.pseudo.length <= 16
+        ) {
+          const postedQuestion = await Question.postQuestion(
+            req.body.form.titre,
+            req.body.form.contenu,
+            req.body.form.pseudo
+          );
+          res.sendStatus(200);
+        } else if (
+          req.body.form.titre.length > 100 ||
+          req.body.form.contenu.length > 300 ||
+          req.body.form.pseudo.length > 16
+        ) {
+          res.sendStatus(412);
+        }
+      } else {
+        res.sendStatus(418);
       }
     } catch (err) {
-      console.log(err);
       res.sendStatus(500);
     }
   }

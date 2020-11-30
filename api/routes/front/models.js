@@ -18,10 +18,10 @@ class Question {
       });
   }
 
-  static async postQuestion(titre, contenu) {
+  static async postQuestion(titre, contenu, pseudo) {
     return db
-      .query("INSERT INTO question (titre, contenu) VALUES (?)", [
-        [titre, contenu],
+      .query("INSERT INTO question (titre, contenu, created_by) VALUES (?)", [
+        [titre, contenu, pseudo],
       ])
       .then((res) => {
         return { res };
