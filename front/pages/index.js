@@ -16,9 +16,9 @@ export default function Home({ data }) {
           content="width=device-width, initial-scale=1.0"
         ></meta>
       </Head>
-      <Header />
+      <Header errorHandler={data}/>
       <Main questions={data} />
-      <Footer />
+      <Footer errorHandler={data}/>
     </>
   );
 }

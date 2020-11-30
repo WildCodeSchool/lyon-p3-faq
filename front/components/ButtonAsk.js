@@ -8,7 +8,6 @@ export default function Modal({ isShowing, hide }) {
     titre: null,
     contenu: null,
   });
-
   const handleSubmit = (e) => {
     fetch("http://localhost:3000/front", {
       method: "POST",
@@ -20,7 +19,7 @@ export default function Modal({ isShowing, hide }) {
       // console.log(form)
       // console.log(response);
       return response;
-    });
+    }).then(res=>res.status=200?alert("Message envoyé"):alert("Problème"));
     e.preventDefault();
   };
 
