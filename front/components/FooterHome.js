@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "../styles/Footer.module.css";
+import styles from "../styles/FooterHome.module.css";
 import Link from "next/link";
 import useModal from "../utils/useModal";
 import Modal from "./ButtonAsk";

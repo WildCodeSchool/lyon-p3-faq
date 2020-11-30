@@ -64,7 +64,8 @@
     top : 0;
     right : -250px;
     transition: 450ms;
-    position: fixed;
+    position: absolute;
+    z-index: 2000;
   }
 
   .navmenuactive {
@@ -79,6 +80,7 @@
     right : 0px;
     transition: 450ms;
     position: fixed;
+    z-index: 2000;
     box-shadow: -7px 1px 19px -3px rgba(0,0,0,0.54);
     -webkit-box-shadow: -7px 1px 19px -3px rgba(0,0,0,0.54);
     -moz-box-shadow: -7px 1px 19px -3px rgba(0,0,0,0.54); 

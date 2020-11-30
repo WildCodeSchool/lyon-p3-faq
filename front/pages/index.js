@@ -2,7 +2,7 @@ import React from "react";
 import Head from "next/head";
 import Header from "../components/Header";
 import Main from "../components/Main";
-import Footer from "../components/Footer";
+import FooterHome from "../components/Footer";
 const Fetch = require("../utils/callAPI");
 
 export default function Home({ data }) {
@@ -18,7 +18,7 @@ export default function Home({ data }) {
       </Head>
       <Header />
       <Main questions={data} />
-      <Footer />
+      <FooterHome />
     </>
   );
 }

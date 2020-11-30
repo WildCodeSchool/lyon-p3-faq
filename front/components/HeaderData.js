@@ -19,7 +19,8 @@ export const HeaderData = [
         path:"/mentions",
         icon: <FaIcons.FaBalanceScale/>,
         cName : "navtextA"
-    },
+    }
+    ,
     {
         title:"Sandbox",
         path:"/test",
