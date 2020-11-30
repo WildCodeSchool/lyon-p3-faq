@@ -7,25 +7,11 @@ import {
   CCardFooter,
   CCardHeader,
   CCol,
-  CCollapse,
-  CDropdownItem,
-  CDropdownMenu,
-  CDropdownToggle,
-  CFade,
   CForm,
   CFormGroup,
-  CFormText,
-  CValidFeedback,
-  CInvalidFeedback,
-  CTextarea,
   CInput,
-  CInputFile,
-  CInputCheckbox,
-  CInputRadio,
   CInputGroup,
   CInputGroupAppend,
-  CInputGroupPrepend,
-  CDropdown,
   CInputGroupText,
   CLabel,
   CSelect,
@@ -44,9 +30,17 @@ import BackButton from "../../../components/BackButton";
 const axios = require("axios");
 
 const BasicForms = (props) => {
+  
+  
   const [danger, setDanger] = useState(false);
   let idUser = props.match.params.iduser;
-  const infosUser = props.location.state;
+  const infosUser = props.location.stated;
+  const {updateField} = props.location.update
+
+updateField("ca vient de mon composant userModify")
+ 
+ 
+
 
   let history = useHistory();
   const [nom, setNom] = useState(infosUser["name"].split(" ")[0]);
@@ -69,6 +63,7 @@ const BasicForms = (props) => {
       .get(`http://51.210.47.134:3003/back/users/roles`)
       .then(function (response) {
         setRoles(response.data);
+        
       })
       .catch(function (error) {
         console.log(error);
@@ -84,13 +79,16 @@ const BasicForms = (props) => {
         role: `${typeCompte}`,
       })
       .then(function (response) {
+      
         console.log(response);
+        
       })
       .catch(function (error) {
         console.log(error);
       });
 
-    history.push(`/pages/users/`);
+    history.push({ pathname :`/pages/users/`,
+  state: nom});
   };
 
   const handleDelete = () => {
@@ -104,7 +102,10 @@ const BasicForms = (props) => {
       .catch(function (error) {
         console.log(error);
       });
-    history.push(`/pages/users/`);
+    history.push( { 
+      path :`/pages/users/`,
+    update : !props.location.update
+  });
   };
 
   return (
@@ -220,6 +221,7 @@ const BasicForms = (props) => {
                     custom
                     name="select"
                     id="select"
+                    value={typeCompte}
                     onChange={(e) => setTypeCompte(e.target.value)}
                   >
                     {roles

@@ -10,6 +10,7 @@ import {
   CRow,
   CButton,
 } from "@coreui/react";
+import { connect } from "react-redux";
 
 const axios = require("axios");
 const getBadge = (status) => {
@@ -36,65 +37,95 @@ const fields = [
   "pseudo",
 ];
 
-const Tables = () => {
-  //Style
+// Utilisation de redux
+function mapStateToProps(state, ownProps) {
+  const { visibilityFilter } = state;
+  const { id } = ownProps;
+  const todo = "test redux";
 
+  // component receives additionally:
+  return { todo, visibilityFilter };
+}
+
+const Tables = (props) => {
   // States
 
-  const [usersData, setUsersData] = useState();
+  let [usersData, setUsersData] = useState();
   const [nbUsers, setNbUsers] = useState();
+  const [updatedOne, setUpdatedOne] = useState("");
   const [tableFields, setTableFields] = useState();
+  const [idMaxUsers, setIdMaxUsers] = useState();
+
+  const updateField = (newValue) => {
+    setUpdatedOne(newValue);
+  };
 
   let history = useHistory();
 
   const selectUser = (e) => {
+    setUpdatedOne(e);
     history.push({
       pathname: `/pages/users/usermodify/${e.id}`,
-      state: e,
+      stated: e,
+      update: { updateField },
     });
   };
 
   // Change filter label
   const filterTitle = {
     label: "Filtre",
+    placeholder: "Contenu",
   };
 
-  useEffect(() => {
-    axios
-      .get("http://51.210.47.134:3003/back/users")
-      .then(function (response) {
-        // handle success
-        setUsersData(response.data);
-        setNbUsers(response.data.length);
-        setTableFields(
-          Object.keys(response.data[0]).filter(
-            (user) => user == "name" || user == "mail" || user == "role"
-          )
-        );
-      })
-      .catch(function (error) {
-        // handle error
-        console.log(error);
-      });
-  }, [nbUsers]);
+  useEffect(
+    (e) => {
+      axios
+        .get("http://51.210.47.134:3003/back/users?withRoles=true")
+        .then(function (response) {
+          // handle success
+
+          setNbUsers(response.data.length);
+          setUsersData(response.data);
+
+          setTableFields(
+            Object.keys(response.data[0]).filter(
+              (user) => user == "name" || user == "mail" || user == "role"
+            )
+          );
+          return response.data;
+        })
+
+        .then((data) => {
+          setIdMaxUsers(data[data.length - 1].id);
+        })
+        .catch(function (error) {
+          // handle error
+          console.log(error);
+        });
+    },
+    [nbUsers]
+  );
   return (
     <>
       <CRow>
-        <CCol className="text-center" >
+        <CCol className="text-center">
           <CCard>
             <CCardHeader>Gestion des utilisateurs</CCardHeader>
 
-            <CRow className="mt-3" style={{  justifyContent:"center" }} >
-              <CCol  lg="2" md="3" xs="6" className="text-center" >
-                <Link to={`/pages/users/adduser`}>
+            <CRow className="mt-3" style={{ justifyContent: "center" }}>
+              <CCol lg="2" md="3" xs="6" className="text-center">
+                <Link
+                  to={{
+                    pathname: `/pages/users/adduser`,
+                    datas: idMaxUsers,
+                  }}
+                >
                   <CButton
                     active
                     block
                     color="dark"
                     aria-pressed="true"
-                    style={{ display:"flex", justifyContent:"center" }}
-                   
-                  
+                    style={{ display: "flex", justifyContent: "center" }}
                   >
                     Add User
                   </CButton>
@@ -114,8 +145,7 @@ const Tables = () => {
                 tableFilter={filterTitle}
                 pagination
                 clickableRows
-                columnFilter
-                
+                sorter
                 onRowClick={(e) => selectUser(e)}
                 scopedSlots={{
                   status: (item) => (
@@ -135,4 +165,4 @@ const Tables = () => {
   );
 };
 
-export default Tables;
+export default connect(mapStateToProps)(Tables);

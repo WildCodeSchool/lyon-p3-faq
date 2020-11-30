@@ -12,7 +12,6 @@ import {
 } from "@coreui/react";
 
 import { Link, useHistory } from "react-router-dom";
-import PostModify from "./PostModify";
 const axios = require("axios");
 
 const getBadge = (status) => {
@@ -41,6 +40,7 @@ const fields = {
 // Change filter label
 const filterTitle = {
   label: "Filtre",
+  palceholder: "Contenu"
 };
 
 const Tables = () => {
@@ -50,7 +50,8 @@ const Tables = () => {
   const [nbPosts, setNbPosts] = useState();
   const [tableFields, setTableFields] = useState();
   const [details, setDetails] = useState([]);
-  const [updatePostStatus, setUpdatePostStatus]= useState(false)
+  const [updatePostStatus, setUpdatePostStatus] = useState(false);
+  let history = useHistory();
 
   // Loading datas
   useEffect(() => {
@@ -79,10 +80,12 @@ const Tables = () => {
         // handle error
         console.log(error);
       });
-  }, [nbPosts,updatePostStatus]);
+  }, [nbPosts, updatePostStatus]);
 
-  let history = useHistory();
-  
+
+
+
+
 
   const toggleDetails = (index) => {
     const position = details.indexOf(index);
@@ -96,7 +99,8 @@ const Tables = () => {
   };
 
   const handleUpdatePost = (item) => {
-    
+    console.log("item : ", item.id);
+
     history.push({
       pathname: `/pages/posts/modifypost/${item.id}`,
 
@@ -104,19 +108,20 @@ const Tables = () => {
     });
   };
 
-  const handleUpdatePostStatus = (item,action) => {
-    
+  const handleUpdatePostStatus = (item, action) => {
+    console.log("item", item);
     axios
-      .put(`http://51.210.47.134:3003/back/posts/${item.id}`, { "action" : action})
+      .put(`http://51.210.47.134:3003/back/posts/${item.id}`, {
+        action: action,
+      })
       .then(function (response) {
         // handle success
-        setUpdatePostStatus(!updatePostStatus)
+        setUpdatePostStatus(!updatePostStatus);
       })
       .catch(function (error) {
         // handle error
         console.log(error);
       });
-     
   };
 
   return (
@@ -146,10 +151,10 @@ const Tables = () => {
                 size="sm"
                 itemsPerPage={10}
                 pagination
-                // clickableRows
+                 //clickableRows
                 sorter
                 tableFilter={filterTitle}
-                //onRowClick={(e) => handleRowClick(e)}
+                //onRowClick={(index) => toggleDetails(index)}
                 scopedSlots={{
                   status: (item) => (
                     <td>
@@ -194,13 +199,24 @@ const Tables = () => {
                             >
                               Modifier
                             </CButton>
-                            <CButton size="sm" color="success" className="ml-1" onClick={() => {
-                                handleUpdatePostStatus(item,"publish");
-                              }}>
+                            <CButton
+                              size="sm"
+                              color="success"
+                              className="ml-1"
+                              onClick={() => {
+                                handleUpdatePostStatus(item, "publish");
+                              }}
+                            >
                               Publier
                             </CButton>
-                            <CButton size="sm" color="danger" className="ml-1"  onClick={() => {
-                                handleUpdatePostStatus(item,"archive");}}>
+                            <CButton
+                              size="sm"
+                              color="danger"
+                              className="ml-1"
+                              onClick={() => {
+                                handleUpdatePostStatus(item, "archive");
+                              }}
+                            >
                               Archiver
                             </CButton>
                           </CCardBody>

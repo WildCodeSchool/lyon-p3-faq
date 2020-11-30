@@ -1,4 +1,5 @@
 const User = require("../models/user.model");
+const Role = require("../models/role.model")
 const logger = require("../library/logger");
 
 class UserController {
@@ -91,10 +92,21 @@ class UserController {
 
   // display all users
   static async getUsers(req, res) {
+    const {withRoles}= req.query
+    console.log("withRoles : ", withRoles)
+    console.log("req.body :",req.query)
     try {
+      if (withRoles == undefined) {
+        console.log("CAS CLASSIC")
       const queryResult = await User.read();
-
       res.send(queryResult);
+    } else {
+
+      console.log("CAS WITH ROLES")
+      const queryResult = await User.getUserWithRoles();
+      res.send(queryResult);
+    }
+      
     } catch (err) {
       logger.error(err);
       res.sendStatus(500);
@@ -104,12 +116,12 @@ class UserController {
   //add a User
   static async addUser(req, res) {
     try {
-      const { name, mail, role } = req.body;
+      const { name, mail, role, id } = req.body;
 
       const pass = "faqmdp";
       const ipAdress =
         req.headers["x-forwarded-for"] || req.connection.remoteAddress;
-      const fields_table = [[name, mail, pass, ipAdress, role]];
+      const fields_table = [[name, mail, pass, ipAdress, role, id]];
 
       const queryResult = await User.create(fields_table);
       console.log("add one", queryResult);
@@ -139,6 +151,24 @@ class UserController {
           res.status(401).json("Identifiants incorrects");
         }
       }
+    } catch (err) {
+      logger.error(err);
+      res.sendStatus(500);
+    }
+  }
+
+
+  //get Roles
+  static async getRoles(req, res) {
+    
+
+    try {
+      
+        const queryResult = await Role.read();
+               
+          res.status(200).json(queryResult);
+        
+      
     } catch (err) {
       logger.error(err);
       res.sendStatus(500);
