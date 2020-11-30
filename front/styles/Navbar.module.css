@@ -46,7 +46,7 @@
   .navtextA {
 
     text-decoration: none;
-    background-color:white;
+    background-color:rgb(255, 255, 255);
     color : black;
     font-size:  20px;
     width: 100%;
@@ -60,10 +60,14 @@
     padding: 10px 10px 10px 10px ;
   }
 
-   .navtext:hover {
-    background-color: white;
-    color : red ;
-  }
+  .navtextA:hover {
+    background-color: Black;
+    color :white ;
+    border-width: 1px;
+    border-style: solid;
+    border-color : white;
+    transition: color 0.55s ease, border-color 0.55s ease;
+   }
 
   .navmenuitems {
     padding-top: 10%;
