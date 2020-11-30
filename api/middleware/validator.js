@@ -9,7 +9,11 @@ exports.signup = [
     const errors = validationResult(req);
 
     if (!errors.isEmpty()) {
+<<<<<<< HEAD
       res.status(400).json({ errors: errors.array() });
+=======
+       res.status(400).json({ errors: errors.array() });
+>>>>>>> fixing issues by MM
     } else next();
   },
 ];
@@ -23,7 +27,11 @@ exports.checkUser = [
     const errors = validationResult(req);
 
     if (!errors.isEmpty()) {
+<<<<<<< HEAD
       res.status(400).json({ errors: errors.array() });
+=======
+       res.status(400).json({ errors: errors.array() });
+>>>>>>> fixing issues by MM
     } else next();
   },
 ];
@@ -34,11 +42,16 @@ exports.checkId = [
     const errors = validationResult(req);
 
     if (!errors.isEmpty()) {
+<<<<<<< HEAD
       res.status(400).json({ errors: errors.array() });
+=======
+       res.status(400).json({ errors: errors.array() });
+>>>>>>> fixing issues by MM
     } else next();
   },
 ];
 
+<<<<<<< HEAD
 exports.checkAction = [
   body("action").exists().notEmpty().isAlpha(),
 
@@ -56,31 +69,53 @@ exports.checkAddResponse = [
   body("contenu").exists().notEmpty().isLength({ max: 1000 }),
   //body("created_by").exists().notEmpty().isNumeric(),
 
+=======
+exports.checkResponse = [
+  body("question_id").exists().notEmpty().isNumeric(),
+  body("contenu").exists().notEmpty().isLength({ max: 1000 }),
+  body("created_by").exists().notEmpty().isNumeric(),
+  body("idUser").exists().notEmpty().isNumeric(),
+>>>>>>> fixing issues by MM
   (req, res, next) => {
     const errors = validationResult(req);
 
     if (!errors.isEmpty()) {
+<<<<<<< HEAD
       res.status(400).json({ errors: errors.array() });
+=======
+       res.status(400).json({ errors: errors.array() });
+>>>>>>> fixing issues by MM
     } else next();
   },
 ];
 
+<<<<<<< HEAD
 exports.checkResponse = [
   body("titre_question").exists().notEmpty().isLength({ max: 1000 }),
   body("contenu_question").exists().notEmpty().isLength({ max: 1000 }),
   body("contenu_reponse").exists().notEmpty().isLength({ max: 1000 }),
 
+=======
+exports.checkAction = [
+  body("action").exists().notEmpty().isAlpha(),
+ 
+>>>>>>> fixing issues by MM
   (req, res, next) => {
     const errors = validationResult(req);
 
     if (!errors.isEmpty()) {
+<<<<<<< HEAD
       res.status(400).json({ errors: errors.array() });
+=======
+       res.status(400).json({ errors: errors.array() });
+>>>>>>> fixing issues by MM
     } else next();
   },
 ];
 
 exports.checkIdUser = [
   body("idUser").exists().notEmpty().isNumeric(),
+<<<<<<< HEAD
   (req, res, next) => {
     errors = validationResult(req);
 
@@ -89,3 +124,15 @@ exports.checkIdUser = [
     } else next();
   },
 ];
+=======
+ 
+  (req, res, next) => {
+    const errors = validationResult(req);
+
+    if (!errors.isEmpty()) {
+       res.status(400).json({ errors: errors.array() });
+    } else next();
+  },
+];
+
+>>>>>>> fixing issues by MM

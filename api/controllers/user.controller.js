@@ -1,6 +1,11 @@
+<<<<<<< HEAD
 const User = require("../models/user.model");
 const Role = require("../models/role.model")
 const logger = require("../library/logger");
+=======
+const db = require("../datasource/mysql");
+const UserModel = require("../models/user.model");
+>>>>>>> fixing issues by MM
 
 class UserController {
   // Actions on one user
@@ -9,12 +14,17 @@ class UserController {
       let idUser = req.params.id;
 
       // On vérifie si l'utilisateur existe en base de données
+<<<<<<< HEAD
       const countResult = await User.matchUser(idUser);
+=======
+      const countResult = await UserModel.matchDB(idUser);
+>>>>>>> fixing issues by MM
 
       // L'utilisateur a bien été trouvé dans la base de données
 
       if (countResult[0].count > 0) {
         // On renvoie les informations de l'utilisateur
+<<<<<<< HEAD
         const { name, mail, role } = req.body;
         const fields = {
           name: name,
@@ -27,6 +37,12 @@ class UserController {
           res.send({message : "User successfully updated"});
         } else {
           res.status(404).send({ error: "Nothing updated" });
+=======
+
+        if (req.method === "DELETE") {
+          const queryResult = await UserModel.one(idUser, req.method);
+          res.send("User deleted");
+>>>>>>> fixing issues by MM
         }
       } else {
         res.status(404).send({ "No result for user :": idUser });
@@ -38,10 +54,17 @@ class UserController {
     }
   }
 
+<<<<<<< HEAD
   // get One user
   static async getOne(req, res) {
     try {
       let idUser = req.params.id;
+=======
+        if (req.method == "GET") {
+          const queryResult = await UserModel.one(idUser, req.method);
+          res.send(queryResult);
+        }
+>>>>>>> fixing issues by MM
 
       // On vérifie si l'utilisateur existe en base de données
       const countResult = await User.matchUser(idUser);
@@ -60,10 +83,14 @@ class UserController {
     }
   }
 
+<<<<<<< HEAD
   // delete one user
   static async deleteOne(req, res) {
     try {
       let idUser = req.params.id;
+=======
+          const queryResult = await UserModel.one(idUser, req.method, fields);
+>>>>>>> fixing issues by MM
 
       // On vérifie si l'utilisateur existe en base de données
       const countResult = await User.matchUser(idUser);
@@ -96,6 +123,7 @@ class UserController {
     console.log("withRoles : ", withRoles)
     console.log("req.body :",req.query)
     try {
+<<<<<<< HEAD
       if (withRoles == undefined) {
         console.log("CAS CLASSIC")
       const queryResult = await User.read();
@@ -104,6 +132,9 @@ class UserController {
 
       console.log("CAS WITH ROLES")
       const queryResult = await User.getUserWithRoles();
+=======
+      const queryResult = await UserModel.getAll();
+>>>>>>> fixing issues by MM
       res.send(queryResult);
     }
       
@@ -123,6 +154,7 @@ class UserController {
         req.headers["x-forwarded-for"] || req.connection.remoteAddress;
       const fields_table = [[name, mail, pass, ipAdress, role, id]];
 
+<<<<<<< HEAD
       const queryResult = await User.create(fields_table);
       console.log("add one", queryResult);
       if (queryResult.affectedRows > 0) {
@@ -130,6 +162,10 @@ class UserController {
       } else {
         res.status(404).send({ error: "Nothing added" });
       }
+=======
+      const queryResult = await UserModel.addOne(fields);
+      res.send("User successfully added");
+>>>>>>> fixing issues by MM
     } catch (err) {
       logger.error(err);
       res.sendStatus(500);
@@ -144,7 +180,12 @@ class UserController {
       if (login === undefined || password === undefined) {
         res.status(400).send("JSON incorrect. Champs attendus : login et mdp");
       } else {
+<<<<<<< HEAD
         const queryResult = await User.checkLogin(login, password);
+=======
+        const queryResult = await UserModel.checkLogin(login, password);
+
+>>>>>>> fixing issues by MM
         if (queryResult[0].count !== 0) {
           res.status(200).json("Identifiants ok");
         } else {

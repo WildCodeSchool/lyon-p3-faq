@@ -8,10 +8,62 @@ class User extends DB {
     super(...args);
   }
 
+<<<<<<< HEAD
   // Customized methods
   async matchUser(id) {
     let resultQuery = await this.query(`SELECT COUNT(id) as count FROM user where id=${id}`);
     return resultQuery;
+=======
+  static one(id, method, fields) {
+    return new Promise((resolve, reject) => {
+      if (method === "DELETE") {
+        const queryField = "DELETE  FROM user WHERE id= ?";
+        db.query(queryField, id, (err, result) => {
+          if (err) {
+            reject(err);
+          } else {
+            resolve(result);
+          }
+        });
+      }
+
+      if (method === "GET") {
+        const queryField =
+          "SELECT name,mail,pass,ip_address,role_id FROM user WHERE id=?";
+        db.query(queryField, id, (err, result) => {
+          if (err) {
+            reject(err);
+          } else {
+            resolve(result);
+          }
+        });
+      }
+
+      if (method === "PUT") {
+        const queryField = "UPDATE user SET ? WHERE id= ?";
+        db.query(queryField, [fields, id], (err, result) => {
+          if (err) {
+            reject(err);
+          } else {
+            resolve(result);
+          }
+        });
+      }
+    });
+  }
+
+  static matchDB(id) {
+    return new Promise((resolve, reject) => {
+      const query = " SELECT COUNT(id) as count FROM user WHERE id= ?";
+      db.query(query, id, (err, result) => {
+        if (err) {
+          reject(err);
+        } else {
+          resolve(result);
+        }
+      });
+    });
+>>>>>>> fixing issues by MM
   }
 
   async checkLogin(login, password) {

@@ -4,7 +4,6 @@ const router = Router();
 const UserController = require("../../controllers/user.controller");
 const validator = require('../../middleware/validator')
 
-
 /* ********************* Routes for users handling ********************* */
 
 
