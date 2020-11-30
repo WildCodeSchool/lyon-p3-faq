@@ -22,16 +22,16 @@ export default function Header() {
         <Modal isShowing={isShowing} hide={toggle} />
       </div>
       <div className="navbar">
-        <Link as="" href="" className="menubar"> 
+        {/* <Link as="" href="/" className="menubar">  */}
           <FaIcons.FaBars onClick={showSidebar} />
-        </Link>
+        {/* </Link> */}
       </div>
       <nav className={ sidebar ? "navmenu active": "styles.navmenu"  }>
         <ul className="navmenuitems" onClick={showSidebar}>
             <li className="navbar-toggle">
-              <Link as="" href="" className="menubar">
+              {/* <Link as="" href="/" className="menubar"> */}
                 <FaIcons.FaRegTimesCircle/>
-              </Link>
+              {/* </Link> */}
             </li>
 
             {HeaderData.map((item, index) => {

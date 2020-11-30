@@ -13,20 +13,15 @@ export default function Navbar() {
   return (
     <header>
       <div className={styles.navbar}>
-        <Link as="" href="" className={styles.menubar}> 
           <FaIcons.FaBars onClick={showSidebar} />
-        </Link>
       </div>
-
 
       <nav className={sidebar ? styles["navmenuactive"] : styles["navmenu"] }>
 
         <ul className={styles["navmenuitems"]} onClick={showSidebar}>
 
             <li className={styles["navbartoggle"]}>
-              <Link as="" href="" className={styles["menubar"]}>
                 <FaIcons.FaRegTimesCircle/>
-              </Link>
             </li>
 
             {HeaderData.map((item, index) => {

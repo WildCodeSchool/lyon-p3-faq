@@ -26,4 +26,10 @@ export const HeaderData = [
         icon: <FaIcons.FaBug/>,
         cName : "navtextA"
     },
+    {
+        title:"Kickstarter",
+        path:"/test",
+        icon: <FaIcons.FaKickstarter/>,
+        cName : "navtextA"
+    },
 ]
