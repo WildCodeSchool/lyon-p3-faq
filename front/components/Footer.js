@@ -1,4 +1,4 @@
-import React,{useState, useEffect} from "react";
+import React, { useState, useEffect } from "react";
 import styles from "../styles/Footer.module.css";
 import Link from "next/link";
 import useModal from "../utils/useModal";
@@ -20,8 +20,10 @@ export default function Footer(props) {
             <Link href="/mentions">Mentions légales</Link>
           </li>
         </ul>
-        <>{APIWork!=true?(
-        <button onClick={toggle}>Poser une question</button>):null}
+        <>
+          {APIWork != true && props.displayButton === true ? (
+            <button onClick={toggle}>Poser une question</button>
+          ) : null}
         </>
         <Modal isShowing={isShowing} hide={toggle} />
       </div>

@@ -16,9 +16,9 @@ export default function Home({ data }) {
           content="width=device-width, initial-scale=1.0"
         ></meta>
       </Head>
-      <Header errorHandler={data}/>
+      <Header displayButton={true} errorHandler={data} />
       <Main questions={data} />
-      <Footer errorHandler={data}/>
+      <Footer displayButton={true} errorHandler={data} />
     </>
   );
 }
