@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 const Post = require("../models/post.model");
 const validator = require("../middleware/validator");
 const logger = require("../library/logger");
@@ -23,23 +22,11 @@ class PostController {
   }
 
   // Archive or Publish a post
-=======
-const PostModel = require("../models/post.model");
-class PostController {
-
-
-
->>>>>>> fixing issues by MM
   static async updatePostStatus(req, res) {
     try {
       let idQuestion = req.params.id;
       const { idUser, action } = req.body;
 
-<<<<<<< HEAD
-=======
-     
-
->>>>>>> fixing issues by MM
       let fields = {};
       if (action === "publish") {
         fields = {
@@ -49,11 +36,7 @@ class PostController {
           disabled_at: null,
         };
 
-<<<<<<< HEAD
         const queryResult = await Post.update(idQuestion, fields);
-=======
-        const queryResult = await PostModel.publishPost(fields, idQuestion);
->>>>>>> fixing issues by MM
         res.send("post published");
       } else if (action === "archive") {
         fields = {
@@ -63,13 +46,8 @@ class PostController {
           publicated_at: null,
         };
 
-<<<<<<< HEAD
         const queryResult = await Post.update(idQuestion, fields);
         res.send({ message: "post archived" });
-=======
-        const queryResult = await PostModel.archivePost(fields, idQuestion);
-        res.send("post archived");
->>>>>>> fixing issues by MM
       } else {
         return res
           .status(400)
