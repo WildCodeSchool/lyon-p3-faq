@@ -19,9 +19,8 @@ export default function Modal({ isShowing, hide }) {
       .then(function (response) {
         return response;
       })
-      .then(
-        (res) =>
-          (res.status = 201 ? alert("Message envoyé") : alert("Problème"))
+      .then((res) =>
+        res.status === 201 ? alert("Message envoyé") : alert("Problème")
       );
   };
 
