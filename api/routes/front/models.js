@@ -27,16 +27,17 @@ class Question {
         return { res };
       });
   }
+
   static async reportQuestion(id_question, ip, raison) {
     return db
-      .query("INSERT INTO report (id_question, ip, raison) VALUES (?)", [
-        [id_question, ip, raison],
-      ])
+      .query(
+        `INSERT INTO report(id_question, ip, raison) SELECT ? FROM report WHERE (ip= ? and id_question= ? ) HAVING COUNT(*) = 0;`,
+        [[id_question, ip, raison], [ip], [id_question]]
+      )
       .then((res) => {
         return { res };
       });
   }
-
 }
-  
+
 module.exports = Question;
