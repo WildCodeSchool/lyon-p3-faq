@@ -1,23 +1,29 @@
 import React, { useState } from "react";
 import ReactDOM from "react-dom";
 import styles from "../styles/Modal.module.css";
+import { toast } from "react-toastify";
 export default function Modal({ isShowing, hide }) {
   const [form, setForm] = useState({
     pseudo: null,
-    mail: null,
     titre: null,
-    question: null,
+    contenu: null,
   });
-
+  const notify = (msg) => toast(msg);
   const handleSubmit = (e) => {
+    e.preventDefault();
     fetch("http://localhost:3000/front", {
       method: "POST",
-      body: form,
-    }).then(function (response) {
-      console.log(response);
-      return response;
-    });
-    e.preventDefault();
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({ form }),
+    })
+      .then(function (response) {
+        return response;
+      })
+      .then((res) =>
+        res.status === 201 ? notify("Message envoyé") : notify("Problème")
+      );
   };
 
   return isShowing
@@ -34,37 +40,28 @@ export default function Modal({ isShowing, hide }) {
                 <input
                   placeholder="Votre pseudo"
                   type="text"
-                  name="name"
+                  name="pseudo"
                   required
                   onChange={(e) => setForm({ ...form, pseudo: e.target.value })}
                 />
               </div>
               <div>
                 <input
-                  placeholder="Votre adresse mail"
-                  type="email"
-                  name="email"
-                  required
-                  onChange={(e) => setForm({ ...form, mail: e.target.value })}
-                />
-              </div>
-              <div>
-                <input
                   placeholder="Votre question"
                   type="text"
-                  name="questionTitle"
+                  name="title"
                   required
                   onChange={(e) => setForm({ ...form, titre: e.target.value })}
                 />
               </div>
               <div>
                 <textarea
-                  name="comment"
+                  name="contenu"
                   type="text"
                   placeholder="Explicitez votre question"
                   required
                   onChange={(e) =>
-                    setForm({ ...form, question: e.target.value })
+                    setForm({ ...form, contenu: e.target.value })
                   }
                 ></textarea>
               </div>
