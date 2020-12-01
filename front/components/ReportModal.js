@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import ReactDOM from "react-dom";
 import styles from "../styles/Modal.module.css";
+import { toast } from 'react-toastify';
 
 export default function Modal({question, isShowing, hide }) {
   const [form, setForm] = useState({
@@ -12,6 +13,7 @@ export default function Modal({question, isShowing, hide }) {
 setForm({...form, id:question})
   }, []);
 
+  const notify = (msg) => toast(msg);
   const handleSubmit = (e) => {
     e.preventDefault();
     fetch("http://localhost:3000/front/report", {
@@ -25,7 +27,7 @@ setForm({...form, id:question})
         return response;
       })
       .then((res) =>
-        res.status === 201 ? alert("Message envoyé") : alert("Problème")
+        res.status === 201 ? notify("Message envoyé") : notify("Problème")
       );
     console.log(form);
   };

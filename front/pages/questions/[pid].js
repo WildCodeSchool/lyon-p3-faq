@@ -3,7 +3,8 @@ import Header from "../../components/Header";
 import Answer from "../../components/Answer";
 import { useRouter } from "next/router";
 const Fetch = require("../../utils/callAPI");
-
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 export default function Question({ data }) {
   const router = useRouter();
   const { pid } = router.query;
@@ -19,6 +20,7 @@ export default function Question({ data }) {
       </Head>
       <Header displayButton={false} errorHandler={data} />
       <Answer questionAnswered={data} />
+      <ToastContainer />
     </>
   );
 }

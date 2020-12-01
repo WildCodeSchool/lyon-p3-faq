@@ -1,12 +1,14 @@
 import React, { useState } from "react";
 import ReactDOM from "react-dom";
 import styles from "../styles/Modal.module.css";
+import { toast } from "react-toastify";
 export default function Modal({ isShowing, hide }) {
   const [form, setForm] = useState({
     pseudo: null,
     titre: null,
     contenu: null,
   });
+  const notify = (msg) => toast(msg);
   const handleSubmit = (e) => {
     e.preventDefault();
     fetch("http://localhost:3000/front", {
@@ -20,7 +22,7 @@ export default function Modal({ isShowing, hide }) {
         return response;
       })
       .then((res) =>
-        res.status === 201 ? alert("Message envoyé") : alert("Problème")
+        res.status === 201 ? notify("Message envoyé") : notify("Problème")
       );
   };
 
