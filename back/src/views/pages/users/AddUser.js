@@ -6,33 +6,18 @@ import {
   CCardFooter,
   CCardHeader,
   CCol,
-  CCollapse,
-  CDropdownItem,
-  CDropdownMenu,
-  CDropdownToggle,
-  CFade,
   CForm,
   CFormGroup,
-  CFormText,
-  CValidFeedback,
-  CInvalidFeedback,
-  CTextarea,
   CInput,
-  CInputFile,
-  CInputCheckbox,
-  CInputRadio,
   CInputGroup,
   CInputGroupAppend,
   CInputGroupPrepend,
-  CDropdown,
   CInputGroupText,
   CLabel,
   CSelect,
-  CRow,
 } from "@coreui/react";
 import CIcon from "@coreui/icons-react";
-import usersData from "../../users/UsersData";
-import { Link, useHistory } from "react-router-dom";
+import { useHistory } from "react-router-dom";
 const axios = require("axios");
 
 const BasicForms = (props) => {
@@ -50,7 +35,7 @@ const BasicForms = (props) => {
 
   useEffect(() => {
     axios
-      .get("http://51.210.47.134:3003/back/users/roles")
+      .get("http://localhost:3002/back/users/roles")
       .then(function (response) {
         // handle success
 
@@ -64,13 +49,13 @@ const BasicForms = (props) => {
   }, []);
 
   const handleSubmit = () => {
-console.log(nom , prenom)
-console.log(email)
-console.log(typeCompte)
-console.log(idToCreate)
+    console.log(nom, prenom);
+    console.log(email);
+    console.log(typeCompte);
+    console.log(idToCreate);
 
     axios
-      .post("http://51.210.47.134:3003/back/users", {
+      .post("http://localhost:3002/back/users", {
         name: `${nom} ${prenom}`,
         mail: `${email}`,
         role: `${typeCompte}`,

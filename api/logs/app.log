@@ -39271,3 +39271,648 @@
   level: 'info',
   timestamp: '2020-11-30T15:56:54.701Z'
 }
+{
+  error: /home/ubuntu/Projets/Projet3/lyon-p3-faq/api/controllers/user.controller.js:1
+  <<<<<<< HEAD
+  ^^
+  
+  SyntaxError: Unexpected token '<<'
+      at wrapSafe (internal/modules/cjs/loader.js:1072:16)
+      at Module._compile (internal/modules/cjs/loader.js:1122:27)
+      at Object.Module._extensions..js (internal/modules/cjs/loader.js:1178:10)
+      at Module.load (internal/modules/cjs/loader.js:1002:32)
+      at Function.Module._load (internal/modules/cjs/loader.js:901:14)
+      at Module.require (internal/modules/cjs/loader.js:1044:19)
+      at require (internal/modules/cjs/helpers.js:77:18)
+      at Object.<anonymous> (/home/ubuntu/Projets/Projet3/lyon-p3-faq/api/routes/backoffice/user.js:4:24)
+      at Module._compile (internal/modules/cjs/loader.js:1158:30)
+      at Object.Module._extensions..js (internal/modules/cjs/loader.js:1178:10),
+  level: 'error',
+  message: "uncaughtException: Unexpected token '<<'\n" +
+    '/home/ubuntu/Projets/Projet3/lyon-p3-faq/api/controllers/user.controller.js:1\n' +
+    '<<<<<<< HEAD\n' +
+    '^^\n' +
+    '\n' +
+    "SyntaxError: Unexpected token '<<'\n" +
+    '    at wrapSafe (internal/modules/cjs/loader.js:1072:16)\n' +
+    '    at Module._compile (internal/modules/cjs/loader.js:1122:27)\n' +
+    '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1178:10)\n' +
+    '    at Module.load (internal/modules/cjs/loader.js:1002:32)\n' +
+    '    at Function.Module._load (internal/modules/cjs/loader.js:901:14)\n' +
+    '    at Module.require (internal/modules/cjs/loader.js:1044:19)\n' +
+    '    at require (internal/modules/cjs/helpers.js:77:18)\n' +
+    '    at Object.<anonymous> (/home/ubuntu/Projets/Projet3/lyon-p3-faq/api/routes/backoffice/user.js:4:24)\n' +
+    '    at Module._compile (internal/modules/cjs/loader.js:1158:30)\n' +
+    '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1178:10)',
+  stack: '/home/ubuntu/Projets/Projet3/lyon-p3-faq/api/controllers/user.controller.js:1\n' +
+    '<<<<<<< HEAD\n' +
+    '^^\n' +
+    '\n' +
+    "SyntaxError: Unexpected token '<<'\n" +
+    '    at wrapSafe (internal/modules/cjs/loader.js:1072:16)\n' +
+    '    at Module._compile (internal/modules/cjs/loader.js:1122:27)\n' +
+    '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1178:10)\n' +
+    '    at Module.load (internal/modules/cjs/loader.js:1002:32)\n' +
+    '    at Function.Module._load (internal/modules/cjs/loader.js:901:14)\n' +
+    '    at Module.require (internal/modules/cjs/loader.js:1044:19)\n' +
+    '    at require (internal/modules/cjs/helpers.js:77:18)\n' +
+    '    at Object.<anonymous> (/home/ubuntu/Projets/Projet3/lyon-p3-faq/api/routes/backoffice/user.js:4:24)\n' +
+    '    at Module._compile (internal/modules/cjs/loader.js:1158:30)\n' +
+    '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1178:10)',
+  exception: true,
+  date: 'Tue Dec 01 2020 09:33:14 GMT+0000 (Coordinated Universal Time)',
+  process: {
+    pid: 10376,
+    uid: 0,
+    gid: 0,
+    cwd: '/home/ubuntu/Projets/Projet3/lyon-p3-faq/api',
+    execPath: '/root/.nvm/versions/node/v12.16.1/bin/node',
+    version: 'v12.16.1',
+    argv: [
+      '/root/.nvm/versions/node/v12.16.1/bin/node',
+      '/home/ubuntu/Projets/Projet3/lyon-p3-faq/api/bin/start'
+    ],
+    memoryUsage: {
+      rss: 52711424,
+      heapTotal: 18694144,
+      heapUsed: 13196432,
+      external: 1436098
+    }
+  },
+  os: {
+    loadavg: [ 1.4169921875, 0.96826171875, 0.98095703125 ],
+    uptime: 505289
+  },
+  trace: [
+    {
+      column: 16,
+      file: 'internal/modules/cjs/loader.js',
+      function: 'wrapSafe',
+      line: 1072,
+      method: null,
+      native: false
+    },
+    {
+      column: 27,
+      file: 'internal/modules/cjs/loader.js',
+      function: 'Module._compile',
+      line: 1122,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'internal/modules/cjs/loader.js',
+      function: 'Module._extensions..js',
+      line: 1178,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'internal/modules/cjs/loader.js',
+      function: 'Module.load',
+      line: 1002,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 14,
+      file: 'internal/modules/cjs/loader.js',
+      function: 'Module._load',
+      line: 901,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'internal/modules/cjs/loader.js',
+      function: 'Module.require',
+      line: 1044,
+      method: 'require',
+      native: false
+    },
+    {
+      column: 18,
+      file: 'internal/modules/cjs/helpers.js',
+      function: 'require',
+      line: 77,
+      method: null,
+      native: false
+    },
+    {
+      column: 24,
+      file: '/home/ubuntu/Projets/Projet3/lyon-p3-faq/api/routes/backoffice/user.js',
+      function: null,
+      line: 4,
+      method: null,
+      native: false
+    },
+    {
+      column: 30,
+      file: 'internal/modules/cjs/loader.js',
+      function: 'Module._compile',
+      line: 1158,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'internal/modules/cjs/loader.js',
+      function: 'Module._extensions..js',
+      line: 1178,
+      method: '.js',
+      native: false
+    }
+  ],
+  timestamp: '2020-12-01T09:33:14.464Z'
+}
+{
+  code: 'ER_ACCESS_DENIED_ERROR',
+  errno: 1045,
+  sqlMessage: "Access denied for user ''@'localhost' (using password: NO)",
+  sqlState: '28000',
+  fatal: true,
+  level: 'error',
+  timestamp: '2020-12-01T09:34:36.291Z'
+}
+{
+  message: 'GET /back/users 500 21 - 49.561 ms\n',
+  level: 'info',
+  timestamp: '2020-12-01T09:34:36.306Z'
+}
+{
+  message: 'GET /back/users 200 1610 - 70.284 ms\n',
+  level: 'info',
+  timestamp: '2020-12-01T09:35:03.671Z'
+}
+{
+  message: 'GET /back/users?withRoles=true 200 1850 - 46.615 ms\n',
+  level: 'info',
+  timestamp: '2020-12-01T09:46:31.728Z'
+}
+{
+  message: 'GET /back/users?withRoles=true 304 - - 8.758 ms\n',
+  level: 'info',
+  timestamp: '2020-12-01T09:46:31.775Z'
+}
+{
+  message: 'GET /back/posts 200 4741 - 5.566 ms\n',
+  level: 'info',
+  timestamp: '2020-12-01T09:46:36.002Z'
+}
+{
+  message: 'GET /back/posts 304 - - 4.471 ms\n',
+  level: 'info',
+  timestamp: '2020-12-01T09:46:36.086Z'
+}
+{
+  message: 'PUT /back/posts/1 200 27 - 39.738 ms\n',
+  level: 'info',
+  timestamp: '2020-12-01T09:46:39.131Z'
+}
+{
+  message: 'GET /back/posts 200 4763 - 4.893 ms\n',
+  level: 'info',
+  timestamp: '2020-12-01T09:46:39.166Z'
+}
+{
+  message: 'GET /back/users?withRoles=true 304 - - 3.060 ms\n',
+  level: 'info',
+  timestamp: '2020-12-01T09:46:41.259Z'
+}
+{
+  message: 'GET /back/users?withRoles=true 304 - - 6.935 ms\n',
+  level: 'info',
+  timestamp: '2020-12-01T09:46:41.300Z'
+}
+{
+  message: 'GET /back/users/roles 200 82 - 2.635 ms\n',
+  level: 'info',
+  timestamp: '2020-12-01T09:46:43.695Z'
+}
+{
+  message: 'GET /back/users?withRoles=true 304 - - 16.588 ms\n',
+  level: 'info',
+  timestamp: '2020-12-01T09:46:49.923Z'
+}
+{
+  message: 'PUT /back/users/39 200 39 - 26.889 ms\n',
+  level: 'info',
+  timestamp: '2020-12-01T09:46:49.962Z'
+}
+{
+  message: 'GET /back/users?withRoles=true 200 1841 - 12.931 ms\n',
+  level: 'info',
+  timestamp: '2020-12-01T09:46:49.970Z'
+}
+{
+  message: 'GET /back/users/roles 304 - - 1.926 ms\n',
+  level: 'info',
+  timestamp: '2020-12-01T09:46:51.419Z'
+}
+{
+  message: 'GET /back/users?withRoles=true 304 - - 4.926 ms\n',
+  level: 'info',
+  timestamp: '2020-12-01T09:47:19.381Z'
+}
+{
+  code: 'ER_DUP_ENTRY',
+  errno: 1062,
+  sqlMessage: "Duplicate entry '42' for key 'PRIMARY'",
+  sqlState: '23000',
+  index: 0,
+  sql: " INSERT INTO  user ( name,mail,pass,ip_address,role_id,id) VALUES ('BORLAND Emeline', 'emeline@gmail.com', 'faqmdp', '::ffff:89.86.76.89', '2', '42')  ",
+  level: 'error',
+  timestamp: '2020-12-01T09:47:19.405Z'
+}
+{
+  message: 'POST /back/users 500 21 - 11.516 ms\n',
+  level: 'info',
+  timestamp: '2020-12-01T09:47:19.410Z'
+}
+{
+  message: 'GET /back/users?withRoles=true 304 - - 5.511 ms\n',
+  level: 'info',
+  timestamp: '2020-12-01T09:47:19.435Z'
+}
+{
+  message: 'POST /back/users/ 200 23 - 5.550 ms\n',
+  level: 'info',
+  timestamp: '2020-12-01T09:48:33.040Z'
+}
+{
+  message: 'GET /back/users?withRoles=true 200 1980 - 6.867 ms\n',
+  level: 'info',
+  timestamp: '2020-12-01T09:51:40.863Z'
+}
+{
+  message: 'GET /back/users?withRoles=true 304 - - 2.700 ms\n',
+  level: 'info',
+  timestamp: '2020-12-01T09:51:40.915Z'
+}
+{
+  message: 'GET /back/users/roles 200 82 - 1.893 ms\n',
+  level: 'info',
+  timestamp: '2020-12-01T09:51:50.770Z'
+}
+{
+  message: 'GET /back/users?withRoles=true 200 1980 - 5.611 ms\n',
+  level: 'info',
+  timestamp: '2020-12-01T09:52:10.497Z'
+}
+{
+  code: 'ER_DUP_ENTRY',
+  errno: 1062,
+  sqlMessage: "Duplicate entry '42' for key 'PRIMARY'",
+  sqlState: '23000',
+  index: 0,
+  sql: " INSERT INTO  user ( name,mail,pass,ip_address,role_id,id) VALUES ('RAMIER José', 'jose@gmail.com', 'faqmdp', '::ffff:89.86.76.89', '3', '42')  ",
+  level: 'error',
+  timestamp: '2020-12-01T09:52:10.517Z'
+}
+{
+  message: 'POST /back/users 500 21 - 6.068 ms\n',
+  level: 'info',
+  timestamp: '2020-12-01T09:52:10.519Z'
+}
+{
+  message: 'GET /back/users?withRoles=true 200 1980 - 2.652 ms\n',
+  level: 'info',
+  timestamp: '2020-12-01T09:52:10.540Z'
+}
+{
+  message: 'GET /back/posts 304 - - 3.293 ms\n',
+  level: 'info',
+  timestamp: '2020-12-01T09:53:10.368Z'
+}
+{
+  message: 'GET /back/posts 304 - - 3.307 ms\n',
+  level: 'info',
+  timestamp: '2020-12-01T09:53:10.443Z'
+}
+{
+  message: 'GET /back/users?withRoles=true 304 - - 3.119 ms\n',
+  level: 'info',
+  timestamp: '2020-12-01T09:53:13.647Z'
+}
+{
+  message: 'GET /back/users?withRoles=true 304 - - 4.214 ms\n',
+  level: 'info',
+  timestamp: '2020-12-01T09:53:13.689Z'
+}
+{
+  message: 'GET /back/users/roles 304 - - 2.274 ms\n',
+  level: 'info',
+  timestamp: '2020-12-01T09:53:22.623Z'
+}
+{
+  message: 'GET /back/users?withRoles=true 304 - - 3.019 ms\n',
+  level: 'info',
+  timestamp: '2020-12-01T09:53:28.939Z'
+}
+{
+  message: 'GET /back/users?withRoles=true 304 - - 4.902 ms\n',
+  level: 'info',
+  timestamp: '2020-12-01T09:53:28.977Z'
+}
+{
+  message: 'GET /back/users?withRoles=true 304 - - 2.786 ms\n',
+  level: 'info',
+  timestamp: '2020-12-01T09:53:32.559Z'
+}
+{
+  message: 'GET /back/users?withRoles=true 304 - - 10.196 ms\n',
+  level: 'info',
+  timestamp: '2020-12-01T09:53:32.607Z'
+}
+{
+  message: 'GET /back/users?withRoles=true 200 1980 - 38.788 ms\n',
+  level: 'info',
+  timestamp: '2020-12-01T09:55:14.413Z'
+}
+{
+  message: 'GET /back/users?withRoles=true 200 1980 - 15.186 ms\n',
+  level: 'info',
+  timestamp: '2020-12-01T09:55:14.473Z'
+}
+{
+  message: 'GET /back/users?withRoles=true 200 1980 - 6.913 ms\n',
+  level: 'info',
+  timestamp: '2020-12-01T09:55:15.008Z'
+}
+{
+  message: 'GET /back/users?withRoles=true 200 1980 - 12.143 ms\n',
+  level: 'info',
+  timestamp: '2020-12-01T09:55:15.073Z'
+}
+{
+  message: 'GET /back/posts 200 4763 - 98.513 ms\n',
+  level: 'info',
+  timestamp: '2020-12-01T10:07:14.276Z'
+}
+{
+  message: 'GET /back/posts 200 4763 - 4.703 ms\n',
+  level: 'info',
+  timestamp: '2020-12-01T10:07:14.366Z'
+}
+{
+  message: 'GET /back/users?withRoles=true 200 1980 - 8.410 ms\n',
+  level: 'info',
+  timestamp: '2020-12-01T10:07:16.027Z'
+}
+{
+  message: 'GET /back/users?withRoles=true 200 1980 - 5.543 ms\n',
+  level: 'info',
+  timestamp: '2020-12-01T10:07:16.073Z'
+}
+{
+  message: 'GET /back/users?withRoles=true 200 1980 - 6.054 ms\n',
+  level: 'info',
+  timestamp: '2020-12-01T10:07:35.693Z'
+}
+{
+  message: 'GET /back/users?withRoles=true 200 1980 - 3.955 ms\n',
+  level: 'info',
+  timestamp: '2020-12-01T10:07:35.742Z'
+}
+{
+  message: 'GET /back/users?withRoles=true 200 1980 - 3.344 ms\n',
+  level: 'info',
+  timestamp: '2020-12-01T10:09:13.534Z'
+}
+{
+  message: 'GET /back/users?withRoles=true 200 1980 - 3.263 ms\n',
+  level: 'info',
+  timestamp: '2020-12-01T10:09:13.581Z'
+}
+{
+  message: 'GET /back/users?withRoles=true 200 1980 - 8.696 ms\n',
+  level: 'info',
+  timestamp: '2020-12-01T10:09:26.379Z'
+}
+{
+  message: 'GET /back/users?withRoles=true 200 1980 - 3.837 ms\n',
+  level: 'info',
+  timestamp: '2020-12-01T10:09:26.426Z'
+}
+{
+  message: 'GET /back/users?withRoles=true 200 1980 - 3.016 ms\n',
+  level: 'info',
+  timestamp: '2020-12-01T10:09:40.497Z'
+}
+{
+  message: 'GET /back/users?withRoles=true 200 1980 - 3.324 ms\n',
+  level: 'info',
+  timestamp: '2020-12-01T10:09:40.550Z'
+}
+{
+  message: 'GET /back/users?withRoles=true 200 1980 - 5.174 ms\n',
+  level: 'info',
+  timestamp: '2020-12-01T10:10:22.430Z'
+}
+{
+  message: 'GET /back/users?withRoles=true 200 1980 - 5.029 ms\n',
+  level: 'info',
+  timestamp: '2020-12-01T10:10:22.480Z'
+}
+{
+  message: 'GET /back/users?withRoles=true 200 1980 - 5.747 ms\n',
+  level: 'info',
+  timestamp: '2020-12-01T10:10:45.562Z'
+}
+{
+  message: 'GET /back/users?withRoles=true 200 1980 - 3.267 ms\n',
+  level: 'info',
+  timestamp: '2020-12-01T10:10:45.608Z'
+}
+{
+  message: 'GET /back/users?withRoles=true 200 1980 - 4.387 ms\n',
+  level: 'info',
+  timestamp: '2020-12-01T10:17:36.266Z'
+}
+{
+  message: 'GET /back/users?withRoles=true 200 1980 - 10.166 ms\n',
+  level: 'info',
+  timestamp: '2020-12-01T10:17:36.323Z'
+}
+{
+  message: 'GET /back/users?withRoles=true 200 1980 - 2.900 ms\n',
+  level: 'info',
+  timestamp: '2020-12-01T10:18:47.573Z'
+}
+{
+  message: 'GET /back/users?withRoles=true 200 1980 - 3.654 ms\n',
+  level: 'info',
+  timestamp: '2020-12-01T10:18:47.625Z'
+}
+{
+  message: 'GET /back/users?withRoles=true 200 1980 - 4.551 ms\n',
+  level: 'info',
+  timestamp: '2020-12-01T10:19:09.322Z'
+}
+{
+  message: 'GET /back/users?withRoles=true 200 1980 - 3.476 ms\n',
+  level: 'info',
+  timestamp: '2020-12-01T10:19:09.369Z'
+}
+{
+  message: 'GET /back/users/roles 200 82 - 2.156 ms\n',
+  level: 'info',
+  timestamp: '2020-12-01T10:19:25.384Z'
+}
+{
+  message: 'GET /back/users?withRoles=true 200 1980 - 3.619 ms\n',
+  level: 'info',
+  timestamp: '2020-12-01T10:19:35.482Z'
+}
+{
+  message: 'GET /back/users?withRoles=true 200 1980 - 3.317 ms\n',
+  level: 'info',
+  timestamp: '2020-12-01T10:19:35.525Z'
+}
+{
+  message: 'GET /back/users?withRoles=true 200 1980 - 2.793 ms\n',
+  level: 'info',
+  timestamp: '2020-12-01T10:20:35.393Z'
+}
+{
+  message: 'GET /back/users?withRoles=true 200 1980 - 2.564 ms\n',
+  level: 'info',
+  timestamp: '2020-12-01T10:20:35.436Z'
+}
+{
+  message: 'GET /back/users?withRoles=true 200 1980 - 7.013 ms\n',
+  level: 'info',
+  timestamp: '2020-12-01T10:21:41.101Z'
+}
+{
+  message: 'GET /back/users?withRoles=true 200 1980 - 3.264 ms\n',
+  level: 'info',
+  timestamp: '2020-12-01T10:21:41.151Z'
+}
+{
+  message: 'GET /back/users?withRoles=true 200 1980 - 4.314 ms\n',
+  level: 'info',
+  timestamp: '2020-12-01T10:22:18.842Z'
+}
+{
+  message: 'GET /back/users?withRoles=true 200 1980 - 3.426 ms\n',
+  level: 'info',
+  timestamp: '2020-12-01T10:22:18.889Z'
+}
+{
+  message: 'GET /back/users?withRoles=true 200 1980 - 3.104 ms\n',
+  level: 'info',
+  timestamp: '2020-12-01T10:23:03.097Z'
+}
+{
+  message: 'GET /back/users?withRoles=true 200 1980 - 3.533 ms\n',
+  level: 'info',
+  timestamp: '2020-12-01T10:23:03.141Z'
+}
+{
+  message: 'GET /back/users?withRoles=true 200 1980 - 4.057 ms\n',
+  level: 'info',
+  timestamp: '2020-12-01T10:23:29.354Z'
+}
+{
+  message: 'GET /back/users?withRoles=true 200 1980 - 9.327 ms\n',
+  level: 'info',
+  timestamp: '2020-12-01T10:23:29.419Z'
+}
+{
+  message: 'GET /back/users?withRoles=true 200 1980 - 3.595 ms\n',
+  level: 'info',
+  timestamp: '2020-12-01T10:23:53.562Z'
+}
+{
+  message: 'GET /back/users?withRoles=true 200 1980 - 4.520 ms\n',
+  level: 'info',
+  timestamp: '2020-12-01T10:23:53.614Z'
+}
+{
+  message: 'GET /back/users?withRoles=true 200 1980 - 2.308 ms\n',
+  level: 'info',
+  timestamp: '2020-12-01T10:24:44.891Z'
+}
+{
+  message: 'GET /back/users?withRoles=true 200 1980 - 4.000 ms\n',
+  level: 'info',
+  timestamp: '2020-12-01T10:24:44.945Z'
+}
+{
+  message: 'GET /back/users?withRoles=true 200 1980 - 4.632 ms\n',
+  level: 'info',
+  timestamp: '2020-12-01T10:26:37.901Z'
+}
+{
+  message: 'GET /back/users?withRoles=true 200 1980 - 3.151 ms\n',
+  level: 'info',
+  timestamp: '2020-12-01T10:26:37.951Z'
+}
+{
+  message: 'GET /back/users?withRoles=true 200 1980 - 4.752 ms\n',
+  level: 'info',
+  timestamp: '2020-12-01T10:27:18.454Z'
+}
+{
+  message: 'GET /back/users?withRoles=true 200 1980 - 7.765 ms\n',
+  level: 'info',
+  timestamp: '2020-12-01T10:27:18.504Z'
+}
+{
+  message: 'GET /back/users?withRoles=true 200 1980 - 12.178 ms\n',
+  level: 'info',
+  timestamp: '2020-12-01T10:27:47.921Z'
+}
+{
+  message: 'GET /back/users?withRoles=true 200 1980 - 3.716 ms\n',
+  level: 'info',
+  timestamp: '2020-12-01T10:27:47.968Z'
+}
+{
+  message: 'GET /back/users/roles 200 82 - 2.254 ms\n',
+  level: 'info',
+  timestamp: '2020-12-01T10:27:53.339Z'
+}
+{
+  message: 'GET /back/users?withRoles=true 200 1980 - 2.536 ms\n',
+  level: 'info',
+  timestamp: '2020-12-01T10:28:17.874Z'
+}
+{
+  message: 'POST /back/users 200 23 - 25.958 ms\n',
+  level: 'info',
+  timestamp: '2020-12-01T10:28:17.939Z'
+}
+{
+  message: 'GET /back/users?withRoles=true 200 2120 - 10.217 ms\n',
+  level: 'info',
+  timestamp: '2020-12-01T10:28:17.943Z'
+}
+{
+  message: 'GET /back/users?withRoles=true 200 2120 - 3.153 ms\n',
+  level: 'info',
+  timestamp: '2020-12-01T10:28:17.979Z'
+}
+{
+  message: 'GET /back/users/roles 200 82 - 2.327 ms\n',
+  level: 'info',
+  timestamp: '2020-12-01T10:28:24.299Z'
+}
+{
+  message: 'GET /back/users?withRoles=true 200 2120 - 8.395 ms\n',
+  level: 'info',
+  timestamp: '2020-12-01T10:28:26.460Z'
+}
+{
+  message: 'PUT /back/users/46 200 39 - 12.862 ms\n',
+  level: 'info',
+  timestamp: '2020-12-01T10:28:26.468Z'
+}
+{
+  message: 'GET /back/users?withRoles=true 200 2114 - 2.836 ms\n',
+  level: 'info',
+  timestamp: '2020-12-01T10:28:26.503Z'
+}

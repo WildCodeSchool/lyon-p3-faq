@@ -37,7 +37,7 @@ const BasicForms = (props) => {
   const infosUser = props.location.stated;
   const {updateField} = props.location.update
 
-updateField("ca vient de mon composant userModify")
+
  
  
 
@@ -60,7 +60,7 @@ updateField("ca vient de mon composant userModify")
 
   useEffect(() => {
     axios
-      .get(`http://51.210.47.134:3003/back/users/roles`)
+      .get(`http://localhost:3002/back/users/roles`)
       .then(function (response) {
         setRoles(response.data);
         
@@ -72,7 +72,7 @@ updateField("ca vient de mon composant userModify")
 
   const handleUpdate = (e) => {
     axios
-      .put(`http://51.210.47.134:3003/back/users/${idUser}`, {
+      .put(`http://localhost:3002/back/users/${idUser}`, {
         //data to update
         name: `${nom} ${prenom}`,
         mail: `${email}`,
@@ -95,7 +95,7 @@ updateField("ca vient de mon composant userModify")
     setDanger(!danger);
 
     axios
-      .delete(`http://51.210.47.134:3003/back/users/${idUser}`)
+      .delete(`http://localhost:3002/back/users/${idUser}`)
       .then(function (response) {
         console.log(response);
       })

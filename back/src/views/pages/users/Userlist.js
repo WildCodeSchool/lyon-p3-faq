@@ -37,17 +37,9 @@ const fields = [
   "pseudo",
 ];
 
-// Utilisation de redux
-function mapStateToProps(state, ownProps) {
-  const { visibilityFilter } = state;
-  const { id } = ownProps;
-  const todo = "test redux";
 
-  // component receives additionally:
-  return { todo, visibilityFilter };
-}
 
-const Tables = (props) => {
+const Tables = () => {
   // States
 
   let [usersData, setUsersData] = useState();
@@ -80,7 +72,7 @@ const Tables = (props) => {
   useEffect(
     (e) => {
       axios
-        .get("http://51.210.47.134:3003/back/users?withRoles=true")
+        .get("http://localhost:3002/back/users?withRoles=true")
         .then(function (response) {
           // handle success
 
@@ -167,4 +159,4 @@ const Tables = (props) => {
   );
 };
 
-export default connect(mapStateToProps)(Tables);
+export default Tables;

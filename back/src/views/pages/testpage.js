@@ -43,7 +43,7 @@ const filterTitle = {
   palceholder: "Contenu"
 };
 
-const Tables = () => {
+const Testpage = () => {
   // States
 
   const [postsData, setPostsData] = useState();
@@ -234,4 +234,4 @@ const Tables = () => {
   );
 };
 
-export default Tables;
+export default Testpage;

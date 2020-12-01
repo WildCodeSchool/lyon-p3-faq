@@ -18,60 +18,36 @@ import CIcon from "@coreui/icons-react";
 
 const axios = require("axios");
 
-const Login = () => {
+const RenewPassword = () => {
   const [login, setLogin] = useState();
   const [password, setPassword] = useState();
+  const [repeatPassword, setRepeatPassword] = useState();
   let history = useHistory();
 
-  const handleLogin = () => {
-    axios
-      .post("http://localhost:3002/back/login", {
-        login: login,
-        password: password,
-      })
-      .then(function (response) {
-        // handle success
-        if (response.status == "200") {
-          history.push("/dashboard");
-        }
-      })
-      .catch(function (error) {
-        // handle error
-        alert("Identifiants incorrects. Merci de ré-essayer");
-      });
+  const handleCreatePassword = () => {
+    if (password === repeatPassword) {
+      axios
+        .patch("http://localhost:3002/back/users", {
+          mail: login,
+          password: password,
+        })
+        .then(function (response) {
+          // handle success
+          if (response.status == "200") {
+            history.push("/");
+          }
+        })
+        .catch(function (error) {
+          if (error.response.status === 400) {
+            alert("Mot de passe trop court : au moins 8 caractères");
+          }
+        });
+    } else {
+      alert(
+        "Vos mots de passe ne correspondent pas. Merci de saisir deux mots de passe identiques"
+      );
+    }
   };
-
-
-  const handleForgottenPassword = () => {
-
-    console.log("mot de passe oublié")
-    console.log("login" , login)
-    axios
-      .post("http://localhost:3002/back/login", {
-        
-        login: login,
-        password: "nananana",
-        action : "renewPassword"
-        
-      })
-      .then(function (response) {
-        // handle success
-        if (response.status == "200") {
-          alert("Merci de consulter votre boite mail pour réinitialiser votre mot de passe");
-          
-        }
-      })
-      .catch(function (error) {
-        // handle error
-        console.log(error)
-      });
-  };
-
-
-
-
-
-
 
   return (
     <div className="c-app c-default-layout flex-row align-items-center">
@@ -82,8 +58,10 @@ const Login = () => {
               <CCard className="p-4">
                 <CCardBody>
                   <CForm>
-                    <h1>Login</h1>
-                    <p className="text-muted">Sign In to your account</p>
+                    <h1>Create new password</h1>
+                    <p className="text-muted">
+                      Please create a new password (Min 8 characters)
+                    </p>
                     <CInputGroup className="mb-3">
                       <CInputGroupPrepend>
                         <CInputGroupText>
@@ -100,7 +78,7 @@ const Login = () => {
                         }}
                       />
                     </CInputGroup>
-                    <CInputGroup className="mb-4">
+                    <CInputGroup className="mb-3">
                       <CInputGroupPrepend>
                         <CInputGroupText>
                           <CIcon name="cil-lock-locked" />
@@ -116,26 +94,31 @@ const Login = () => {
                         }}
                       />
                     </CInputGroup>
-                    <CRow>
-                      <CCol xs="6">
-                        <CButton
-                          color="primary"
-                          className="px-4"
-                          onClick={handleLogin}
-                        >
-                          Login
-                        </CButton>
-                      </CCol>
-                      <CCol xs="6" className="text-right">
-                        <CButton
-                          color="link"
-                          className="px-0"
-                          onClick={handleForgottenPassword}
-                        >
-                          Forgot password?
-                        </CButton>
-                      </CCol>
-                    </CRow>
+                    <CInputGroup className="mb-3">
+                      <CInputGroupPrepend>
+                        <CInputGroupText>
+                          <CIcon name="cil-lock-locked" />
+                        </CInputGroupText>
+                      </CInputGroupPrepend>
+                      <CInput
+                        type="repeat password"
+                        placeholder=" repeat Password"
+                        autoComplete="current-password"
+                        value={repeatPassword}
+                        onChange={(e) => {
+                          setRepeatPassword(e.target.value);
+                        }}
+                      />
+                    </CInputGroup>
+                    <CCol xs="6">
+                      <CButton
+                        color="primary"
+                        className="px-4"
+                        onClick={handleCreatePassword}
+                      >
+                        Create
+                      </CButton>
+                    </CCol>
                   </CForm>
                 </CCardBody>
               </CCard>
@@ -148,4 +131,4 @@ const Login = () => {
   );
 };
 
-export default Login;
+export default RenewPassword;
