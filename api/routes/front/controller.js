@@ -1,17 +1,14 @@
 const Question = require("./models");
+const logger = require("morgan");
 
 class QuestionController {
   static async getAll(req, res) {
     try {
       const listQuestions = await Question.getQuestions();
       res.send(listQuestions);
-      // console.log(
-      //   req.headers["x-forwarded-for"] ||
-      //     req.connection.remoteAddress ||
-      //     req.socket.remoteAddress
-      // );
     } catch (err) {
       res.sendStatus(500);
+      logger.error(err);
     }
   }
 
@@ -23,6 +20,7 @@ class QuestionController {
       res.send(listQuestionsAnswered);
     } catch (err) {
       res.sendStatus(500);
+      logger.error(err);
     }
   }
 
@@ -56,6 +54,7 @@ class QuestionController {
       }
     } catch (err) {
       res.sendStatus(500);
+      logger.error(err);
     }
   }
 
@@ -77,7 +76,7 @@ class QuestionController {
       }
     } catch (err) {
       res.sendStatus(500);
-      console.log(err)
+      logger.error(err);
     }
   }
 }

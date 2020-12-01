@@ -5,8 +5,8 @@ const QuestionController = require("./controller");
 const rateLimit = require("express-rate-limit");
 
 const limit = rateLimit({
-  windowMs: 60 * 60 * 5000,
-  max: 5,
+  windowMs: 60 * 60 * 5000, // 5 hours
+  max: 5, // 5 requests
 });
 
 router.get("/", QuestionController.getAll);
