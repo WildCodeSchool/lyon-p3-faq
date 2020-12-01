@@ -96,7 +96,9 @@ const Tables = (props) => {
         })
 
         .then((data) => {
-          setIdMaxUsers(data[data.length - 1].id);
+        const arrayUsers = Object.values(data)
+        const idList= arrayUsers.map ( user => {return (user.id)})
+        setIdMaxUsers(Math.max(...idList));
         })
         .catch(function (error) {
           // handle error

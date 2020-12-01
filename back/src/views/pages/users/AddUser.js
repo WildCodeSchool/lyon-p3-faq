@@ -64,6 +64,11 @@ const BasicForms = (props) => {
   }, []);
 
   const handleSubmit = () => {
+console.log(nom , prenom)
+console.log(email)
+console.log(typeCompte)
+console.log(idToCreate)
+
     axios
       .post("http://51.210.47.134:3003/back/users", {
         name: `${nom} ${prenom}`,
