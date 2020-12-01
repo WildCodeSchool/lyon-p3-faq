@@ -5,6 +5,11 @@ class QuestionController {
     try {
       const listQuestions = await Question.getQuestions();
       res.send(listQuestions);
+      // console.log(
+      //   req.headers["x-forwarded-for"] ||
+      //     req.connection.remoteAddress ||
+      //     req.socket.remoteAddress
+      // );
     } catch (err) {
       res.sendStatus(500);
     }
@@ -48,6 +53,27 @@ class QuestionController {
         }
       } else {
         res.sendStatus(400);
+      }
+    } catch (err) {
+      res.sendStatus(500);
+    }
+  }
+
+  static async report(req, res) {
+    const IP =
+      req.headers["x-forwarded-for"] ||
+      req.connection.remoteAddress ||
+      req.socket.remoteAddress;
+    try {
+      if (IP === undefined || req.body.form.id === undefined) {
+        res.sendStatus(400);
+      } else {
+        const reported = await Question.reportQuestion(
+          req.body.form.id,
+          IP,
+          req.body.form.raison
+        );
+        res.sendStatus(201);
       }
     } catch (err) {
       res.sendStatus(500);

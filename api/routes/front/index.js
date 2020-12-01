@@ -6,6 +6,6 @@ const QuestionController = require("./controller");
 router.get("/", QuestionController.getAll);
 router.get("/answered", QuestionController.getAllAnswered);
 router.post("/", QuestionController.postQuestion);
-
+router.post("/report", QuestionController.report);
 module.exports = router;
 
