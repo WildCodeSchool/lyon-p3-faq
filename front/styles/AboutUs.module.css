@@ -120,3 +120,76 @@
 .social >li {
     padding: 20px;
 }
+
+@media screen and (max-width: 1775px) {
+    .rightwrapteam {
+        width: 60%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 0px 0px;
+        grid-template-areas:
+          ". . "
+          ". . ";
+        padding: 40px;
+       }
+    }
+
+
+@media screen and (max-width: 1170px) {
+        .rightwrapteam {
+            width: 60%;
+            display: flex;
+            flex-direction: column;
+            padding: 40px;
+           }
+        }
+
+@media screen and (max-width: 768px) {
+
+        .teamintro {
+            display: flex;
+            flex-direction: column;
+            padding: 20px ;
+        }
+
+        .leftwrapteam {
+            width: 100%;
+            margin : 0;
+        }
+
+        .innerleftupwrap {
+            height: 20%;
+            padding-top: 10px;
+            font-size: 1.5em;
+        }
+
+        .innerleftmidwrap {
+            height: 60%;
+            font-size: 3em;
+            display: flex;
+            flex-direction: row;
+            justify-content: left;
+        }
+
+        .innerleftmidwrap > span{
+            padding-right: 10px;
+        }
+
+        .innerleftbotwrap {
+            height: 20%;
+            font-size: 1.2em;
+            font-weight : 600;
+            padding-bottom: 10px;
+        }
+
+        .rightwrapteam {
+            display: flex;
+            flex-direction: column;
+            padding: 0;
+            width: 100%;
+            align-items: center;
+
+        }     
+
+}
