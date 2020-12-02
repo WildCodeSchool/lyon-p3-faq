@@ -34,6 +34,7 @@ export default function Navbar() {
       </div>
 
       <nav className={sidebar ? styles["navmenuactive"] : styles["navmenu"] }>
+      {/* <nav className={styles["navmenu"] } style =  {{right : "0px"}} : null> */}
 
         <ul className={styles["navmenuitems"]} onClick={showSidebar}>
 
