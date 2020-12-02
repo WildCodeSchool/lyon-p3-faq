@@ -1,4 +1,4 @@
-import {useState} from "react";
+import {useState, useState} from "react";
 import Link from "next/link";
 import styles from "../styles/Navbar.module.css"
 import * as FaIcons from "react-icons/fa";
@@ -6,12 +6,16 @@ import {HeaderData} from "./HeaderData";
 import useModal from "../utils/useModal";
 import Modal from "./ButtonAsk";
 
-
 export default function Navbar() {
   
+  const [APIWork, setAPIWork] = useState({});
   const [sidebar, setSidebar] = useState(false);
   const showSidebar = () => setSidebar(!sidebar);
   const { isShowing, toggle } = useModal();
+  
+  useEffect(() => {
+    setAPIWork(props.errorHandler.error);
+  }, []);
   
   return (
     <header>
@@ -23,7 +27,11 @@ export default function Navbar() {
               <Link href="/">Les Freelances Lyonnais</Link>
             </h1>
           </div>
-
+          <>
+            {!APIWork && props.displayButton ? (
+              <button onClick={toggle}>Poser une question</button>
+            ) : null}
+          </>
           <div className={styles.rightwrapnav}>
             <button  className={styles.navbutton} onClick={toggle}>Poser une question</button>
             <Modal isShowing={isShowing} hide={toggle} />
@@ -34,8 +42,7 @@ export default function Navbar() {
       </div>
 
       <nav className={sidebar ? styles["navmenuactive"] : styles["navmenu"] }>
-      {/* <nav className={styles["navmenu"] } style =  {{right : "0px"}} : null> */}
-
+      
         <ul className={styles["navmenuitems"]} onClick={showSidebar}>
 
             <li className={styles["navbartoggle"]}>
@@ -58,7 +65,6 @@ export default function Navbar() {
 
         </ul>        
       </nav>
-
     </header>
   );
 }

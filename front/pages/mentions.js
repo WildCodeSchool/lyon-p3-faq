@@ -68,6 +68,12 @@ export default function Mentions() {
         </div>
       </section>
       <Footer />
+
     </>
   );
+}
+
+export async function getServerSideProps() {
+  const data = await Fetch.fetchData("http://localhost:3000/front");
+  return { props: { data } };
 }
