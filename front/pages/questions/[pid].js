@@ -1,5 +1,5 @@
 import Head from "next/head";
-import Navbar from "../../components/Navbar";
+import Header from "../../components/Header";
 import Answer from "../../components/Answer";
 import { useRouter } from "next/router";
 const Fetch = require("../../utils/callAPI");
@@ -17,7 +17,7 @@ export default function Question({ data }) {
           content="width=device-width, initial-scale=1.0"
         ></meta>
       </Head>
-      <Navbar />
+      <Header />
       <Answer questionAnswered={data} />
     </>
   );

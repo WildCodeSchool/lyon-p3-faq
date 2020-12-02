@@ -6,6 +6,7 @@
     color : white;
     display: flex;
     justify-content: center;
+   
   }
 
   .headerWrapper {
@@ -40,8 +41,8 @@
   }
 
   .navbar {
-    background-color: blue;
     height: 80px;
+    width: 100%;
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -54,7 +55,6 @@
   }
 
   .navmenu {
-    background-color:green;
     width : 250px;
     height : 100vh;
     display : flex;

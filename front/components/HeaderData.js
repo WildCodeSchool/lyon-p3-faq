@@ -20,11 +20,11 @@ export const HeaderData = [
         icon: <FaIcons.FaBalanceScale/>,
         cName : "navtextA"
     }
-    ,
-    {
-        title:"Sandbox",
-        path:"/test",
-        icon: <FaIcons.FaBug/>,
-        cName : "navtextA"
-    }
+    // ,
+    // {
+    //     title:"Sandbox",
+    //     path:"/test",
+    //     icon: <FaIcons.FaBug/>,
+    //     cName : "navtextA"
+    // }
 ]
