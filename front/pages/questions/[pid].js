@@ -18,7 +18,7 @@ export default function Question({ data }) {
           content="width=device-width, initial-scale=1.0"
         ></meta>
       </Head>
-      <Header displayButton={false} errorHandler={data} />
+      <Header displayButton={true} errorHandler={data} />
       <Answer questionAnswered={data} />
       <ToastContainer />
     </>

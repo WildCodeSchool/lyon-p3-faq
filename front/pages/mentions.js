@@ -7,11 +7,11 @@ const Fetch = require("../utils/callAPI");
 export default function Mentions({ data }) {
   return (
     <>
-      <Header displayButton={false} errorHandler={data} />
+      <Header displayButton={true} errorHandler={data} />
       <div className={styles.div}>
         <p>Nothing to see here</p>
       </div>
-      <Footer displayButton={false} errorHandler={data} />
+      <Footer displayButton={true} errorHandler={data} />
     </>
   );
 }
