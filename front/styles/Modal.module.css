@@ -76,14 +76,13 @@
     .modalPost {
         display: block;
         background-color: white;
-        width: 70vw;
+        width: 90vw;
         height: auto;
         position: absolute;
         z-index: 3;
         border-radius: 20px;
         padding: 10px;
-        margin-left: auto;
-        margin-right: auto;
+        margin:auto;
         top:10%;
     }
 
@@ -104,10 +103,12 @@
         padding: 10px;
         border-radius: 10px;
         resize: none;
+        margin:auto;
+        height:fit-content;
     }
 
     .modalPost form div textarea {
-        height: 20vh;
+        height: 40vh;
     }
 
     .modalPost form div *:valid {
@@ -118,7 +119,8 @@
         border: 1px solid red;
     }
 
-    .modalPost form #submit {
-        background-color: red;
+    .modalPost form input#submit{
+        font-size:50px;
     }
+
 }
