@@ -8,7 +8,7 @@ class QuestionController {
       res.send(listQuestions);
     } catch (err) {
       res.sendStatus(500);
-      logger.error(err);
+      console.log(err);
     }
   }
 
@@ -20,7 +20,7 @@ class QuestionController {
       res.send(listQuestionsAnswered);
     } catch (err) {
       res.sendStatus(500);
-      logger.error(err);
+      console.log(err);
     }
   }
 
@@ -54,7 +54,7 @@ class QuestionController {
       }
     } catch (err) {
       res.sendStatus(500);
-      logger.error(err);
+      console.log(err);
     }
   }
 
@@ -76,7 +76,7 @@ class QuestionController {
       }
     } catch (err) {
       res.sendStatus(500);
-      logger.error(err);
+      console.log(err);
     }
   }
 }
