@@ -1,15 +1,18 @@
 const User = require("../models/user.model");
-const Role = require("../models/role.model")
+const Role = require("../models/role.model");
 const logger = require("../library/logger");
+const mailer = require("../library/mailer");
 
 class UserController {
   // Actions on one user
   static async updateOne(req, res) {
+    const { mail } = req.body.mail;
+
     try {
       let idUser = req.params.id;
 
       // On vérifie si l'utilisateur existe en base de données
-      const countResult = await User.matchUser(idUser);
+      const countResult = await User.matchUser("id", idUser);
 
       // L'utilisateur a bien été trouvé dans la base de données
 
@@ -24,7 +27,7 @@ class UserController {
 
         const queryResult = await User.update(idUser, fields);
         if (queryResult.affectedRows > 0) {
-          res.send({message : "User successfully updated"});
+          res.send({ message: "User successfully updated" });
         } else {
           res.status(404).send({ error: "Nothing updated" });
         }
@@ -44,10 +47,9 @@ class UserController {
       let idUser = req.params.id;
 
       // On vérifie si l'utilisateur existe en base de données
-      const countResult = await User.matchUser(idUser);
+      const countResult = await User.matchUser("id", idUser);
       // L'utilisateur a bien été trouvé dans la base de données
       if (countResult[0].count > 0) {
-        
         // On renvoie les informations de l'utilisateur
         const queryResult = await User.read("where id=", idUser);
         res.send(queryResult);
@@ -66,16 +68,15 @@ class UserController {
       let idUser = req.params.id;
 
       // On vérifie si l'utilisateur existe en base de données
-      const countResult = await User.matchUser(idUser);
+      const countResult = await User.matchUser("id", idUser);
 
       // L'utilisateur a bien été trouvé dans la base de données
       if (countResult[0].count > 0) {
-        
         // On renvoie les informations de l'utilisateur
 
         const queryResult = await User.delete(idUser);
         if (queryResult.affectedRows > 0) {
-          res.send({ message : "User successfully deleted"});
+          res.send({ message: "User successfully deleted" });
         } else {
           res.status(404).send({ error: "Nothing deleted" });
         }
@@ -92,21 +93,19 @@ class UserController {
 
   // display all users
   static async getUsers(req, res) {
-    const {withRoles}= req.query
-    console.log("withRoles : ", withRoles)
-    console.log("req.body :",req.query)
+    const { withRoles } = req.query;
+    console.log("withRoles : ", withRoles);
+    console.log("req.body :", req.query);
     try {
       if (withRoles == undefined) {
-        console.log("CAS CLASSIC")
-      const queryResult = await User.read();
-      res.send(queryResult);
-    } else {
-
-      console.log("CAS WITH ROLES")
-      const queryResult = await User.getUserWithRoles();
-      res.send(queryResult);
-    }
-      
+        console.log("CAS CLASSIC");
+        const queryResult = await User.read();
+        res.send(queryResult);
+      } else {
+        console.log("CAS WITH ROLES");
+        const queryResult = await User.getUserWithRoles();
+        res.send(queryResult);
+      }
     } catch (err) {
       logger.error(err);
       res.sendStatus(500);
@@ -115,9 +114,9 @@ class UserController {
 
   //add a User
   static async addUser(req, res) {
-    try {
-      const { name, mail, role, id } = req.body;
+    const { name, mail, role, id } = req.body;
 
+    try {
       const pass = "faqmdp";
       const ipAdress =
         req.headers["x-forwarded-for"] || req.connection.remoteAddress;
@@ -126,6 +125,20 @@ class UserController {
       const queryResult = await User.create(fields_table);
       console.log("add one", queryResult);
       if (queryResult.affectedRows > 0) {
+        let mailOptions = {
+          from: '"Pierre Freelances lyonnais 👻" <pierre@ammeloot.fr >', // sender address
+          to: mail, // list of receivers
+          subject: `Bonjour ${name}, bienvenue sur la plateforme FAQ ✔ `, // Subject line
+          text:
+            " merci de cliquer sur le lien-suivant pour créer un mot de passe", // plain text body
+          html:
+            '<b>Veuillez cliquer sur ce clien pour créer un mot de passe : <a href ="http://localhost:6001/#/pages/renewpassword"> Création mot de passe</a> </b>',
+        };
+
+        // send mail with defined transport object
+
+        mailer(mailOptions);
+
         res.send("User successfully added");
       } else {
         res.status(404).send({ error: "Nothing added" });
@@ -138,38 +151,84 @@ class UserController {
 
   //login a User
   static async login(req, res) {
-    const { login, password } = req.body;
+    const { login, password, action } = req.body;
 
-    try {
-      if (login === undefined || password === undefined) {
-        res.status(400).send("JSON incorrect. Champs attendus : login et mdp");
-      } else {
-        const queryResult = await User.checkLogin(login, password);
-        if (queryResult[0].count !== 0) {
-          res.status(200).json("Identifiants ok");
+    if (action === "renewPassword") {
+      let mailOptions = {
+        from: '"Pierre Freelances lyonnais 👻" <pierre@ammeloot.fr >', // sender address
+        to: login, // list of receivers
+        subject: "Hello ✔, vous avez oublié votre mot de passe ?", // Subject line
+        text: "Hello world ?", // plain text body
+        html:
+          '<b>Veuillez cliquer sur ce clien pour créer un nouveau mot de passe : <a href ="http://localhost:6001/#/pages/renewpassword">Nouveau mot de passe</a> </b>',
+      };
+
+      // send mail with defined transport object
+      console.log("login", login);
+      let info = await mailer(mailOptions);
+      res.sendStatus(200);
+    } else {
+      try {
+        if (login === undefined || password === undefined) {
+          res
+            .status(400)
+            .send("JSON incorrect. Champs attendus : login et mdp");
         } else {
-          res.status(401).json("Identifiants incorrects");
+          const queryResult = await User.checkLogin(login, password);
+          if (queryResult[0].count !== 0) {
+            res.status(200).json("Identifiants ok");
+          } else {
+            res.status(401).json("Identifiants incorrects");
+          }
         }
+      } catch (err) {
+        logger.error(err);
+        res.sendStatus(500);
       }
+    }
+  }
+
+  //get Roles
+  static async getRoles(req, res) {
+    try {
+      const queryResult = await Role.read();
+
+      res.status(200).json(queryResult);
     } catch (err) {
       logger.error(err);
       res.sendStatus(500);
     }
   }
 
+  static async updatePassword(req, res) {
+    console.log("UPDATEPASSWORD CONTROLLER");
 
-  //get Roles
-  static async getRoles(req, res) {
-    
-
+    const { mail, password } = req.body;
     try {
-      
-        const queryResult = await Role.read();
-               
-          res.status(200).json(queryResult);
-        
-      
+      // On vérifie si l'utilisateur existe en base de données
+      const countResult = await User.matchUser("mail", mail);
+      console.log("countResult :", countResult);
+      // L'utilisateur a bien été trouvé dans la base de données
+
+      if (countResult[0].count > 0) {
+        // On renvoie les informations de l'utilisateur
+
+        const fields = {
+          pass: password,
+        };
+
+        const queryResult = await User.updatePwd(mail, fields);
+        if (queryResult.affectedRows > 0) {
+          res.status(200).send({ message: "Password successfully updated" });
+        } else {
+          res.status(404).send({ error: "Nothing updated" });
+        }
+      } else {
+        res.status(404).send({ "No result for user :": idUser });
+      }
     } catch (err) {
+      // fin du try
+      console.log(err);
       logger.error(err);
       res.sendStatus(500);
     }

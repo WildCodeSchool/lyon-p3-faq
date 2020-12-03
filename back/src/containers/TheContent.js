@@ -11,6 +11,7 @@ const loading = (
   </div>
 );
 
+
 const TheContent = () => {
   return (
     <main className="c-main">

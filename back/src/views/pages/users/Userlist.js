@@ -135,7 +135,7 @@ const Tables = () => {
                 striped
                 bordered
                 size="sm"
-                itemsPerPage={10}
+                itemsPerPage={50}
                 tableFilter={filterTitle}
                 pagination
                 clickableRows

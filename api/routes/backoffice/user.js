@@ -32,5 +32,9 @@ router.put("/:id",validator.checkId,validator.checkUser, UserController.updateOn
 
 router.post("/", validator.checkUser, UserController.addUser);
 
+/* change password */
+
+router.patch("/", validator.checkupdatePassword, UserController.updatePassword);
+
 
 module.exports = router;

@@ -2,7 +2,7 @@ const {createLogger, format, transports} = require('winston');
 const {combine, timestamp, label, prettyPrint} = format;
 const packageJson = require('../package.json');
 const DailyRotateFile = require('winston-daily-rotate-file');
-const logDir = './logs';
+const logDir = './logs'
 
 const options = {
     file: {

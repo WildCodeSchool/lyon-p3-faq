@@ -6,6 +6,7 @@ const TheLayout = () => {
 
   return (
     <>
+
       <div className="c-app c-default-layout">
         <TheSidebar />
         <div className="c-wrapper">
@@ -15,7 +16,7 @@ const TheLayout = () => {
           </div>
           <TheFooter />
         </div>
-      </div>
+      </div> :  <TheContent />
     </>
   );
 };

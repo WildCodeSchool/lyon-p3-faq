@@ -29,13 +29,39 @@ const getBadge = (status) => {
   }
 };
 //const fields = ["question", "reponse", "created_by", "created_at"];
-const fields = {
-  key: "show_details",
-  label: "",
-  _style: { width: "1%" },
+const fields = [
+ 
+  {
+    
+    key: "modifier",
+  label: "modifier",
+  _style: { width: "5%" },
   sorter: false,
-  filter: false,
-};
+  filter: false
+
+} ,
+
+  {
+    
+    key: "archiver",
+  label: "archiver",
+  _style: { width: "5%" },
+  sorter: false,
+  filter: false
+
+},
+
+{
+  
+  key: "publier",
+label: "publier",
+_style: { width: "5%" },
+sorter: false,
+filter: false
+
+} 
+
+];
 
 // Change filter label
 const filterTitle = {
@@ -69,12 +95,13 @@ const Tables = () => {
         setPostsData(response.data);
         setNbPosts(response.data.length);
         setTableFields(
-          Object.keys(response.data[0]).filter((field) => field != "id")
+          Object.keys(response.data[0]).filter((field) => field != "id" )
         );
 
         setTableFields((prevState) => {
-          return [...prevState, fields];
+          return [...prevState, fields[0], fields[1], fields[2]];
         });
+
       })
       .catch(function (error) {
         // handle error
@@ -87,17 +114,7 @@ const Tables = () => {
 
 
 
-  const toggleDetails = (index) => {
-    const position = details.indexOf(index);
-    let newDetails = details.slice();
-    if (position !== -1) {
-      newDetails.splice(position, 1);
-    } else {
-      newDetails = [...details, index];
-    }
-    setDetails(newDetails);
-  };
-
+  
   const handleUpdatePost = (item) => {
     console.log("item : ", item.id);
 
@@ -147,84 +164,53 @@ const Tables = () => {
                 fields={tableFields}
                 hover
                 striped
+                itemsPerPageSelect
                 bordered
                 size="sm"
-                itemsPerPage={10}
+                itemsPerPage={5}
                 pagination
                  //clickableRows
                 sorter
                 tableFilter={filterTitle}
                 //onRowClick={(index) => toggleDetails(index)}
                 scopedSlots={{
-                  status: (item) => (
+                  'status': (item) => (
                     <td>
                       <CBadge color={getBadge(item.status)}>
                         {item.status}
                       </CBadge>
                     </td>
-                  ),
-                  show_details: (item, index) => {
-                    return (
-                      <td className="py-2">
-                        <CButton
-                          color="primary"
-                          variant="outline"
-                          shape="square"
-                          size="sm"
-                          onClick={() => {
-                            toggleDetails(index);
-                          }}
-                        >
-                          {details.includes(index) ? "Réduire" : "Plus"}
-                        </CButton>
-                      </td>
-                    );
-                  },
-                  details: (item, index) => {
-                    return (
-                      <>
-                        <CCollapse show={details.includes(index)}>
-                          <CCardBody>
-                            <h4>{item.username}</h4>
-                            <p className="text-muted">
-                              Actions : {item.registered}
-                            </p>
-                            <CButton
-                              size="sm"
-                              color="info"
-                              className="ml-1"
-                              onClick={() => {
-                                handleUpdatePost(item);
-                              }}
-                            >
-                              Modifier
-                            </CButton>
-                            <CButton
-                              size="sm"
-                              color="success"
-                              className="ml-1"
-                              onClick={() => {
-                                handleUpdatePostStatus(item, "publish");
-                              }}
-                            >
-                              Publier
-                            </CButton>
-                            <CButton
-                              size="sm"
-                              color="danger"
-                              className="ml-1"
-                              onClick={() => {
-                                handleUpdatePostStatus(item, "archive");
-                              }}
-                            >
-                              Archiver
-                            </CButton>
-                          </CCardBody>
-                        </CCollapse>
-                      </>
-                    );
-                  },
-                }}
+                  ) }}
+
+                             scopedSlots={{'publier': (item, index) => (
+                    
+                            
+                              <CButton
+                                size="sm"
+                                color="success"
+                                className="ml-1"
+                                onClick={() => {
+                                  handleUpdatePostStatus(item, "publish");
+                                }}
+                              > Publier
+                              </CButton>
+                            )}}
+
+                            scopedSlots={{'modifier': (item, index) => {
+
+                              return (
+                            
+                                       <CButton
+                                        size="sm"
+                                        color="info"
+                                        className="ml-1"
+                                        onClick={() => {
+                                          handleUpdatePost(item);
+                                        }}
+                                      >Modifier
+                                      </CButton>
+                                 
+                                    )}}}
               />
             </CCardBody>
           </CCard>
@@ -235,3 +221,6 @@ const Tables = () => {
 };
 
 export default Tables;
+
+
+

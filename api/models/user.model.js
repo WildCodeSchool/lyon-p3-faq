@@ -9,10 +9,20 @@ class User extends DB {
   }
 
   // Customized methods
-  async matchUser(id) {
-    let resultQuery = await this.query(`SELECT COUNT(id) as count FROM user where id=${id}`);
+  async matchUser(field,cond) {
+    console.log("methode matchUser")
+    let resultQuery = await this.query(`SELECT COUNT(*) as count FROM user where ${field}= '${cond}' `);
+    
     return resultQuery;
   }
+
+  async updatePwd(mail, fields) {
+    let query = ` UPDATE ${this.table} SET ? WHERE mail= ? `;
+    return this.query(query, fields, mail);
+  }
+
+  
+
 
   async checkLogin(login, password) {
     const fields = " count(id) as count   ";

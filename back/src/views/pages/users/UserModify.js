@@ -93,19 +93,19 @@ const BasicForms = (props) => {
 
   const handleDelete = () => {
     setDanger(!danger);
-
+console.log(idUser)
     axios
       .delete(`http://localhost:3002/back/users/${idUser}`)
       .then(function (response) {
-        console.log(response);
+        history.push( { 
+          pathname :`/pages/users`,
+        update : !props.location.update
+      });
       })
       .catch(function (error) {
         console.log(error);
       });
-    history.push( { 
-      path :`/pages/users/`,
-    update : !props.location.update
-  });
+   
   };
 
   return (

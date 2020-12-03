@@ -3,7 +3,7 @@ const { param, body, validationResult } = require("express-validator");
 
 exports.signup = [
   body("login").isEmail().normalizeEmail(),
-  body("password").isLength({ min: 5, max: 100 }),
+  body("password").isLength({ min: 8, max: 100 }),
 
   (req, res, next) => {
     const errors = validationResult(req);
@@ -27,6 +27,22 @@ exports.checkUser = [
     } else next();
   },
 ];
+
+
+exports.checkupdatePassword = [
+  body("password").exists().notEmpty().isLength({ min: 8, max: 100 }),
+  body("mail").isEmail().normalizeEmail(),
+
+ 
+  (req, res, next) => {
+    const errors = validationResult(req);
+
+    if (!errors.isEmpty()) {
+      return res.status(400).send({ errors: errors.array() });
+    } else next();
+  },
+];
+
 
 exports.checkId = [
   param("id").exists().isNumeric(),
