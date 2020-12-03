@@ -86,13 +86,13 @@ const routes = [
   { path: "/theme/colors", name: "Colors", component: Colors },
   { path: "/theme/typography", name: "Typography", component: Typography },
   { path: "/base", name: "Base", component: Cards, exact: true },
-  { path: "/", name: "Login", component: Login, exact: true },
-  {
-    path: "/pages/renewpassword",
-    name: "RenewPassword",
-    component: RenewPassword,
-    exact: true,
-  },
+  // { path: "/", name: "Login", component: Login, exact: true },
+  // {
+  //   path: "/pages/renewpassword",
+  //   name: "RenewPassword",
+  //   component: RenewPassword,
+  //   exact: true,
+  // },
   {
     path: "/pages/testpage",
     name: "TestPage",

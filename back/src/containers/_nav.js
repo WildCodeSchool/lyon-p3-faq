@@ -38,12 +38,6 @@ export default [
         _tag: 'CSidebarNavItem',
         name: 'Posts',
         to: '/pages/posts',
-      },
-      {
-
-        _tag: 'CSidebarNavItem',
-        name: 'Renewpassword',
-        to: '/pages/renewpassword',
       }
      
     ],

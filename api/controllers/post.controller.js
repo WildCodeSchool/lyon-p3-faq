@@ -116,14 +116,12 @@ class PostController {
       console.log("methode controller addQuestion")
       const { titre_question, contenu_question } = req.body;
 
-      const created_at = new Date().toISOString().
-      replace(/T/, ' ').      // replace T with a space
-      replace(/\..+/, '')  
+     
       const created_by = "2";
-      console.log(created_at)
+      
 
       const fields = [
-        [titre_question, contenu_question, created_by, created_at],
+        [titre_question, contenu_question, created_by],
       ];
 
       const queryResult = await Post.addQuestion(fields);

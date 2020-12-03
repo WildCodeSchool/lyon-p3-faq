@@ -30,43 +30,19 @@ const getBadge = (status) => {
 };
 //const fields = ["question", "reponse", "created_by", "created_at"];
 const fields = [
- 
   {
-    
-    key: "modifier",
-  label: "modifier",
-  _style: { width: "5%" },
-  sorter: false,
-  filter: false
-
-} ,
-
-  {
-    
-    key: "archiver",
-  label: "archiver",
-  _style: { width: "5%" },
-  sorter: false,
-  filter: false
-
-},
-
-{
-  
-  key: "publier",
-label: "publier",
-_style: { width: "5%" },
-sorter: false,
-filter: false
-
-} 
-
+    key: "actions",
+    label: "Actions",
+    _style: { width: "20%" },
+    sorter: false,
+    filter: false,
+  },
 ];
 
 // Change filter label
 const filterTitle = {
   label: "Filtre",
-  palceholder: "Contenu"
+  palceholder: "Contenu",
 };
 
 const Tables = () => {
@@ -86,22 +62,26 @@ const Tables = () => {
       .then(function (response) {
         // handle success
         response.data.map((post) => {
-          if (post.status == null) {
+          if (post.publicated_at == null && post.disabled_at == null) {
+            post.status = "Pending";
+          }
+          if (post.publicated_at !== null && post.disabled_at === null) {
             post.status = "active";
-          } else {
+          }
+
+          if (post.publicated_at === null && post.disabled_at !== null) {
             post.status = "archived";
           }
         });
         setPostsData(response.data);
         setNbPosts(response.data.length);
         setTableFields(
-          Object.keys(response.data[0]).filter((field) => field != "id" )
+          Object.keys(response.data[0]).filter((field) => field != "id")
         );
 
         setTableFields((prevState) => {
-          return [...prevState, fields[0], fields[1], fields[2]];
+          return [...prevState, fields[0]];
         });
-
       })
       .catch(function (error) {
         // handle error
@@ -109,12 +89,6 @@ const Tables = () => {
       });
   }, [nbPosts, updatePostStatus]);
 
-
-
-
-
-
-  
   const handleUpdatePost = (item) => {
     console.log("item : ", item.id);
 
@@ -169,48 +143,56 @@ const Tables = () => {
                 size="sm"
                 itemsPerPage={5}
                 pagination
-                 //clickableRows
+                //clickableRows
                 sorter
                 tableFilter={filterTitle}
                 //onRowClick={(index) => toggleDetails(index)}
                 scopedSlots={{
-                  'status': (item) => (
+                  status: (item) => (
                     <td>
                       <CBadge color={getBadge(item.status)}>
                         {item.status}
                       </CBadge>
                     </td>
-                  ) }}
+                  ),
 
-                             scopedSlots={{'publier': (item, index) => (
-                    
-                            
-                              <CButton
-                                size="sm"
-                                color="success"
-                                className="ml-1"
-                                onClick={() => {
-                                  handleUpdatePostStatus(item, "publish");
-                                }}
-                              > Publier
-                              </CButton>
-                            )}}
-
-                            scopedSlots={{'modifier': (item, index) => {
-
-                              return (
-                            
-                                       <CButton
-                                        size="sm"
-                                        color="info"
-                                        className="ml-1"
-                                        onClick={() => {
-                                          handleUpdatePost(item);
-                                        }}
-                                      >Modifier
-                                      </CButton>
-                                 
-                                    )}}}
+                  actions: (item, index) => {
+                    return (
+                      <CCardBody>
+                        <CButton
+                          size="sm"
+                          color="info"
+                          className="ml-1"
+                          onClick={() => {
+                            handleUpdatePost(item);
+                          }}
+                        >
+                          Modifier
+                        </CButton>
+                        <CButton
+                          size="sm"
+                          color="success"
+                          className="ml-1"
+                          onClick={() => {
+                            handleUpdatePostStatus(item, "publish");
+                          }}
+                        >
+                          Publish
+                        </CButton>
+                        <CButton
+                          size="sm"
+                          color="danger"
+                          className="ml-1"
+                          onClick={() => {
+                            handleUpdatePostStatus(item, "archive");
+                          }}
+                        >
+                          Archiver
+                        </CButton>
+                      </CCardBody>
+                    );
+                  },
+                }}
               />
             </CCardBody>
           </CCard>
@@ -221,6 +203,3 @@ const Tables = () => {
 };
 
 export default Tables;
-
-
-

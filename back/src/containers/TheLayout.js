@@ -16,7 +16,7 @@ const TheLayout = () => {
           </div>
           <TheFooter />
         </div>
-      </div> :  <TheContent />
+      </div> 
     </>
   );
 };

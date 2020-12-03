@@ -132,7 +132,7 @@ class UserController {
           text:
             " merci de cliquer sur le lien-suivant pour créer un mot de passe", // plain text body
           html:
-            '<b>Veuillez cliquer sur ce clien pour créer un mot de passe : <a href ="http://localhost:6001/#/pages/renewpassword"> Création mot de passe</a> </b>',
+            '<b>Veuillez cliquer sur ce clien pour créer un mot de passe : <a href ="http://localhost:6001/#/renewpassword"> Création mot de passe</a> </b>',
         };
 
         // send mail with defined transport object
@@ -160,7 +160,7 @@ class UserController {
         subject: "Hello ✔, vous avez oublié votre mot de passe ?", // Subject line
         text: "Hello world ?", // plain text body
         html:
-          '<b>Veuillez cliquer sur ce clien pour créer un nouveau mot de passe : <a href ="http://localhost:6001/#/pages/renewpassword">Nouveau mot de passe</a> </b>',
+          '<b>Veuillez cliquer sur ce clien pour créer un nouveau mot de passe : <a href ="http://localhost:6001/#/renewpassword">Nouveau mot de passe</a> </b>',
       };
 
       // send mail with defined transport object

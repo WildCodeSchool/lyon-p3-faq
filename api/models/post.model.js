@@ -9,7 +9,7 @@ class Post extends DB {
 
   getAll() {
     const query =
-      "SELECT q.id,q.titre,q.contenu as contenu_question, reponse.contenu as contenu_reponse,q.created_by,q.created_at, q.disabled_at as status  from question as q  LEFT JOIN reponse ON q.id=reponse.question_id";
+      "SELECT q.id,q.titre,q.contenu as contenu_question, reponse.contenu as contenu_reponse,q.created_by,q.created_at, q.disabled_at , q.publicated_at  from question as q  LEFT JOIN reponse ON q.id=reponse.question_id";
     return this.query(query);
   }
 
@@ -21,7 +21,7 @@ class Post extends DB {
 
   addQuestion(fields) {
     const query =
-      "INSERT INTO question (titre,contenu,created_by,created_at) VALUES ? ";
+      "INSERT INTO question (titre,contenu,created_by) VALUES ? ";
     return this.query(query, fields);
   }
 
