@@ -1,13 +1,14 @@
 import Head from "next/head";
-import Header from "../../components/Header";
-import Answer from "../../components/Answer";
+import Header from "../components/Header";
+import Answer from "../components/Answer";
 import { useRouter } from "next/router";
-const Fetch = require("../../utils/callAPI");
+const Fetch = require("../utils/callAPI");
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 export default function Question({ data }) {
   const router = useRouter();
   const { pid } = router.query;
+
   return (
     <>
       <Head>
@@ -27,7 +28,7 @@ export default function Question({ data }) {
 
 export async function getServerSideProps({ params }) {
   const data = await Fetch.fetchData(
-    `http://localhost:3000/front/answered/?id=${params.pid}`
+    `http://localhost:3000/front/answered/?id=${params.pid.substring(9)}`
   );
   return { props: { data } };
 }
