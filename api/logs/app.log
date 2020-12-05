@@ -47507,6 +47507,7 @@
   level: 'info',
   timestamp: '2020-12-05T01:27:23.242Z'
 }
+<<<<<<< HEAD
 {
   message: 'GET /back/users/ 500 13 - 2.148 ms\n',
   level: 'info',
@@ -47532,3 +47533,5 @@
   level: 'info',
   timestamp: '2020-12-05T11:11:01.515Z'
 }
+=======
+>>>>>>> cad8062820271637b72f88b92963c1139b720c3e
