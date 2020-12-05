@@ -26,16 +26,18 @@ import {
 import CIcon from "@coreui/icons-react";
 import { Link, useHistory } from "react-router-dom";
 import BackButton from "../../../components/BackButton";
+import {useContext} from 'react'
+import { storeContext} from "../../../context";
 
 const axios = require("axios");
 
 const BasicForms = (props) => {
   
-  
+  const [currentUser, setCurrentUser] = useContext(storeContext);
   const [danger, setDanger] = useState(false);
   let idUser = props.match.params.iduser;
-  const infosUser = props.location.stated;
-  const {updateField} = props.location.update
+  const infosUser = (props.location.user || currentUser);
+ 
 
 
  
@@ -60,7 +62,7 @@ const BasicForms = (props) => {
 
   useEffect(() => {
     axios
-      .get(`http://localhost:3002/back/users/roles`)
+      .get(`${process.env.REACT_APP_API_HOST}/back/users/roles`)
       .then(function (response) {
         setRoles(response.data);
         
@@ -72,7 +74,7 @@ const BasicForms = (props) => {
 
   const handleUpdate = (e) => {
     axios
-      .put(`http://localhost:3002/back/users/${idUser}`, {
+      .put(`${process.env.REACT_APP_API_HOST}/back/users/${idUser}`, {
         //data to update
         name: `${nom} ${prenom}`,
         mail: `${email}`,
@@ -95,7 +97,7 @@ const BasicForms = (props) => {
     setDanger(!danger);
 console.log(idUser)
     axios
-      .delete(`http://localhost:3002/back/users/${idUser}`)
+      .delete(`${process.env.REACT_APP_API_HOST}/back/users/${idUser}`)
       .then(function (response) {
         history.push( { 
           pathname :`/pages/users`,

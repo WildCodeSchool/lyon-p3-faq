@@ -15,6 +15,7 @@ import {
   CRow,
 } from "@coreui/react";
 import CIcon from "@coreui/icons-react";
+import dotenv from  'dotenv'
 
 const axios = require("axios");
 
@@ -27,7 +28,7 @@ const RenewPassword = () => {
   const handleCreatePassword = () => {
     if (password === repeatPassword) {
       axios
-        .patch("http://localhost:3002/back/users", {
+        .patch(`http://localhost:3002/back/users`, {
           mail: login,
           password: password,
         })

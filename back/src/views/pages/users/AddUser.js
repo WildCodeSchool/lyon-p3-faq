@@ -35,7 +35,7 @@ const BasicForms = (props) => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:3002/back/users/roles")
+      .get(`${process.env.REACT_APP_API_HOST}/back/users/roles`)
       .then(function (response) {
         // handle success
 
@@ -55,7 +55,7 @@ const BasicForms = (props) => {
     console.log(idToCreate);
 
     axios
-      .post("http://localhost:3002/back/users", {
+      .post(`${process.env.REACT_APP_API_HOST}/back/users`, {
         name: `${nom} ${prenom}`,
         mail: `${email}`,
         role: `${typeCompte}`,

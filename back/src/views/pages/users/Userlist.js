@@ -10,7 +10,8 @@ import {
   CRow,
   CButton,
 } from "@coreui/react";
-import { connect } from "react-redux";
+import dotenv from  'dotenv'
+
 
 const axios = require("axios");
 const getBadge = (status) => {
@@ -44,22 +45,20 @@ const Tables = () => {
 
   let [usersData, setUsersData] = useState();
   const [nbUsers, setNbUsers] = useState();
-  const [updatedOne, setUpdatedOne] = useState("");
+
   const [tableFields, setTableFields] = useState();
   const [idMaxUsers, setIdMaxUsers] = useState();
 
-  const updateField = (newValue) => {
-    setUpdatedOne(newValue);
-  };
+ 
 
   let history = useHistory();
 
   const selectUser = (e) => {
-    setUpdatedOne(e);
+   
     history.push({
       pathname: `/pages/users/usermodify/${e.id}`,
-      stated: e,
-      update: { updateField },
+      user: e,
+      
     });
   };
 
@@ -68,11 +67,13 @@ const Tables = () => {
     label: "Filtre",
     placeholder: "Contenu",
   };
+  
+ 
 
   useEffect(
     (e) => {
       axios
-        .get("http://localhost:3002/back/users?withRoles=true")
+        .get(`${process.env.REACT_APP_API_HOST}/back/users?withRoles=true`)
         .then(function (response) {
           // handle success
 

@@ -1,5 +1,6 @@
-import React, { useState } from "react";
-import { Link, useHistory } from "react-router-dom";
+import React, { useState, useContext  } from "react";
+import { Link, useHistory} from "react-router-dom";
+import { storeContext} from "../../../context";
 import {
   CButton,
   CCard,
@@ -15,23 +16,39 @@ import {
   CRow,
 } from "@coreui/react";
 import CIcon from "@coreui/icons-react";
+import dotenv from  'dotenv'
 
 const axios = require("axios");
 
 const Login = () => {
+
+  const [currentUser, setCurrentUser] = useContext(storeContext);
   const [login, setLogin] = useState();
   const [password, setPassword] = useState();
   let history = useHistory();
 
   const handleLogin = () => {
     axios
-      .post("http://localhost:3002/back/login", {
+  
+      .post(`${process.env.REACT_APP_API_HOST}/back/login`, {
         login: login,
         password: password,
       })
       .then(function (response) {
         // handle success
         if (response.status == "200") {
+          
+          setCurrentUser({
+            mail: login,
+            password: password,
+            id:response.data.id,
+            token: null,
+            connected:true,
+            name: response.data.name,
+            role_id: response.data.role_id
+
+
+          })
           history.push("/dashboard");
         }
       })
@@ -47,7 +64,7 @@ const Login = () => {
     console.log("mot de passe oublié")
     console.log("login" , login)
     axios
-      .post("http://localhost:3002/back/login", {
+      .post(`${process.env.REACT_APP_API_HOST}/back/login`, {
         
         login: login,
         password: "nananana",
