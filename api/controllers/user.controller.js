@@ -2,6 +2,9 @@ const User = require("../models/user.model");
 const Role = require("../models/role.model");
 const logger = require("../library/logger");
 const mailer = require("../library/mailer");
+const {createToken, verifyToken} = require("../services/jwt")
+const jwt = require("jsonwebtoken");
+const { checkupdatePassword } = require("../middleware/validator");
 
 class UserController {
   // Actions on one user
@@ -43,9 +46,19 @@ class UserController {
 
   // get One user
   static async getOne(req, res) {
+
+    const token = req.headers.authentication
+    
+   
+    
+     
     try {
       let idUser = req.params.id;
+      //const checkToken =   verifyToken(token)
+      
+      //On vérifie la validité du token
 
+     
       // On vérifie si l'utilisateur existe en base de données
       const countResult = await User.matchUser("id", idUser);
       // L'utilisateur a bien été trouvé dans la base de données
@@ -58,6 +71,7 @@ class UserController {
       }
     } catch (err) {
       logger.error(err);
+     
       res.sendStatus(500);
     }
   }
@@ -176,13 +190,19 @@ class UserController {
         } else {
           const queryResult = await User.checkLogin(login, password);
           if (queryResult[0].count !== 0) {
-            res.status(200).json("Identifiants ok");
+            const usersInfos = await User.getInfosUser(login, password);
+             const token= await createToken(usersInfos[0])
+          
+            
+            res.status(200).send({userInfos :usersInfos[0], token: token});
+           
           } else {
             res.status(401).json("Identifiants incorrects");
           }
         }
       } catch (err) {
         logger.error(err);
+        console.log(err)
         res.sendStatus(500);
       }
     }
@@ -228,7 +248,7 @@ class UserController {
       }
     } catch (err) {
       // fin du try
-      console.log(err);
+     
       logger.error(err);
       res.sendStatus(500);
     }

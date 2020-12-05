@@ -56,7 +56,7 @@ const Testpage = () => {
   // Loading datas
   useEffect(() => {
     axios
-      .get("http://localhost:3002/back/posts")
+      .get(`${process.env.REACT_APP_API_HOST}/back/post`)
       .then(function (response) {
         // handle success
         response.data.map((post) => {
@@ -111,7 +111,7 @@ const Testpage = () => {
   const handleUpdatePostStatus = (item, action) => {
     console.log("item", item);
     axios
-      .put(`http://localhost:3002/back/posts/${item.id}`, {
+      .put(`${process.env.REACT_APP_API_HOST}/back/posts/${item.id}`, {
         action: action,
       })
       .then(function (response) {

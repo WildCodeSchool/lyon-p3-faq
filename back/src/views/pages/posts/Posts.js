@@ -12,6 +12,7 @@ import {
 } from "@coreui/react";
 
 import { Link, useHistory } from "react-router-dom";
+import dotenv from  'dotenv'
 const axios = require("axios");
 
 const getBadge = (status) => {
@@ -58,7 +59,7 @@ const Tables = () => {
   // Loading datas
   useEffect(() => {
     axios
-      .get("http://localhost:3002/back/posts")
+      .get(`${process.env.REACT_APP_API_HOST}/back/posts`)
       .then(function (response) {
         // handle success
         response.data.map((post) => {
@@ -102,7 +103,7 @@ const Tables = () => {
   const handleUpdatePostStatus = (item, action) => {
     console.log("item", item);
     axios
-      .put(`http://localhost:3002/back/posts/${item.id}`, {
+      .put(`${process.env.REACT_APP_API_HOST}/back/posts/${item.id}`, {
         action: action,
       })
       .then(function (response) {

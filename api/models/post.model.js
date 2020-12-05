@@ -20,15 +20,14 @@ class Post extends DB {
   }
 
   addQuestion(fields) {
-    const query =
-      "INSERT INTO question (titre,contenu,created_by) VALUES ? ";
+    const query = "INSERT INTO question (titre,contenu,created_by) VALUES ? ";
     return this.query(query, fields);
   }
 
   updatePost(idQuestion, fields) {
     const query =
       "UPDATE question  LEFT JOIN reponse  ON question.id = reponse.question_id SET ? WHERE question.id= ?";
-      
+
     return this.query(query, fields, idQuestion);
   }
 }

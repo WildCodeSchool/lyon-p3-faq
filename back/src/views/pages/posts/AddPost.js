@@ -53,7 +53,7 @@ const BasicForms = () => {
 
   const handleAddPost = () => {
     axios
-      .post(`http://localhost:3002/back/posts/`, {
+      .post(`${process.env.REACT_APP_API_HOST}/back/posts/`, {
         //data to add
 
         type: "question",
@@ -62,7 +62,7 @@ const BasicForms = () => {
       })
       .then(function (response) {
         axios
-          .post(`http://localhost:3002/back/posts/`, {
+          .post(`${process.env.REACT_APP_API_HOST}/back/posts/`, {
             //data to add
 
             type: "reponse",
@@ -88,7 +88,7 @@ const BasicForms = () => {
     setDanger(!danger);
 
     axios
-      .post(`http://localhost:3002/back/posts/`, {
+      .post(`${process.env.REACT_APP_API_HOST}/back/posts/`, {
         action: "archive",
       })
       .then(function (response) {

@@ -47,7 +47,7 @@ const BasicForms = (props) => {
   const handleUpdatePost = () => {
     axios
 
-      .put(`http://localhost:3002/back/posts/${idPost}`, {
+      .put(`${process.env.REACT_APP_API_HOST}/back/posts/${idPost}`, {
         //data to update
         action: "update",
         titre_question: `${titreQuestion}`,
@@ -66,7 +66,7 @@ const BasicForms = (props) => {
     if (postsDatas.contenu_reponse === null) {
       axios
 
-        .post(`http://localhost:3002/back/posts/`, {
+        .post(`${process.env.REACT_APP_API_HOST}/back/posts/`, {
           //data to update
           type: "reponse",
           question_id: `${idPost}`,
@@ -86,7 +86,7 @@ const BasicForms = (props) => {
     setDanger(!danger);
 
     axios
-      .put(`http://localhost:3002/back/posts/${idPost}`, {
+      .put(`${process.env.REACT_APP_API_HOST}/back/posts/${idPost}`, {
         action: "archive",
       })
       .then(function (response) {
