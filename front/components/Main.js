@@ -22,6 +22,14 @@ export default function Main(props) {
                     <div key={key} className={styles.question}>
                       <h3>{questions[key].titre}</h3>
                       <p className={styles.p}>{questions[key].contenu}</p>
+
+                      <div className={styles.bottomwrap}>
+                      <div className={styles.wrapperhelp}>
+                        <span>
+                          Cette question à aidé <strong>10</strong> personnes
+                        </span>
+                        
+                      </div>
                       <div className={styles.wrapperAuthor}>
                         <span>
                           <p>
@@ -35,6 +43,8 @@ export default function Main(props) {
                           </Link>
                         </span>
                       </div>
+                      </div>
+
                     </div>
                   );
                 })}
