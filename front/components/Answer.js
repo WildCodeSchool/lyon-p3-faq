@@ -9,6 +9,7 @@ import * as FaIcons from "react-icons/fa";
 export default function Answer(props) {
   const { isShowing, toggle } = useModal();
   const [QA, setQA] = useState({});
+  console.log(props.questionAnswered.users)
   useEffect(() => {
     props.questionAnswered.users != null
       ? setQA(props.questionAnswered.users.res[0])
