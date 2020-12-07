@@ -73,6 +73,21 @@
   cursor: pointer;
 }
 
+@media (max-width: 850px) {
+
+    .wrapperAuthor {
+      white-space: nowrap;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+    }
+
+    .authorname {
+      margin-bottom: 10px;
+    }
+
+}
+
 @media (max-width: 768px) {
 
   .texth2 {
@@ -84,6 +99,59 @@
    }
 }
 
+@media (max-width: 510px) {
+
+  .bottomwrap {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .wrapperhelp {
+    text-align: left;
+    white-space: nowrap;
+  }
+
+  .wrapperAuthor {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    
+  }
+
+  .authorname {
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: 420px) {
+
+  .bottomwrap {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .wrapperhelp {
+    text-align: left;
+    white-space: nowrap;
+    font-size: 0.80em;
+  }
+
+  .wrapperAuthor {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    font-size: 0.80em;
+  }
+
+  .authorname {
+    margin-bottom: 0;
+  }
+}
+
 @media (max-width: 450px) {
   .question span {
     text-align: center;
@@ -93,7 +161,7 @@
 
   .wrapperhelp {
     display: flex;
-    text-align: left;
+    text-align: center;
     margin-top: 5px;
     font-size : 0.80em;
   }
