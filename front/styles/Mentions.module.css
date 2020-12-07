@@ -1,0 +1,45 @@
+.mainsection {
+    width: 100vw;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.container {
+    width : 800px;
+    max-width: 1300px;
+    height: auto;
+    margin-top: 50px;
+}
+
+.container > span {
+    font-size: 2em;
+}
+
+.mentionlist {
+    padding: 10px;
+}
+
+.mentionlist > li {
+    padding: 10px;
+}
+
+
+@media screen and (max-width: 768px) {
+
+    .mainsection {
+        padding: 10px;
+        text-align: center;
+    }
+
+    .container > span {
+        font-size : 1.5em;
+    }
+
+    .mentionlist {
+        text-align: justify;
+    }
+
+}

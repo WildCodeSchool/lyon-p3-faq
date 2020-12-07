@@ -19,21 +19,20 @@ export default function Answer(props) {
         {props.questionAnswered.error && <Error />}
         {!props.questionAnswered.error && props.questionAnswered.users && (
           <div className={styles.box}>
-            <div className={styles.question}>
-              <Link as="/" href="/">
+            <Link as="/" href="/">
                 <button className={styles.buttonQuestion}>
-                  <a>
-                    <span>
                       <img
                         src="/leftarrowwhite.png"
                         height="25px"
-                        width="25x"
+                        width="25px"
                         alt="left white arrow"
                       />
+                      <span>
+                      Retour à la liste
                     </span>
-                  </a>
                 </button>
               </Link>
+            <div className={styles.question}>
               <h2 className={styles.h2}>{QA.titre}</h2>
               <p className={styles.p}>{QA.contenu}</p>
               <span>
