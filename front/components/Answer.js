@@ -4,6 +4,7 @@ import styles from "../styles/Answer.module.css";
 import Error from "./Error";
 import useModal from "../utils/useModal";
 import ReportModal from "./ReportModal";
+import * as FaIcons from "react-icons/fa";
 
 export default function Answer(props) {
   const { isShowing, toggle } = useModal();
@@ -45,6 +46,12 @@ export default function Answer(props) {
               <span className={styles.author}>
                 <p>{QA.replyer}</p>
               </span>
+              <div className={styles.thumbwrapper}>
+                <span className={styles.thumb}>
+                Cette réponse vous à t-elle aidé ?
+                </span>
+                <FaIcons.FaThumbsUp className={styles.thumbup}/>
+              </div>
               <button onClick={toggle} className={styles.report}>
                 Signaler
               </button>
