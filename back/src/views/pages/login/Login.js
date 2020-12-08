@@ -37,14 +37,15 @@ const Login = () => {
       .then(function (response) {
         // handle success
         if (response.status == "200") {
+          console.log(response.data)
           
           setCurrentUser({
             mail: login,
             password: password,
-            id:response.data.id,
-            token: null,
+            id:response.data.userInfos.id,
+            token: response.data.token,
             connected:true,
-            name: response.data.name,
+            name: response.data.userInfos.name,
             role_id: response.data.role_id
 
 
@@ -70,6 +71,9 @@ const Login = () => {
         password: "nananana",
         action : "renewPassword"
         
+      } ,{
+
+        headers : {authentication : currentUser.token}
       })
       .then(function (response) {
         // handle success

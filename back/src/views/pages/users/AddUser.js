@@ -1,4 +1,5 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useContext } from "react";
+import { storeContext} from "../../../context";
 import {
   CButton,
   CCard,
@@ -21,7 +22,9 @@ import { useHistory } from "react-router-dom";
 const axios = require("axios");
 
 const BasicForms = (props) => {
-  console.log("props :", props);
+
+  //Context
+  const [currentUser, setCurrentUser] = useContext(storeContext);
 
   let history = useHistory();
   const [nom, setNom] = useState("");
@@ -35,7 +38,10 @@ const BasicForms = (props) => {
 
   useEffect(() => {
     axios
-      .get(`${process.env.REACT_APP_API_HOST}/back/users/roles`)
+      .get(`${process.env.REACT_APP_API_HOST}/back/users/roles`, {
+
+        headers : {authentication : currentUser.token}
+      })
       .then(function (response) {
         // handle success
 
@@ -60,6 +66,9 @@ const BasicForms = (props) => {
         mail: `${email}`,
         role: `${typeCompte}`,
         id: `${idToCreate}`,
+      }, {
+
+        headers : {authentication : currentUser.token}
       })
       .then(function (response) {
         console.log(response);

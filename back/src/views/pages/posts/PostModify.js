@@ -1,4 +1,5 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect, useState,useContext } from "react";
+import { storeContext} from "../../../context";
 import {
   CButton,
   CCard,
@@ -29,6 +30,7 @@ const BasicForms = (props) => {
   const postsDatas = props.location.state;
 
   const [danger, setDanger] = useState(false);
+  const [currentUser, setCurrentUser] = useContext(storeContext);
   let history = useHistory();
 
   let idPost = props.match.params.idpost;
@@ -54,6 +56,9 @@ const BasicForms = (props) => {
         contenu_question: `${question}`,
 
         contenu_reponse: `${reponse}`,
+      }, {
+
+        headers : {authentication : currentUser.token}
       })
       .then(function (response) {
         console.log(response.data);
@@ -71,6 +76,9 @@ const BasicForms = (props) => {
           type: "reponse",
           question_id: `${idPost}`,
           contenu: `${reponse}`,
+        }, {
+
+          headers : {authentication : currentUser.token}
         })
         .then(function (response) {
           console.log(response.data);
@@ -88,6 +96,9 @@ const BasicForms = (props) => {
     axios
       .put(`${process.env.REACT_APP_API_HOST}/back/posts/${idPost}`, {
         action: "archive",
+      }, {
+
+        headers : {authentication : currentUser.token}
       })
       .then(function (response) {
         console.log(response);

@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
+import { storeContext} from "../../../context";
 import { Link, useHistory } from "react-router-dom";
 import {
   CButton,
@@ -20,6 +21,11 @@ import dotenv from  'dotenv'
 const axios = require("axios");
 
 const RenewPassword = () => {
+
+  
+  //Context
+  const [currentUser, setCurrentUser] = useContext(storeContext);
+
   const [login, setLogin] = useState();
   const [password, setPassword] = useState();
   const [repeatPassword, setRepeatPassword] = useState();
@@ -31,6 +37,9 @@ const RenewPassword = () => {
         .patch(`http://localhost:3002/back/users`, {
           mail: login,
           password: password,
+        }, {
+
+          headers : {authentication : currentUser.token}
         })
         .then(function (response) {
           // handle success
@@ -41,6 +50,10 @@ const RenewPassword = () => {
         .catch(function (error) {
           if (error.response.status === 400) {
             alert("Mot de passe trop court : au moins 8 caractères");
+          }
+          else {
+
+            alert("Votre adresse email ne correspond à aucun compte. Merci de contacter votre administrateur")
           }
         });
     } else {
@@ -102,7 +115,7 @@ const RenewPassword = () => {
                         </CInputGroupText>
                       </CInputGroupPrepend>
                       <CInput
-                        type="repeat password"
+                        type="password"
                         placeholder=" repeat Password"
                         autoComplete="current-password"
                         value={repeatPassword}

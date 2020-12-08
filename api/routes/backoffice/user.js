@@ -35,7 +35,7 @@ router.post("/", verifyToken,validator.checkUser, UserController.addUser);
 
 /* change password */
 
-router.patch("/", verifyToken,validator.checkupdatePassword, UserController.updatePassword);
+router.patch("/", validator.checkupdatePassword, UserController.updatePassword);
 
 
 module.exports = router;

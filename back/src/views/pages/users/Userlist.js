@@ -1,4 +1,5 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useContext } from "react";
+import { storeContext} from "../../../context";
 import { Link, useHistory } from "react-router-dom";
 import {
   CBadge,
@@ -41,6 +42,12 @@ const fields = [
 
 
 const Tables = () => {
+
+
+//Context
+const [currentUser, setCurrentUser] = useContext(storeContext);
+
+
   // States
 
   let [usersData, setUsersData] = useState();
@@ -72,8 +79,12 @@ const Tables = () => {
 
   useEffect(
     (e) => {
+      console.log("currentUser :",currentUser.token)
       axios
-        .get(`${process.env.REACT_APP_API_HOST}/back/users?withRoles=true`)
+        .get(`${process.env.REACT_APP_API_HOST}/back/users?withRoles=true`, {
+
+          headers : {authentication : currentUser.token}
+        })
         .then(function (response) {
           // handle success
 

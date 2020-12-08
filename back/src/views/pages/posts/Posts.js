@@ -1,4 +1,5 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState,useContext } from "react";
+import { storeContext} from "../../../context";
 import {
   CBadge,
   CCard,
@@ -52,6 +53,7 @@ const Tables = () => {
   const [postsData, setPostsData] = useState();
   const [nbPosts, setNbPosts] = useState();
   const [tableFields, setTableFields] = useState();
+  const [currentUser, setCurrentUser] = useContext(storeContext);
   const [details, setDetails] = useState([]);
   const [updatePostStatus, setUpdatePostStatus] = useState(false);
   let history = useHistory();
@@ -59,7 +61,10 @@ const Tables = () => {
   // Loading datas
   useEffect(() => {
     axios
-      .get(`${process.env.REACT_APP_API_HOST}/back/posts`)
+      .get(`${process.env.REACT_APP_API_HOST}/back/posts`, {
+
+        headers : {authentication : currentUser.token}
+      })
       .then(function (response) {
         // handle success
         response.data.map((post) => {
@@ -105,6 +110,10 @@ const Tables = () => {
     axios
       .put(`${process.env.REACT_APP_API_HOST}/back/posts/${item.id}`, {
         action: action,
+        idUser:currentUser.id
+      }, {
+
+        headers : {authentication : currentUser.token}
       })
       .then(function (response) {
         // handle success

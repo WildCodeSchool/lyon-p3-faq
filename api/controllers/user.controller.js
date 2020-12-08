@@ -46,6 +46,7 @@ class UserController {
 
   // get One user
   static async getOne(req, res) {
+    console.log("controller get ONE")
 
     const token = req.headers.authentication
     
@@ -252,6 +253,7 @@ class UserController {
       // fin du try
      
       logger.error(err);
+      console.log(err)
       res.sendStatus(500);
     }
   }

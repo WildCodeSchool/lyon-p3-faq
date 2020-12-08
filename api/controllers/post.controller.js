@@ -1,6 +1,9 @@
 const Post = require("../models/post.model");
 const validator = require("../middleware/validator");
 const logger = require("../library/logger");
+const mailer = require("../library/mailer");
+
+const User = require("../models/user.model");
 const { Console } = require("winston/lib/winston/transports");
 class PostController {
   static async update(req, res) {
@@ -37,6 +40,22 @@ class PostController {
         };
 
         const queryResult = await Post.update(idQuestion, fields);
+
+        const getMail = await User.read("where id=", idUser);
+
+        // Send an email confirmation when a post is published
+        let mailOptions = {
+          from: '"Pierre Freelances lyonnais 👻" <pierre@ammeloot.fr >', // sender address
+          to: getMail[0].mail, // list of receivers
+          subject:
+            " Hello ✔, votre question a été publiée et a reçue une réponse ", // Subject line
+          html: `<b>Vous pouvez consulter le post au lien suivant  : <a href = "http://localhost:3001/question-${idQuestion}">Lien du post</a> </b>`, //TODO Mettre à jour le lien de la ref
+        };
+
+        // send mail with defined transport object
+
+        const info = await mailer(mailOptions);
+
         res.send("post published");
       } else if (action === "archive") {
         fields = {
@@ -46,7 +65,6 @@ class PostController {
           publicated_at: null,
         };
 
-        const queryResult = await Post.update(idQuestion, fields);
         res.send({ message: "post archived" });
       } else {
         return res
@@ -113,16 +131,12 @@ class PostController {
 
   static async addQuestion(req, res) {
     try {
-      console.log("methode controller addQuestion")
+      console.log("methode controller addQuestion");
       const { titre_question, contenu_question } = req.body;
 
-     
       const created_by = "2";
-      
 
-      const fields = [
-        [titre_question, contenu_question, created_by],
-      ];
+      const fields = [[titre_question, contenu_question, created_by]];
 
       const queryResult = await Post.addQuestion(fields);
 
