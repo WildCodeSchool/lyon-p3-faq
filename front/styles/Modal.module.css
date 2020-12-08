@@ -82,9 +82,29 @@
 }
 
 .rightwrap {
-    background-color: white;
+    padding: 10px;
+    background-color: rgb(255, 255, 255);
     width: 40%;
     border-radius:  0px 15px 15px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.quitbutton {
+    position: absolute;
+    top: 40px;
+    right: 10px;
+}
+
+.formwrap {
+    background-color: rgb(255, 255, 255);
+    border-radius: 15px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(223, 223, 223);
+    margin-top: 20px;
+    
 }
 
 .modalPost h3 {
@@ -96,7 +116,7 @@
 
 .modalPost button {
     background-color: rgb(0, 0, 0);
-    color: white;
+    color: rgb(255, 255, 255);
     float: right;
     cursor: pointer;
     border-radius: 50%;

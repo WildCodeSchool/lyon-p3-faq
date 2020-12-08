@@ -48,24 +48,27 @@ export default function Modal({ isShowing, hide }) {
               </div>
               <div className={styles.botwrap}>
                 <span> Retrouvez-nous sur : </span>
-                <ul className={styles.socialicons}>
-              <li><Link href="https://facebook.com"><div><FaIcons.FaFacebookF/></div></Link></li>
-              <li><Link href="https://linkedin.com"><div><FaIcons.FaLinkedin/></div></Link></li>
-              <li><Link href="https://discord.com"><div><FaIcons.FaDiscord/></div></Link></li>
-              <li><Link href="https://github.com"><div><FaIcons.FaGithub/></div></Link></li>
-            </ul>
+                  <ul className={styles.socialicons}>
+                    <li><Link href="https://facebook.com"><div><FaIcons.FaFacebookF/></div></Link></li>
+                    <li><Link href="https://linkedin.com"><div><FaIcons.FaLinkedin/></div></Link></li>
+                    <li><Link href="https://discord.com"><div><FaIcons.FaDiscord/></div></Link></li>
+                    <li><Link href="https://github.com"><div><FaIcons.FaGithub/></div></Link></li>
+                </ul>
               </div>
-
             </div>
+
             <div className={styles.rightwrap}>
-            <h3>Poser une question</h3>
-            <button type="button" onClick={hide}>
-              <span>&times;</span>
-            </button>
+                <button className={styles.quitbutton} type="button" onClick={hide}>
+                  <span>&times;</span>
+                </button>
+              <div className={styles.formwrap}>
+                <h3>Poser une question</h3>
+            
             <form onSubmit={handleSubmit}>
               <div>
+                <label for="pseudo">Votre Pseudo</label>
                 <input
-                  placeholder="Votre pseudo"
+                  placeholder="John Doe"
                   type="text"
                   name="pseudo"
                   required
@@ -73,6 +76,7 @@ export default function Modal({ isShowing, hide }) {
                 />
               </div>
               <div>
+              <label for="title"> Titre de votre question</label>
                 <input
                   placeholder="Votre question"
                   type="text"
@@ -82,6 +86,7 @@ export default function Modal({ isShowing, hide }) {
                 />
               </div>
               <div>
+                <label for="title"> Question complète</label>
                 <textarea
                   name="contenu"
                   type="text"
@@ -94,6 +99,7 @@ export default function Modal({ isShowing, hide }) {
               </div>
               <input id="submit" type="submit" value="Envoyer" />
             </form>
+            </div>
             </div>
           </div>
         </>,
