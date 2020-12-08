@@ -64,7 +64,7 @@ class QuestionController {
       req.connection.remoteAddress ||
       req.socket.remoteAddress;
     try {
-      if (IP === undefined || req.body.form.id === undefined) {
+      if (IP === undefined || req.body.form.id === undefined || req.body.form.raison === undefined) {
         res.sendStatus(400);
       } else {
         const reported = await Question.reportQuestion(
@@ -72,6 +72,24 @@ class QuestionController {
           IP,
           req.body.form.raison
         );
+        res.sendStatus(201);
+      }
+    } catch (err) {
+      res.sendStatus(500);
+      console.log(err);
+    }
+  }
+
+  static async vote(req, res) {
+    const IP =
+      req.headers["x-forwarded-for"] ||
+      req.connection.remoteAddress ||
+      req.socket.remoteAddress;
+    try {
+      if (IP === undefined || req.body.vote.id === undefined) {
+        res.sendStatus(400);
+      } else {
+        const voted = await Question.upVote(req.body.vote.id, IP);
         res.sendStatus(201);
       }
     } catch (err) {

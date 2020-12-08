@@ -13,4 +13,6 @@ router.get("/", QuestionController.getAll);
 router.get("/answered", QuestionController.getAllAnswered);
 router.post("/", QuestionController.postQuestion);
 router.post("/report", limit, QuestionController.report);
+router.post("/vote", limit, QuestionController.vote);
+
 module.exports = router;
