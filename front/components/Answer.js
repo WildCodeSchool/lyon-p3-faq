@@ -76,7 +76,6 @@ export default function Answer(props) {
                   className={styles.thumbup}
                   onClick={handleSubmit}
                 />
-                {QA.voteup != 0 ? <span>{QA.voteup} like</span> : null}
               </div>
               <button onClick={toggle} className={styles.report}>
                 Signaler
