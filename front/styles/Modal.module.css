@@ -11,7 +11,7 @@
 .modalPost {
     display: flex;
     flex-direction: row;
-    background-color: #b14242;
+    background-color: #f3f3f3;
     width: 90vw;
     height: 90vh;
     z-index: 3;
@@ -46,11 +46,13 @@
     height: 80%;
     justify-content: center;
     padding-left : 20px;
+    padding-right: 20px;
     
 }
 
 .spanslug {
     margin-top: 40px;
+    margin-bottom: 10px;
 }
 
 .botwrap {
@@ -91,21 +93,41 @@
     justify-content: center;
 }
 
-.quitbutton {
-    position: absolute;
-    top: 40px;
-    right: 10px;
-}
-
 .formwrap {
-    background-color: rgb(255, 255, 255);
     border-radius: 15px;
     border-style: solid;
     border-width: 1px;
     border-color: rgb(223, 223, 223);
-    margin-top: 20px;
-    
+    padding : 40px;
+    height: 100%;
 }
+
+.topwrappara {
+    display: flex; 
+    flex-direction: column;
+    justify-content: left;
+}
+
+.mediumtitle {
+   color: rgb(12, 12, 12);
+   font-size: 2em;
+   font-weight: bold;
+}
+
+.paraform {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: rgb(119, 119, 119);
+}
+
+
+.quitbutton {
+    position: absolute;
+    top: 50px;
+    right: 15px;
+}
+
+
 
 .modalPost h3 {
     text-align: center;
@@ -129,22 +151,75 @@
 .modalPost form * {
     width: 100%;
     padding: 5px;
-    border-radius: 10px;
+    border: rgba(0, 0, 0, 0.267);
     resize: none;
 }
 
+.labelform {
+    color :rgba(99, 99, 99, 0.39);
+    text-transform: uppercase;
+    font-size: 0.8em;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+.modalPost form div  {
+    margin-top: 10px;
+}
+
 .modalPost form div *:valid {
-    border: 1px solid green;
+    border-bottom: 4px solid green;
 }
 
 .modalPost form div *:invalid {
-    border: 1px solid red;
+    border-bottom: 4px solid red;
 }
 
 .modalPost form div textarea {
-    height: 50vh;
+    height: 30vh;
 }
 
+.buttonsubmit {
+    position: absolute;
+    bottom: 20px;
+    right : 20px;
+    max-width: 100px;
+    height: 50px;
+    background-color: black;
+    color : white;
+    border-radius: 15px;
+    cursor : pointer ; 
+}
+
+@media screen and (max-width: 1000px) {
+
+    .bigtittle {
+        font-weight: bold;
+        font-size: 4em;
+        letter-spacing: 4px;
+    }
+
+    .mediumtitle {
+        font-size: 1.5em;
+    }
+}
+
+
+@media screen and (max-width: 867px) {
+
+    .modalPost form div textarea {
+        height: 25vh;
+    }
+
+    .bigtittle {
+        font-weight: bold;
+        font-size: 3.5em;
+        letter-spacing: 4px;
+    }
+
+    .mediumtitle {
+        font-size: 1.5em;
+    }
+}
 
 @media screen and (max-width: 768px) {
     .overlay {
@@ -158,17 +233,122 @@
     }
 
     .modalPost {
-        display: block;
-        background-color: white;
+        display: flex;
+        flex-direction: row;
+        background-color: #f3f3f3;
         width: 90vw;
-        height: auto;
-        position: absolute;
+        height: 90vh;
         z-index: 3;
-        border-radius: 20px;
-        padding: 10px;
-        margin:auto;
-        top:10%;
+        margin-top: 5vh;
+        border-radius: 15px;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%);
+        top: 0;
     }
+
+    .leftwrap {
+        background-color: black;
+        background-image: none;
+        width : 40%;
+        display: flex;
+        flex-direction: column;
+        border-radius : 15px 0px 0px 15px;
+        color: white;
+    }   
+    
+    .topwrap {
+        height: 10%;
+        
+    }
+    
+    .midwrap {
+        display: flex;
+        flex-direction: column;
+        height: 80%;
+        font-size: 0.60em;
+        justify-content: center;
+        padding-left : 20px;
+        padding-right: 20px;
+        
+    }
+    
+    .spanslug {
+        margin-top: 30px;
+        margin-bottom: 10px;
+    }
+    
+    .botwrap {
+        height: 10%;
+        background-color: black;
+        border-radius: 0px 0px 0px 15px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .sociallist {
+        display: none;
+    }
+
+    .socialicons {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    
+    .socialicons > li {
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    
+    .bigtittle {
+        font-weight: bold;
+        font-size: 1.3em;
+        letter-spacing: 4px;
+    }
+    
+    .rightwrap {
+        padding: 10px;
+        background-color: rgb(255, 255, 255);
+        width: 60%;
+        border-radius:  0px 15px 15px 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .formwrap {
+        border-radius: 15px;
+        border-style: solid;
+        border-width: 1px;
+        border-color: rgb(223, 223, 223);
+        padding : 10px;
+        height: 100%;
+    }
+    
+    .topwrappara {
+        padding-top: 20px;
+        display: flex; 
+        flex-direction: column;
+        justify-content: left;
+    }
+    
+    .mediumtitle {
+       color: rgb(12, 12, 12);
+       font-size: 1.0em;
+       font-weight: bold;
+       white-space: nowrap;
+    }
+    
+    .paraform {
+        margin-top: 5px;
+        margin-bottom: 5px;
+        font-size: 0.70em;
+        color: rgb(119, 119, 119);
+    }
+
 
     .modalPost h3 {
         text-align: center;
@@ -180,11 +360,11 @@
         background-color: black;
         color: white;
         float: right;
+        padding : 10px;
     }
 
     .modalPost form * {
         width: 100%;
-        padding: 10px;
         border-radius: 10px;
         resize: none;
         margin:auto;
@@ -192,19 +372,22 @@
     }
 
     .modalPost form div textarea {
-        height: 40vh;
+        height: 30vh;
     }
 
     .modalPost form div *:valid {
-        border: 1px solid green;
+        border-bottom: 2px solid green;
+        border-radius: 0px;
     }
 
     .modalPost form div *:invalid {
-        border: 1px solid red;
+        border-bottom: 2px solid rgb(255, 0, 0);
+        border-radius: 0px;
     }
 
     .modalPost form input#submit{
         font-size:50px;
+        padding: 10px;
     }
 
 }
