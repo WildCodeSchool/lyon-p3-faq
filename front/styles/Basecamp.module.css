@@ -1,7 +1,7 @@
 .mynavbar {
     display: flex;
     height: 80px;
-    background-color:black;
+    background-color: rgb(37, 37, 37);
     align-items: center;
     justify-content: center;
 }
@@ -11,6 +11,10 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+}
+
+.herotitle {
+    font-weight: bold;
 }
 
 .icons {
@@ -51,24 +55,30 @@
 }
 
 .firstsection {
-    width: 100vw;
-    height: 70vh;
+    width: 100%;
+    height: auto;
     background-color: black;
     color : white;
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: rgb(37, 37, 37);
+    background-image: url("../public/handz.png");
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .mainwrapper {
-    width: 60vw;
+    width: 50vw;
+    margin-top: 60px;
+    margin-bottom: 80px;
 }
 
 .topwrap {
     display: flex;
     align-content: center;
     justify-content: center;
-    margin-bottom: 40px;
+    margin-bottom: 80px;
 }
 
 .bigspan {
@@ -78,5 +88,121 @@
 }
 
 .mainparagraph {
+    text-align: justify;
+}
+
+.githubwrap {
+    display: flex;
+    margin-top: 20px;
+    justify-content: right;
+}
+
+.versionwrap {
+display: flex;
+align-items: center;
+}
+
+.versionspan {
+    margin-right: 15px;
+    color : rgb(146, 146, 146)
+}
+
+.githubbutton {
+    display: flex;
+    align-items: center;
+    padding: 10px 15px 10px 15px;
+    font-weight: bold;
+    border-radius: 40px;
+    cursor: pointer;
+}
+
+
+/************************************************************/
+
+.secondsection {
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ssmainwrap {
+    display: flex;
+    width: 80%;
+    height: 80%;
+}
+
+.ssinnerleftwrap {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    background-color: lavenderblush;
+}
+
+.wrapcard {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height:90%;
+    background-color: lawngreen;
+}
+
+.topcard {
+    height: 50%;
+    width: 300px;
+    border-radius: 15px;
+    background-color: white;
+    border-radius: 15px;
+    border-style: solid;
+    border-color: lavender;
+}
+
+.botcard {
+    height: 50%;
+    width: 300px;
+    border-radius: 15px;
+    background-color: white;
+    border-radius: 15px;
+    border-style: solid;
+    border-color: lavender;
+}
+
+.versionmaj {
+    height: 10%;
+    width: 100%;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    padding-right: 20px;
+    background-color: lawngreen;
+}
+
+
+
+
+
+
+.ssinnerrightwrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    padding-left: 30px;
+    height: 100%;
+    width: 50%;
+}
+
+.ssbigparagraph {
+    font-size: 3em;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: rgb(32, 32, 32);
+}
+
+.ssmediumparagraph {
+    font-weight: 1.1em;
     text-align: justify;
 }
