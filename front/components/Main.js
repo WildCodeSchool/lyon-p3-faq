@@ -24,7 +24,6 @@ export default function Main(props) {
                         <strong>{questions[key].titre}</strong>
                       </h3>
                       <p className={styles.p}>{questions[key].contenu}</p>
-
                       <div className={styles.bottomwrap}>
                         <div className={styles.wrapperhelp}>
                           <span>

@@ -13,7 +13,6 @@ export default function Answer(props) {
   const [vote, setVote] = useState({
     id: null,
   });
-  console.log(props)
   const notify = (msg) => toast(msg);
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -62,7 +61,7 @@ export default function Answer(props) {
               <h2 className={styles.h2}>{QA.titre}</h2>
               <p className={styles.p}>{QA.contenu}</p>
               <span>
-                <p className={styles.author}>{QA.asker}</p>
+                <p className={styles.author}>{props.asker.users[0].asker}</p>
               </span>
             </div>
             <div className={styles.answer}>

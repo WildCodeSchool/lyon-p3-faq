@@ -4,7 +4,7 @@ const logger = require("morgan");
 class QuestionController {
   static async getAll(req, res) {
     try {
-      const listQuestions = await Question.getQuestions();
+      const listQuestions = await Question.getQuestions(req.query.id);
       res.send(listQuestions);
     } catch (err) {
       res.sendStatus(500);
