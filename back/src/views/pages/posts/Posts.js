@@ -1,5 +1,5 @@
-import React, { useEffect, useState,useContext } from "react";
-import { storeContext} from "../../../context";
+import React, { useEffect, useState, useContext } from "react";
+import { storeContext } from "../../../context";
 import {
   CBadge,
   CCard,
@@ -9,11 +9,13 @@ import {
   CDataTable,
   CRow,
   CButton,
-  CCollapse,
+  CFormGroup,
+  CLabel,
+  CInputCheckbox,
 } from "@coreui/react";
 
 import { Link, useHistory } from "react-router-dom";
-import dotenv from  'dotenv'
+import dotenv from "dotenv";
 const axios = require("axios");
 
 const getBadge = (status) => {
@@ -22,7 +24,7 @@ const getBadge = (status) => {
       return "success";
     case "Inactive":
       return "secondary";
-    case "Pending":
+    case "pending":
       return "warning";
     case "archived":
       return "danger";
@@ -51,10 +53,14 @@ const Tables = () => {
   // States
 
   const [postsData, setPostsData] = useState();
+
   const [nbPosts, setNbPosts] = useState();
   const [tableFields, setTableFields] = useState();
   const [currentUser, setCurrentUser] = useContext(storeContext);
-  const [details, setDetails] = useState([]);
+  const [archiveChecked, setArchiveChecked] = useState(false);
+  const [pendingChecked, setPendingChecked] = useState(false);
+  const [trigger, setTrigger] = useState(false);
+  const [labelTrigger, setLabelTrigger] = useState(false);
   const [updatePostStatus, setUpdatePostStatus] = useState(false);
   let history = useHistory();
 
@@ -62,14 +68,13 @@ const Tables = () => {
   useEffect(() => {
     axios
       .get(`${process.env.REACT_APP_API_HOST}/back/posts`, {
-
-        headers : {authentication : currentUser.token}
+        headers: { authentication: currentUser.token },
       })
       .then(function (response) {
         // handle success
         response.data.map((post) => {
           if (post.publicated_at == null && post.disabled_at == null) {
-            post.status = "Pending";
+            post.status = "pending";
           }
           if (post.publicated_at !== null && post.disabled_at === null) {
             post.status = "active";
@@ -81,9 +86,7 @@ const Tables = () => {
         });
         setPostsData(response.data);
         setNbPosts(response.data.length);
-        setTableFields(
-          Object.keys(response.data[0]).filter((field) => field != "id")
-        );
+        setTableFields(Object.keys(response.data[0]));
 
         setTableFields((prevState) => {
           return [...prevState, fields[0]];
@@ -108,13 +111,16 @@ const Tables = () => {
   const handleUpdatePostStatus = (item, action) => {
     console.log("item", item);
     axios
-      .put(`${process.env.REACT_APP_API_HOST}/back/posts/${item.id}`, {
-        action: action,
-        idUser:currentUser.id
-      }, {
-
-        headers : {authentication : currentUser.token}
-      })
+      .put(
+        `${process.env.REACT_APP_API_HOST}/back/posts/${item.id}`,
+        {
+          action: action,
+          idUser: currentUser.id,
+        },
+        {
+          headers: { authentication: currentUser.token },
+        }
+      )
       .then(function (response) {
         // handle success
         setUpdatePostStatus(!updatePostStatus);
@@ -143,8 +149,63 @@ const Tables = () => {
               </CRow>
             </CCardHeader>
             <CCardBody>
+              <CFormGroup row>
+                <CCol md="3">
+                  <CLabel>Catégories </CLabel>
+                </CCol>
+                <CCol md="9">
+                  <CFormGroup variant="custom-checkbox" inline>
+                    <CInputCheckbox
+                      custom
+                      id="inline-checkbox1"
+                      name="inline-checkbox1"
+                      value="option1"
+                      onChange={(e) => {
+                        setArchiveChecked(e.target.checked);
+                        setTrigger(!trigger);
+
+                        setPendingChecked( pendingChecked? !pendingChecked : pendingChecked);
+                        setLabelTrigger("archived");
+                      }}
+                    />
+                    <CLabel
+                      variant="custom-checkbox"
+                      htmlFor="inline-checkbox1"
+                    >
+                      Archived
+                    </CLabel>
+                  </CFormGroup>
+                  <CFormGroup variant="custom-checkbox" inline>
+                    <CInputCheckbox
+                      custom
+                      id="inline-checkbox2"
+                      name="inline-checkbox2"
+                      value="option2"
+                      onChange={(e) => {
+                        setLabelTrigger("pending");
+                        setPendingChecked(e.target.checked);
+                        setArchiveChecked( archiveChecked? !archiveChecked: archiveChecked)
+                        setTrigger(!trigger);
+                      }}
+                    />
+                    <CLabel
+                      variant="custom-checkbox"
+                      htmlFor="inline-checkbox2"
+                    >
+                      Pending
+                    </CLabel>
+                  </CFormGroup>
+                </CCol>
+              </CFormGroup>
+
               <CDataTable
-                items={postsData}
+                items={
+                  postsData
+                    ? (archiveChecked === false && pendingChecked === false)  ?
+                       postsData
+                      : postsData.filter((post) => post.status == labelTrigger)
+                    : ""
+                }
                 fields={tableFields}
                 hover
                 striped
@@ -153,6 +214,7 @@ const Tables = () => {
                 size="sm"
                 itemsPerPage={5}
                 pagination
+                responsive
                 //clickableRows
                 sorter
                 tableFilter={filterTitle}

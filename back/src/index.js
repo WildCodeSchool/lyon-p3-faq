@@ -14,6 +14,7 @@ import store from './store'
 
 React.icons = icons
 
+
 ReactDOM.render(
 
   <Provider store={store}>

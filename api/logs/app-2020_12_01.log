@@ -1,0 +1,39 @@
+{
+  message: 'GET / 200 218 - 7.910 ms\n',
+  level: 'info',
+  timestamp: '2020-12-01T13:22:25.617Z'
+}
+{
+  message: 'GET /stylesheets/style.css 404 1256 - 5.106 ms\n',
+  level: 'info',
+  timestamp: '2020-12-01T13:22:25.651Z'
+}
+{
+  message: 'GET /favicon.ico 404 1256 - 1.644 ms\n',
+  level: 'info',
+  timestamp: '2020-12-01T13:22:25.717Z'
+}
+{
+  errno: 'ENOTFOUND',
+  code: 'ENOTFOUND',
+  syscall: 'getaddrinfo',
+  hostname: '51.210.47.134:2402',
+  fatal: true,
+  level: 'error',
+  timestamp: '2020-12-01T13:22:34.150Z'
+}
+{
+  message: 'GET /back/users 500 21 - 15.666 ms\n',
+  level: 'info',
+  timestamp: '2020-12-01T13:22:34.152Z'
+}
+{
+  message: 'GET / 304 - - 6.821 ms\n',
+  level: 'info',
+  timestamp: '2020-12-01T13:37:10.919Z'
+}
+{
+  message: 'GET /stylesheets/style.css 404 1256 - 3.725 ms\n',
+  level: 'info',
+  timestamp: '2020-12-01T13:37:10.944Z'
+}

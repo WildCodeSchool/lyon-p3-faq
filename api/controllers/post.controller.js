@@ -64,7 +64,7 @@ class PostController {
           publicated_by: null,
           publicated_at: null,
         };
-
+        const queryResult = await Post.update(idQuestion, fields);
         res.send({ message: "post archived" });
       } else {
         return res

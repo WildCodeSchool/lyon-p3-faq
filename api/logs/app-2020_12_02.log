@@ -1,0 +1,1805 @@
+{
+  message: 'GET / 304 - - 8.582 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T09:08:37.805Z'
+}
+{
+  message: 'GET /stylesheets/style.css 404 1256 - 2.771 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T09:08:37.837Z'
+}
+{
+  message: 'POST /back/login 400 73 - 5.470 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T09:13:57.092Z'
+}
+{
+  code: 'ER_HOST_NOT_PRIVILEGED',
+  errno: 1130,
+  sqlMessage: "Host '89-86-76-89.abo.bbox.fr' is not allowed to connect to this MySQL server",
+  sqlState: undefined,
+  fatal: true,
+  level: 'error',
+  timestamp: '2020-12-02T09:14:02.285Z'
+}
+{
+  message: 'POST /back/login 500 21 - 108.399 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T09:14:02.287Z'
+}
+{
+  message: 'GET / 200 218 - 0.830 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T09:14:32.081Z'
+}
+{
+  code: 'ER_HOST_NOT_PRIVILEGED',
+  errno: 1130,
+  sqlMessage: "Host '89-86-76-89.abo.bbox.fr' is not allowed to connect to this MySQL server",
+  sqlState: undefined,
+  fatal: true,
+  level: 'error',
+  timestamp: '2020-12-02T09:14:39.727Z'
+}
+{
+  message: 'GET /back/users 500 21 - 43.821 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T09:14:39.728Z'
+}
+{
+  errno: 'ENOTFOUND',
+  code: 'ENOTFOUND',
+  syscall: 'getaddrinfo',
+  hostname: '51.210.47.134:2402',
+  fatal: true,
+  level: 'error',
+  timestamp: '2020-12-02T09:35:58.246Z'
+}
+{
+  message: 'GET /back/users 500 21 - 18.857 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T09:35:58.252Z'
+}
+{
+  errno: 'ENOTFOUND',
+  code: 'ENOTFOUND',
+  syscall: 'getaddrinfo',
+  hostname: '51.210.47.134:2402',
+  fatal: true,
+  level: 'error',
+  timestamp: '2020-12-02T09:37:06.833Z'
+}
+{
+  message: 'GET /back/users 500 21 - 9.440 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T09:37:06.841Z'
+}
+{
+  code: 'ER_HOST_NOT_PRIVILEGED',
+  errno: 1130,
+  sqlMessage: "Host '89-86-76-89.abo.bbox.fr' is not allowed to connect to this MySQL server",
+  sqlState: undefined,
+  fatal: true,
+  level: 'error',
+  timestamp: '2020-12-02T09:37:20.180Z'
+}
+{
+  message: 'GET /back/users 500 21 - 52.203 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T09:37:20.185Z'
+}
+{
+  message: 'GET /back/users 200 2284 - 181.620 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T09:51:44.524Z'
+}
+{
+  message: 'POST /back/login 200 17 - 45.804 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T10:08:55.611Z'
+}
+{
+  message: 'POST /back/login 400 73 - 1.012 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T10:09:01.674Z'
+}
+{
+  message: 'POST /back/login 400 86 - 0.566 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T10:09:09.682Z'
+}
+{
+  message: 'GET /back/login 404 1256 - 6.679 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T10:09:56.268Z'
+}
+{
+  message: 'POST /back/login 400 144 - 0.544 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T10:10:14.316Z'
+}
+{ level: 'error', timestamp: '2020-12-02T10:10:33.475Z' }
+{
+  message: 'POST /back/login 500 21 - 1.210 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T10:10:33.476Z'
+}
+{ level: 'error', timestamp: '2020-12-02T10:12:13.989Z' }
+{
+  message: 'POST /back/login 500 21 - 11.756 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T10:12:13.995Z'
+}
+{ level: 'error', timestamp: '2020-12-02T10:53:09.445Z' }
+{
+  message: 'POST /back/login 500 21 - 17.885 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T10:53:09.457Z'
+}
+{ level: 'error', timestamp: '2020-12-02T10:53:46.582Z' }
+{
+  message: 'POST /back/login 500 21 - 12.512 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T10:53:46.588Z'
+}
+{ level: 'error', timestamp: '2020-12-02T11:04:08.442Z' }
+{
+  message: 'POST /back/login 500 21 - 16.431 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T11:04:08.453Z'
+}
+{
+  message: 'POST /back/login 200 17 - 86.979 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T11:04:49.158Z'
+}
+{ level: 'error', timestamp: '2020-12-02T11:05:10.709Z' }
+{
+  message: 'POST /back/login 500 21 - 1.848 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T11:05:10.711Z'
+}
+{ level: 'error', timestamp: '2020-12-02T11:05:33.641Z' }
+{
+  message: 'POST /back/login 500 21 - 11.742 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T11:05:33.647Z'
+}
+{ level: 'error', timestamp: '2020-12-02T11:05:42.559Z' }
+{
+  message: 'POST /back/login 500 21 - 12.314 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T11:05:42.565Z'
+}
+{
+  message: 'POST /back/login 200 24 - 10.760 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T11:06:01.765Z'
+}
+{ level: 'error', timestamp: '2020-12-02T11:06:13.049Z' }
+{
+  message: 'POST /back/login 500 21 - 12.148 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T11:06:13.056Z'
+}
+{ level: 'error', timestamp: '2020-12-02T11:07:45.994Z' }
+{
+  message: 'POST /back/login 500 21 - 16.255 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T11:07:46.005Z'
+}
+{ level: 'error', timestamp: '2020-12-02T11:09:18.292Z' }
+{
+  message: 'POST /back/login 500 21 - 16.210 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T11:09:18.303Z'
+}
+{ level: 'error', timestamp: '2020-12-02T11:09:37.767Z' }
+{
+  message: 'POST /back/login 500 21 - 11.916 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T11:09:37.772Z'
+}
+{ level: 'error', timestamp: '2020-12-02T11:10:16.227Z' }
+{
+  message: 'POST /back/login 500 21 - 16.303 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T11:10:16.238Z'
+}
+{ level: 'error', timestamp: '2020-12-02T11:11:39.494Z' }
+{
+  message: 'POST /back/login 500 21 - 18.169 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T11:11:39.506Z'
+}
+{ level: 'error', timestamp: '2020-12-02T11:12:08.509Z' }
+{
+  message: 'POST /back/login 500 21 - 13.892 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T11:12:08.517Z'
+}
+{ level: 'error', timestamp: '2020-12-02T11:14:42.850Z' }
+{
+  message: 'POST /back/login 500 21 - 16.392 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T11:14:42.860Z'
+}
+{ level: 'error', timestamp: '2020-12-02T11:15:07.709Z' }
+{
+  message: 'POST /back/login 500 21 - 12.127 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T11:15:07.715Z'
+}
+{ level: 'error', timestamp: '2020-12-02T11:15:46.025Z' }
+{
+  message: 'POST /back/login 500 21 - 16.040 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T11:15:46.035Z'
+}
+{ level: 'error', timestamp: '2020-12-02T11:17:14.769Z' }
+{
+  message: 'POST /back/login 500 21 - 15.206 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T11:17:14.778Z'
+}
+{ level: 'error', timestamp: '2020-12-02T11:17:32.062Z' }
+{
+  message: 'POST /back/login 500 21 - 11.659 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T11:17:32.068Z'
+}
+{ level: 'error', timestamp: '2020-12-02T11:22:37.842Z' }
+{
+  message: 'POST /back/login 500 21 - 15.968 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T11:22:37.852Z'
+}
+{ level: 'error', timestamp: '2020-12-02T11:25:09.361Z' }
+{
+  message: 'POST /back/login 500 21 - 15.822 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T11:25:09.371Z'
+}
+{
+  message: 'POST /back/login 200 24 - 17.103 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T11:29:35.100Z'
+}
+{
+  message: 'POST /back/login - - - - ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T11:32:19.903Z'
+}
+{
+  message: 'POST /back/login 200 24 - 12.255 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T11:33:14.669Z'
+}
+{
+  message: 'POST /back/login 200 24 - 4.175 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T11:33:27.898Z'
+}
+{
+  message: 'POST /back/login 200 5 - 11148.174 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T11:34:15.431Z'
+}
+{
+  message: 'POST /back/login 200 5 - 11112.801 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T11:35:41.599Z'
+}
+{
+  message: 'POST /back/login - - - - ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T11:41:54.017Z'
+}
+{
+  message: 'POST /back/login - - - - ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T11:50:52.515Z'
+}
+{
+  message: 'POST /back/login - - - - ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T12:03:07.706Z'
+}
+{
+  message: 'POST /back/login - - - - ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T12:06:58.724Z'
+}
+{
+  message: 'POST /back/login 200 - - 11.935 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T12:08:01.718Z'
+}
+{
+  message: 'POST /back/login - - - - ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T12:08:38.241Z'
+}
+{
+  message: 'POST /back/login - - - - ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T12:10:49.100Z'
+}
+{
+  message: 'POST /back/login 200 2 - 12.360 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T12:11:57.364Z'
+}
+{
+  message: 'PUT /back/users 404 1256 - 6.922 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T12:29:57.622Z'
+}
+{
+  message: 'PUT /back/users 404 1256 - 1.174 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T12:30:57.769Z'
+}
+{
+  message: 'PUT /back/users 404 1256 - 0.700 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T12:31:02.351Z'
+}
+{
+  message: 'PUT /back/users 404 1256 - 0.672 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T12:31:13.060Z'
+}
+{
+  message: 'PUT /back/login 404 1256 - 1.484 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T12:31:41.797Z'
+}
+{
+  message: 'PUT /back/login 404 1256 - 0.686 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T12:31:54.318Z'
+}
+{
+  message: 'POST /back/login 200 2 - 9.835 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T12:32:06.390Z'
+}
+{
+  message: 'POST /back/login 200 17 - 81.977 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T12:32:37.147Z'
+}
+{
+  message: 'POST /back/login 200 17 - 39.302 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T12:32:49.718Z'
+}
+{
+  message: 'POST /back/login 400 131 - 0.650 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T12:35:41.985Z'
+}
+{
+  message: 'POST /back/login 400 73 - 0.514 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T12:36:36.432Z'
+}
+{
+  message: 'POST /back/login 400 131 - 4.945 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T12:42:05.190Z'
+}
+{
+  message: 'POST /back/login 400 73 - 2.889 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T12:42:09.778Z'
+}
+{
+  message: 'POST /back/login 401 25 - 87.096 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T12:42:25.866Z'
+}
+{
+  message: 'POST /back/login 200 17 - 46.045 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T12:42:44.489Z'
+}
+{
+  message: 'POST /back/login 400 73 - 0.517 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T12:42:52.764Z'
+}
+{
+  message: 'POST /back/login 400 73 - 1.128 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T12:44:04.373Z'
+}
+{
+  message: 'POST /back/login 400 73 - 0.502 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T12:44:20.109Z'
+}
+{
+  message: 'POST /back/login 400 73 - 6.798 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T12:45:15.348Z'
+}
+{
+  message: 'POST /back/login 401 25 - 88.109 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T12:45:22.224Z'
+}
+{
+  message: 'POST /back/login 200 17 - 42.398 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T12:45:26.190Z'
+}
+{
+  message: 'POST /back/login 200 2 - 5.906 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T12:45:50.237Z'
+}
+{
+  message: 'POST /back/login 400 131 - 0.685 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T12:46:35.008Z'
+}
+{
+  message: 'POST /back/login 400 73 - 0.586 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T12:46:43.673Z'
+}
+{
+  message: 'POST /back/login 400 73 - 0.525 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T12:47:23.151Z'
+}
+{
+  message: 'POST /back/login 400 73 - 0.501 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T12:47:49.440Z'
+}
+{
+  message: 'POST /back/login 400 73 - 1.125 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T12:48:20.086Z'
+}
+{
+  message: 'POST /back/login 400 73 - 0.453 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T12:48:25.824Z'
+}
+{
+  message: 'POST /back/login 200 2 - 1.724 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T12:49:16.578Z'
+}
+{
+  message: 'POST /back/login 400 86 - 0.462 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T12:52:01.455Z'
+}
+{
+  message: 'POST /back/login 400 86 - 0.412 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T12:52:15.174Z'
+}
+{
+  message: 'POST /back/login 400 73 - 0.407 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T12:52:48.920Z'
+}
+{
+  message: 'POST /back/login 400 86 - 0.405 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T12:52:56.595Z'
+}
+{
+  message: 'POST /back/login 400 86 - 0.469 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T12:53:16.688Z'
+}
+{
+  message: 'POST /back/login 200 17 - 41.792 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T12:53:38.730Z'
+}
+{
+  message: 'POST /back/login 200 17 - 38.905 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T12:53:59.766Z'
+}
+{
+  message: 'POST /back/login 400 86 - 0.467 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T12:54:02.688Z'
+}
+{
+  message: 'POST /back/login 400 86 - 0.400 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T12:54:36.979Z'
+}
+{
+  message: 'POST /back/login 400 86 - 0.421 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T12:55:20.495Z'
+}
+{
+  message: 'POST /back/login 200 2 - 3.472 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T12:55:35.601Z'
+}
+{
+  message: 'POST /back/login 200 2 - 5.317 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T12:56:03.655Z'
+}
+{
+  message: 'POST /back/login 200 2 - 2.631 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T12:57:12.601Z'
+}
+{
+  message: 'GET /back/posts 200 4741 - 42.578 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T13:00:50.055Z'
+}
+{
+  message: 'GET /back/posts 200 4741 - 41.746 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T13:00:50.180Z'
+}
+{
+  message: 'GET /back/posts 200 4741 - 42.488 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T13:00:51.760Z'
+}
+{
+  message: 'GET /back/posts 200 4741 - 40.551 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T13:00:51.876Z'
+}
+{
+  message: 'POST /back/login 200 17 - 39.257 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T13:03:42.038Z'
+}
+{
+  message: 'POST /back/login 200 2 - 1.476 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T13:03:57.922Z'
+}
+{
+  message: 'POST /back/login 401 25 - 38.773 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T13:07:03.619Z'
+}
+{
+  message: 'POST /back/login 200 17 - 42.115 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T13:07:15.343Z'
+}
+{
+  message: 'POST /back/login 200 2 - 1.499 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T13:07:35.733Z'
+}
+{
+  message: 'GET /back/posts 304 - - 41.746 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T13:09:17.106Z'
+}
+{
+  message: 'GET /back/posts 304 - - 43.745 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T13:09:17.204Z'
+}
+{
+  message: 'GET /back/users?withRoles=true 200 2638 - 42.591 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T13:09:33.531Z'
+}
+{
+  message: 'GET /back/users?withRoles=true 304 - - 41.657 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T13:09:33.587Z'
+}
+{
+  message: 'GET /back/posts 304 - - 40.455 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T13:09:35.051Z'
+}
+{
+  message: 'GET /back/posts 304 - - 42.193 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T13:09:35.135Z'
+}
+{
+  message: 'PUT /back/posts/3 200 14 - 52.062 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T13:10:49.328Z'
+}
+{
+  message: 'GET /back/posts 200 4675 - 42.005 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T13:10:49.382Z'
+}
+{
+  message: 'PUT /back/posts/11 200 27 - 40.904 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T13:10:51.461Z'
+}
+{
+  message: 'GET /back/posts 200 4675 - 40.564 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T13:10:51.514Z'
+}
+{
+  message: 'PUT /back/posts/11 200 14 - 40.544 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T13:10:52.517Z'
+}
+{
+  message: 'GET /back/posts 200 4609 - 40.590 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T13:10:52.569Z'
+}
+{
+  message: 'GET /back/posts 304 - - 42.887 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T13:11:02.472Z'
+}
+{
+  message: 'GET /back/posts 304 - - 40.302 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T13:11:02.563Z'
+}
+{
+  message: 'GET /back/posts 304 - - 37.215 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T13:12:28.553Z'
+}
+{
+  message: 'GET /back/posts 304 - - 41.978 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T13:12:28.632Z'
+}
+{
+  message: 'PUT /back/posts/11 200 27 - 46.143 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T13:12:33.167Z'
+}
+{
+  message: 'GET /back/posts 200 4675 - 40.091 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T13:12:33.219Z'
+}
+{
+  message: 'PUT /back/posts/3 200 27 - 44.623 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T13:12:40.345Z'
+}
+{
+  message: 'GET /back/posts 200 4741 - 40.648 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T13:12:40.397Z'
+}
+{
+  message: 'PUT /back/posts/2 200 27 - 45.522 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T13:12:52.140Z'
+}
+{
+  message: 'GET /back/posts 200 4763 - 39.518 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T13:12:52.192Z'
+}
+{
+  message: 'GET /back/users?withRoles=true 304 - - 42.858 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T13:13:23.442Z'
+}
+{
+  message: 'GET /back/users?withRoles=true 304 - - 46.100 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T13:13:23.503Z'
+}
+{
+  message: 'GET /back/users/roles 200 82 - 40.484 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T13:13:47.907Z'
+}
+{
+  code: 'ERR_HTTP_HEADERS_SENT',
+  level: 'error',
+  timestamp: '2020-12-02T13:14:11.177Z'
+}
+{
+  message: 'DELETE /back/users/30 500 39 - 94.358 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T13:14:11.178Z'
+}
+{
+  message: 'GET /back/users?withRoles=true 200 2493 - 44.091 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T13:14:13.514Z'
+}
+{
+  message: 'GET /back/users?withRoles=true 304 - - 42.979 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T13:14:13.573Z'
+}
+{
+  message: 'GET /back/users/roles 304 - - 40.953 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T13:14:19.065Z'
+}
+{
+  message: 'GET /back/users?withRoles=true 304 - - 41.310 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T13:14:21.806Z'
+}
+{
+  message: 'GET /back/users?withRoles=true 304 - - 43.555 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T13:14:21.862Z'
+}
+{
+  message: 'PUT /back/users/40 200 39 - 128.253 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T13:14:21.896Z'
+}
+{
+  message: 'GET /back/users?withRoles=true 200 2499 - 37.558 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T13:15:09.991Z'
+}
+{
+  message: 'GET /back/users?withRoles=true 304 - - 38.051 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T13:15:10.043Z'
+}
+{
+  message: 'GET /back/users/roles 304 - - 41.471 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T13:39:23.436Z'
+}
+{
+  message: 'GET /back/users?withRoles=true 304 - - 40.980 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T13:39:24.949Z'
+}
+{
+  message: 'GET /back/users?withRoles=true 304 - - 41.083 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T13:39:25.005Z'
+}
+{
+  errno: 'ECONNREFUSED',
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '51.210.47.134',
+  port: 3306,
+  fatal: true,
+  level: 'error',
+  timestamp: '2020-12-02T14:50:22.320Z'
+}
+{
+  message: 'GET /back/posts 500 21 - 2127.706 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T14:50:22.325Z'
+}
+{
+  errno: 'ECONNREFUSED',
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '51.210.47.134',
+  port: 3306,
+  fatal: true,
+  level: 'error',
+  timestamp: '2020-12-02T14:50:23.493Z'
+}
+{
+  message: 'GET /back/posts 500 21 - 2127.855 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T14:50:23.495Z'
+}
+{
+  errno: 'ECONNREFUSED',
+  code: 'ECONNREFUSED',
+  syscall: 'connect',
+  address: '51.210.47.134',
+  port: 3306,
+  fatal: true,
+  level: 'error',
+  timestamp: '2020-12-02T14:52:30.637Z'
+}
+{
+  message: 'GET /back/posts 500 21 - 2127.521 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T14:52:30.641Z'
+}
+{
+  message: 'GET /back/posts 200 4763 - 158.449 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T14:53:02.020Z'
+}
+{
+  message: 'GET /back/posts 200 4763 - 41.444 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T14:53:02.131Z'
+}
+{
+  message: 'PUT /back/posts/2 200 14 - 44.643 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T14:58:00.717Z'
+}
+{
+  message: 'GET /back/posts 200 4741 - 42.497 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T14:58:00.778Z'
+}
+{
+  message: 'GET /back/posts 200 4741 - 39.817 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T15:01:31.340Z'
+}
+{
+  message: 'GET /back/posts 200 4741 - 41.539 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T15:01:31.441Z'
+}
+{
+  message: 'GET /back/users?withRoles=true 200 2499 - 44.163 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T15:01:32.401Z'
+}
+{
+  message: 'GET /back/users?withRoles=true 200 2499 - 40.442 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T15:01:32.459Z'
+}
+{
+  message: 'GET /back/users?withRoles=true 200 2499 - 39.578 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T15:01:55.240Z'
+}
+{
+  message: 'GET /back/users?withRoles=true 200 2499 - 40.887 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T15:01:55.313Z'
+}
+{
+  message: 'GET /back/posts 200 4741 - 41.857 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T15:02:04.041Z'
+}
+{
+  message: 'GET /back/posts 200 4741 - 39.192 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T15:02:04.136Z'
+}
+{
+  message: 'GET /back/posts 200 4741 - 41.697 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T15:02:31.209Z'
+}
+{
+  message: 'GET /back/posts 200 4741 - 41.314 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T15:02:31.334Z'
+}
+{
+  message: 'GET /back/posts 200 4741 - 42.202 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T15:09:32.987Z'
+}
+{
+  message: 'GET /back/posts 200 4741 - 38.864 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T15:09:33.106Z'
+}
+{
+  message: 'POST /back/login 200 2 - 2.974 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T15:11:40.455Z'
+}
+{
+  message: 'GET /back/users?withRoles=true 200 2499 - 41.874 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T15:13:05.955Z'
+}
+{
+  message: 'GET /back/users?withRoles=true 200 2499 - 40.372 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T15:13:06.058Z'
+}
+{
+  message: 'GET /back/posts 200 4741 - 42.788 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T15:13:08.130Z'
+}
+{
+  message: 'GET /back/posts 200 4741 - 38.672 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T15:13:08.222Z'
+}
+{
+  message: 'GET /back/users?withRoles=true 304 - - 47.765 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T15:13:31.371Z'
+}
+{
+  message: 'GET /back/users?withRoles=true 304 - - 40.604 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T15:13:31.431Z'
+}
+{
+  message: 'GET /back/users?withRoles=true 304 - - 42.417 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T15:13:41.980Z'
+}
+{
+  message: 'GET /back/users?withRoles=true 304 - - 42.130 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T15:13:42.055Z'
+}
+{
+  message: 'POST /back/login 200 2 - 12.149 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T15:14:59.901Z'
+}
+{
+  message: 'POST /back/login 400 86 - 1.515 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T16:32:08.467Z'
+}
+{
+  message: 'GET /back/users 200 2159 - 92.447 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T16:32:24.453Z'
+}
+{
+  message: 'GET /back/users/3 200 129 - 82.533 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T16:32:30.254Z'
+}
+{
+  message: 'GET /back/users/3 200 129 - 127.335 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T16:41:28.903Z'
+}
+{ level: 'error', timestamp: '2020-12-02T16:42:06.053Z' }
+{
+  message: 'PATCH /back/users/ 500 21 - 0.973 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T16:42:06.054Z'
+}
+{ level: 'error', timestamp: '2020-12-02T16:42:50.235Z' }
+{
+  message: 'PATCH /back/users/ 500 21 - 7.652 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T16:42:50.242Z'
+}
+{ level: 'error', timestamp: '2020-12-02T16:43:15.351Z' }
+{
+  message: 'PATCH /back/users/ 500 21 - 6.609 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T16:43:15.357Z'
+}
+{ level: 'error', timestamp: '2020-12-02T16:43:44.175Z' }
+{
+  message: 'PATCH /back/users/ 500 21 - 6.345 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T16:43:44.181Z'
+}
+{ level: 'error', timestamp: '2020-12-02T16:44:49.926Z' }
+{
+  message: 'PATCH /back/users/ 500 21 - 5.946 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T16:44:49.932Z'
+}
+{ level: 'error', timestamp: '2020-12-02T16:45:07.124Z' }
+{
+  message: 'PATCH /back/users/ 500 21 - 6.920 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T16:45:07.130Z'
+}
+{ level: 'error', timestamp: '2020-12-02T16:47:07.535Z' }
+{
+  message: 'PATCH /back/users/ 500 21 - 6.243 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T16:47:07.541Z'
+}
+{ level: 'error', timestamp: '2020-12-02T16:48:51.942Z' }
+{
+  message: 'PATCH /back/users/ 500 21 - 28.416 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T16:48:51.964Z'
+}
+{
+  code: 'ER_PARSE_ERROR',
+  errno: 1064,
+  sqlMessage: "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '@gmail.com' at line 1",
+  sqlState: '42000',
+  index: 0,
+  sql: 'SELECT COUNT(id) as count FROM user where mail=aurelien.chiren@gmail.com',
+  level: 'error',
+  timestamp: '2020-12-02T16:49:16.795Z'
+}
+{
+  message: 'PATCH /back/users/ 500 21 - 158.290 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T16:49:16.801Z'
+}
+{
+  code: 'ER_PARSE_ERROR',
+  errno: 1064,
+  sqlMessage: "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '@gmail.com' at line 1",
+  sqlState: '42000',
+  index: 0,
+  sql: 'SELECT COUNT(id) as count FROM user where mail=aurelien.chiren@gmail.com',
+  level: 'error',
+  timestamp: '2020-12-02T16:50:48.437Z'
+}
+{
+  message: 'PATCH /back/users/ 500 21 - 100.588 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T16:50:48.442Z'
+}
+{ level: 'error', timestamp: '2020-12-02T16:52:12.666Z' }
+{
+  message: 'PATCH /back/users/ 500 21 - 98.963 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T16:52:12.671Z'
+}
+{
+  message: 'GET /back/users/ 200 2159 - 42.544 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T16:52:29.112Z'
+}
+{ level: 'error', timestamp: '2020-12-02T16:53:35.575Z' }
+{
+  message: 'PATCH /back/users/ 500 21 - 101.520 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T16:53:35.585Z'
+}
+{ level: 'error', timestamp: '2020-12-02T16:54:04.829Z' }
+{
+  message: 'PATCH /back/users/ 500 21 - 93.724 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T16:54:04.834Z'
+}
+{ level: 'error', timestamp: '2020-12-02T17:44:28.259Z' }
+{
+  message: 'PATCH /back/users/ 500 21 - 94.700 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T17:44:28.268Z'
+}
+{
+  message: 'GET /back/users/ 200 2159 - 42.489 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T17:45:06.469Z'
+}
+{ level: 'error', timestamp: '2020-12-02T17:45:25.429Z' }
+{
+  message: 'PATCH /back/users/ 500 21 - 44.429 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T17:45:25.430Z'
+}
+{
+  message: 'PATCH /back/users/ 200 43 - 178.083 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T17:45:56.641Z'
+}
+{ level: 'error', timestamp: '2020-12-02T17:46:38.184Z' }
+{
+  message: 'PATCH /back/users/ 500 21 - 46.784 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T17:46:38.186Z'
+}
+{
+  message: 'GET /back/users?withRoles=true 200 2499 - 53.346 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T17:46:51.663Z'
+}
+{
+  message: 'GET /back/users?withRoles=true 304 - - 39.768 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T17:46:51.726Z'
+}
+{
+  message: 'GET /back/users/roles 304 - - 42.541 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T17:46:56.563Z'
+}
+{
+  message: 'PATCH /back/users/ 200 43 - 83.835 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T17:47:05.423Z'
+}
+{
+  message: 'GET /back/users?withRoles=true 200 2495 - 50.737 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T17:50:33.704Z'
+}
+{
+  message: 'GET /back/users?withRoles=true 304 - - 43.656 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T17:50:33.768Z'
+}
+{
+  message: 'GET /back/users/roles 304 - - 41.939 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T17:50:36.364Z'
+}
+{
+  message: 'PATCH /back/users/ 200 43 - 99.136 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T17:50:46.500Z'
+}
+{ level: 'error', timestamp: '2020-12-02T17:51:00.710Z' }
+{
+  message: 'PATCH /back/users/ 500 21 - 44.170 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T17:51:00.711Z'
+}
+{
+  message: 'GET /back/users?withRoles=true 200 2495 - 40.169 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T17:51:15.233Z'
+}
+{
+  message: 'GET /back/users?withRoles=true 304 - - 43.617 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T17:51:15.293Z'
+}
+{
+  message: 'GET /back/users/roles 304 - - 42.658 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T17:51:20.694Z'
+}
+{
+  message: 'GET /back/users?withRoles=true 304 - - 51.288 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T17:51:23.189Z'
+}
+{
+  message: 'GET /back/users?withRoles=true 304 - - 41.347 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T17:51:23.245Z'
+}
+{
+  message: 'PUT /back/users/39 200 39 - 133.976 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T17:51:23.283Z'
+}
+{
+  message: 'GET /back/users?withRoles=true 200 2490 - 49.293 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T17:51:30.201Z'
+}
+{
+  message: 'GET /back/users?withRoles=true 304 - - 43.938 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T17:51:30.268Z'
+}
+{
+  message: 'GET /back/users/roles 304 - - 39.204 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T17:51:34.029Z'
+}
+{
+  message: 'GET /back/users?withRoles=true 304 - - 48.906 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T17:51:36.521Z'
+}
+{
+  message: 'PUT /back/users/39 200 39 - 83.644 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T17:51:36.566Z'
+}
+{
+  message: 'GET /back/users?withRoles=true 200 2496 - 42.749 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T17:51:36.581Z'
+}
+{
+  message: 'POST /back/login 401 25 - 39.433 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T17:55:55.182Z'
+}
+{
+  message: 'GET /back/users/ 200 2155 - 42.045 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T17:56:23.617Z'
+}
+{
+  message: 'POST /back/login 200 17 - 42.565 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T17:56:39.116Z'
+}
+{
+  message: 'POST /back/login 200 2 - 5.922 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T17:56:51.482Z'
+}
+{
+  message: 'PATCH /back/users 200 43 - 145.665 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T17:57:18.268Z'
+}
+{
+  message: 'GET /back/users/ 200 2154 - 40.606 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T17:57:30.305Z'
+}
+{
+  message: 'PATCH /back/users 200 43 - 80.956 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T17:59:51.259Z'
+}
+{
+  message: 'POST /back/login 401 25 - 40.038 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T17:59:55.769Z'
+}
+{
+  message: 'POST /back/login 400 88 - 0.539 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T18:00:00.090Z'
+}
+{
+  message: 'GET /back/users/ 200 2151 - 40.733 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T18:00:06.622Z'
+}
+{
+  message: 'PATCH /back/users/ 400 183 - 7.708 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T18:01:09.206Z'
+}
+{
+  message: 'PATCH /back/users/ 200 43 - 206.091 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T18:02:59.866Z'
+}
+{
+  message: 'PATCH /back/users/ 400 87 - 0.827 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T18:03:04.440Z'
+}
+{
+  message: 'PATCH /back/users 400 86 - 2.387 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T18:06:04.659Z'
+}
+{
+  message: 'PATCH /back/users 400 86 - 0.575 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T18:06:59.964Z'
+}
+{
+  message: 'PATCH /back/users 400 86 - 0.644 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T18:14:01.080Z'
+}
+{
+  message: 'PATCH /back/users 400 86 - 6.950 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T18:14:20.451Z'
+}
+{
+  message: 'PATCH /back/users 400 86 - 6.880 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T18:15:18.732Z'
+}
+{
+  message: 'PATCH /back/users 400 86 - 2.562 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T18:15:44.938Z'
+}
+{
+  message: 'PATCH /back/users 400 86 - 0.622 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T18:16:37.740Z'
+}
+{
+  message: 'PATCH /back/users 400 86 - 0.655 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T18:17:41.070Z'
+}
+{
+  message: 'PATCH /back/users 400 154 - 0.748 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T18:18:05.112Z'
+}
+{
+  message: 'PATCH /back/users 400 155 - 6.170 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T18:19:34.191Z'
+}
+{
+  message: 'PATCH /back/users 400 155 - 0.659 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T18:19:39.598Z'
+}
+{
+  message: 'PATCH /back/users 400 2 - 6.689 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T18:20:29.739Z'
+}
+{
+  message: 'PATCH /back/users 400 86 - 6.791 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T18:21:40.609Z'
+}
+{
+  message: 'PATCH /back/users 400 86 - 2.530 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T18:21:52.267Z'
+}
+{
+  message: 'PATCH /back/users/ 200 43 - 140.618 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T18:33:19.849Z'
+}
+{
+  message: 'PATCH /back/users 200 43 - 107.836 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T18:33:27.408Z'
+}
+{
+  message: 'PATCH /back/users 200 43 - 96.373 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T18:33:43.741Z'
+}
+{
+  message: 'PATCH /back/users 400 86 - 6.899 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T18:39:09.323Z'
+}
+{
+  message: 'PATCH /back/users/ 400 87 - 0.789 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T18:39:19.598Z'
+}
+{
+  message: 'PATCH /back/users 400 86 - 0.645 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T18:44:49.864Z'
+}
+{
+  message: 'PATCH /back/users 400 86 - 7.057 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T18:45:32.213Z'
+}
+{
+  message: 'PATCH /back/users 400 86 - 0.835 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T18:59:28.674Z'
+}
+{
+  message: 'PATCH /back/users 400 86 - 0.587 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T18:59:58.020Z'
+}
+{
+  message: 'PATCH /back/users/ 400 87 - 7.061 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T19:03:05.394Z'
+}
+{
+  message: 'PATCH /back/users 400 86 - 2.409 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T19:03:26.999Z'
+}
+{
+  message: 'PATCH /back/users 400 86 - 6.819 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T19:04:28.072Z'
+}
+{
+  message: 'PATCH /back/users 400 86 - 2.422 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T19:04:37.883Z'
+}
+{
+  message: 'PATCH /back/users 400 86 - 0.633 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T19:05:34.557Z'
+}
+{
+  message: 'PATCH /back/users 400 86 - 0.577 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T19:06:42.161Z'
+}
+{
+  message: 'PATCH /back/users 400 86 - 6.800 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T19:07:08.004Z'
+}
+{
+  message: 'PATCH /back/users 400 86 - 6.820 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T19:07:20.432Z'
+}
+{
+  message: 'PATCH /back/users 400 86 - 2.472 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T19:07:47.304Z'
+}
+{
+  message: 'PATCH /back/users 400 86 - 0.660 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T19:08:12.690Z'
+}
+{
+  message: 'PATCH /back/users 400 86 - 6.791 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T19:10:42.400Z'
+}
+{
+  message: 'PATCH /back/users 400 86 - 6.953 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T19:11:16.734Z'
+}
+{
+  message: 'PATCH /back/users 500 694 - 14.032 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T19:12:12.853Z'
+}
+{
+  message: 'PATCH /back/users 500 694 - 3.617 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T19:12:38.104Z'
+}
+{
+  message: 'PATCH /back/users 500 694 - 1.109 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T19:13:23.409Z'
+}
+{
+  message: 'PATCH /back/users 500 694 - 1.959 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T19:49:09.012Z'
+}
+{
+  message: 'PATCH /back/users 500 694 - 1.016 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T19:49:30.825Z'
+}
+{
+  message: 'PATCH /back/users 500 694 - 1.081 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T19:49:54.543Z'
+}
+{
+  message: 'PATCH /back/users 500 694 - 1.003 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T19:50:43.335Z'
+}
+{
+  message: 'PATCH /back/users 500 694 - 1.182 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T19:51:24.417Z'
+}
+{
+  message: 'PATCH /back/users 500 694 - 12.065 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T19:52:49.071Z'
+}
+{
+  message: 'PATCH /back/users 500 694 - 3.582 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T19:53:59.987Z'
+}
+{
+  message: 'PATCH /back/users 500 694 - 1.141 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T19:55:41.194Z'
+}
+{
+  message: 'PATCH /back/users 500 694 - 11.778 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T19:57:14.629Z'
+}
+{
+  message: 'PATCH /back/users 400 33 - 6.727 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T19:57:51.128Z'
+}
+{
+  message: 'PATCH /back/users 400 33 - 2.405 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T19:58:03.959Z'
+}
+{
+  message: 'PATCH /back/users 400 5 - 6.883 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T19:59:05.789Z'
+}
+{
+  message: 'PATCH /back/users 400 5 - 0.714 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T20:00:00.375Z'
+}
+{
+  message: 'PATCH /back/users 500 705 - 11.774 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T20:00:54.469Z'
+}
+{
+  message: 'PATCH /back/users 500 705 - 1.269 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T20:01:01.617Z'
+}
+{
+  message: 'PATCH /back/users 406 5 - 6.992 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T20:04:06.090Z'
+}
+{
+  message: 'PATCH /back/users 406 5 - 0.848 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T20:06:20.460Z'
+}
+{
+  message: 'PATCH /back/users 406 5 - 0.594 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T20:07:26.952Z'
+}
+{
+  message: 'PATCH /back/users 400 86 - 7.093 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T20:08:11.072Z'
+}
+{
+  message: 'PATCH /back/users 400 86 - 6.833 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T20:08:45.018Z'
+}
+{
+  message: 'PATCH /back/users 400 86 - 2.525 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T20:15:28.290Z'
+}
+{
+  message: 'PATCH /back/users 400 86 - 0.620 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T20:16:57.774Z'
+}
+{
+  message: 'PATCH /back/users 400 86 - 0.576 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T20:17:25.936Z'
+}
+{
+  message: 'PATCH /back/users 400 86 - 0.650 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T20:47:56.064Z'
+}
+{
+  message: 'PATCH /back/users 400 86 - 1.543 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T20:48:45.932Z'
+}
+{
+  message: 'PATCH /back/users 400 86 - 0.548 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T20:49:31.343Z'
+}
+{
+  message: 'PATCH /back/users 400 86 - 0.527 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T20:49:49.273Z'
+}
+{
+  message: 'PATCH /back/users 400 86 - 0.500 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T20:50:09.994Z'
+}
+{
+  message: 'PATCH /back/users 400 86 - 1.087 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T20:51:21.356Z'
+}
+{
+  message: 'PATCH /back/users 400 88 - 0.476 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T20:53:19.383Z'
+}
+{
+  message: 'PATCH /back/users 400 86 - 0.448 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T20:53:48.764Z'
+}
+{
+  message: 'PATCH /back/users 200 43 - 128.881 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T20:54:04.935Z'
+}
+{
+  message: 'POST /back/login 200 17 - 41.903 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T20:54:08.932Z'
+}
+{
+  message: 'GET /back/posts 200 4741 - 51.231 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T20:54:11.695Z'
+}
+{
+  message: 'GET /back/posts 200 4741 - 41.707 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T20:54:11.835Z'
+}
+{
+  message: 'GET /back/users?withRoles=true 304 - - 55.776 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T21:39:42.481Z'
+}
+{
+  message: 'GET /back/users?withRoles=true 304 - - 45.772 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T21:39:42.544Z'
+}
+{
+  message: 'GET /back/users/roles 304 - - 41.710 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T21:39:45.188Z'
+}
+{ level: 'error', timestamp: '2020-12-02T21:46:53.542Z' }
+{
+  message: 'POST /back/users 500 21 - 103.160 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T21:46:53.553Z'
+}
+{
+  message: 'GET /back/users?withRoles=true 200 2636 - 98.013 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T21:46:53.558Z'
+}
+{
+  message: 'GET /back/users?withRoles=true 304 - - 41.850 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T21:46:53.614Z'
+}
+{ level: 'error', timestamp: '2020-12-02T21:49:36.220Z' }
+{
+  message: 'POST /back/users/ 500 21 - 44.118 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T21:49:36.221Z'
+}
+{
+  code: 'ER_DUP_ENTRY',
+  errno: 1062,
+  sqlMessage: "Duplicate entry '99' for key 'PRIMARY'",
+  sqlState: '23000',
+  index: 0,
+  sql: " INSERT INTO  user ( name,mail,pass,ip_address,role_id,id) VALUES ('TUTU', 'aurelienchiren@gmail.com', 'faqmdp', '::1', '2', '99')  ",
+  level: 'error',
+  timestamp: '2020-12-02T21:54:40.316Z'
+}
+{
+  message: 'POST /back/users/ 500 21 - 95.616 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T21:54:40.322Z'
+}
+{
+  message: 'POST /back/users/ 200 23 - 45.661 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T21:54:56.561Z'
+}
+{ level: 'error', timestamp: '2020-12-02T21:55:10.436Z' }
+{
+  message: 'POST /back/users/ 500 21 - 103.285 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T21:55:10.442Z'
+}
+{ level: 'error', timestamp: '2020-12-02T21:56:00.997Z' }
+{
+  message: 'POST /back/users/ 500 21 - 11.624 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T21:56:01.003Z'
+}
+{ level: 'error', timestamp: '2020-12-02T21:56:33.514Z' }
+{
+  message: 'POST /back/users/ 500 21 - 11.863 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T21:56:33.520Z'
+}
+{ level: 'error', timestamp: '2020-12-02T21:56:42.469Z' }
+{
+  message: 'POST /back/users/ 500 21 - 3.344 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T21:56:42.470Z'
+}
+{ level: 'error', timestamp: '2020-12-02T21:57:10.929Z' }
+{
+  message: 'POST /back/users/ 500 21 - 12.347 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T21:57:10.935Z'
+}
+{ level: 'error', timestamp: '2020-12-02T21:59:12.958Z' }
+{
+  message: 'POST /back/users/ 500 21 - 13.634 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T21:59:12.967Z'
+}
+{
+  message: 'POST /back/login 200 2 - 7.489 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T21:59:57.268Z'
+}
+{
+  message: 'POST /back/users/ - - - - ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T22:01:31.690Z'
+}
+{
+  message: 'POST /back/users/ 200 23 - 111.322 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T22:01:36.852Z'
+}
+{
+  message: 'POST /back/users/ - - - - ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T22:03:44.833Z'
+}
+{
+  message: 'POST /back/users/ 200 23 - 97.947 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T22:04:23.040Z'
+}
+{
+  message: 'POST /back/users/ 200 23 - 100.143 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T22:05:14.850Z'
+}
+{
+  code: 'ER_DUP_ENTRY',
+  errno: 1062,
+  sqlMessage: "Duplicate entry '106' for key 'PRIMARY'",
+  sqlState: '23000',
+  index: 0,
+  sql: " INSERT INTO  user ( name,mail,pass,ip_address,role_id,id) VALUES ('TUTU', 'aurelienchiren@gmail.com', 'faqmdp', '::1', '2', '106')  ",
+  level: 'error',
+  timestamp: '2020-12-02T22:05:53.227Z'
+}
+{
+  message: 'POST /back/users/ 500 21 - 93.383 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T22:05:53.234Z'
+}
+{
+  message: 'POST /back/users/ 200 23 - 57.864 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T22:05:58.436Z'
+}
+{
+  message: 'POST /back/users/ 200 23 - 101.261 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T22:07:11.245Z'
+}
+{
+  message: 'PATCH /back/users 400 89 - 2.673 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T22:07:28.334Z'
+}
+{
+  message: 'PATCH /back/users 200 43 - 83.974 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T22:07:40.115Z'
+}
+{
+  message: 'POST /back/login 400 89 - 0.744 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T22:07:47.183Z'
+}
+{
+  message: 'POST /back/login 200 17 - 41.939 ms\n',
+  level: 'info',
+  timestamp: '2020-12-02T22:07:52.318Z'
+}
