@@ -1,0 +1,82 @@
+.mynavbar {
+    display: flex;
+    height: 80px;
+    background-color:black;
+    align-items: center;
+    justify-content: center;
+}
+.navwrapper {
+    width: 90vw;
+    max-width: 1400px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.icons {
+    font-size: 25px;
+    color : white;
+    margin-right: 10px;
+}
+
+.icons2 {
+    font-size: 25px;
+    color :black;
+    margin-right: 10px;
+
+}
+
+.hwrapper {
+    display: flex;
+    width: 50%;
+    color : white ;
+    font-size: 1.2em;
+}
+
+.bwrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 50%;
+}
+
+.buttonwrap {
+    border-radius: 50px;
+    padding: 5px 15px 5px 15px;
+    display: flex;
+    flex-direction: row;
+    font-size: 0.9em;
+    align-items: center;
+    font-weight: lighter;
+}
+
+.firstsection {
+    width: 100vw;
+    height: 70vh;
+    background-color: black;
+    color : white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainwrapper {
+    width: 60vw;
+}
+
+.topwrap {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.bigspan {
+    font-size: 2.2em;
+    font-weight: bolder;
+    white-space: nowrap;
+}
+
+.mainparagraph {
+    text-align: justify;
+}
