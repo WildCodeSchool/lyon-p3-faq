@@ -54,14 +54,15 @@ export default function Basecamp() {
 
       <section className={styles.secondsection}>
         <div className={styles.ssmainwrap}>
-
           <div className={styles.ssinnerleftwrap}>
             <div className={styles.wrapcard}>
-              <div className={styles.topcard}></div>
-              <div className={styles.botcard}></div>
+              <img src="/questionlist.png" className={styles.screenimg} alt="screenshot app"/>
+              <img src="/question.png" className={styles.screenimg2} alt="screenshot app"/>
             </div>
             <div className={styles.versionmaj}>
-              <span>A venir dans la v 1.5.0</span>
+              <span>
+                <em>A venir dans la v 1.5.0</em>
+              </span>
             </div>
           </div>
 
@@ -80,6 +81,33 @@ export default function Basecamp() {
               <strong>Vous ! </strong>🙏🏼
             </p>
           </div>
+        </div>
+      </section>
+
+      <section className={styles.thirdsection}>
+        <div className={styles.middleleftwrap}>
+            <span>Des technologies fiables pour un gain de temps
+                maximal ! 🦾
+            </span>
+            <div className={styles.midbuttonwrap}>
+                <div className={styles.customempbut}><span>Lire la documentation</span>
+                <p className={styles.workinprogress}> En cours de rédaction ✍🏻</p>
+                </div>
+                <div className={styles.customfilbut}>
+                    <span>Guide de démarrage</span>
+                    <p className={styles.workinprogress}>👷 En construction 👷</p>
+                </div>
+            </div>
+        </div>
+        <div className={styles.middlerightwrap}>
+        </div>
+      </section>
+
+      <section className={styles.fourthsection}>
+        <h1>Renforcez votre communauté </h1>
+        <div className={styles.buttonwrapfs}>
+            <div>Github</div>
+            <div>Démo</div>
         </div>
       </section>
     </>

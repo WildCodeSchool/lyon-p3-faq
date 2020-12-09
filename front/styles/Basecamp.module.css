@@ -121,6 +121,7 @@ align-items: center;
 
 .secondsection {
     height: 80vh;
+    width: 100vw;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -139,45 +140,61 @@ align-items: center;
     width: 50%;
     justify-content: center;
     align-items: center;
-    background-color: lavenderblush;
 }
 
 .wrapcard {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
     justify-content: center;
     height:90%;
-    background-color: lawngreen;
+    background-color: rgb(85, 85, 85);
+    border-radius: 15px 0 15px 0;
 }
 
-.topcard {
-    height: 50%;
-    width: 300px;
-    border-radius: 15px;
-    background-color: white;
-    border-radius: 15px;
-    border-style: solid;
-    border-color: lavender;
+.screenimg {
+    height: 70%;
+    width: auto;
+    object-fit: cover;
+    z-index: 1;
 }
 
-.botcard {
-    height: 50%;
-    width: 300px;
+.screenimg2 {
+    height:80% ;
+    width: auto ;
+    object-fit: cover;
+    z-index: 2;
+    margin-left: 10px;
+    position: relative;
+}
+
+.backbutton {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    width: 130px;
+    height: 40px;
     border-radius: 15px;
-    background-color: white;
-    border-radius: 15px;
-    border-style: solid;
-    border-color: lavender;
+    background-color: black;
+    margin-bottom: 10px;
+}
+
+.backbutton > span {
+    font-size: 0.7em;
+    margin-left: 10px;
 }
 
 .versionmaj {
     height: 10%;
     width: 100%;
     display: flex;
-    justify-content: right;
+    justify-content: center;
     align-items: center;
     padding-right: 20px;
-    background-color: lawngreen;
 }
 
 
@@ -205,4 +222,80 @@ align-items: center;
 .ssmediumparagraph {
     font-weight: 1.1em;
     text-align: justify;
+}
+
+
+/******************************************************/
+
+.thirdsection {
+    height: 50vh;
+    width: 100%;
+    background-color: rgb(243, 237, 237);
+    display: flex;
+    flex-direction: row;
+}
+
+.middleleftwrap{
+    padding: 50px;
+    display: flex;
+    flex-direction: column ;
+    justify-content: center;
+    align-items : center; 
+    width: 60%;
+    font-size: 3em;
+    font-weight: bold;
+    color: rgb(32, 32, 32);
+}
+
+.middlerightwrap {
+    width: 40%;
+    background-image: url("../public/rock.png");
+    background-position: bottom;
+    background-repeat: no-repeat;
+}
+
+.midbuttonwrap {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    font-size: 1.4rem;
+}
+
+.customempbut {
+    margin-top: 20px;
+    border : solid ;
+    margin-right: 10px;
+    border-radius : 5px ;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.customfilbut {
+    margin-top: 20px;
+    color: white;
+    border : solid ;
+    border-color: rgb(32, 32, 32);
+    border-radius : 5px ;
+    padding: 20px;
+    background-color:rgb(32, 32, 32);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.workinprogress {
+    display: flex;
+    font-size: 0.8rem;
+    justify-content: left;
+}
+
+.fourthsection {
+    height: 30vh;
+    background-color: lightcoral;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
