@@ -18,11 +18,18 @@ class Question {
       });
   }
 
-  static async postQuestion(titre, contenu, pseudo) {
+  static async postQuestion(titre, contenu, pseudo, mail, IP) {
     return db
-      .query("INSERT INTO question (titre, contenu, created_by) VALUES (?)", [
-        [titre, contenu, pseudo],
-      ])
+      .query(
+        "INSERT INTO user (name, mail, pass, ip_address, role_id)  VALUES (?)",
+        [[pseudo, mail, "!!pswd!!", IP, 5]]
+      )
+      .then((res) =>
+        db.query(
+          `INSERT INTO question (titre, contenu, created_by) VALUES (?)`,
+          [[titre, contenu, res.insertId]]
+        )
+      )
       .then((res) => {
         return { res };
       });
@@ -35,7 +42,8 @@ class Question {
         [[id_question, ip, raison], [ip], [id_question]]
       )
       .then((res) => {
-        return { res };
+        const isInsert = res.affectedRows === 1 ? true : false;
+        return { res, isInsert };
       });
   }
 
@@ -46,7 +54,8 @@ class Question {
         [[id_question, ip], [ip], [id_question]]
       )
       .then((res) => {
-        return { res };
+        const isInsert = res.affectedRows === 1 ? true : false;
+        return { res, isInsert };
       });
   }
 }

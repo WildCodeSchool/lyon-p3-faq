@@ -7,6 +7,7 @@ export default function Modal({ isShowing, hide }) {
     pseudo: null,
     titre: null,
     contenu: null,
+    mail:null
   });
   const notify = (msg) => toast(msg);
   const handleSubmit = (e) => {
@@ -43,6 +44,15 @@ export default function Modal({ isShowing, hide }) {
                   name="pseudo"
                   required
                   onChange={(e) => setForm({ ...form, pseudo: e.target.value })}
+                />
+              </div>
+              <div>
+                <input
+                  placeholder="Votre mail"
+                  type="email"
+                  name="email"
+                  required
+                  onChange={(e) => setForm({ ...form, mail: e.target.value })}
                 />
               </div>
               <div>

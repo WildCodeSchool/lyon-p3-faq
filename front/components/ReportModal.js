@@ -1,16 +1,16 @@
 import React, { useState, useEffect } from "react";
 import ReactDOM from "react-dom";
 import styles from "../styles/Modal.module.css";
-import { toast } from 'react-toastify';
+import { toast } from "react-toastify";
 
-export default function Modal({question, isShowing, hide }) {
+export default function Modal({ question, isShowing, hide }) {
   const [form, setForm] = useState({
     raison: null,
     id: question,
   });
 
   useEffect(() => {
-setForm({...form, id:question})
+    setForm({ ...form, id: question });
   }, []);
 
   const notify = (msg) => toast(msg);
@@ -27,9 +27,12 @@ setForm({...form, id:question})
         return response;
       })
       .then((res) =>
-        res.status === 201 ? notify("Message envoyé") : notify("Problème")
+        res.status === 201
+          ? notify("Message envoyé")
+          : res.status === 403
+          ? notify("Vous avez déjà signalé ce contenu")
+          : notify("Problème")
       );
-    console.log(form);
   };
 
   return isShowing

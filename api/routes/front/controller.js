@@ -25,11 +25,17 @@ class QuestionController {
   }
 
   static async postQuestion(req, res) {
+    const IP =
+      req.headers["x-forwarded-for"] ||
+      req.connection.remoteAddress ||
+      req.socket.remoteAddress;
     try {
       if (
         req.body.form.titre != undefined &&
         req.body.form.contenu != undefined &&
-        req.body.form.pseudo != undefined
+        req.body.form.pseudo != undefined &&
+        req.body.form.mail != undefined &&
+        IP != undefined
       ) {
         if (
           req.body.form.titre.length <= 100 &&
@@ -39,7 +45,9 @@ class QuestionController {
           const postedQuestion = await Question.postQuestion(
             req.body.form.titre,
             req.body.form.contenu,
-            req.body.form.pseudo
+            req.body.form.pseudo,
+            req.body.form.mail,
+            IP
           );
           res.sendStatus(201);
         } else if (
@@ -64,7 +72,11 @@ class QuestionController {
       req.connection.remoteAddress ||
       req.socket.remoteAddress;
     try {
-      if (IP === undefined || req.body.form.id === undefined || req.body.form.raison === undefined) {
+      if (
+        IP === undefined ||
+        req.body.form.id === undefined ||
+        req.body.form.raison === undefined
+      ) {
         res.sendStatus(400);
       } else {
         const reported = await Question.reportQuestion(
@@ -72,7 +84,7 @@ class QuestionController {
           IP,
           req.body.form.raison
         );
-        res.sendStatus(201);
+        reported.isInsert === true ? res.sendStatus(201) : res.sendStatus(403);
       }
     } catch (err) {
       res.sendStatus(500);
@@ -90,7 +102,7 @@ class QuestionController {
         res.sendStatus(400);
       } else {
         const voted = await Question.upVote(req.body.vote.id, IP);
-        res.sendStatus(201);
+        voted.isInsert === true ? res.sendStatus(201) : res.sendStatus(403);
       }
     } catch (err) {
       res.sendStatus(500);

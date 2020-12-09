@@ -10,7 +10,6 @@ import { toast } from "react-toastify";
 export default function Answer(props) {
   const { isShowing, toggle } = useModal();
   const [QA, setQA] = useState({});
-  console.log(props.questionAnswered.users.res[0].question_id);
   const [vote, setVote] = useState({
     id: null,
   });
@@ -28,10 +27,13 @@ export default function Answer(props) {
         return response;
       })
       .then((res) =>
-        res.status === 201 ? notify("Vote envoyé") : notify("Problème")
+        res.status === 201
+          ? notify("Vote envoyé")
+          : res.status === 403
+          ? notify("Vous avez déjà voté pour cette question")
+          : notify("Problème")
       );
   };
-  console.log(props);
   useEffect(() => {
     props.questionAnswered.users != null
       ? setQA(props.questionAnswered.users.res[0])
