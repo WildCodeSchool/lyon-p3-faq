@@ -35,7 +35,7 @@ export default function Main(props) {
                         <div className={styles.wrapperAuthor}>
                           <span>
                             <p className={styles.authorname}>
-                              <strong>{questions[key].created_by}</strong> à
+                              <strong>{questions[key].replyer}</strong> à
                               répondu
                             </p>
                           </span>

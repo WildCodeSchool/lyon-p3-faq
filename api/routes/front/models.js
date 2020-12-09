@@ -3,14 +3,14 @@ const db = require("../../datasource/mysql");
 class Question {
   static async getQuestions() {
     return db.query(
-      "SELECT question.titre, question.contenu, question.id, reponse.created_by, COUNT(upvote.id_reponse) AS voteup FROM question JOIN reponse ON question.id = reponse.question_id LEFT JOIN upvote ON reponse.question_id=upvote.id_reponse WHERE question.disabled_at IS NULL GROUP BY question.titre, question.contenu, question.id, reponse.created_by"
+      "SELECT question.titre, question.contenu, question.id, user.name AS replyer, COUNT(upvote.id_reponse) AS voteup FROM question JOIN reponse ON question.id = reponse.question_id LEFT JOIN upvote ON reponse.question_id=upvote.id_reponse JOIN user ON user.id = question.created_by WHERE question.disabled_at IS NULL GROUP BY question.titre, question.contenu, question.id, reponse.created_by"
     );
   }
 
   static async getQuestionsAnswered(id) {
     return db
       .query(
-        "SELECT question.id AS question_id, question.titre, question.contenu, reponse.contenu AS reponse, user.name AS replyer, question.created_by AS asker, COUNT(upvote.id_reponse) as voteup FROM question JOIN reponse ON question.id = reponse.question_id JOIN user ON reponse.created_by = user.id LEFT JOIN upvote ON reponse.question_id=upvote.id_reponse WHERE question.id = ? AND reponse.disabled_at IS NULL GROUP BY question.id, question.titre, question.contenu, reponse.contenu, user.name, question.created_by",
+        "SELECT question.id AS question_id, question.titre, question.contenu, reponse.contenu AS reponse, user.name AS replyer, user.name AS asker, COUNT(upvote.id_reponse) as voteup FROM question JOIN reponse ON question.id = reponse.question_id JOIN user ON reponse.created_by = user.id LEFT JOIN upvote ON reponse.question_id=upvote.id_reponse WHERE question.id = ? AND reponse.disabled_at IS NULL GROUP BY question.id, question.titre, question.contenu, reponse.contenu, user.name, question.created_by",
         [parseInt(id)]
       )
       .then((res) => {

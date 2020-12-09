@@ -13,6 +13,7 @@ export default function Answer(props) {
   const [vote, setVote] = useState({
     id: null,
   });
+  console.log(props)
   const notify = (msg) => toast(msg);
   const handleSubmit = (e) => {
     e.preventDefault();
