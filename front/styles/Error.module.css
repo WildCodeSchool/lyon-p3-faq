@@ -1,6 +1,6 @@
 .div{
     position: relative;
-    margin:0 auto;
+    margin:50px auto;
 }
 .image{
     margin:15px auto;
@@ -11,4 +11,10 @@
 text-align:center;
 font-size:large;
 height:fit-content;
+}
+.title{
+    font-size:3rem;
+    margin:auto;
+    width:fit-content;
+    color:rgb(10, 157, 177);
 }

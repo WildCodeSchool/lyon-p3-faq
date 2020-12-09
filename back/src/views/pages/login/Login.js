@@ -1,6 +1,7 @@
-import React, { useState, useContext  } from "react";
-import { Link, useHistory} from "react-router-dom";
-import { storeContext} from "../../../context";
+import React, { useState, useContext } from "react";
+import { Link, useHistory } from "react-router-dom";
+import { storeContext } from "../../../context";
+import Alert from "../../../containers/Alert";
 import {
   CButton,
   CCard,
@@ -14,22 +15,28 @@ import {
   CInputGroupPrepend,
   CInputGroupText,
   CRow,
+  CAlert,
+  CProgress,
 } from "@coreui/react";
 import CIcon from "@coreui/icons-react";
-import dotenv from  'dotenv'
+import dotenv from "dotenv";
 
 const axios = require("axios");
 
 const Login = () => {
-
   const [currentUser, setCurrentUser] = useContext(storeContext);
   const [login, setLogin] = useState();
   const [password, setPassword] = useState();
+  const [failAuth, setFailAuth] = useState(false);
+  const [forgottenPassword, setForgottenPassword] = useState(false);
+  const [alertMessage, setAlertMessage] = useState("");
+  const [alertType, setAlertType] = useState("");
+
   let history = useHistory();
 
   const handleLogin = () => {
     axios
-  
+
       .post(`${process.env.REACT_APP_API_HOST}/back/login`, {
         login: login,
         password: password,
@@ -37,68 +44,60 @@ const Login = () => {
       .then(function (response) {
         // handle success
         if (response.status == "200") {
-          console.log(response.data)
-          
           setCurrentUser({
             mail: login,
             password: password,
-            id:response.data.userInfos.id,
+            id: response.data.userInfos.id,
             token: response.data.token,
-            connected:true,
+            connected: true,
             name: response.data.userInfos.name,
-            role_id: response.data.role_id
-
-
-          })
+            role_id: response.data.role_id,
+          });
           history.push("/dashboard");
         }
       })
       .catch(function (error) {
         // handle error
-        alert("Identifiants incorrects. Merci de ré-essayer");
+        setForgottenPassword(false);
+        setFailAuth(true);
+
+        setAlertMessage("Identifiants incorrects. Merci de ré-essayer!!");
+        setAlertType("danger");
       });
   };
 
-
   const handleForgottenPassword = () => {
-
-    console.log("mot de passe oublié")
-    console.log("login" , login)
     axios
-      .post(`${process.env.REACT_APP_API_HOST}/back/login`, {
-        
-        login: login,
-        password: "nananana",
-        action : "renewPassword"
-        
-      } ,{
-
-        headers : {authentication : currentUser.token}
+      .post(`${process.env.REACT_APP_API_HOST}/back/users/passwordrenew`, {
+        mail: login,
       })
       .then(function (response) {
         // handle success
         if (response.status == "200") {
-          alert("Merci de consulter votre boite mail pour réinitialiser votre mot de passe");
-          
+          setFailAuth(false);
+          setForgottenPassword(true);
+
+          setAlertMessage(
+            "Vous venez de reçevoir un email afin de réinitialiser votre mot de passe"
+          );
+          setAlertType("success");
         }
       })
       .catch(function (error) {
         // handle error
-        console.log(error)
       });
   };
-
-
-
-
-
-
 
   return (
     <div className="c-app c-default-layout flex-row align-items-center">
       <CContainer>
         <CRow className="justify-content-center">
           <CCol md="8">
+            {failAuth || forgottenPassword ? (
+              <Alert message={alertMessage} type={alertType}></Alert>
+            ) : (
+              ""
+            )}
             <CCardGroup>
               <CCard className="p-4">
                 <CCardBody>
@@ -160,7 +159,6 @@ const Login = () => {
                   </CForm>
                 </CCardBody>
               </CCard>
-              
             </CCardGroup>
           </CCol>
         </CRow>

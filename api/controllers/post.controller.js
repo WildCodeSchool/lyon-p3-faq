@@ -2,6 +2,7 @@ const Post = require("../models/post.model");
 const validator = require("../middleware/validator");
 const logger = require("../library/logger");
 const mailer = require("../library/mailer");
+const { mailOptions } = require("../datasource/mails");
 
 const User = require("../models/user.model");
 const { Console } = require("winston/lib/winston/transports");
@@ -43,18 +44,8 @@ class PostController {
 
         const getMail = await User.read("where id=", idUser);
 
-        // Send an email confirmation when a post is published
-        let mailOptions = {
-          from: '"Pierre Freelances lyonnais 👻" <pierre@ammeloot.fr >', // sender address
-          to: getMail[0].mail, // list of receivers
-          subject:
-            " Hello ✔, votre question a été publiée et a reçue une réponse ", // Subject line
-          html: `<b>Vous pouvez consulter le post au lien suivant  : <a href = "http://localhost:3001/question-${idQuestion}">Lien du post</a> </b>`, //TODO Mettre à jour le lien de la ref
-        };
-
         // send mail with defined transport object
-
-        const info = await mailer(mailOptions);
+        mailer(mailOptions.newPost(getMail[0].mail, idQuestion));
 
         res.send("post published");
       } else if (action === "archive") {
@@ -106,7 +97,6 @@ class PostController {
   }
 
   static async addResponse(req, res) {
-    console.log("controller addResponse");
     try {
       const { question_id, contenu } = req.body;
       const created_by = "2";
@@ -131,7 +121,6 @@ class PostController {
 
   static async addQuestion(req, res) {
     try {
-      console.log("methode controller addQuestion");
       const { titre_question, contenu_question } = req.body;
 
       const created_by = "2";

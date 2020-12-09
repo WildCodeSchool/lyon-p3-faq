@@ -138,7 +138,7 @@ const Tables = () => {
           <CCard>
             <CCardHeader>
               Gestion des posts
-              <CRow className="align-items-center ">
+              <CRow className="align-items-center">
                 <CCol col="6" sm="4" md="3" className="mt-2">
                   <Link to={`/pages/posts/addpost`}>
                     <CButton active block color="dark" aria-pressed="true">
@@ -159,12 +159,13 @@ const Tables = () => {
                       custom
                       id="inline-checkbox1"
                       name="inline-checkbox1"
+                      checked={archiveChecked}
                       value="option1"
                       onChange={(e) => {
                         setArchiveChecked(e.target.checked);
-                        setTrigger(!trigger);
-
-                        setPendingChecked( pendingChecked? !pendingChecked : pendingChecked);
+                        setPendingChecked(
+                          pendingChecked ? !pendingChecked : pendingChecked
+                        );
                         setLabelTrigger("archived");
                       }}
                     />
@@ -181,11 +182,13 @@ const Tables = () => {
                       id="inline-checkbox2"
                       name="inline-checkbox2"
                       value="option2"
+                      checked={pendingChecked}
                       onChange={(e) => {
                         setLabelTrigger("pending");
                         setPendingChecked(e.target.checked);
-                        setArchiveChecked( archiveChecked? !archiveChecked: archiveChecked)
-                        setTrigger(!trigger);
+                        setArchiveChecked(
+                          archiveChecked ? !archiveChecked : archiveChecked
+                        );
                       }}
                     />
                     <CLabel
@@ -201,18 +204,18 @@ const Tables = () => {
               <CDataTable
                 items={
                   postsData
-                    ? (archiveChecked === false && pendingChecked === false)  ?
-                       postsData
+                    ? archiveChecked === false && pendingChecked === false
+                      ? postsData
                       : postsData.filter((post) => post.status == labelTrigger)
                     : ""
                 }
                 fields={tableFields}
                 hover
                 striped
-                itemsPerPageSelect
+                itemsPerPageSelect={{values : [20,50], "replaces default" :20, label:"Posts par page"}}
                 bordered
                 size="sm"
-                itemsPerPage={5}
+                itemsPerPage={20}
                 pagination
                 responsive
                 //clickableRows

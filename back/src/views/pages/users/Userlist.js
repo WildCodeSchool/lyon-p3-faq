@@ -79,7 +79,7 @@ const [currentUser, setCurrentUser] = useContext(storeContext);
 
   useEffect(
     (e) => {
-      console.log("currentUser :",currentUser.token)
+     
       axios
         .get(`${process.env.REACT_APP_API_HOST}/back/users?withRoles=true`, {
 
@@ -118,8 +118,8 @@ const [currentUser, setCurrentUser] = useContext(storeContext);
           <CCard>
             <CCardHeader>Gestion des utilisateurs</CCardHeader>
 
-            <CRow className="mt-3" style={{ justifyContent: "center" }}>
-              <CCol lg="2" md="3" xs="6" className="text-center">
+            <CRow className="align-items-center">
+              <CCol col="6" sm="4" md="3" className="mt-2 ml-4">
                 <Link
                   to={{
                     pathname: `/pages/users/adduser`,
@@ -147,7 +147,8 @@ const [currentUser, setCurrentUser] = useContext(storeContext);
                 striped
                 bordered
                 size="sm"
-                itemsPerPage={50}
+                itemsPerPage={20}
+                itemsPerPageSelect={{values : [20,50], "replaces default" :20, label:"Users par page"}}
                 tableFilter={filterTitle}
                 pagination
                 clickableRows

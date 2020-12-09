@@ -10,7 +10,7 @@ class User extends DB {
 
   // Customized methods
   async matchUser(field, cond) {
-    console.log("methode matchUser");
+    
     let resultQuery = await this.query(
       `SELECT COUNT(*) as count FROM user where ${field}= '${cond}' `
     );
@@ -42,7 +42,7 @@ class User extends DB {
   }
 
   async getUserWithRoles() {
-    console.log("getUserWithRoles MODEL");
+   
     let resultQuery = await this.query(
       "SELECT name,mail,pass,ip_address,role_id,user.id, role.nom as role FROM user JOIN role ON user.role_id=role.id"
     );

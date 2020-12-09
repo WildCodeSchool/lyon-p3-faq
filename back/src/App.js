@@ -40,7 +40,7 @@ class App extends Component {
               name="Login Page"
               render={(props) => <Login {...props} />}
             />
-            <PrivateRoute
+            <Route
               exact
               path="/renewpassword"
               name="Register Page"

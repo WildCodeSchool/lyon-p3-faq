@@ -1,5 +1,5 @@
 import React, { useState, useContext } from "react";
-import { storeContext} from "../../../context";
+import { storeContext } from "../../../context";
 import { Link, useHistory } from "react-router-dom";
 import {
   CButton,
@@ -16,31 +16,37 @@ import {
   CRow,
 } from "@coreui/react";
 import CIcon from "@coreui/icons-react";
-import dotenv from  'dotenv'
+import Alert from "../../../containers/Alert";
+import dotenv from "dotenv";
 
 const axios = require("axios");
 
 const RenewPassword = () => {
-
-  
   //Context
   const [currentUser, setCurrentUser] = useContext(storeContext);
 
   const [login, setLogin] = useState();
   const [password, setPassword] = useState();
   const [repeatPassword, setRepeatPassword] = useState();
+  const [failRenew, setFailRenew] = useState(false);
+  const [forgottenPassword, setForgottenPassword] = useState(false);
+  const [alertMessage, setAlertMessage] = useState("");
+  const [alertType, setAlertType] = useState("danger");
   let history = useHistory();
 
   const handleCreatePassword = () => {
     if (password === repeatPassword) {
       axios
-        .patch(`http://localhost:3002/back/users`, {
-          mail: login,
-          password: password,
-        }, {
-
-          headers : {authentication : currentUser.token}
-        })
+        .patch(
+          `http://localhost:3002/back/users`,
+          {
+            mail: login,
+            password: password,
+          },
+          {
+            headers: { authentication: currentUser.token },
+          }
+        )
         .then(function (response) {
           // handle success
           if (response.status == "200") {
@@ -48,18 +54,26 @@ const RenewPassword = () => {
           }
         })
         .catch(function (error) {
-          if (error.response.status === 400) {
-            alert("Mot de passe trop court : au moins 8 caractères");
-          }
-          else {
+          const msgError = error.response.data.errors[0].msg;
 
-            alert("Votre adresse email ne correspond à aucun compte. Merci de contacter votre administrateur")
+          if (error.response.status === 400) {
+            setAlertMessage(msgError);
+            setFailRenew(false);
+            setFailRenew(true);
+          } else {
+            setFailRenew(false);
+            setAlertMessage(
+              "Votre adresse email ne correspond à aucun compte. Merci de contacter votre administrateur"
+            );
+            setFailRenew(true);
           }
         });
     } else {
-      alert(
+      setFailRenew(false);
+      setAlertMessage(
         "Vos mots de passe ne correspondent pas. Merci de saisir deux mots de passe identiques"
       );
+      setFailRenew(true);
     }
   };
 
@@ -68,6 +82,12 @@ const RenewPassword = () => {
       <CContainer>
         <CRow className="justify-content-center">
           <CCol md="8">
+            {failRenew ? (
+              <Alert message={alertMessage} type={alertType}></Alert>
+            ) : (
+              ""
+            )}
+
             <CCardGroup>
               <CCard className="p-4">
                 <CCardBody>
@@ -136,7 +156,6 @@ const RenewPassword = () => {
                   </CForm>
                 </CCardBody>
               </CCard>
-              
             </CCardGroup>
           </CCol>
         </CRow>

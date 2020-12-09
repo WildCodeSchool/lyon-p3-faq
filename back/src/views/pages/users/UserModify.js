@@ -82,8 +82,8 @@ const BasicForms = (props) => {
       .put(`${process.env.REACT_APP_API_HOST}/back/users/${idUser}`, {
         //data to update
         name: `${nom} ${prenom}`,
-        mail: `${email}`,
-        role: `${typeCompte}`,
+        mail: email,
+        role: typeCompte,
        
         
       },

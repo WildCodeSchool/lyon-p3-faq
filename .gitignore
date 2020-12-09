@@ -10,6 +10,7 @@
 
 # testing
 /coverage
+/api/library/testemail.js
 
 # next.js
 /.next/
@@ -43,4 +44,5 @@ yarn-error.log*
 /.vscode
 
 # Logs
-/api/*.log
+/api/logs/*.log
+

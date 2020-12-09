@@ -3,7 +3,7 @@ const jwt = require('jsonwebtoken');
 const JWT_KEY = 'some_rand0m_$tring';
 
 exports.createToken = (user,ip)=> (
-console.log(ip),
+
        jwt.sign({
         id: user.id,
         ip: ip

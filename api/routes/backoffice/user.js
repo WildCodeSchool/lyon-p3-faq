@@ -33,6 +33,11 @@ router.put("/:id",verifyToken,validator.checkId,validator.checkUser, UserControl
 
 router.post("/", verifyToken,validator.checkUser, UserController.addUser);
 
+
+/* forgotten password */
+
+router.post("/passwordrenew",  UserController.passwordRenew);
+
 /* change password */
 
 router.patch("/", validator.checkupdatePassword, UserController.updatePassword);

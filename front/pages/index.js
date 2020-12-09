@@ -4,7 +4,8 @@ import Header from "../components/Header";
 import Main from "../components/Main";
 import Footer from "../components/Footer";
 const Fetch = require("../utils/callAPI");
-
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 export default function Home({ data }) {
   return (
     <>
@@ -16,9 +17,10 @@ export default function Home({ data }) {
           content="width=device-width, initial-scale=1.0"
         ></meta>
       </Head>
-      <Header />
+      <Header displayButton={true} errorHandler={data} />
       <Main questions={data} />
-      <Footer />
+      <Footer displayButton={true} errorHandler={data} />
+      <ToastContainer />
     </>
   );
 }

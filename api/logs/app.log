@@ -52581,3 +52581,4877 @@
   level: 'info',
   timestamp: '2020-12-09T19:03:38.662Z'
 }
+{
+  message: 'POST /back/login 200 305 - 136.617 ms\n',
+  level: 'info',
+  timestamp: '2020-12-09T19:34:41.877Z'
+}
+{
+  message: 'GET /back/posts 304 - - 43.165 ms\n',
+  level: 'info',
+  timestamp: '2020-12-09T19:34:44.377Z'
+}
+{
+  message: 'GET /back/posts 304 - - 39.387 ms\n',
+  level: 'info',
+  timestamp: '2020-12-09T19:34:44.449Z'
+}
+{
+  message: 'POST /back/login 200 305 - 87.041 ms\n',
+  level: 'info',
+  timestamp: '2020-12-09T19:36:55.149Z'
+}
+{
+  message: 'GET /back/posts 304 - - 40.755 ms\n',
+  level: 'info',
+  timestamp: '2020-12-09T19:36:58.073Z'
+}
+{
+  message: 'GET /back/posts 304 - - 44.281 ms\n',
+  level: 'info',
+  timestamp: '2020-12-09T19:36:58.149Z'
+}
+{
+  message: 'POST /back/login 200 305 - 80.086 ms\n',
+  level: 'info',
+  timestamp: '2020-12-09T19:58:31.373Z'
+}
+{
+  message: 'GET /back/posts 304 - - 39.322 ms\n',
+  level: 'info',
+  timestamp: '2020-12-09T19:58:34.246Z'
+}
+{
+  message: 'GET /back/posts 304 - - 44.246 ms\n',
+  level: 'info',
+  timestamp: '2020-12-09T19:58:34.323Z'
+}
+{
+  message: 'POST /back/login 200 305 - 81.712 ms\n',
+  level: 'info',
+  timestamp: '2020-12-09T19:59:03.956Z'
+}
+{
+  message: 'GET /back/posts 304 - - 38.930 ms\n',
+  level: 'info',
+  timestamp: '2020-12-09T19:59:06.390Z'
+}
+{
+  message: 'GET /back/posts 304 - - 40.926 ms\n',
+  level: 'info',
+  timestamp: '2020-12-09T19:59:06.486Z'
+}
+{
+  message: 'POST /back/login 200 305 - 84.887 ms\n',
+  level: 'info',
+  timestamp: '2020-12-09T20:03:15.740Z'
+}
+{
+  message: 'GET /back/posts 304 - - 43.282 ms\n',
+  level: 'info',
+  timestamp: '2020-12-09T20:03:17.801Z'
+}
+{
+  message: 'GET /back/posts 304 - - 41.517 ms\n',
+  level: 'info',
+  timestamp: '2020-12-09T20:03:17.900Z'
+}
+{
+  message: 'POST /back/login 200 305 - 82.936 ms\n',
+  level: 'info',
+  timestamp: '2020-12-09T20:25:01.915Z'
+}
+{
+  message: 'GET /back/posts 304 - - 48.329 ms\n',
+  level: 'info',
+  timestamp: '2020-12-09T20:25:03.706Z'
+}
+{
+  message: 'GET /back/posts 304 - - 41.374 ms\n',
+  level: 'info',
+  timestamp: '2020-12-09T20:25:03.820Z'
+}
+{
+  message: 'POST /back/login 200 305 - 84.152 ms\n',
+  level: 'info',
+  timestamp: '2020-12-09T20:25:29.814Z'
+}
+{
+  message: 'GET /back/posts 304 - - 46.829 ms\n',
+  level: 'info',
+  timestamp: '2020-12-09T20:25:32.205Z'
+}
+{
+  message: 'GET /back/posts 304 - - 39.449 ms\n',
+  level: 'info',
+  timestamp: '2020-12-09T20:25:32.304Z'
+}
+{
+  message: 'POST /back/login 200 305 - 79.486 ms\n',
+  level: 'info',
+  timestamp: '2020-12-09T20:26:07.117Z'
+}
+{
+  message: 'POST /back/login 200 305 - 80.286 ms\n',
+  level: 'info',
+  timestamp: '2020-12-09T20:26:32.241Z'
+}
+{
+  message: 'GET /back/posts 304 - - 41.666 ms\n',
+  level: 'info',
+  timestamp: '2020-12-09T20:26:34.061Z'
+}
+{
+  message: 'GET /back/posts 304 - - 38.451 ms\n',
+  level: 'info',
+  timestamp: '2020-12-09T20:26:34.156Z'
+}
+{
+  message: 'POST /back/login 200 305 - 81.935 ms\n',
+  level: 'info',
+  timestamp: '2020-12-09T20:27:46.971Z'
+}
+{
+  message: 'GET /back/posts 304 - - 44.364 ms\n',
+  level: 'info',
+  timestamp: '2020-12-09T20:27:49.189Z'
+}
+{
+  message: 'GET /back/posts 304 - - 41.922 ms\n',
+  level: 'info',
+  timestamp: '2020-12-09T20:27:49.292Z'
+}
+{
+  message: 'POST /back/login 200 305 - 81.263 ms\n',
+  level: 'info',
+  timestamp: '2020-12-09T20:28:08.943Z'
+}
+{
+  message: 'GET /back/posts 304 - - 39.270 ms\n',
+  level: 'info',
+  timestamp: '2020-12-09T20:28:11.156Z'
+}
+{
+  message: 'GET /back/posts 304 - - 40.171 ms\n',
+  level: 'info',
+  timestamp: '2020-12-09T20:28:11.221Z'
+}
+{
+  message: 'POST /back/login 200 305 - 78.321 ms\n',
+  level: 'info',
+  timestamp: '2020-12-09T20:28:27.003Z'
+}
+{
+  message: 'GET /back/posts 304 - - 47.278 ms\n',
+  level: 'info',
+  timestamp: '2020-12-09T20:28:28.684Z'
+}
+{
+  message: 'GET /back/posts 304 - - 42.175 ms\n',
+  level: 'info',
+  timestamp: '2020-12-09T20:28:28.796Z'
+}
+{
+  message: 'POST /back/login 200 305 - 80.585 ms\n',
+  level: 'info',
+  timestamp: '2020-12-09T20:28:41.340Z'
+}
+{
+  message: 'GET /back/posts 304 - - 43.862 ms\n',
+  level: 'info',
+  timestamp: '2020-12-09T20:28:43.513Z'
+}
+{
+  message: 'GET /back/posts 304 - - 40.847 ms\n',
+  level: 'info',
+  timestamp: '2020-12-09T20:28:43.609Z'
+}
+{
+  message: 'POST /back/login 200 305 - 89.342 ms\n',
+  level: 'info',
+  timestamp: '2020-12-09T20:29:40.466Z'
+}
+{
+  message: 'GET /back/posts 304 - - 41.634 ms\n',
+  level: 'info',
+  timestamp: '2020-12-09T20:29:42.242Z'
+}
+{
+  message: 'GET /back/posts 304 - - 39.127 ms\n',
+  level: 'info',
+  timestamp: '2020-12-09T20:29:42.338Z'
+}
+{
+  message: 'POST /back/login 200 305 - 80.652 ms\n',
+  level: 'info',
+  timestamp: '2020-12-09T20:30:38.063Z'
+}
+{
+  message: 'GET /back/posts 304 - - 41.636 ms\n',
+  level: 'info',
+  timestamp: '2020-12-09T20:30:39.872Z'
+}
+{
+  message: 'GET /back/posts 304 - - 39.791 ms\n',
+  level: 'info',
+  timestamp: '2020-12-09T20:30:39.967Z'
+}
+{
+  message: 'POST /back/login 200 305 - 80.987 ms\n',
+  level: 'info',
+  timestamp: '2020-12-09T20:31:15.204Z'
+}
+{
+  message: 'GET /back/posts 304 - - 39.888 ms\n',
+  level: 'info',
+  timestamp: '2020-12-09T20:31:16.984Z'
+}
+{
+  message: 'GET /back/posts 304 - - 42.002 ms\n',
+  level: 'info',
+  timestamp: '2020-12-09T20:31:17.084Z'
+}
+{
+  message: 'POST /back/login 200 305 - 83.018 ms\n',
+  level: 'info',
+  timestamp: '2020-12-09T21:00:09.444Z'
+}
+{
+  message: 'GET /back/posts 304 - - 42.883 ms\n',
+  level: 'info',
+  timestamp: '2020-12-09T21:00:11.641Z'
+}
+{
+  message: 'GET /back/posts 304 - - 41.521 ms\n',
+  level: 'info',
+  timestamp: '2020-12-09T21:00:11.740Z'
+}
+{
+  message: 'POST /back/login 200 305 - 81.992 ms\n',
+  level: 'info',
+  timestamp: '2020-12-09T21:00:32.365Z'
+}
+{
+  message: 'GET /back/posts 304 - - 40.103 ms\n',
+  level: 'info',
+  timestamp: '2020-12-09T21:00:34.181Z'
+}
+{
+  message: 'GET /back/posts 304 - - 46.144 ms\n',
+  level: 'info',
+  timestamp: '2020-12-09T21:00:34.285Z'
+}
+{
+  message: 'GET /back/users?withRoles=true 200 1920 - 46.535 ms\n',
+  level: 'info',
+  timestamp: '2020-12-09T21:10:07.433Z'
+}
+{
+  message: 'GET /back/users?withRoles=true 304 - - 42.999 ms\n',
+  level: 'info',
+  timestamp: '2020-12-09T21:10:07.492Z'
+}
+{
+  message: 'GET /back/users/roles 304 - - 40.503 ms\n',
+  level: 'info',
+  timestamp: '2020-12-09T21:10:14.044Z'
+}
+{
+  message: 'GET /back/users?withRoles=true 304 - - 41.628 ms\n',
+  level: 'info',
+  timestamp: '2020-12-09T21:10:20.608Z'
+}
+{
+  message: 'GET /back/users?withRoles=true 304 - - 43.275 ms\n',
+  level: 'info',
+  timestamp: '2020-12-09T21:10:20.668Z'
+}
+{
+  message: 'GET /back/posts 304 - - 38.955 ms\n',
+  level: 'info',
+  timestamp: '2020-12-09T21:10:46.461Z'
+}
+{
+  message: 'GET /back/posts 304 - - 41.811 ms\n',
+  level: 'info',
+  timestamp: '2020-12-09T21:10:46.581Z'
+}
+{
+  message: 'GET /back/users?withRoles=true 304 - - 40.039 ms\n',
+  level: 'info',
+  timestamp: '2020-12-09T21:10:47.636Z'
+}
+{
+  message: 'GET /back/users?withRoles=true 304 - - 41.764 ms\n',
+  level: 'info',
+  timestamp: '2020-12-09T21:10:47.692Z'
+}
+{
+  message: 'POST /back/login 200 305 - 82.164 ms\n',
+  level: 'info',
+  timestamp: '2020-12-09T21:16:48.696Z'
+}
+{
+  message: 'GET /back/users?withRoles=true 304 - - 44.340 ms\n',
+  level: 'info',
+  timestamp: '2020-12-09T21:16:50.580Z'
+}
+{
+  message: 'GET /back/users?withRoles=true 304 - - 39.796 ms\n',
+  level: 'info',
+  timestamp: '2020-12-09T21:16:50.636Z'
+}
+{
+  message: 'POST /back/login 200 305 - 78.909 ms\n',
+  level: 'info',
+  timestamp: '2020-12-09T21:18:48.291Z'
+}
+{
+  message: 'GET /back/users?withRoles=true 304 - - 41.075 ms\n',
+  level: 'info',
+  timestamp: '2020-12-09T21:18:50.988Z'
+}
+{
+  message: 'GET /back/users?withRoles=true 304 - - 41.983 ms\n',
+  level: 'info',
+  timestamp: '2020-12-09T21:18:51.047Z'
+}
+{
+  message: 'GET /back/posts 304 - - 41.056 ms\n',
+  level: 'info',
+  timestamp: '2020-12-09T21:18:53.387Z'
+}
+{
+  message: 'GET /back/posts 304 - - 42.035 ms\n',
+  level: 'info',
+  timestamp: '2020-12-09T21:18:53.484Z'
+}
+{
+  message: 'GET /back/users?withRoles=true 304 - - 44.509 ms\n',
+  level: 'info',
+  timestamp: '2020-12-09T21:18:54.545Z'
+}
+{
+  message: 'GET /back/users?withRoles=true 304 - - 49.263 ms\n',
+  level: 'info',
+  timestamp: '2020-12-09T21:18:54.629Z'
+}
+{
+  message: 'POST /back/login 200 305 - 81.063 ms\n',
+  level: 'info',
+  timestamp: '2020-12-09T21:19:13.984Z'
+}
+{
+  message: 'GET /back/users?withRoles=true 304 - - 40.927 ms\n',
+  level: 'info',
+  timestamp: '2020-12-09T21:19:15.888Z'
+}
+{
+  message: 'GET /back/users?withRoles=true 304 - - 43.288 ms\n',
+  level: 'info',
+  timestamp: '2020-12-09T21:19:15.948Z'
+}
+{
+  message: 'GET /back/posts 304 - - 39.460 ms\n',
+  level: 'info',
+  timestamp: '2020-12-09T21:19:18.760Z'
+}
+{
+  message: 'GET /back/posts 304 - - 38.656 ms\n',
+  level: 'info',
+  timestamp: '2020-12-09T21:19:18.848Z'
+}
+{
+  message: 'GET /back/users?withRoles=true 304 - - 44.006 ms\n',
+  level: 'info',
+  timestamp: '2020-12-09T21:19:19.511Z'
+}
+{
+  message: 'GET /back/users?withRoles=true 304 - - 39.495 ms\n',
+  level: 'info',
+  timestamp: '2020-12-09T21:19:19.563Z'
+}
+{
+  message: 'POST /back/login 200 305 - 81.161 ms\n',
+  level: 'info',
+  timestamp: '2020-12-09T21:19:25.773Z'
+}
+{
+  message: 'GET /back/posts 304 - - 43.319 ms\n',
+  level: 'info',
+  timestamp: '2020-12-09T21:19:27.769Z'
+}
+{
+  message: 'GET /back/posts 304 - - 43.827 ms\n',
+  level: 'info',
+  timestamp: '2020-12-09T21:19:27.872Z'
+}
+{
+  message: 'GET /back/users?withRoles=true 304 - - 41.971 ms\n',
+  level: 'info',
+  timestamp: '2020-12-09T21:19:29.516Z'
+}
+{
+  message: 'GET /back/users?withRoles=true 304 - - 41.764 ms\n',
+  level: 'info',
+  timestamp: '2020-12-09T21:19:29.572Z'
+}
+{
+  message: 'GET /back/posts 304 - - 41.636 ms\n',
+  level: 'info',
+  timestamp: '2020-12-09T21:19:30.901Z'
+}
+{
+  message: 'GET /back/posts 304 - - 39.307 ms\n',
+  level: 'info',
+  timestamp: '2020-12-09T21:19:30.977Z'
+}
+{
+  message: 'GET /back/users?withRoles=true 304 - - 41.653 ms\n',
+  level: 'info',
+  timestamp: '2020-12-09T21:19:33.211Z'
+}
+{
+  message: 'GET /back/users?withRoles=true 304 - - 42.102 ms\n',
+  level: 'info',
+  timestamp: '2020-12-09T21:19:33.268Z'
+}
+{
+  message: 'GET /back/posts 304 - - 41.581 ms\n',
+  level: 'info',
+  timestamp: '2020-12-09T21:19:37.365Z'
+}
+{
+  message: 'GET /back/posts 304 - - 42.108 ms\n',
+  level: 'info',
+  timestamp: '2020-12-09T21:19:37.449Z'
+}
+{
+  message: 'GET /back/users?withRoles=true 304 - - 41.283 ms\n',
+  level: 'info',
+  timestamp: '2020-12-09T21:19:38.912Z'
+}
+{
+  message: 'GET /back/users?withRoles=true 304 - - 42.310 ms\n',
+  level: 'info',
+  timestamp: '2020-12-09T21:19:38.968Z'
+}
+{
+  message: 'POST /back/login 200 305 - 81.880 ms\n',
+  level: 'info',
+  timestamp: '2020-12-09T21:20:34.702Z'
+}
+{
+  message: 'GET /back/posts 304 - - 39.967 ms\n',
+  level: 'info',
+  timestamp: '2020-12-09T21:20:36.558Z'
+}
+{
+  message: 'GET /back/posts 304 - - 41.308 ms\n',
+  level: 'info',
+  timestamp: '2020-12-09T21:20:36.658Z'
+}
+{
+  message: 'POST /back/login 200 305 - 83.238 ms\n',
+  level: 'info',
+  timestamp: '2020-12-09T21:21:23.418Z'
+}
+{
+  message: 'GET /back/posts 304 - - 40.698 ms\n',
+  level: 'info',
+  timestamp: '2020-12-09T21:21:27.697Z'
+}
+{
+  message: 'GET /back/posts 304 - - 43.601 ms\n',
+  level: 'info',
+  timestamp: '2020-12-09T21:21:27.805Z'
+}
+{
+  message: 'GET /back/users?withRoles=true 304 - - 41.400 ms\n',
+  level: 'info',
+  timestamp: '2020-12-09T21:21:30.641Z'
+}
+{
+  message: 'GET /back/users?withRoles=true 304 - - 40.455 ms\n',
+  level: 'info',
+  timestamp: '2020-12-09T21:21:30.695Z'
+}
+{
+  message: 'GET /back/users/roles - - - - ms\n',
+  level: 'info',
+  timestamp: '2020-12-09T21:39:22.238Z'
+}
+{
+  message: 'POST /back/login 200 305 - 80.760 ms\n',
+  level: 'info',
+  timestamp: '2020-12-09T21:39:25.622Z'
+}
+{
+  message: 'GET /back/users?withRoles=true 304 - - 42.327 ms\n',
+  level: 'info',
+  timestamp: '2020-12-09T21:39:28.182Z'
+}
+{
+  message: 'GET /back/users?withRoles=true 304 - - 43.133 ms\n',
+  level: 'info',
+  timestamp: '2020-12-09T21:39:28.244Z'
+}
+{
+  message: 'GET /back/users/roles 200 101 - 42.009 ms\n',
+  level: 'info',
+  timestamp: '2020-12-09T21:39:28.797Z'
+}
+{
+  message: 'POST /back/users 200 23 - 68.783 ms\n',
+  level: 'info',
+  timestamp: '2020-12-09T21:39:53.295Z'
+}
+{
+  message: 'GET /back/users?withRoles=true 200 2057 - 89.377 ms\n',
+  level: 'info',
+  timestamp: '2020-12-09T21:39:53.319Z'
+}
+{
+  message: 'GET /back/users?withRoles=true 304 - - 43.113 ms\n',
+  level: 'info',
+  timestamp: '2020-12-09T21:39:53.378Z'
+}
+{
+  message: 'GET /back/users/roles 304 - - 39.550 ms\n',
+  level: 'info',
+  timestamp: '2020-12-09T21:39:59.659Z'
+}
+{
+  message: 'GET /back/users?withRoles=true 304 - - 43.101 ms\n',
+  level: 'info',
+  timestamp: '2020-12-09T21:40:01.750Z'
+}
+{
+  message: 'PUT /back/users/111 200 39 - 83.016 ms\n',
+  level: 'info',
+  timestamp: '2020-12-09T21:40:01.787Z'
+}
+{
+  message: 'GET /back/users?withRoles=true 200 2058 - 41.781 ms\n',
+  level: 'info',
+  timestamp: '2020-12-09T21:40:01.811Z'
+}
+{
+  message: 'GET /back/posts 304 - - 42.758 ms\n',
+  level: 'info',
+  timestamp: '2020-12-09T21:40:14.632Z'
+}
+{
+  message: 'GET /back/posts 304 - - 40.529 ms\n',
+  level: 'info',
+  timestamp: '2020-12-09T21:40:14.731Z'
+}
+{
+  message: 'GET /back/users?withRoles=true 304 - - 40.471 ms\n',
+  level: 'info',
+  timestamp: '2020-12-09T21:40:18.123Z'
+}
+{
+  message: 'GET /back/users?withRoles=true 304 - - 41.561 ms\n',
+  level: 'info',
+  timestamp: '2020-12-09T21:40:18.178Z'
+}
+{
+  message: 'GET /back/users/roles 304 - - 41.343 ms\n',
+  level: 'info',
+  timestamp: '2020-12-09T21:40:21.950Z'
+}
+{
+  message: 'GET /back/users?withRoles=true 304 - - 41.880 ms\n',
+  level: 'info',
+  timestamp: '2020-12-09T21:40:23.599Z'
+}
+{
+  message: 'GET /back/users?withRoles=true 304 - - 43.772 ms\n',
+  level: 'info',
+  timestamp: '2020-12-09T21:40:23.656Z'
+}
+{
+  message: 'GET /back/posts 304 - - 41.788 ms\n',
+  level: 'info',
+  timestamp: '2020-12-09T21:40:32.015Z'
+}
+{
+  message: 'GET /back/posts 304 - - 39.015 ms\n',
+  level: 'info',
+  timestamp: '2020-12-09T21:40:32.099Z'
+}
+{
+  message: 'GET /back/users?withRoles=true 304 - - 43.645 ms\n',
+  level: 'info',
+  timestamp: '2020-12-09T21:55:37.202Z'
+}
+{
+  message: 'GET /back/users?withRoles=true 304 - - 42.829 ms\n',
+  level: 'info',
+  timestamp: '2020-12-09T21:55:37.261Z'
+}
+{
+  message: 'POST /back/login 200 305 - 84.190 ms\n',
+  level: 'info',
+  timestamp: '2020-12-09T21:58:05.156Z'
+}
+{
+  message: 'POST /back/login 200 305 - 85.486 ms\n',
+  level: 'info',
+  timestamp: '2020-12-09T23:54:46.936Z'
+}
+{
+  message: 'POST /back/login 200 305 - 132.103 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T08:17:25.989Z'
+}
+{
+  message: 'POST /back/login 200 305 - 81.393 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T08:18:54.374Z'
+}
+{
+  message: 'POST /back/login 200 305 - 81.618 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T08:29:53.737Z'
+}
+{
+  message: 'GET /back/users?withRoles=true 304 - - 41.484 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T08:29:53.973Z'
+}
+{
+  message: 'GET /back/users?withRoles=true 304 - - 42.245 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T08:29:54.095Z'
+}
+{
+  message: 'POST /back/login 200 305 - 79.009 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T08:35:11.113Z'
+}
+{
+  message: 'GET /back/users?withRoles=true 304 - - 41.548 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T08:35:11.328Z'
+}
+{
+  message: 'GET /back/posts 304 - - 81.633 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T08:35:11.370Z'
+}
+{
+  message: 'GET /back/users?withRoles=true 304 - - 41.967 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T08:35:11.453Z'
+}
+{
+  message: 'GET /back/posts 304 - - 42.602 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T08:35:11.455Z'
+}
+{
+  message: 'POST /back/login 200 305 - 81.565 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T08:52:04.074Z'
+}
+{
+  message: 'GET /back/users?withRoles=true 304 - - 41.796 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T08:52:04.618Z'
+}
+{
+  message: 'GET /back/posts 304 - - 42.003 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T08:52:04.620Z'
+}
+{
+  message: 'GET /back/users?withRoles=true 304 - - 40.693 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T08:52:04.740Z'
+}
+{
+  message: 'GET /back/posts 304 - - 40.546 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T08:52:04.743Z'
+}
+{
+  message: 'GET /back/posts 500 13 - 1.032 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T10:09:08.403Z'
+}
+{
+  message: 'POST /back/login 200 305 - 82.397 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T10:09:13.184Z'
+}
+{
+  message: 'GET /back/posts 200 7471 - 39.835 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T10:09:13.415Z'
+}
+{
+  message: 'GET /back/users?withRoles=true 304 - - 41.516 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T10:09:13.417Z'
+}
+{
+  message: 'GET /back/users?withRoles=true 304 - - 42.680 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T10:09:13.587Z'
+}
+{
+  message: 'GET /back/posts 304 - - 46.951 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T10:09:13.594Z'
+}
+{
+  message: 'GET /back/posts 304 - - 41.327 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T10:09:14.826Z'
+}
+{
+  message: 'GET /back/posts 304 - - 40.183 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T10:09:14.914Z'
+}
+{
+  message: 'GET /back/users?withRoles=true 304 - - 41.550 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T10:09:19.807Z'
+}
+{
+  message: 'GET /back/users?withRoles=true 304 - - 43.546 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T10:09:19.866Z'
+}
+{
+  message: 'GET /back/users/roles 304 - - 40.531 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T10:09:22.137Z'
+}
+{
+  message: 'GET /back/users?withRoles=true 304 - - 48.342 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T10:09:25.506Z'
+}
+{
+  message: 'PUT /back/users/1 200 39 - 84.372 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T10:09:25.539Z'
+}
+{
+  message: 'GET /back/users?withRoles=true 200 2059 - 41.875 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T10:09:25.562Z'
+}
+{
+  message: 'GET /back/users/roles 304 - - 91.150 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T10:11:12.547Z'
+}
+{ level: 'error', timestamp: '2020-12-10T10:11:15.051Z' }
+{
+  message: 'PUT /back/users/1 500 21 - 46.654 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T10:11:15.052Z'
+}
+{
+  message: 'GET /back/users?withRoles=true 304 - - 83.175 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T10:11:15.097Z'
+}
+{
+  message: 'GET /back/users?withRoles=true 304 - - 39.663 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T10:11:15.156Z'
+}
+{
+  message: 'GET /back/users/roles 304 - - 90.339 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T10:12:06.407Z'
+}
+{ level: 'error', timestamp: '2020-12-10T10:12:09.389Z' }
+{
+  message: 'PUT /back/users/1 500 21 - 45.495 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T10:12:09.390Z'
+}
+{
+  message: 'GET /back/users?withRoles=true 304 - - 88.287 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T10:12:09.441Z'
+}
+{
+  message: 'GET /back/users?withRoles=true 304 - - 39.605 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T10:12:09.514Z'
+}
+{
+  message: 'GET /back/users/roles 304 - - 88.409 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T10:14:03.674Z'
+}
+{
+  message: 'PUT /back/users/1 200 39 - 86.246 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T10:14:06.721Z'
+}
+{
+  message: 'GET /back/users?withRoles=true 200 2058 - 82.251 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T10:14:06.724Z'
+}
+{
+  message: 'GET /back/users?withRoles=true 304 - - 39.347 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T10:14:06.784Z'
+}
+{
+  message: 'GET /back/users/2 500 13 - 3.124 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T10:20:47.020Z'
+}
+{
+  message: 'POST /back/login 200 305 - 129.624 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T10:21:29.657Z'
+}
+{
+  message: 'GET /back/users 500 13 - 0.804 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T10:21:46.848Z'
+}
+{
+  message: 'GET /back/users 200 1777 - 38.741 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T10:22:18.585Z'
+}
+{
+  message: 'GET /back/users/2 200 126 - 98.187 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T10:22:24.986Z'
+}
+{
+  message: 'GET /back/users/105 404 30 - 40.977 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T10:22:34.400Z'
+}
+{
+  message: 'GET /back/users/105 404 30 - 89.399 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T10:23:44.937Z'
+}
+{
+  message: 'GET /back/users/2 200 126 - 80.959 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T10:23:51.223Z'
+}
+{
+  message: 'GET /back/users/2 200 126 - 93.507 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T10:25:37.088Z'
+}
+{
+  message: 'GET /back/users/105 200 2 - 41.362 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T10:25:41.826Z'
+}
+{
+  message: 'GET /back/users/105 200 2 - 92.571 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T10:26:49.907Z'
+}
+{
+  message: 'GET /back/users/105 200 2 - 93.759 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T10:27:11.270Z'
+}
+{
+  message: 'GET /back/users/105 200 2 - 90.735 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T10:27:27.882Z'
+}
+{
+  message: 'GET /back/users/105 200 2 - 90.344 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T10:27:49.123Z'
+}
+{
+  message: 'GET /back/users/105 404 30 - 94.327 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T10:28:20.397Z'
+}
+{
+  message: 'GET /back/users/2 200 126 - 62.164 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T10:28:25.672Z'
+}
+{
+  message: 'POST /back/login 200 305 - 143.416 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T10:33:18.113Z'
+}
+{
+  message: 'GET /back/users?withRoles=true 304 - - 40.998 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T10:33:18.339Z'
+}
+{
+  message: 'GET /back/posts 304 - - 79.972 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T10:33:18.380Z'
+}
+{
+  message: 'GET /back/posts 304 - - 40.374 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T10:33:18.471Z'
+}
+{
+  message: 'GET /back/users?withRoles=true 304 - - 43.129 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T10:33:18.473Z'
+}
+{
+  message: 'GET /back/users?withRoles=true 304 - - 38.532 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T10:33:22.554Z'
+}
+{
+  message: 'GET /back/users?withRoles=true 304 - - 40.935 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T10:33:22.615Z'
+}
+{
+  message: 'GET /back/users/roles 304 - - 40.484 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T10:33:24.581Z'
+}
+{
+  code: 'ERR_HTTP_HEADERS_SENT',
+  level: 'error',
+  timestamp: '2020-12-10T10:33:27.709Z'
+}
+{
+  message: 'DELETE /back/users/40 500 39 - 38.892 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T10:33:27.710Z'
+}
+{
+  message: 'GET /back/users?withRoles=true 200 1914 - 39.255 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T10:33:27.822Z'
+}
+{
+  message: 'GET /back/users?withRoles=true 304 - - 40.444 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T10:33:27.879Z'
+}
+{
+  message: 'POST /back/login 200 305 - 128.001 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T10:36:10.394Z'
+}
+{
+  message: 'GET /back/users?withRoles=true 304 - - 39.831 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T10:36:10.603Z'
+}
+{
+  message: 'GET /back/posts 304 - - 82.440 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T10:36:10.648Z'
+}
+{
+  message: 'GET /back/posts 304 - - 40.485 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T10:36:10.719Z'
+}
+{
+  message: 'GET /back/users?withRoles=true 304 - - 43.785 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T10:36:10.722Z'
+}
+{
+  message: 'GET /back/users?withRoles=true 304 - - 42.093 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T10:36:14.054Z'
+}
+{
+  message: 'GET /back/users?withRoles=true 304 - - 40.765 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T10:36:14.127Z'
+}
+{
+  message: 'GET /back/users/roles 304 - - 41.004 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T10:36:21.455Z'
+}
+{
+  message: 'GET /back/users?withRoles=true 200 2045 - 38.842 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T10:36:34.292Z'
+}
+{
+  message: 'POST /back/users 200 23 - 71.728 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T10:36:34.322Z'
+}
+{
+  message: 'GET /back/users?withRoles=true 304 - - 35.778 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T10:36:34.344Z'
+}
+{
+  message: 'GET /back/users/roles 304 - - 40.144 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T10:36:38.627Z'
+}
+{
+  message: 'DELETE /back/users/112 200 39 - 42.378 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T10:36:41.380Z'
+}
+{
+  message: 'GET /back/users?withRoles=true 200 1914 - 38.813 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T10:36:41.456Z'
+}
+{
+  message: 'GET /back/users?withRoles=true 304 - - 41.215 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T10:36:41.512Z'
+}
+{
+  message: 'POST /back/login 200 305 - 84.198 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T11:16:23.821Z'
+}
+{
+  message: 'GET /back/posts 304 - - 39.603 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T11:16:24.030Z'
+}
+{
+  message: 'GET /back/users?withRoles=true 304 - - 43.246 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T11:16:24.033Z'
+}
+{
+  message: 'GET /back/posts 304 - - 38.469 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T11:16:24.182Z'
+}
+{
+  message: 'GET /back/users?withRoles=true 304 - - 41.437 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T11:16:24.184Z'
+}
+{
+  message: 'GET /back/users?withRoles=true 304 - - 39.671 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T11:16:27.286Z'
+}
+{
+  message: 'GET /back/users?withRoles=true 304 - - 40.418 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T11:16:27.345Z'
+}
+{
+  message: 'GET /back/users/roles 304 - - 40.397 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T11:16:28.469Z'
+}
+{
+  message: 'GET /back/users?withRoles=true 304 - - 39.013 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T11:16:56.418Z'
+}
+{
+  message: 'POST /back/users 200 23 - 42.417 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T11:16:56.420Z'
+}
+{
+  message: 'GET /back/users?withRoles=true 200 2042 - 38.383 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T11:16:56.474Z'
+}
+{
+  message: 'GET /back/users?withRoles=true 304 - - 43.564 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T11:16:56.533Z'
+}
+{
+  error: C:\Users\Aurel\Documents\GitHub\Projet3\lyon-p3-faq\api\datasource\mails.js:3
+      newUser= {  from: '"Pierre Freelances lyonnais 👻" <pierre@ammeloot.fr >', // sender address
+      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  
+  SyntaxError: Invalid shorthand property initializer
+      at wrapSafe (internal/modules/cjs/loader.js:1053:16)
+      at Module._compile (internal/modules/cjs/loader.js:1101:27)
+      at Object.Module._extensions..js (internal/modules/cjs/loader.js:1157:10)
+      at Module.load (internal/modules/cjs/loader.js:985:32)
+      at Function.Module._load (internal/modules/cjs/loader.js:878:14)
+      at Module.require (internal/modules/cjs/loader.js:1025:19)
+      at require (internal/modules/cjs/helpers.js:72:18)
+      at Object.<anonymous> (C:\Users\Aurel\Documents\GitHub\Projet3\lyon-p3-faq\api\controllers\user.controller.js:7:20)
+      at Module._compile (internal/modules/cjs/loader.js:1137:30)
+      at Object.Module._extensions..js (internal/modules/cjs/loader.js:1157:10),
+  level: 'error',
+  message: 'uncaughtException: Invalid shorthand property initializer\n' +
+    'C:\\Users\\Aurel\\Documents\\GitHub\\Projet3\\lyon-p3-faq\\api\\datasource\\mails.js:3\n' +
+    `    newUser= {  from: '"Pierre Freelances lyonnais 👻" <pierre@ammeloot.fr >', // sender address\n` +
+    '    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n' +
+    '\n' +
+    'SyntaxError: Invalid shorthand property initializer\n' +
+    '    at wrapSafe (internal/modules/cjs/loader.js:1053:16)\n' +
+    '    at Module._compile (internal/modules/cjs/loader.js:1101:27)\n' +
+    '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1157:10)\n' +
+    '    at Module.load (internal/modules/cjs/loader.js:985:32)\n' +
+    '    at Function.Module._load (internal/modules/cjs/loader.js:878:14)\n' +
+    '    at Module.require (internal/modules/cjs/loader.js:1025:19)\n' +
+    '    at require (internal/modules/cjs/helpers.js:72:18)\n' +
+    '    at Object.<anonymous> (C:\\Users\\Aurel\\Documents\\GitHub\\Projet3\\lyon-p3-faq\\api\\controllers\\user.controller.js:7:20)\n' +
+    '    at Module._compile (internal/modules/cjs/loader.js:1137:30)\n' +
+    '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1157:10)',
+  stack: 'C:\\Users\\Aurel\\Documents\\GitHub\\Projet3\\lyon-p3-faq\\api\\datasource\\mails.js:3\n' +
+    `    newUser= {  from: '"Pierre Freelances lyonnais 👻" <pierre@ammeloot.fr >', // sender address\n` +
+    '    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n' +
+    '\n' +
+    'SyntaxError: Invalid shorthand property initializer\n' +
+    '    at wrapSafe (internal/modules/cjs/loader.js:1053:16)\n' +
+    '    at Module._compile (internal/modules/cjs/loader.js:1101:27)\n' +
+    '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1157:10)\n' +
+    '    at Module.load (internal/modules/cjs/loader.js:985:32)\n' +
+    '    at Function.Module._load (internal/modules/cjs/loader.js:878:14)\n' +
+    '    at Module.require (internal/modules/cjs/loader.js:1025:19)\n' +
+    '    at require (internal/modules/cjs/helpers.js:72:18)\n' +
+    '    at Object.<anonymous> (C:\\Users\\Aurel\\Documents\\GitHub\\Projet3\\lyon-p3-faq\\api\\controllers\\user.controller.js:7:20)\n' +
+    '    at Module._compile (internal/modules/cjs/loader.js:1137:30)\n' +
+    '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1157:10)',
+  exception: true,
+  date: 'Thu Dec 10 2020 12:18:05 GMT+0100 (GMT+01:00)',
+  process: {
+    pid: 12028,
+    uid: null,
+    gid: null,
+    cwd: 'C:\\Users\\Aurel\\Documents\\GitHub\\Projet3\\lyon-p3-faq\\api',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v12.18.3',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'C:\\Users\\Aurel\\Documents\\GitHub\\Projet3\\lyon-p3-faq\\api\\bin\\start'
+    ],
+    memoryUsage: {
+      rss: 51871744,
+      heapTotal: 30666752,
+      heapUsed: 14618816,
+      external: 1575723,
+      arrayBuffers: 127814
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 28622 },
+  trace: [
+    {
+      column: 16,
+      file: 'internal/modules/cjs/loader.js',
+      function: 'wrapSafe',
+      line: 1053,
+      method: null,
+      native: false
+    },
+    {
+      column: 27,
+      file: 'internal/modules/cjs/loader.js',
+      function: 'Module._compile',
+      line: 1101,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'internal/modules/cjs/loader.js',
+      function: 'Module._extensions..js',
+      line: 1157,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'internal/modules/cjs/loader.js',
+      function: 'Module.load',
+      line: 985,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 14,
+      file: 'internal/modules/cjs/loader.js',
+      function: 'Module._load',
+      line: 878,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'internal/modules/cjs/loader.js',
+      function: 'Module.require',
+      line: 1025,
+      method: 'require',
+      native: false
+    },
+    {
+      column: 18,
+      file: 'internal/modules/cjs/helpers.js',
+      function: 'require',
+      line: 72,
+      method: null,
+      native: false
+    },
+    {
+      column: 20,
+      file: 'C:\\Users\\Aurel\\Documents\\GitHub\\Projet3\\lyon-p3-faq\\api\\controllers\\user.controller.js',
+      function: null,
+      line: 7,
+      method: null,
+      native: false
+    },
+    {
+      column: 30,
+      file: 'internal/modules/cjs/loader.js',
+      function: 'Module._compile',
+      line: 1137,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'internal/modules/cjs/loader.js',
+      function: 'Module._extensions..js',
+      line: 1157,
+      method: '.js',
+      native: false
+    }
+  ],
+  timestamp: '2020-12-10T11:18:05.875Z'
+}
+{
+  error: ReferenceError: mail is not defined
+      at Object.<anonymous> (C:\Users\Aurel\Documents\GitHub\Projet3\lyon-p3-faq\api\datasource\mails.js:4:9)
+      at Module._compile (internal/modules/cjs/loader.js:1137:30)
+      at Object.Module._extensions..js (internal/modules/cjs/loader.js:1157:10)
+      at Module.load (internal/modules/cjs/loader.js:985:32)
+      at Function.Module._load (internal/modules/cjs/loader.js:878:14)
+      at Module.require (internal/modules/cjs/loader.js:1025:19)
+      at require (internal/modules/cjs/helpers.js:72:18)
+      at Object.<anonymous> (C:\Users\Aurel\Documents\GitHub\Projet3\lyon-p3-faq\api\controllers\user.controller.js:7:20)
+      at Module._compile (internal/modules/cjs/loader.js:1137:30)
+      at Object.Module._extensions..js (internal/modules/cjs/loader.js:1157:10),
+  level: 'error',
+  message: 'uncaughtException: mail is not defined\n' +
+    'ReferenceError: mail is not defined\n' +
+    '    at Object.<anonymous> (C:\\Users\\Aurel\\Documents\\GitHub\\Projet3\\lyon-p3-faq\\api\\datasource\\mails.js:4:9)\n' +
+    '    at Module._compile (internal/modules/cjs/loader.js:1137:30)\n' +
+    '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1157:10)\n' +
+    '    at Module.load (internal/modules/cjs/loader.js:985:32)\n' +
+    '    at Function.Module._load (internal/modules/cjs/loader.js:878:14)\n' +
+    '    at Module.require (internal/modules/cjs/loader.js:1025:19)\n' +
+    '    at require (internal/modules/cjs/helpers.js:72:18)\n' +
+    '    at Object.<anonymous> (C:\\Users\\Aurel\\Documents\\GitHub\\Projet3\\lyon-p3-faq\\api\\controllers\\user.controller.js:7:20)\n' +
+    '    at Module._compile (internal/modules/cjs/loader.js:1137:30)\n' +
+    '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1157:10)',
+  stack: 'ReferenceError: mail is not defined\n' +
+    '    at Object.<anonymous> (C:\\Users\\Aurel\\Documents\\GitHub\\Projet3\\lyon-p3-faq\\api\\datasource\\mails.js:4:9)\n' +
+    '    at Module._compile (internal/modules/cjs/loader.js:1137:30)\n' +
+    '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1157:10)\n' +
+    '    at Module.load (internal/modules/cjs/loader.js:985:32)\n' +
+    '    at Function.Module._load (internal/modules/cjs/loader.js:878:14)\n' +
+    '    at Module.require (internal/modules/cjs/loader.js:1025:19)\n' +
+    '    at require (internal/modules/cjs/helpers.js:72:18)\n' +
+    '    at Object.<anonymous> (C:\\Users\\Aurel\\Documents\\GitHub\\Projet3\\lyon-p3-faq\\api\\controllers\\user.controller.js:7:20)\n' +
+    '    at Module._compile (internal/modules/cjs/loader.js:1137:30)\n' +
+    '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1157:10)',
+  exception: true,
+  date: 'Thu Dec 10 2020 12:19:56 GMT+0100 (GMT+01:00)',
+  process: {
+    pid: 18160,
+    uid: null,
+    gid: null,
+    cwd: 'C:\\Users\\Aurel\\Documents\\GitHub\\Projet3\\lyon-p3-faq\\api',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v12.18.3',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'C:\\Users\\Aurel\\Documents\\GitHub\\Projet3\\lyon-p3-faq\\api\\bin\\start'
+    ],
+    memoryUsage: {
+      rss: 51900416,
+      heapTotal: 30404608,
+      heapUsed: 14755128,
+      external: 1575723,
+      arrayBuffers: 127814
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 28733 },
+  trace: [
+    {
+      column: 9,
+      file: 'C:\\Users\\Aurel\\Documents\\GitHub\\Projet3\\lyon-p3-faq\\api\\datasource\\mails.js',
+      function: null,
+      line: 4,
+      method: null,
+      native: false
+    },
+    {
+      column: 30,
+      file: 'internal/modules/cjs/loader.js',
+      function: 'Module._compile',
+      line: 1137,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'internal/modules/cjs/loader.js',
+      function: 'Module._extensions..js',
+      line: 1157,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'internal/modules/cjs/loader.js',
+      function: 'Module.load',
+      line: 985,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 14,
+      file: 'internal/modules/cjs/loader.js',
+      function: 'Module._load',
+      line: 878,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'internal/modules/cjs/loader.js',
+      function: 'Module.require',
+      line: 1025,
+      method: 'require',
+      native: false
+    },
+    {
+      column: 18,
+      file: 'internal/modules/cjs/helpers.js',
+      function: 'require',
+      line: 72,
+      method: null,
+      native: false
+    },
+    {
+      column: 20,
+      file: 'C:\\Users\\Aurel\\Documents\\GitHub\\Projet3\\lyon-p3-faq\\api\\controllers\\user.controller.js',
+      function: null,
+      line: 7,
+      method: null,
+      native: false
+    },
+    {
+      column: 30,
+      file: 'internal/modules/cjs/loader.js',
+      function: 'Module._compile',
+      line: 1137,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'internal/modules/cjs/loader.js',
+      function: 'Module._extensions..js',
+      line: 1157,
+      method: '.js',
+      native: false
+    }
+  ],
+  timestamp: '2020-12-10T11:19:56.801Z'
+}
+{
+  error: C:\Users\Aurel\Documents\GitHub\Projet3\lyon-p3-faq\api\datasource\mails.js:10
+    }
+    ^
+  
+  SyntaxError: Unexpected token '}'
+      at wrapSafe (internal/modules/cjs/loader.js:1053:16)
+      at Module._compile (internal/modules/cjs/loader.js:1101:27)
+      at Object.Module._extensions..js (internal/modules/cjs/loader.js:1157:10)
+      at Module.load (internal/modules/cjs/loader.js:985:32)
+      at Function.Module._load (internal/modules/cjs/loader.js:878:14)
+      at Module.require (internal/modules/cjs/loader.js:1025:19)
+      at require (internal/modules/cjs/helpers.js:72:18)
+      at Object.<anonymous> (C:\Users\Aurel\Documents\GitHub\Projet3\lyon-p3-faq\api\controllers\user.controller.js:7:20)
+      at Module._compile (internal/modules/cjs/loader.js:1137:30)
+      at Object.Module._extensions..js (internal/modules/cjs/loader.js:1157:10),
+  level: 'error',
+  message: "uncaughtException: Unexpected token '}'\n" +
+    'C:\\Users\\Aurel\\Documents\\GitHub\\Projet3\\lyon-p3-faq\\api\\datasource\\mails.js:10\n' +
+    '  }\n' +
+    '  ^\n' +
+    '\n' +
+    "SyntaxError: Unexpected token '}'\n" +
+    '    at wrapSafe (internal/modules/cjs/loader.js:1053:16)\n' +
+    '    at Module._compile (internal/modules/cjs/loader.js:1101:27)\n' +
+    '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1157:10)\n' +
+    '    at Module.load (internal/modules/cjs/loader.js:985:32)\n' +
+    '    at Function.Module._load (internal/modules/cjs/loader.js:878:14)\n' +
+    '    at Module.require (internal/modules/cjs/loader.js:1025:19)\n' +
+    '    at require (internal/modules/cjs/helpers.js:72:18)\n' +
+    '    at Object.<anonymous> (C:\\Users\\Aurel\\Documents\\GitHub\\Projet3\\lyon-p3-faq\\api\\controllers\\user.controller.js:7:20)\n' +
+    '    at Module._compile (internal/modules/cjs/loader.js:1137:30)\n' +
+    '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1157:10)',
+  stack: 'C:\\Users\\Aurel\\Documents\\GitHub\\Projet3\\lyon-p3-faq\\api\\datasource\\mails.js:10\n' +
+    '  }\n' +
+    '  ^\n' +
+    '\n' +
+    "SyntaxError: Unexpected token '}'\n" +
+    '    at wrapSafe (internal/modules/cjs/loader.js:1053:16)\n' +
+    '    at Module._compile (internal/modules/cjs/loader.js:1101:27)\n' +
+    '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1157:10)\n' +
+    '    at Module.load (internal/modules/cjs/loader.js:985:32)\n' +
+    '    at Function.Module._load (internal/modules/cjs/loader.js:878:14)\n' +
+    '    at Module.require (internal/modules/cjs/loader.js:1025:19)\n' +
+    '    at require (internal/modules/cjs/helpers.js:72:18)\n' +
+    '    at Object.<anonymous> (C:\\Users\\Aurel\\Documents\\GitHub\\Projet3\\lyon-p3-faq\\api\\controllers\\user.controller.js:7:20)\n' +
+    '    at Module._compile (internal/modules/cjs/loader.js:1137:30)\n' +
+    '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1157:10)',
+  exception: true,
+  date: 'Thu Dec 10 2020 12:29:43 GMT+0100 (GMT+01:00)',
+  process: {
+    pid: 7976,
+    uid: null,
+    gid: null,
+    cwd: 'C:\\Users\\Aurel\\Documents\\GitHub\\Projet3\\lyon-p3-faq\\api',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v12.18.3',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'C:\\Users\\Aurel\\Documents\\GitHub\\Projet3\\lyon-p3-faq\\api\\bin\\start'
+    ],
+    memoryUsage: {
+      rss: 52080640,
+      heapTotal: 30404608,
+      heapUsed: 14679160,
+      external: 1575723,
+      arrayBuffers: 127814
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 29319 },
+  trace: [
+    {
+      column: 16,
+      file: 'internal/modules/cjs/loader.js',
+      function: 'wrapSafe',
+      line: 1053,
+      method: null,
+      native: false
+    },
+    {
+      column: 27,
+      file: 'internal/modules/cjs/loader.js',
+      function: 'Module._compile',
+      line: 1101,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'internal/modules/cjs/loader.js',
+      function: 'Module._extensions..js',
+      line: 1157,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'internal/modules/cjs/loader.js',
+      function: 'Module.load',
+      line: 985,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 14,
+      file: 'internal/modules/cjs/loader.js',
+      function: 'Module._load',
+      line: 878,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'internal/modules/cjs/loader.js',
+      function: 'Module.require',
+      line: 1025,
+      method: 'require',
+      native: false
+    },
+    {
+      column: 18,
+      file: 'internal/modules/cjs/helpers.js',
+      function: 'require',
+      line: 72,
+      method: null,
+      native: false
+    },
+    {
+      column: 20,
+      file: 'C:\\Users\\Aurel\\Documents\\GitHub\\Projet3\\lyon-p3-faq\\api\\controllers\\user.controller.js',
+      function: null,
+      line: 7,
+      method: null,
+      native: false
+    },
+    {
+      column: 30,
+      file: 'internal/modules/cjs/loader.js',
+      function: 'Module._compile',
+      line: 1137,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'internal/modules/cjs/loader.js',
+      function: 'Module._extensions..js',
+      line: 1157,
+      method: '.js',
+      native: false
+    }
+  ],
+  timestamp: '2020-12-10T11:29:43.136Z'
+}
+{
+  message: 'GET /back/users/roles 500 13 - 3.693 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T12:23:59.491Z'
+}
+{
+  message: 'GET /back/users?withRoles=true 500 13 - 0.486 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T12:24:31.512Z'
+}
+{
+  message: 'POST /back/users 500 13 - 0.604 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T12:24:31.527Z'
+}
+{
+  message: 'POST /back/login 200 305 - 132.648 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T12:24:37.155Z'
+}
+{
+  message: 'GET /back/users?withRoles=true 200 2042 - 39.308 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T12:24:37.362Z'
+}
+{
+  message: 'GET /back/posts 304 - - 83.509 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T12:24:37.407Z'
+}
+{
+  message: 'GET /back/posts 304 - - 40.773 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T12:24:37.478Z'
+}
+{
+  message: 'GET /back/users?withRoles=true 304 - - 43.370 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T12:24:37.480Z'
+}
+{
+  message: 'GET /back/users?withRoles=true 304 - - 40.382 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T12:24:39.578Z'
+}
+{
+  message: 'GET /back/users?withRoles=true 304 - - 41.285 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T12:24:39.638Z'
+}
+{
+  message: 'GET /back/users/roles 200 101 - 37.204 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T12:24:44.601Z'
+}
+{
+  message: 'GET /back/users?withRoles=true 304 - - 38.883 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T12:25:01.238Z'
+}
+{ level: 'error', timestamp: '2020-12-10T12:25:01.239Z' }
+{
+  message: 'POST /back/users 500 21 - 43.098 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T12:25:01.240Z'
+}
+{
+  message: 'GET /back/users?withRoles=true 200 2166 - 41.217 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T12:25:01.294Z'
+}
+{
+  message: 'GET /back/users?withRoles=true 304 - - 38.794 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T12:25:01.346Z'
+}
+{
+  message: 'GET /back/users/roles 304 - - 86.188 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T12:27:03.261Z'
+}
+{
+  message: 'DELETE /back/users/113 200 39 - 45.690 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T12:27:05.569Z'
+}
+{
+  message: 'GET /back/users?withRoles=true 200 2042 - 42.156 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T12:27:05.644Z'
+}
+{
+  message: 'GET /back/users?withRoles=true 304 - - 40.696 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T12:27:05.701Z'
+}
+{
+  message: 'GET /back/users/roles 304 - - 38.992 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T12:27:10.072Z'
+}
+{ level: 'error', timestamp: '2020-12-10T12:27:25.518Z' }
+{
+  message: 'POST /back/users 500 21 - 45.289 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T12:27:25.520Z'
+}
+{
+  message: 'GET /back/users?withRoles=true 200 2174 - 90.200 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T12:27:25.569Z'
+}
+{
+  message: 'GET /back/users?withRoles=true 304 - - 41.477 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T12:27:25.625Z'
+}
+{
+  message: 'GET /back/users/roles 304 - - 100.746 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T12:28:44.969Z'
+}
+{
+  message: 'DELETE /back/users/113 200 39 - 45.520 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T12:28:47.484Z'
+}
+{
+  message: 'GET /back/users?withRoles=true 200 2042 - 43.256 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T12:28:47.556Z'
+}
+{
+  message: 'GET /back/users?withRoles=true 304 - - 40.575 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T12:28:47.611Z'
+}
+{
+  message: 'GET /back/users/roles 304 - - 41.625 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T12:28:48.487Z'
+}
+{ level: 'error', timestamp: '2020-12-10T12:29:05.249Z' }
+{
+  message: 'POST /back/users 500 21 - 45.122 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T12:29:05.251Z'
+}
+{
+  message: 'GET /back/users?withRoles=true 200 2174 - 89.636 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T12:29:05.299Z'
+}
+{
+  message: 'GET /back/users?withRoles=true 304 - - 41.777 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T12:29:05.356Z'
+}
+{
+  message: 'GET /back/users/roles 304 - - 86.166 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T12:29:53.418Z'
+}
+{
+  message: 'DELETE /back/users/113 200 39 - 43.886 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T12:29:55.297Z'
+}
+{
+  message: 'GET /back/users?withRoles=true 200 2042 - 40.020 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T12:29:55.364Z'
+}
+{
+  message: 'GET /back/users?withRoles=true 304 - - 40.196 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T12:29:55.421Z'
+}
+{
+  message: 'GET /back/users/roles 304 - - 41.192 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T12:29:56.388Z'
+}
+{ level: 'error', timestamp: '2020-12-10T12:30:08.986Z' }
+{
+  message: 'POST /back/users 500 21 - 45.436 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T12:30:08.988Z'
+}
+{
+  message: 'GET /back/users?withRoles=true 200 2173 - 93.405 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T12:30:09.041Z'
+}
+{
+  message: 'GET /back/users?withRoles=true 304 - - 39.609 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T12:30:09.121Z'
+}
+{
+  error: C:\Users\Aurel\Documents\GitHub\Projet3\lyon-p3-faq\api\datasource\mails.js:4
+      newUser(mail,name)  { return  {  from= '"Pierre Freelances lyonnais 👻" <pierre@ammeloot.fr >', // sender address
+                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  
+  SyntaxError: Invalid shorthand property initializer
+      at wrapSafe (internal/modules/cjs/loader.js:1053:16)
+      at Module._compile (internal/modules/cjs/loader.js:1101:27)
+      at Object.Module._extensions..js (internal/modules/cjs/loader.js:1157:10)
+      at Module.load (internal/modules/cjs/loader.js:985:32)
+      at Function.Module._load (internal/modules/cjs/loader.js:878:14)
+      at Module.require (internal/modules/cjs/loader.js:1025:19)
+      at require (internal/modules/cjs/helpers.js:72:18)
+      at Object.<anonymous> (C:\Users\Aurel\Documents\GitHub\Projet3\lyon-p3-faq\api\controllers\user.controller.js:7:20)
+      at Module._compile (internal/modules/cjs/loader.js:1137:30)
+      at Object.Module._extensions..js (internal/modules/cjs/loader.js:1157:10),
+  level: 'error',
+  message: 'uncaughtException: Invalid shorthand property initializer\n' +
+    'C:\\Users\\Aurel\\Documents\\GitHub\\Projet3\\lyon-p3-faq\\api\\datasource\\mails.js:4\n' +
+    `    newUser(mail,name)  { return  {  from= '"Pierre Freelances lyonnais 👻" <pierre@ammeloot.fr >', // sender address\n` +
+    '                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n' +
+    '\n' +
+    'SyntaxError: Invalid shorthand property initializer\n' +
+    '    at wrapSafe (internal/modules/cjs/loader.js:1053:16)\n' +
+    '    at Module._compile (internal/modules/cjs/loader.js:1101:27)\n' +
+    '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1157:10)\n' +
+    '    at Module.load (internal/modules/cjs/loader.js:985:32)\n' +
+    '    at Function.Module._load (internal/modules/cjs/loader.js:878:14)\n' +
+    '    at Module.require (internal/modules/cjs/loader.js:1025:19)\n' +
+    '    at require (internal/modules/cjs/helpers.js:72:18)\n' +
+    '    at Object.<anonymous> (C:\\Users\\Aurel\\Documents\\GitHub\\Projet3\\lyon-p3-faq\\api\\controllers\\user.controller.js:7:20)\n' +
+    '    at Module._compile (internal/modules/cjs/loader.js:1137:30)\n' +
+    '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1157:10)',
+  stack: 'C:\\Users\\Aurel\\Documents\\GitHub\\Projet3\\lyon-p3-faq\\api\\datasource\\mails.js:4\n' +
+    `    newUser(mail,name)  { return  {  from= '"Pierre Freelances lyonnais 👻" <pierre@ammeloot.fr >', // sender address\n` +
+    '                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n' +
+    '\n' +
+    'SyntaxError: Invalid shorthand property initializer\n' +
+    '    at wrapSafe (internal/modules/cjs/loader.js:1053:16)\n' +
+    '    at Module._compile (internal/modules/cjs/loader.js:1101:27)\n' +
+    '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1157:10)\n' +
+    '    at Module.load (internal/modules/cjs/loader.js:985:32)\n' +
+    '    at Function.Module._load (internal/modules/cjs/loader.js:878:14)\n' +
+    '    at Module.require (internal/modules/cjs/loader.js:1025:19)\n' +
+    '    at require (internal/modules/cjs/helpers.js:72:18)\n' +
+    '    at Object.<anonymous> (C:\\Users\\Aurel\\Documents\\GitHub\\Projet3\\lyon-p3-faq\\api\\controllers\\user.controller.js:7:20)\n' +
+    '    at Module._compile (internal/modules/cjs/loader.js:1137:30)\n' +
+    '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1157:10)',
+  exception: true,
+  date: 'Thu Dec 10 2020 13:32:23 GMT+0100 (GMT+01:00)',
+  process: {
+    pid: 15920,
+    uid: null,
+    gid: null,
+    cwd: 'C:\\Users\\Aurel\\Documents\\GitHub\\Projet3\\lyon-p3-faq\\api',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v12.18.3',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'C:\\Users\\Aurel\\Documents\\GitHub\\Projet3\\lyon-p3-faq\\api\\bin\\start'
+    ],
+    memoryUsage: {
+      rss: 51765248,
+      heapTotal: 30404608,
+      heapUsed: 14713512,
+      external: 1575723,
+      arrayBuffers: 127814
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 33080 },
+  trace: [
+    {
+      column: 16,
+      file: 'internal/modules/cjs/loader.js',
+      function: 'wrapSafe',
+      line: 1053,
+      method: null,
+      native: false
+    },
+    {
+      column: 27,
+      file: 'internal/modules/cjs/loader.js',
+      function: 'Module._compile',
+      line: 1101,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'internal/modules/cjs/loader.js',
+      function: 'Module._extensions..js',
+      line: 1157,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'internal/modules/cjs/loader.js',
+      function: 'Module.load',
+      line: 985,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 14,
+      file: 'internal/modules/cjs/loader.js',
+      function: 'Module._load',
+      line: 878,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'internal/modules/cjs/loader.js',
+      function: 'Module.require',
+      line: 1025,
+      method: 'require',
+      native: false
+    },
+    {
+      column: 18,
+      file: 'internal/modules/cjs/helpers.js',
+      function: 'require',
+      line: 72,
+      method: null,
+      native: false
+    },
+    {
+      column: 20,
+      file: 'C:\\Users\\Aurel\\Documents\\GitHub\\Projet3\\lyon-p3-faq\\api\\controllers\\user.controller.js',
+      function: null,
+      line: 7,
+      method: null,
+      native: false
+    },
+    {
+      column: 30,
+      file: 'internal/modules/cjs/loader.js',
+      function: 'Module._compile',
+      line: 1137,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'internal/modules/cjs/loader.js',
+      function: 'Module._extensions..js',
+      line: 1157,
+      method: '.js',
+      native: false
+    }
+  ],
+  timestamp: '2020-12-10T12:32:23.995Z'
+}
+{
+  message: 'GET /back/users/roles 304 - - 87.387 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T12:36:45.467Z'
+}
+{
+  message: 'DELETE /back/users/113 200 39 - 45.161 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T12:36:47.738Z'
+}
+{
+  message: 'GET /back/users?withRoles=true 200 2042 - 39.257 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T12:36:47.805Z'
+}
+{
+  message: 'GET /back/users?withRoles=true 304 - - 38.557 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T12:36:47.861Z'
+}
+{
+  message: 'GET /back/users/roles 304 - - 40.442 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T12:36:48.534Z'
+}
+{
+  message: 'GET /back/users?withRoles=true 304 - - 43.926 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T12:38:33.533Z'
+}
+{ level: 'error', timestamp: '2020-12-10T12:38:33.584Z' }
+{
+  message: 'POST /back/users 500 21 - 86.047 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T12:38:33.586Z'
+}
+{
+  message: 'GET /back/users?withRoles=true 200 2174 - 41.443 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T12:38:33.610Z'
+}
+{
+  message: 'GET /back/users?withRoles=true 304 - - 39.560 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T12:38:33.675Z'
+}
+{
+  message: 'GET /back/users/roles 304 - - 92.159 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T12:39:32.587Z'
+}
+{
+  message: 'DELETE /back/users/113 200 39 - 43.991 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T12:39:34.482Z'
+}
+{
+  message: 'GET /back/users?withRoles=true 200 2042 - 41.875 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T12:39:34.548Z'
+}
+{
+  message: 'GET /back/users?withRoles=true 304 - - 39.733 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T12:39:34.604Z'
+}
+{
+  message: 'GET /back/users/roles 304 - - 39.772 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T12:39:35.330Z'
+}
+{ level: 'error', timestamp: '2020-12-10T12:39:49.530Z' }
+{
+  message: 'POST /back/users 500 21 - 49.567 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T12:39:49.533Z'
+}
+{
+  message: 'GET /back/users?withRoles=true 200 2173 - 80.615 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T12:39:49.569Z'
+}
+{
+  message: 'GET /back/users?withRoles=true 304 - - 40.639 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T12:39:49.624Z'
+}
+{
+  message: 'GET /back/users/roles 304 - - 90.289 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T12:41:24.382Z'
+}
+{
+  message: 'DELETE /back/users/113 200 39 - 46.245 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T12:41:26.453Z'
+}
+{
+  message: 'GET /back/users?withRoles=true 200 2042 - 42.196 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T12:41:26.522Z'
+}
+{
+  message: 'GET /back/users?withRoles=true 304 - - 39.708 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T12:41:26.582Z'
+}
+{
+  message: 'GET /back/users/roles 304 - - 37.591 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T12:41:27.206Z'
+}
+{ level: 'error', timestamp: '2020-12-10T12:41:38.007Z' }
+{
+  message: 'POST /back/users 500 21 - 43.904 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T12:41:38.008Z'
+}
+{
+  message: 'GET /back/users?withRoles=true 200 2173 - 77.222 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T12:41:38.046Z'
+}
+{
+  message: 'GET /back/users?withRoles=true 304 - - 40.515 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T12:41:38.099Z'
+}
+{
+  message: 'GET /back/users/roles 304 - - 90.442 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T12:42:19.610Z'
+}
+{
+  message: 'DELETE /back/users/113 200 39 - 89.274 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T12:42:21.594Z'
+}
+{
+  message: 'GET /back/users?withRoles=true 200 2042 - 45.763 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T12:42:21.674Z'
+}
+{
+  message: 'GET /back/users?withRoles=true 304 - - 41.505 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T12:42:21.748Z'
+}
+{
+  message: 'GET /back/users/roles 304 - - 43.898 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T12:42:22.500Z'
+}
+{ level: 'error', timestamp: '2020-12-10T12:42:32.355Z' }
+{
+  message: 'POST /back/users 500 21 - 45.452 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T12:42:32.356Z'
+}
+{
+  message: 'GET /back/users?withRoles=true 200 2173 - 88.505 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T12:42:32.404Z'
+}
+{
+  message: 'GET /back/users?withRoles=true 304 - - 39.921 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T12:42:32.457Z'
+}
+{
+  message: 'GET /back/users/roles 304 - - 88.557 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T12:43:15.967Z'
+}
+{
+  message: 'DELETE /back/users/113 200 39 - 43.164 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T12:43:17.674Z'
+}
+{
+  message: 'GET /back/users?withRoles=true 200 2042 - 42.101 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T12:43:17.741Z'
+}
+{
+  message: 'GET /back/users?withRoles=true 304 - - 42.647 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T12:43:17.797Z'
+}
+{
+  message: 'POST /back/login 200 305 - 85.882 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T12:43:21.353Z'
+}
+{
+  message: 'GET /back/users?withRoles=true 304 - - 41.974 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T12:43:21.581Z'
+}
+{
+  message: 'GET /back/posts 304 - - 80.134 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T12:43:21.621Z'
+}
+{
+  message: 'GET /back/users?withRoles=true 304 - - 38.761 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T12:43:21.693Z'
+}
+{
+  message: 'GET /back/posts 304 - - 41.916 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T12:43:21.697Z'
+}
+{
+  message: 'GET /back/users?withRoles=true 304 - - 40.313 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T12:43:23.005Z'
+}
+{
+  message: 'GET /back/users?withRoles=true 304 - - 41.420 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T12:43:23.065Z'
+}
+{
+  message: 'GET /back/users/roles 304 - - 40.783 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T12:43:23.785Z'
+}
+{
+  message: 'GET /back/users?withRoles=true 304 - - 40.660 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T12:43:29.469Z'
+}
+{
+  message: 'POST /back/users 200 23 - 54.347 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T12:43:29.479Z'
+}
+{
+  message: 'GET /back/users?withRoles=true 200 2177 - 37.694 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T12:43:29.525Z'
+}
+{
+  message: 'GET /back/users?withRoles=true 304 - - 39.861 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T12:43:29.578Z'
+}
+{
+  message: 'GET /back/users/roles 304 - - 85.108 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T12:52:15.676Z'
+}
+{
+  message: 'DELETE /back/users/113 200 39 - 44.771 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T12:52:17.739Z'
+}
+{
+  message: 'GET /back/users?withRoles=true 200 2042 - 39.365 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T12:52:17.814Z'
+}
+{
+  message: 'GET /back/users?withRoles=true 304 - - 38.032 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T12:52:17.869Z'
+}
+{
+  message: 'GET /back/users/roles 304 - - 40.237 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T12:52:18.610Z'
+}
+{
+  message: 'POST /back/users 200 23 - 45.248 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T12:52:34.916Z'
+}
+{
+  message: 'GET /back/users?withRoles=true 200 2173 - 78.883 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T12:52:34.954Z'
+}
+{
+  message: 'GET /back/users?withRoles=true 304 - - 40.118 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T12:52:35.010Z'
+}
+{
+  message: 'GET /back/users/2 500 13 - 0.417 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T12:53:02.144Z'
+}
+{
+  message: 'POST /back/login 200 305 - 86.280 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T12:53:24.896Z'
+}
+{
+  message: 'GET /back/users/2 200 126 - 41.329 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T12:53:37.128Z'
+}
+{
+  message: 'POST /back/users/ 400 240 - 0.898 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T12:54:15.406Z'
+}
+{
+  message: 'POST /back/users/ 400 255 - 0.821 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T12:54:53.399Z'
+}
+{
+  message: 'POST /back/users/ 400 69 - 0.742 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T12:55:42.025Z'
+}
+{
+  message: 'POST /back/users/ 200 23 - 45.256 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T12:55:47.378Z'
+}
+{
+  message: 'POST /back/users/ 200 23 - 96.222 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T12:56:38.253Z'
+}
+{
+  message: 'POST /back/users/ 200 23 - 50.504 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T12:56:49.075Z'
+}
+{
+  message: 'POST /back/users/ 200 23 - 96.653 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T12:57:03.856Z'
+}
+{
+  message: 'POST /back/users/ 200 23 - 45.170 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T12:57:19.396Z'
+}
+{
+  message: 'POST /back/users/ 200 23 - 98.071 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T12:57:47.174Z'
+}
+{
+  error: C:\Users\Aurel\Documents\GitHub\Projet3\lyon-p3-faq\api\datasource\mails.js:3
+      test="hello",
+      ^^^^^^^^^^^^
+  
+  SyntaxError: Invalid shorthand property initializer
+      at wrapSafe (internal/modules/cjs/loader.js:1053:16)
+      at Module._compile (internal/modules/cjs/loader.js:1101:27)
+      at Object.Module._extensions..js (internal/modules/cjs/loader.js:1157:10)
+      at Module.load (internal/modules/cjs/loader.js:985:32)
+      at Function.Module._load (internal/modules/cjs/loader.js:878:14)
+      at Module.require (internal/modules/cjs/loader.js:1025:19)
+      at require (internal/modules/cjs/helpers.js:72:18)
+      at Object.<anonymous> (C:\Users\Aurel\Documents\GitHub\Projet3\lyon-p3-faq\api\controllers\user.controller.js:7:20)
+      at Module._compile (internal/modules/cjs/loader.js:1137:30)
+      at Object.Module._extensions..js (internal/modules/cjs/loader.js:1157:10),
+  level: 'error',
+  message: 'uncaughtException: Invalid shorthand property initializer\n' +
+    'C:\\Users\\Aurel\\Documents\\GitHub\\Projet3\\lyon-p3-faq\\api\\datasource\\mails.js:3\n' +
+    '    test="hello",\n' +
+    '    ^^^^^^^^^^^^\n' +
+    '\n' +
+    'SyntaxError: Invalid shorthand property initializer\n' +
+    '    at wrapSafe (internal/modules/cjs/loader.js:1053:16)\n' +
+    '    at Module._compile (internal/modules/cjs/loader.js:1101:27)\n' +
+    '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1157:10)\n' +
+    '    at Module.load (internal/modules/cjs/loader.js:985:32)\n' +
+    '    at Function.Module._load (internal/modules/cjs/loader.js:878:14)\n' +
+    '    at Module.require (internal/modules/cjs/loader.js:1025:19)\n' +
+    '    at require (internal/modules/cjs/helpers.js:72:18)\n' +
+    '    at Object.<anonymous> (C:\\Users\\Aurel\\Documents\\GitHub\\Projet3\\lyon-p3-faq\\api\\controllers\\user.controller.js:7:20)\n' +
+    '    at Module._compile (internal/modules/cjs/loader.js:1137:30)\n' +
+    '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1157:10)',
+  stack: 'C:\\Users\\Aurel\\Documents\\GitHub\\Projet3\\lyon-p3-faq\\api\\datasource\\mails.js:3\n' +
+    '    test="hello",\n' +
+    '    ^^^^^^^^^^^^\n' +
+    '\n' +
+    'SyntaxError: Invalid shorthand property initializer\n' +
+    '    at wrapSafe (internal/modules/cjs/loader.js:1053:16)\n' +
+    '    at Module._compile (internal/modules/cjs/loader.js:1101:27)\n' +
+    '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1157:10)\n' +
+    '    at Module.load (internal/modules/cjs/loader.js:985:32)\n' +
+    '    at Function.Module._load (internal/modules/cjs/loader.js:878:14)\n' +
+    '    at Module.require (internal/modules/cjs/loader.js:1025:19)\n' +
+    '    at require (internal/modules/cjs/helpers.js:72:18)\n' +
+    '    at Object.<anonymous> (C:\\Users\\Aurel\\Documents\\GitHub\\Projet3\\lyon-p3-faq\\api\\controllers\\user.controller.js:7:20)\n' +
+    '    at Module._compile (internal/modules/cjs/loader.js:1137:30)\n' +
+    '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1157:10)',
+  exception: true,
+  date: 'Thu Dec 10 2020 13:59:16 GMT+0100 (GMT+01:00)',
+  process: {
+    pid: 14848,
+    uid: null,
+    gid: null,
+    cwd: 'C:\\Users\\Aurel\\Documents\\GitHub\\Projet3\\lyon-p3-faq\\api',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v12.18.3',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'C:\\Users\\Aurel\\Documents\\GitHub\\Projet3\\lyon-p3-faq\\api\\bin\\start'
+    ],
+    memoryUsage: {
+      rss: 52174848,
+      heapTotal: 30404608,
+      heapUsed: 14660648,
+      external: 1575723,
+      arrayBuffers: 127814
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 34692 },
+  trace: [
+    {
+      column: 16,
+      file: 'internal/modules/cjs/loader.js',
+      function: 'wrapSafe',
+      line: 1053,
+      method: null,
+      native: false
+    },
+    {
+      column: 27,
+      file: 'internal/modules/cjs/loader.js',
+      function: 'Module._compile',
+      line: 1101,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'internal/modules/cjs/loader.js',
+      function: 'Module._extensions..js',
+      line: 1157,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'internal/modules/cjs/loader.js',
+      function: 'Module.load',
+      line: 985,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 14,
+      file: 'internal/modules/cjs/loader.js',
+      function: 'Module._load',
+      line: 878,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'internal/modules/cjs/loader.js',
+      function: 'Module.require',
+      line: 1025,
+      method: 'require',
+      native: false
+    },
+    {
+      column: 18,
+      file: 'internal/modules/cjs/helpers.js',
+      function: 'require',
+      line: 72,
+      method: null,
+      native: false
+    },
+    {
+      column: 20,
+      file: 'C:\\Users\\Aurel\\Documents\\GitHub\\Projet3\\lyon-p3-faq\\api\\controllers\\user.controller.js',
+      function: null,
+      line: 7,
+      method: null,
+      native: false
+    },
+    {
+      column: 30,
+      file: 'internal/modules/cjs/loader.js',
+      function: 'Module._compile',
+      line: 1137,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'internal/modules/cjs/loader.js',
+      function: 'Module._extensions..js',
+      line: 1157,
+      method: '.js',
+      native: false
+    }
+  ],
+  timestamp: '2020-12-10T12:59:16.343Z'
+}
+{
+  message: 'POST /back/users/ 200 23 - 101.319 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T13:00:05.202Z'
+}
+{
+  message: 'POST /back/users/ 200 23 - 101.560 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T13:02:08.836Z'
+}
+{
+  message: 'POST /back/users/ 200 23 - 92.395 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T13:02:39.375Z'
+}
+{
+  message: 'POST /back/users/ 200 23 - 103.005 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T13:03:57.778Z'
+}
+{
+  error: C:\Users\Aurel\Documents\GitHub\Projet3\lyon-p3-faq\api\controllers\user.controller.js:132
+          )
+          ^
+  
+  SyntaxError: Unexpected token ')'
+      at wrapSafe (internal/modules/cjs/loader.js:1053:16)
+      at Module._compile (internal/modules/cjs/loader.js:1101:27)
+      at Object.Module._extensions..js (internal/modules/cjs/loader.js:1157:10)
+      at Module.load (internal/modules/cjs/loader.js:985:32)
+      at Function.Module._load (internal/modules/cjs/loader.js:878:14)
+      at Module.require (internal/modules/cjs/loader.js:1025:19)
+      at require (internal/modules/cjs/helpers.js:72:18)
+      at Object.<anonymous> (C:\Users\Aurel\Documents\GitHub\Projet3\lyon-p3-faq\api\routes\backoffice\user.js:4:24)
+      at Module._compile (internal/modules/cjs/loader.js:1137:30)
+      at Object.Module._extensions..js (internal/modules/cjs/loader.js:1157:10),
+  level: 'error',
+  message: "uncaughtException: Unexpected token ')'\n" +
+    'C:\\Users\\Aurel\\Documents\\GitHub\\Projet3\\lyon-p3-faq\\api\\controllers\\user.controller.js:132\n' +
+    '        )\n' +
+    '        ^\n' +
+    '\n' +
+    "SyntaxError: Unexpected token ')'\n" +
+    '    at wrapSafe (internal/modules/cjs/loader.js:1053:16)\n' +
+    '    at Module._compile (internal/modules/cjs/loader.js:1101:27)\n' +
+    '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1157:10)\n' +
+    '    at Module.load (internal/modules/cjs/loader.js:985:32)\n' +
+    '    at Function.Module._load (internal/modules/cjs/loader.js:878:14)\n' +
+    '    at Module.require (internal/modules/cjs/loader.js:1025:19)\n' +
+    '    at require (internal/modules/cjs/helpers.js:72:18)\n' +
+    '    at Object.<anonymous> (C:\\Users\\Aurel\\Documents\\GitHub\\Projet3\\lyon-p3-faq\\api\\routes\\backoffice\\user.js:4:24)\n' +
+    '    at Module._compile (internal/modules/cjs/loader.js:1137:30)\n' +
+    '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1157:10)',
+  stack: 'C:\\Users\\Aurel\\Documents\\GitHub\\Projet3\\lyon-p3-faq\\api\\controllers\\user.controller.js:132\n' +
+    '        )\n' +
+    '        ^\n' +
+    '\n' +
+    "SyntaxError: Unexpected token ')'\n" +
+    '    at wrapSafe (internal/modules/cjs/loader.js:1053:16)\n' +
+    '    at Module._compile (internal/modules/cjs/loader.js:1101:27)\n' +
+    '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1157:10)\n' +
+    '    at Module.load (internal/modules/cjs/loader.js:985:32)\n' +
+    '    at Function.Module._load (internal/modules/cjs/loader.js:878:14)\n' +
+    '    at Module.require (internal/modules/cjs/loader.js:1025:19)\n' +
+    '    at require (internal/modules/cjs/helpers.js:72:18)\n' +
+    '    at Object.<anonymous> (C:\\Users\\Aurel\\Documents\\GitHub\\Projet3\\lyon-p3-faq\\api\\routes\\backoffice\\user.js:4:24)\n' +
+    '    at Module._compile (internal/modules/cjs/loader.js:1137:30)\n' +
+    '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1157:10)',
+  exception: true,
+  date: 'Thu Dec 10 2020 14:04:40 GMT+0100 (GMT+01:00)',
+  process: {
+    pid: 17340,
+    uid: null,
+    gid: null,
+    cwd: 'C:\\Users\\Aurel\\Documents\\GitHub\\Projet3\\lyon-p3-faq\\api',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v12.18.3',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'C:\\Users\\Aurel\\Documents\\GitHub\\Projet3\\lyon-p3-faq\\api\\bin\\start'
+    ],
+    memoryUsage: {
+      rss: 45359104,
+      heapTotal: 28831744,
+      heapUsed: 15498928,
+      external: 1617183,
+      arrayBuffers: 294937
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 35017 },
+  trace: [
+    {
+      column: 16,
+      file: 'internal/modules/cjs/loader.js',
+      function: 'wrapSafe',
+      line: 1053,
+      method: null,
+      native: false
+    },
+    {
+      column: 27,
+      file: 'internal/modules/cjs/loader.js',
+      function: 'Module._compile',
+      line: 1101,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'internal/modules/cjs/loader.js',
+      function: 'Module._extensions..js',
+      line: 1157,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'internal/modules/cjs/loader.js',
+      function: 'Module.load',
+      line: 985,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 14,
+      file: 'internal/modules/cjs/loader.js',
+      function: 'Module._load',
+      line: 878,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'internal/modules/cjs/loader.js',
+      function: 'Module.require',
+      line: 1025,
+      method: 'require',
+      native: false
+    },
+    {
+      column: 18,
+      file: 'internal/modules/cjs/helpers.js',
+      function: 'require',
+      line: 72,
+      method: null,
+      native: false
+    },
+    {
+      column: 24,
+      file: 'C:\\Users\\Aurel\\Documents\\GitHub\\Projet3\\lyon-p3-faq\\api\\routes\\backoffice\\user.js',
+      function: null,
+      line: 4,
+      method: null,
+      native: false
+    },
+    {
+      column: 30,
+      file: 'internal/modules/cjs/loader.js',
+      function: 'Module._compile',
+      line: 1137,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'internal/modules/cjs/loader.js',
+      function: 'Module._extensions..js',
+      line: 1157,
+      method: '.js',
+      native: false
+    }
+  ],
+  timestamp: '2020-12-10T13:04:40.724Z'
+}
+{
+  message: 'POST /back/users/ 200 23 - 99.868 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T13:05:18.305Z'
+}
+{
+  message: 'POST /back/users/ 200 23 - 97.886 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T13:06:48.013Z'
+}
+{
+  message: 'POST /back/users/ 200 23 - 106.057 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T13:07:45.348Z'
+}
+{
+  error: C:\Users\Aurel\Documents\GitHub\Projet3\lyon-p3-faq\api\datasource\mails.js:5
+      newUser : (mail,name) => {return {    from= '"Pierre Freelances lyonnais 👻" <pierre@ammeloot.fr >', // sender address
+                                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  
+  SyntaxError: Invalid shorthand property initializer
+      at wrapSafe (internal/modules/cjs/loader.js:1053:16)
+      at Module._compile (internal/modules/cjs/loader.js:1101:27)
+      at Object.Module._extensions..js (internal/modules/cjs/loader.js:1157:10)
+      at Module.load (internal/modules/cjs/loader.js:985:32)
+      at Function.Module._load (internal/modules/cjs/loader.js:878:14)
+      at Module.require (internal/modules/cjs/loader.js:1025:19)
+      at require (internal/modules/cjs/helpers.js:72:18)
+      at Object.<anonymous> (C:\Users\Aurel\Documents\GitHub\Projet3\lyon-p3-faq\api\controllers\user.controller.js:7:22)
+      at Module._compile (internal/modules/cjs/loader.js:1137:30)
+      at Object.Module._extensions..js (internal/modules/cjs/loader.js:1157:10),
+  level: 'error',
+  message: 'uncaughtException: Invalid shorthand property initializer\n' +
+    'C:\\Users\\Aurel\\Documents\\GitHub\\Projet3\\lyon-p3-faq\\api\\datasource\\mails.js:5\n' +
+    `    newUser : (mail,name) => {return {    from= '"Pierre Freelances lyonnais 👻" <pierre@ammeloot.fr >', // sender address\n` +
+    '                                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n' +
+    '\n' +
+    'SyntaxError: Invalid shorthand property initializer\n' +
+    '    at wrapSafe (internal/modules/cjs/loader.js:1053:16)\n' +
+    '    at Module._compile (internal/modules/cjs/loader.js:1101:27)\n' +
+    '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1157:10)\n' +
+    '    at Module.load (internal/modules/cjs/loader.js:985:32)\n' +
+    '    at Function.Module._load (internal/modules/cjs/loader.js:878:14)\n' +
+    '    at Module.require (internal/modules/cjs/loader.js:1025:19)\n' +
+    '    at require (internal/modules/cjs/helpers.js:72:18)\n' +
+    '    at Object.<anonymous> (C:\\Users\\Aurel\\Documents\\GitHub\\Projet3\\lyon-p3-faq\\api\\controllers\\user.controller.js:7:22)\n' +
+    '    at Module._compile (internal/modules/cjs/loader.js:1137:30)\n' +
+    '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1157:10)',
+  stack: 'C:\\Users\\Aurel\\Documents\\GitHub\\Projet3\\lyon-p3-faq\\api\\datasource\\mails.js:5\n' +
+    `    newUser : (mail,name) => {return {    from= '"Pierre Freelances lyonnais 👻" <pierre@ammeloot.fr >', // sender address\n` +
+    '                                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n' +
+    '\n' +
+    'SyntaxError: Invalid shorthand property initializer\n' +
+    '    at wrapSafe (internal/modules/cjs/loader.js:1053:16)\n' +
+    '    at Module._compile (internal/modules/cjs/loader.js:1101:27)\n' +
+    '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1157:10)\n' +
+    '    at Module.load (internal/modules/cjs/loader.js:985:32)\n' +
+    '    at Function.Module._load (internal/modules/cjs/loader.js:878:14)\n' +
+    '    at Module.require (internal/modules/cjs/loader.js:1025:19)\n' +
+    '    at require (internal/modules/cjs/helpers.js:72:18)\n' +
+    '    at Object.<anonymous> (C:\\Users\\Aurel\\Documents\\GitHub\\Projet3\\lyon-p3-faq\\api\\controllers\\user.controller.js:7:22)\n' +
+    '    at Module._compile (internal/modules/cjs/loader.js:1137:30)\n' +
+    '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1157:10)',
+  exception: true,
+  date: 'Thu Dec 10 2020 14:09:13 GMT+0100 (GMT+01:00)',
+  process: {
+    pid: 13120,
+    uid: null,
+    gid: null,
+    cwd: 'C:\\Users\\Aurel\\Documents\\GitHub\\Projet3\\lyon-p3-faq\\api',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v12.18.3',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'C:\\Users\\Aurel\\Documents\\GitHub\\Projet3\\lyon-p3-faq\\api\\bin\\start'
+    ],
+    memoryUsage: {
+      rss: 52039680,
+      heapTotal: 30666752,
+      heapUsed: 14609352,
+      external: 1575723,
+      arrayBuffers: 127814
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 35290 },
+  trace: [
+    {
+      column: 16,
+      file: 'internal/modules/cjs/loader.js',
+      function: 'wrapSafe',
+      line: 1053,
+      method: null,
+      native: false
+    },
+    {
+      column: 27,
+      file: 'internal/modules/cjs/loader.js',
+      function: 'Module._compile',
+      line: 1101,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'internal/modules/cjs/loader.js',
+      function: 'Module._extensions..js',
+      line: 1157,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'internal/modules/cjs/loader.js',
+      function: 'Module.load',
+      line: 985,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 14,
+      file: 'internal/modules/cjs/loader.js',
+      function: 'Module._load',
+      line: 878,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'internal/modules/cjs/loader.js',
+      function: 'Module.require',
+      line: 1025,
+      method: 'require',
+      native: false
+    },
+    {
+      column: 18,
+      file: 'internal/modules/cjs/helpers.js',
+      function: 'require',
+      line: 72,
+      method: null,
+      native: false
+    },
+    {
+      column: 22,
+      file: 'C:\\Users\\Aurel\\Documents\\GitHub\\Projet3\\lyon-p3-faq\\api\\controllers\\user.controller.js',
+      function: null,
+      line: 7,
+      method: null,
+      native: false
+    },
+    {
+      column: 30,
+      file: 'internal/modules/cjs/loader.js',
+      function: 'Module._compile',
+      line: 1137,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'internal/modules/cjs/loader.js',
+      function: 'Module._extensions..js',
+      line: 1157,
+      method: '.js',
+      native: false
+    }
+  ],
+  timestamp: '2020-12-10T13:09:13.829Z'
+}
+{
+  message: 'POST /back/users/ 200 23 - 99.274 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T13:13:34.531Z'
+}
+{
+  message: 'POST /back/users/ 200 23 - 100.821 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T13:15:40.594Z'
+}
+{
+  message: 'POST /back/login 200 2 - 11.565 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T13:21:29.154Z'
+}
+{
+  error: C:\Users\Aurel\Documents\GitHub\Projet3\lyon-p3-faq\api\datasource\mails.js:38
+  };
+  ^
+  
+  SyntaxError: Unexpected token '}'
+      at wrapSafe (internal/modules/cjs/loader.js:1053:16)
+      at Module._compile (internal/modules/cjs/loader.js:1101:27)
+      at Object.Module._extensions..js (internal/modules/cjs/loader.js:1157:10)
+      at Module.load (internal/modules/cjs/loader.js:985:32)
+      at Function.Module._load (internal/modules/cjs/loader.js:878:14)
+      at Module.require (internal/modules/cjs/loader.js:1025:19)
+      at require (internal/modules/cjs/helpers.js:72:18)
+      at Object.<anonymous> (C:\Users\Aurel\Documents\GitHub\Projet3\lyon-p3-faq\api\controllers\user.controller.js:7:22)
+      at Module._compile (internal/modules/cjs/loader.js:1137:30)
+      at Object.Module._extensions..js (internal/modules/cjs/loader.js:1157:10),
+  level: 'error',
+  message: "uncaughtException: Unexpected token '}'\n" +
+    'C:\\Users\\Aurel\\Documents\\GitHub\\Projet3\\lyon-p3-faq\\api\\datasource\\mails.js:38\n' +
+    '};\n' +
+    '^\n' +
+    '\n' +
+    "SyntaxError: Unexpected token '}'\n" +
+    '    at wrapSafe (internal/modules/cjs/loader.js:1053:16)\n' +
+    '    at Module._compile (internal/modules/cjs/loader.js:1101:27)\n' +
+    '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1157:10)\n' +
+    '    at Module.load (internal/modules/cjs/loader.js:985:32)\n' +
+    '    at Function.Module._load (internal/modules/cjs/loader.js:878:14)\n' +
+    '    at Module.require (internal/modules/cjs/loader.js:1025:19)\n' +
+    '    at require (internal/modules/cjs/helpers.js:72:18)\n' +
+    '    at Object.<anonymous> (C:\\Users\\Aurel\\Documents\\GitHub\\Projet3\\lyon-p3-faq\\api\\controllers\\user.controller.js:7:22)\n' +
+    '    at Module._compile (internal/modules/cjs/loader.js:1137:30)\n' +
+    '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1157:10)',
+  stack: 'C:\\Users\\Aurel\\Documents\\GitHub\\Projet3\\lyon-p3-faq\\api\\datasource\\mails.js:38\n' +
+    '};\n' +
+    '^\n' +
+    '\n' +
+    "SyntaxError: Unexpected token '}'\n" +
+    '    at wrapSafe (internal/modules/cjs/loader.js:1053:16)\n' +
+    '    at Module._compile (internal/modules/cjs/loader.js:1101:27)\n' +
+    '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1157:10)\n' +
+    '    at Module.load (internal/modules/cjs/loader.js:985:32)\n' +
+    '    at Function.Module._load (internal/modules/cjs/loader.js:878:14)\n' +
+    '    at Module.require (internal/modules/cjs/loader.js:1025:19)\n' +
+    '    at require (internal/modules/cjs/helpers.js:72:18)\n' +
+    '    at Object.<anonymous> (C:\\Users\\Aurel\\Documents\\GitHub\\Projet3\\lyon-p3-faq\\api\\controllers\\user.controller.js:7:22)\n' +
+    '    at Module._compile (internal/modules/cjs/loader.js:1137:30)\n' +
+    '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1157:10)',
+  exception: true,
+  date: 'Thu Dec 10 2020 14:24:49 GMT+0100 (GMT+01:00)',
+  process: {
+    pid: 18836,
+    uid: null,
+    gid: null,
+    cwd: 'C:\\Users\\Aurel\\Documents\\GitHub\\Projet3\\lyon-p3-faq\\api',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v12.18.3',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'C:\\Users\\Aurel\\Documents\\GitHub\\Projet3\\lyon-p3-faq\\api\\bin\\start'
+    ],
+    memoryUsage: {
+      rss: 51994624,
+      heapTotal: 30666752,
+      heapUsed: 14536416,
+      external: 1530097,
+      arrayBuffers: 82188
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 36225 },
+  trace: [
+    {
+      column: 16,
+      file: 'internal/modules/cjs/loader.js',
+      function: 'wrapSafe',
+      line: 1053,
+      method: null,
+      native: false
+    },
+    {
+      column: 27,
+      file: 'internal/modules/cjs/loader.js',
+      function: 'Module._compile',
+      line: 1101,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'internal/modules/cjs/loader.js',
+      function: 'Module._extensions..js',
+      line: 1157,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'internal/modules/cjs/loader.js',
+      function: 'Module.load',
+      line: 985,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 14,
+      file: 'internal/modules/cjs/loader.js',
+      function: 'Module._load',
+      line: 878,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'internal/modules/cjs/loader.js',
+      function: 'Module.require',
+      line: 1025,
+      method: 'require',
+      native: false
+    },
+    {
+      column: 18,
+      file: 'internal/modules/cjs/helpers.js',
+      function: 'require',
+      line: 72,
+      method: null,
+      native: false
+    },
+    {
+      column: 22,
+      file: 'C:\\Users\\Aurel\\Documents\\GitHub\\Projet3\\lyon-p3-faq\\api\\controllers\\user.controller.js',
+      function: null,
+      line: 7,
+      method: null,
+      native: false
+    },
+    {
+      column: 30,
+      file: 'internal/modules/cjs/loader.js',
+      function: 'Module._compile',
+      line: 1137,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'internal/modules/cjs/loader.js',
+      function: 'Module._extensions..js',
+      line: 1157,
+      method: '.js',
+      native: false
+    }
+  ],
+  timestamp: '2020-12-10T13:24:49.217Z'
+}
+{
+  message: 'POST /back/login 200 305 - 133.650 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T13:25:34.834Z'
+}
+{
+  message: 'GET /back/users?withRoles=true 200 4033 - 41.634 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T13:25:35.450Z'
+}
+{
+  message: 'GET /back/posts 304 - - 80.017 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T13:25:35.490Z'
+}
+{
+  message: 'GET /back/posts 304 - - 39.962 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T13:25:35.566Z'
+}
+{
+  message: 'GET /back/users?withRoles=true 304 - - 43.725 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T13:25:35.568Z'
+}
+{
+  message: 'GET /back/posts 304 - - 40.267 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T13:25:37.402Z'
+}
+{
+  message: 'GET /back/posts 304 - - 38.736 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T13:25:37.490Z'
+}
+{ level: 'error', timestamp: '2020-12-10T13:25:39.125Z' }
+{
+  message: 'PUT /back/posts/2 500 21 - 82.122 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T13:25:39.128Z'
+}
+{ level: 'error', timestamp: '2020-12-10T13:25:43.602Z' }
+{
+  message: 'PUT /back/posts/11 500 21 - 87.202 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T13:25:43.608Z'
+}
+{
+  message: 'POST /back/login 200 305 - 131.179 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T13:26:25.632Z'
+}
+{
+  message: 'GET /back/users?withRoles=true 304 - - 41.732 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T13:26:25.854Z'
+}
+{
+  message: 'GET /back/posts 200 7471 - 83.004 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T13:26:25.897Z'
+}
+{
+  message: 'GET /back/users?withRoles=true 304 - - 38.620 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T13:26:25.962Z'
+}
+{
+  message: 'GET /back/posts 304 - - 41.492 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T13:26:25.966Z'
+}
+{
+  message: 'GET /back/posts 304 - - 40.098 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T13:26:27.655Z'
+}
+{
+  message: 'GET /back/posts 304 - - 39.863 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T13:26:27.742Z'
+}
+{
+  message: 'PUT /back/posts/3 200 14 - 126.138 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T13:26:29.314Z'
+}
+{
+  message: 'GET /back/posts 200 7471 - 41.012 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T13:26:29.374Z'
+}
+{
+  message: 'PUT /back/posts/12 200 14 - 140.417 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T13:27:15.817Z'
+}
+{
+  message: 'GET /back/posts 200 7471 - 42.629 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T13:27:15.908Z'
+}
+{
+  message: 'POST /back/posts - - - - ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T13:32:34.299Z'
+}
+{
+  message: 'GET /back/posts 200 7471 - 43.527 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T13:32:36.516Z'
+}
+{
+  message: 'GET /back/posts/2 404 1256 - 7.327 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T13:32:40.539Z'
+}
+{
+  message: 'GET /back/posts/2 404 1256 - 7.946 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T13:33:03.854Z'
+}
+{
+  message: 'GET /back/posts/1 404 1256 - 1.024 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T13:33:09.818Z'
+}
+{
+  message: 'GET /back/users 200 3518 - 87.823 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T13:33:32.976Z'
+}
+{ level: 'error', timestamp: '2020-12-10T13:33:37.007Z' }
+{
+  message: 'GET /back/users/2 500 21 - 4.396 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T13:33:37.008Z'
+}
+{
+  message: 'GET /back/users/2 200 126 - 87.417 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T13:33:47.515Z'
+}
+{
+  message: 'GET /back/users/2 200 126 - 90.765 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T13:41:56.617Z'
+}
+{
+  message: 'GET /back/users/2 500 13 - 0.527 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T13:42:00.673Z'
+}
+{
+  error: C:\Users\Aurel\Documents\GitHub\Projet3\lyon-p3-faq\api\controllers\user.controller.js:172
+    const {mail = req.body}
+          ^^^^^^^^^^^^^^^^^
+  
+  SyntaxError: Missing initializer in destructuring declaration
+      at wrapSafe (internal/modules/cjs/loader.js:1053:16)
+      at Module._compile (internal/modules/cjs/loader.js:1101:27)
+      at Object.Module._extensions..js (internal/modules/cjs/loader.js:1157:10)
+      at Module.load (internal/modules/cjs/loader.js:985:32)
+      at Function.Module._load (internal/modules/cjs/loader.js:878:14)
+      at Module.require (internal/modules/cjs/loader.js:1025:19)
+      at require (internal/modules/cjs/helpers.js:72:18)
+      at Object.<anonymous> (C:\Users\Aurel\Documents\GitHub\Projet3\lyon-p3-faq\api\routes\backoffice\user.js:4:24)
+      at Module._compile (internal/modules/cjs/loader.js:1137:30)
+      at Object.Module._extensions..js (internal/modules/cjs/loader.js:1157:10),
+  level: 'error',
+  message: 'uncaughtException: Missing initializer in destructuring declaration\n' +
+    'C:\\Users\\Aurel\\Documents\\GitHub\\Projet3\\lyon-p3-faq\\api\\controllers\\user.controller.js:172\n' +
+    '  const {mail = req.body}\n' +
+    '        ^^^^^^^^^^^^^^^^^\n' +
+    '\n' +
+    'SyntaxError: Missing initializer in destructuring declaration\n' +
+    '    at wrapSafe (internal/modules/cjs/loader.js:1053:16)\n' +
+    '    at Module._compile (internal/modules/cjs/loader.js:1101:27)\n' +
+    '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1157:10)\n' +
+    '    at Module.load (internal/modules/cjs/loader.js:985:32)\n' +
+    '    at Function.Module._load (internal/modules/cjs/loader.js:878:14)\n' +
+    '    at Module.require (internal/modules/cjs/loader.js:1025:19)\n' +
+    '    at require (internal/modules/cjs/helpers.js:72:18)\n' +
+    '    at Object.<anonymous> (C:\\Users\\Aurel\\Documents\\GitHub\\Projet3\\lyon-p3-faq\\api\\routes\\backoffice\\user.js:4:24)\n' +
+    '    at Module._compile (internal/modules/cjs/loader.js:1137:30)\n' +
+    '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1157:10)',
+  stack: 'C:\\Users\\Aurel\\Documents\\GitHub\\Projet3\\lyon-p3-faq\\api\\controllers\\user.controller.js:172\n' +
+    '  const {mail = req.body}\n' +
+    '        ^^^^^^^^^^^^^^^^^\n' +
+    '\n' +
+    'SyntaxError: Missing initializer in destructuring declaration\n' +
+    '    at wrapSafe (internal/modules/cjs/loader.js:1053:16)\n' +
+    '    at Module._compile (internal/modules/cjs/loader.js:1101:27)\n' +
+    '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1157:10)\n' +
+    '    at Module.load (internal/modules/cjs/loader.js:985:32)\n' +
+    '    at Function.Module._load (internal/modules/cjs/loader.js:878:14)\n' +
+    '    at Module.require (internal/modules/cjs/loader.js:1025:19)\n' +
+    '    at require (internal/modules/cjs/helpers.js:72:18)\n' +
+    '    at Object.<anonymous> (C:\\Users\\Aurel\\Documents\\GitHub\\Projet3\\lyon-p3-faq\\api\\routes\\backoffice\\user.js:4:24)\n' +
+    '    at Module._compile (internal/modules/cjs/loader.js:1137:30)\n' +
+    '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1157:10)',
+  exception: true,
+  date: 'Thu Dec 10 2020 16:13:14 GMT+0100 (GMT+01:00)',
+  process: {
+    pid: 6444,
+    uid: null,
+    gid: null,
+    cwd: 'C:\\Users\\Aurel\\Documents\\GitHub\\Projet3\\lyon-p3-faq\\api',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v12.18.3',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'C:\\Users\\Aurel\\Documents\\GitHub\\Projet3\\lyon-p3-faq\\api\\bin\\start'
+    ],
+    memoryUsage: {
+      rss: 45096960,
+      heapTotal: 28831744,
+      heapUsed: 15431424,
+      external: 1616736,
+      arrayBuffers: 294490
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 42731 },
+  trace: [
+    {
+      column: 16,
+      file: 'internal/modules/cjs/loader.js',
+      function: 'wrapSafe',
+      line: 1053,
+      method: null,
+      native: false
+    },
+    {
+      column: 27,
+      file: 'internal/modules/cjs/loader.js',
+      function: 'Module._compile',
+      line: 1101,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'internal/modules/cjs/loader.js',
+      function: 'Module._extensions..js',
+      line: 1157,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'internal/modules/cjs/loader.js',
+      function: 'Module.load',
+      line: 985,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 14,
+      file: 'internal/modules/cjs/loader.js',
+      function: 'Module._load',
+      line: 878,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'internal/modules/cjs/loader.js',
+      function: 'Module.require',
+      line: 1025,
+      method: 'require',
+      native: false
+    },
+    {
+      column: 18,
+      file: 'internal/modules/cjs/helpers.js',
+      function: 'require',
+      line: 72,
+      method: null,
+      native: false
+    },
+    {
+      column: 24,
+      file: 'C:\\Users\\Aurel\\Documents\\GitHub\\Projet3\\lyon-p3-faq\\api\\routes\\backoffice\\user.js',
+      function: null,
+      line: 4,
+      method: null,
+      native: false
+    },
+    {
+      column: 30,
+      file: 'internal/modules/cjs/loader.js',
+      function: 'Module._compile',
+      line: 1137,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'internal/modules/cjs/loader.js',
+      function: 'Module._extensions..js',
+      line: 1157,
+      method: '.js',
+      native: false
+    }
+  ],
+  timestamp: '2020-12-10T15:13:14.739Z'
+}
+{
+  error: C:\Users\Aurel\Documents\GitHub\Projet3\lyon-p3-faq\api\controllers\user.controller.js:172
+    const {mail = req.body}
+          ^^^^^^^^^^^^^^^^^
+  
+  SyntaxError: Missing initializer in destructuring declaration
+      at wrapSafe (internal/modules/cjs/loader.js:1053:16)
+      at Module._compile (internal/modules/cjs/loader.js:1101:27)
+      at Object.Module._extensions..js (internal/modules/cjs/loader.js:1157:10)
+      at Module.load (internal/modules/cjs/loader.js:985:32)
+      at Function.Module._load (internal/modules/cjs/loader.js:878:14)
+      at Module.require (internal/modules/cjs/loader.js:1025:19)
+      at require (internal/modules/cjs/helpers.js:72:18)
+      at Object.<anonymous> (C:\Users\Aurel\Documents\GitHub\Projet3\lyon-p3-faq\api\routes\backoffice\user.js:4:24)
+      at Module._compile (internal/modules/cjs/loader.js:1137:30)
+      at Object.Module._extensions..js (internal/modules/cjs/loader.js:1157:10),
+  level: 'error',
+  message: 'uncaughtException: Missing initializer in destructuring declaration\n' +
+    'C:\\Users\\Aurel\\Documents\\GitHub\\Projet3\\lyon-p3-faq\\api\\controllers\\user.controller.js:172\n' +
+    '  const {mail = req.body}\n' +
+    '        ^^^^^^^^^^^^^^^^^\n' +
+    '\n' +
+    'SyntaxError: Missing initializer in destructuring declaration\n' +
+    '    at wrapSafe (internal/modules/cjs/loader.js:1053:16)\n' +
+    '    at Module._compile (internal/modules/cjs/loader.js:1101:27)\n' +
+    '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1157:10)\n' +
+    '    at Module.load (internal/modules/cjs/loader.js:985:32)\n' +
+    '    at Function.Module._load (internal/modules/cjs/loader.js:878:14)\n' +
+    '    at Module.require (internal/modules/cjs/loader.js:1025:19)\n' +
+    '    at require (internal/modules/cjs/helpers.js:72:18)\n' +
+    '    at Object.<anonymous> (C:\\Users\\Aurel\\Documents\\GitHub\\Projet3\\lyon-p3-faq\\api\\routes\\backoffice\\user.js:4:24)\n' +
+    '    at Module._compile (internal/modules/cjs/loader.js:1137:30)\n' +
+    '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1157:10)',
+  stack: 'C:\\Users\\Aurel\\Documents\\GitHub\\Projet3\\lyon-p3-faq\\api\\controllers\\user.controller.js:172\n' +
+    '  const {mail = req.body}\n' +
+    '        ^^^^^^^^^^^^^^^^^\n' +
+    '\n' +
+    'SyntaxError: Missing initializer in destructuring declaration\n' +
+    '    at wrapSafe (internal/modules/cjs/loader.js:1053:16)\n' +
+    '    at Module._compile (internal/modules/cjs/loader.js:1101:27)\n' +
+    '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1157:10)\n' +
+    '    at Module.load (internal/modules/cjs/loader.js:985:32)\n' +
+    '    at Function.Module._load (internal/modules/cjs/loader.js:878:14)\n' +
+    '    at Module.require (internal/modules/cjs/loader.js:1025:19)\n' +
+    '    at require (internal/modules/cjs/helpers.js:72:18)\n' +
+    '    at Object.<anonymous> (C:\\Users\\Aurel\\Documents\\GitHub\\Projet3\\lyon-p3-faq\\api\\routes\\backoffice\\user.js:4:24)\n' +
+    '    at Module._compile (internal/modules/cjs/loader.js:1137:30)\n' +
+    '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1157:10)',
+  exception: true,
+  date: 'Thu Dec 10 2020 16:13:29 GMT+0100 (GMT+01:00)',
+  process: {
+    pid: 13508,
+    uid: null,
+    gid: null,
+    cwd: 'C:\\Users\\Aurel\\Documents\\GitHub\\Projet3\\lyon-p3-faq\\api',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v12.18.3',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'C:\\Users\\Aurel\\Documents\\GitHub\\Projet3\\lyon-p3-faq\\api\\bin\\start'
+    ],
+    memoryUsage: {
+      rss: 45314048,
+      heapTotal: 28831744,
+      heapUsed: 15329776,
+      external: 1616735,
+      arrayBuffers: 294489
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 42746 },
+  trace: [
+    {
+      column: 16,
+      file: 'internal/modules/cjs/loader.js',
+      function: 'wrapSafe',
+      line: 1053,
+      method: null,
+      native: false
+    },
+    {
+      column: 27,
+      file: 'internal/modules/cjs/loader.js',
+      function: 'Module._compile',
+      line: 1101,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'internal/modules/cjs/loader.js',
+      function: 'Module._extensions..js',
+      line: 1157,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'internal/modules/cjs/loader.js',
+      function: 'Module.load',
+      line: 985,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 14,
+      file: 'internal/modules/cjs/loader.js',
+      function: 'Module._load',
+      line: 878,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'internal/modules/cjs/loader.js',
+      function: 'Module.require',
+      line: 1025,
+      method: 'require',
+      native: false
+    },
+    {
+      column: 18,
+      file: 'internal/modules/cjs/helpers.js',
+      function: 'require',
+      line: 72,
+      method: null,
+      native: false
+    },
+    {
+      column: 24,
+      file: 'C:\\Users\\Aurel\\Documents\\GitHub\\Projet3\\lyon-p3-faq\\api\\routes\\backoffice\\user.js',
+      function: null,
+      line: 4,
+      method: null,
+      native: false
+    },
+    {
+      column: 30,
+      file: 'internal/modules/cjs/loader.js',
+      function: 'Module._compile',
+      line: 1137,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'internal/modules/cjs/loader.js',
+      function: 'Module._extensions..js',
+      line: 1157,
+      method: '.js',
+      native: false
+    }
+  ],
+  timestamp: '2020-12-10T15:13:29.568Z'
+}
+{
+  message: 'GET /back/users 500 13 - 2.516 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T15:22:30.533Z'
+}
+{
+  message: 'GET /back/users 500 13 - 1.196 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T15:22:35.999Z'
+}
+{
+  message: 'POST /back/login 200 305 - 127.893 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T15:22:58.384Z'
+}
+{
+  message: 'GET /back/users 200 3518 - 39.346 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T15:23:12.657Z'
+}
+{
+  message: 'GET /back/users/passwordrenew 400 93 - 1.118 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T15:23:25.710Z'
+}
+{
+  message: 'POST /back/users/passwordrenew 200 2 - 44.357 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T15:24:00.287Z'
+}
+{
+  message: 'POST /back/users/passwordrenew 404 30 - 91.044 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T15:26:05.185Z'
+}
+{
+  message: 'POST /back/users/passwordrenew 404 30 - 40.383 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T15:26:28.058Z'
+}
+{
+  message: 'POST /back/users/passwordrenew 200 2 - 45.805 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T15:26:36.010Z'
+}
+{
+  message: 'POST /back/users/passwordrenew 404 30 - 42.241 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T15:30:02.282Z'
+}
+{
+  message: 'POST /back/users/passwordrenew 200 2 - 41.364 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T15:30:16.063Z'
+}
+{
+  message: 'PATCH /back/users 400 84 - 3.871 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T15:34:20.213Z'
+}
+{
+  message: 'PATCH /back/users 400 84 - 0.845 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T15:34:29.650Z'
+}
+{
+  message: 'PATCH /back/users/ 400 94 - 2.449 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T15:36:06.592Z'
+}
+{
+  message: 'PATCH /back/users 400 101 - 0.541 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T15:38:16.126Z'
+}
+{
+  message: 'PATCH /back/users 400 86 - 0.880 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T15:42:05.845Z'
+}
+{
+  message: 'PATCH /back/users 400 86 - 1.202 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T15:42:28.244Z'
+}
+{ level: 'error', timestamp: '2020-12-10T15:43:03.214Z' }
+{
+  message: 'PATCH /back/users 500 21 - 47.340 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T15:43:03.216Z'
+}
+{
+  message: 'PATCH /back/users 400 102 - 0.499 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T15:43:09.629Z'
+}
+{
+  message: 'PATCH /back/users 400 103 - 0.494 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T15:43:59.703Z'
+}
+{
+  message: 'PATCH /back/users/ 400 94 - 25.666 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T15:51:37.507Z'
+}
+{
+  message: 'PATCH /back/users 400 103 - 8.908 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T15:55:06.117Z'
+}
+{
+  message: 'PATCH /back/users 400 103 - 8.295 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T15:55:37.176Z'
+}
+{
+  message: 'PATCH /back/users 400 103 - 8.409 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T15:56:09.787Z'
+}
+{
+  message: 'PATCH /back/users 400 103 - 10.356 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T15:57:40.643Z'
+}
+{
+  message: 'PATCH /back/users 400 103 - 11.055 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T15:57:48.234Z'
+}
+{
+  message: 'PATCH /back/users 400 103 - 10.036 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T15:58:07.931Z'
+}
+{
+  message: 'PATCH /back/users/ 400 94 - 9.175 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T15:59:19.737Z'
+}
+{
+  message: 'PATCH /back/users 400 103 - 8.434 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T16:00:24.029Z'
+}
+{
+  message: 'PATCH /back/users 400 103 - 8.875 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T16:03:56.814Z'
+}
+{
+  message: 'PATCH /back/users 400 103 - 9.002 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T16:04:13.472Z'
+}
+{
+  message: 'PATCH /back/users 400 103 - 7.911 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T16:04:48.464Z'
+}
+{
+  message: 'PATCH /back/users 400 103 - 7.226 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T16:05:03.911Z'
+}
+{
+  message: 'PATCH /back/users 400 103 - 8.447 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T16:05:25.722Z'
+}
+{
+  message: 'PATCH /back/users 400 103 - 8.400 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T16:05:49.049Z'
+}
+{
+  message: 'PATCH /back/users 400 103 - 7.973 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T16:06:24.638Z'
+}
+{
+  message: 'PATCH /back/users 400 103 - 1.999 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T16:07:58.419Z'
+}
+{
+  message: 'PATCH /back/users 400 103 - 7.957 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T16:08:36.355Z'
+}
+{
+  message: 'PATCH /back/users 400 92 - 17.793 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T16:09:33.448Z'
+}
+{
+  message: 'PATCH /back/users 400 92 - 9.172 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T16:10:04.895Z'
+}
+{
+  message: 'PATCH /back/users 400 92 - 8.572 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T16:10:41.860Z'
+}
+{
+  message: 'PATCH /back/users 400 92 - 7.193 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T16:11:25.976Z'
+}
+{
+  message: 'PATCH /back/users 400 92 - 9.431 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T16:12:03.856Z'
+}
+{
+  message: 'PATCH /back/users 400 103 - 10.585 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T16:12:50.279Z'
+}
+{
+  message: 'PATCH /back/users 400 103 - 5.619 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T16:13:03.097Z'
+}
+{
+  message: 'PATCH /back/users 400 103 - 2.954 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T16:13:32.495Z'
+}
+{
+  message: 'PATCH /back/users 400 103 - 2.073 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T16:13:59.717Z'
+}
+{
+  message: 'PATCH /back/users 400 103 - 3.577 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T16:14:44.036Z'
+}
+{
+  message: 'PATCH /back/users 400 103 - 2.858 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T16:15:08.243Z'
+}
+{
+  message: 'PATCH /back/users 400 103 - 2.255 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T16:17:13.340Z'
+}
+{
+  message: 'PATCH /back/users 400 103 - 2.913 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T16:17:54.856Z'
+}
+{
+  message: 'PATCH /back/users 400 103 - 2.709 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T16:19:01.079Z'
+}
+{
+  message: 'PATCH /back/users 400 103 - 2.914 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T16:19:21.544Z'
+}
+{
+  message: 'PATCH /back/users 400 103 - 3.070 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T16:19:33.987Z'
+}
+{
+  message: 'PATCH /back/users/ 400 90 - 16.643 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T16:21:35.307Z'
+}
+{
+  message: 'PATCH /back/users/ 400 90 - 8.784 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T16:21:44.140Z'
+}
+{
+  message: 'PATCH /back/users/ 400 94 - 11.672 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T16:22:18.691Z'
+}
+{
+  message: 'PATCH /back/users/ 400 90 - 14.063 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T16:23:26.309Z'
+}
+{
+  message: 'PATCH /back/users/ 400 - - 20.435 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T16:24:06.733Z'
+}
+{
+  message: 'PATCH /back/users/ 400 95 - 19.771 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T16:26:34.402Z'
+}
+{
+  message: 'PATCH /back/users/ 400 106 - 13.641 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T16:26:59.391Z'
+}
+{
+  message: 'PATCH /back/users/ 400 106 - 12.524 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T16:27:19.799Z'
+}
+{
+  message: 'PATCH /back/users/ 400 106 - 8.563 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T16:28:44.190Z'
+}
+{
+  message: 'PATCH /back/users/ 400 106 - 13.982 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T16:28:59.315Z'
+}
+{
+  message: 'PATCH /back/users 400 115 - 10.063 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T16:31:07.865Z'
+}
+{
+  message: 'PATCH /back/users 400 115 - 8.887 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T16:31:54.325Z'
+}
+{
+  message: 'PATCH /back/users 400 115 - 10.000 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T16:32:41.278Z'
+}
+{
+  message: 'PATCH /back/users 400 115 - 8.312 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T16:33:18.506Z'
+}
+{
+  message: 'PATCH /back/users 400 115 - 8.325 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T16:33:56.377Z'
+}
+{
+  message: 'PATCH /back/users 400 115 - 8.390 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T16:34:33.402Z'
+}
+{
+  message: 'PATCH /back/users 400 115 - 8.941 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T16:38:40.644Z'
+}
+{
+  message: 'PATCH /back/users 400 115 - 7.864 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T16:39:25.425Z'
+}
+{
+  message: 'PATCH /back/users 400 115 - 9.033 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T16:47:46.842Z'
+}
+{
+  message: 'PATCH /back/users 400 214 - 8.825 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T16:47:53.661Z'
+}
+{
+  message: 'POST /back/login 400 104 - 7.180 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T16:50:06.733Z'
+}
+{
+  message: 'POST /back/login 400 104 - 7.001 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T16:50:50.879Z'
+}
+{
+  message: 'POST /back/login 400 104 - 2.784 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T16:50:57.067Z'
+}
+{
+  message: 'POST /back/login 400 104 - 0.727 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T16:59:39.532Z'
+}
+{
+  message: 'POST /back/users/passwordrenew 404 30 - 84.581 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T16:59:43.461Z'
+}
+{
+  message: 'POST /back/users/passwordrenew 404 30 - 39.308 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T17:00:20.681Z'
+}
+{
+  message: 'POST /back/users/passwordrenew 404 30 - 41.548 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T17:00:28.860Z'
+}
+{
+  message: 'POST /back/users/passwordrenew 404 30 - 40.872 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T17:00:45.752Z'
+}
+{
+  message: 'POST /back/users/passwordrenew 404 30 - 38.265 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T17:08:20.094Z'
+}
+{
+  message: 'POST /back/users/passwordrenew 200 2 - 45.658 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T17:08:26.859Z'
+}
+{
+  message: 'POST /back/login 200 305 - 138.953 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T17:40:38.347Z'
+}
+{
+  message: 'GET /back/users?withRoles=true 200 1914 - 42.620 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T17:40:39.009Z'
+}
+{
+  message: 'GET /back/posts 200 7471 - 79.595 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T17:40:39.049Z'
+}
+{
+  message: 'GET /back/posts 200 7471 - 41.222 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T17:40:39.168Z'
+}
+{
+  message: 'GET /back/users?withRoles=true 200 1914 - 44.087 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T17:40:39.170Z'
+}
+{
+  message: 'GET /back/posts 304 - - 48.049 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T18:11:04.938Z'
+}
+{
+  message: 'GET /back/posts 304 - - 39.898 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T18:11:05.031Z'
+}
+{
+  message: 'GET /back/users?withRoles=true 304 - - 36.301 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T18:11:32.041Z'
+}
+{
+  message: 'GET /back/users?withRoles=true 304 - - 38.269 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T18:11:32.108Z'
+}
+{
+  message: 'GET /back/posts 304 - - 42.808 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T18:32:53.465Z'
+}
+{
+  message: 'GET /back/posts 304 - - 39.694 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T18:32:53.548Z'
+}
+{
+  message: 'PUT /back/posts/1 200 27 - 42.840 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T18:32:56.065Z'
+}
+{
+  message: 'GET /back/posts 200 7471 - 39.614 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T18:32:56.121Z'
+}
+{
+  message: 'POST /back/login 400 181 - 2.354 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T18:36:42.914Z'
+}
+{
+  message: 'POST /back/login 400 181 - 0.488 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T18:37:05.388Z'
+}
+{
+  message: 'POST /back/login 400 104 - 0.478 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T18:37:17.612Z'
+}
+{
+  message: 'POST /back/login 400 104 - 0.669 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T19:11:54.543Z'
+}
+{
+  message: 'POST /back/login 400 104 - 0.536 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T19:12:33.283Z'
+}
+{
+  message: 'POST /back/login 400 104 - 0.485 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T19:12:59.488Z'
+}
+{
+  message: 'POST /back/login 400 104 - 0.445 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T19:13:53.247Z'
+}
+{
+  message: 'POST /back/login 400 104 - 0.482 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T19:14:02.070Z'
+}
+{
+  message: 'POST /back/login 400 104 - 0.482 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T19:14:10.413Z'
+}
+{
+  message: 'POST /back/login 400 104 - 0.524 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T19:14:27.847Z'
+}
+{
+  message: 'POST /back/login 400 104 - 1.734 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T19:14:34.076Z'
+}
+{
+  message: 'POST /back/login 400 105 - 0.402 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T19:14:44.554Z'
+}
+{
+  message: 'POST /back/login 400 105 - 0.387 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T19:14:48.132Z'
+}
+{
+  message: 'POST /back/login 400 104 - 0.478 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T19:15:07.414Z'
+}
+{
+  message: 'POST /back/login 400 104 - 0.433 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T19:15:09.519Z'
+}
+{
+  message: 'POST /back/login 200 305 - 82.300 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T19:15:37.812Z'
+}
+{
+  message: 'POST /back/login 400 105 - 0.522 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T19:16:01.780Z'
+}
+{
+  message: 'POST /back/login 400 104 - 0.483 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T19:18:48.230Z'
+}
+{
+  message: 'POST /back/login 400 104 - 0.490 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T19:18:56.197Z'
+}
+{
+  message: 'POST /back/login 400 104 - 0.405 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T19:19:42.690Z'
+}
+{
+  message: 'POST /back/login 400 104 - 0.430 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T19:20:05.601Z'
+}
+{
+  message: 'POST /back/login 200 305 - 81.939 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T19:20:46.449Z'
+}
+{
+  message: 'GET /back/users?withRoles=true 200 1914 - 38.817 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T19:20:46.738Z'
+}
+{
+  message: 'GET /back/posts 200 7471 - 39.785 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T19:20:46.740Z'
+}
+{
+  message: 'GET /back/posts 200 7471 - 40.077 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T19:20:46.868Z'
+}
+{
+  message: 'GET /back/users?withRoles=true 200 1914 - 42.717 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T19:20:46.870Z'
+}
+{
+  message: 'POST /back/login 400 104 - 0.467 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T19:21:00.014Z'
+}
+{
+  message: 'POST /back/login 401 25 - 38.190 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T19:21:30.202Z'
+}
+{
+  message: 'POST /back/login 200 305 - 81.374 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T19:21:51.712Z'
+}
+{
+  message: 'GET /back/posts 200 7471 - 42.213 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T19:21:51.992Z'
+}
+{
+  message: 'GET /back/users?withRoles=true 200 1914 - 44.453 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T19:21:51.994Z'
+}
+{
+  message: 'GET /back/posts 200 7471 - 34.261 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T19:21:52.160Z'
+}
+{
+  message: 'GET /back/users?withRoles=true 200 1914 - 36.771 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T19:21:52.161Z'
+}
+{
+  message: 'POST /back/login 401 25 - 42.908 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T19:24:48.987Z'
+}
+{
+  message: 'POST /back/login 401 25 - 41.514 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T19:25:19.704Z'
+}
+{
+  message: 'POST /back/login 401 25 - 39.820 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T19:25:34.120Z'
+}
+{
+  message: 'POST /back/login 401 25 - 39.374 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T19:26:14.005Z'
+}
+{
+  message: 'POST /back/login 200 305 - 81.382 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T19:26:31.638Z'
+}
+{
+  message: 'GET /back/posts 200 7471 - 40.738 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T19:26:31.915Z'
+}
+{
+  message: 'GET /back/users?withRoles=true 200 1914 - 42.869 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T19:26:31.916Z'
+}
+{
+  message: 'GET /back/posts 200 7471 - 40.568 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T19:26:32.086Z'
+}
+{
+  message: 'GET /back/users?withRoles=true 200 1914 - 44.183 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T19:26:32.089Z'
+}
+{
+  message: 'POST /back/login 401 25 - 38.826 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T19:26:36.754Z'
+}
+{
+  message: 'POST /back/login 401 25 - 39.282 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T19:27:08.154Z'
+}
+{
+  message: 'POST /back/login 200 305 - 78.579 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T19:27:27.606Z'
+}
+{
+  message: 'GET /back/posts 200 7471 - 39.297 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T19:27:27.888Z'
+}
+{
+  message: 'GET /back/users?withRoles=true 200 1914 - 41.766 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T19:27:27.890Z'
+}
+{
+  message: 'GET /back/posts 200 7471 - 39.940 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T19:27:28.063Z'
+}
+{
+  message: 'GET /back/users?withRoles=true 200 1914 - 42.817 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T19:27:28.065Z'
+}
+{
+  message: 'POST /back/login 401 25 - 39.728 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T19:27:30.935Z'
+}
+{
+  message: 'POST /back/login 200 305 - 83.509 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T21:47:47.836Z'
+}
+{
+  message: 'GET /back/users?withRoles=true 200 1914 - 37.937 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T21:47:48.427Z'
+}
+{
+  message: 'GET /back/posts 200 7471 - 41.344 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T21:47:48.432Z'
+}
+{
+  message: 'GET /back/users?withRoles=true 200 1914 - 39.403 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T21:47:48.568Z'
+}
+{
+  message: 'GET /back/posts 200 7471 - 42.430 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T21:47:48.572Z'
+}
+{
+  message: 'POST /back/login 401 25 - 40.185 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T21:49:19.560Z'
+}
+{
+  message: 'POST /back/login 401 25 - 38.934 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T21:50:43.626Z'
+}
+{
+  message: 'POST /back/login 401 25 - 38.490 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T22:06:03.781Z'
+}
+{
+  message: 'POST /back/users/passwordrenew 200 2 - 48.304 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T22:06:09.890Z'
+}
+{
+  message: 'POST /back/users/passwordrenew 200 2 - 42.561 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T22:12:02.695Z'
+}
+{
+  message: 'POST /back/login 200 305 - 80.375 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T22:17:42.705Z'
+}
+{
+  message: 'POST /back/login 200 305 - 82.418 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T22:17:46.707Z'
+}
+{
+  message: 'GET /back/posts 200 7471 - 38.794 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T22:17:46.981Z'
+}
+{
+  message: 'GET /back/users?withRoles=true 200 1914 - 41.537 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T22:17:46.983Z'
+}
+{
+  message: 'GET /back/users?withRoles=true 200 1914 - 38.950 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T22:17:47.150Z'
+}
+{
+  message: 'GET /back/posts 200 7471 - 46.242 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T22:17:47.158Z'
+}
+{
+  message: 'POST /back/users/passwordrenew 200 2 - 40.931 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T22:18:44.363Z'
+}
+{
+  message: 'POST /back/login 401 25 - 37.583 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T22:19:06.115Z'
+}
+{
+  message: 'POST /back/login 401 25 - 39.436 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T22:19:18.942Z'
+}
+{
+  message: 'POST /back/users/passwordrenew 200 2 - 41.447 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T22:19:24.320Z'
+}
+{
+  message: 'POST /back/users/passwordrenew 200 2 - 38.928 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T22:19:35.232Z'
+}
+{
+  message: 'POST /back/users/passwordrenew 200 2 - 42.789 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T22:24:37.791Z'
+}
+{
+  message: 'POST /back/login 401 25 - 36.119 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T22:24:45.583Z'
+}
+{
+  message: 'POST /back/users/passwordrenew 200 2 - 42.247 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T22:25:11.635Z'
+}
+{
+  message: 'POST /back/login 401 25 - 40.395 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T22:25:20.054Z'
+}
+{
+  message: 'POST /back/users/passwordrenew 200 2 - 38.977 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T22:25:26.483Z'
+}
+{
+  message: 'POST /back/users/passwordrenew 200 2 - 40.444 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T22:25:42.595Z'
+}
+{
+  message: 'POST /back/login 401 25 - 41.237 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T22:25:49.599Z'
+}
+{
+  message: 'POST /back/users/passwordrenew 200 2 - 41.134 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T22:25:56.116Z'
+}
+{
+  message: 'POST /back/users/passwordrenew 404 30 - 36.785 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T22:32:20.269Z'
+}
+{
+  message: 'POST /back/users/passwordrenew 200 2 - 38.009 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T22:32:26.727Z'
+}
+{
+  message: 'PATCH /back/users 400 111 - 8.913 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T22:32:58.454Z'
+}
+{
+  message: 'PATCH /back/users 400 111 - 6.300 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T22:33:06.604Z'
+}
+{
+  message: 'PATCH /back/users 400 111 - 7.036 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T22:33:07.601Z'
+}
+{
+  message: 'PATCH /back/users 400 111 - 5.910 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T22:33:07.823Z'
+}
+{
+  message: 'PATCH /back/users 400 111 - 6.152 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T22:33:08.037Z'
+}
+{
+  message: 'PATCH /back/users 400 111 - 6.465 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T22:33:08.260Z'
+}
+{
+  message: 'PATCH /back/users 400 111 - 7.698 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T22:35:46.991Z'
+}
+{
+  message: 'PATCH /back/users 400 115 - 7.321 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T22:36:00.424Z'
+}
+{
+  message: 'POST /back/login 200 305 - 81.205 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T22:47:13.175Z'
+}
+{
+  message: 'GET /back/posts 200 7471 - 38.898 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T22:47:13.460Z'
+}
+{
+  message: 'GET /back/users?withRoles=true 200 1914 - 40.942 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T22:47:13.462Z'
+}
+{
+  message: 'GET /back/posts 200 7471 - 41.410 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T22:47:13.652Z'
+}
+{
+  message: 'GET /back/users?withRoles=true 200 1914 - 44.837 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T22:47:13.655Z'
+}
+{
+  message: 'POST /back/login 200 305 - 81.013 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T22:47:55.944Z'
+}
+{
+  message: 'GET /back/users?withRoles=true 304 - - 38.154 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T22:47:56.149Z'
+}
+{
+  message: 'GET /back/posts 304 - - 41.593 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T22:47:56.153Z'
+}
+{
+  message: 'GET /back/posts 304 - - 43.514 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T22:47:56.261Z'
+}
+{
+  message: 'GET /back/users?withRoles=true 304 - - 45.732 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T22:47:56.263Z'
+}
+{
+  message: 'GET /back/users/roles 304 - - 36.075 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T22:47:58.640Z'
+}
+{
+  message: 'GET /back/users?withRoles=true 304 - - 38.734 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T22:48:10.397Z'
+}
+{
+  message: 'GET /back/users?withRoles=true 304 - - 46.940 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T22:48:10.461Z'
+}
+{
+  message: 'GET /back/posts 304 - - 41.660 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T22:48:16.454Z'
+}
+{
+  message: 'GET /back/posts 304 - - 41.670 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T22:48:16.546Z'
+}
+{
+  message: 'PUT /back/posts/2 200 27 - 42.542 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T22:48:28.663Z'
+}
+{
+  message: 'GET /back/posts 200 7471 - 41.588 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T22:48:28.723Z'
+}
+{
+  message: 'PUT /back/posts/3 200 27 - 42.298 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T22:48:29.770Z'
+}
+{
+  message: 'GET /back/posts 200 7471 - 42.730 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T22:48:29.831Z'
+}
+{
+  message: 'PUT /back/posts/11 200 27 - 41.324 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T22:48:45.459Z'
+}
+{
+  message: 'GET /back/posts 200 7471 - 41.488 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T22:48:45.522Z'
+}
+{
+  message: 'PUT /back/posts/12 200 27 - 43.611 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T22:48:46.532Z'
+}
+{
+  message: 'GET /back/posts 200 7471 - 37.714 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T22:48:46.588Z'
+}
+{
+  message: 'PUT /back/posts/13 200 14 - 84.326 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T22:49:13.755Z'
+}
+{
+  message: 'GET /back/posts 200 7471 - 41.115 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T22:49:13.815Z'
+}
+{
+  message: 'PUT /back/posts/21 200 27 - 41.852 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T22:49:27.204Z'
+}
+{
+  message: 'GET /back/posts 200 7471 - 41.544 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T22:49:27.267Z'
+}
+{
+  message: 'POST /back/users/passwordrenew 200 2 - 41.176 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T22:58:24.278Z'
+}
+{
+  message: 'POST /back/login 200 305 - 127.973 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T23:00:42.621Z'
+}
+{
+  message: 'GET /back/users?withRoles=true 200 1914 - 43.033 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T23:00:43.214Z'
+}
+{
+  message: 'GET /back/posts 200 7471 - 81.685 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T23:00:43.255Z'
+}
+{
+  message: 'GET /back/posts 200 7471 - 38.629 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T23:00:43.335Z'
+}
+{
+  message: 'GET /back/users?withRoles=true 200 1914 - 41.178 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T23:00:43.336Z'
+}
+{
+  message: 'POST /back/users/passwordrenew 200 2 - 47.549 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T23:00:45.697Z'
+}
+{
+  message: 'POST /back/users/passwordrenew 200 2 - 103.815 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T23:01:46.321Z'
+}
+{
+  message: 'POST /back/login 200 305 - 134.877 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T23:02:58.480Z'
+}
+{
+  message: 'GET /back/users?withRoles=true 304 - - 43.898 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T23:02:58.691Z'
+}
+{
+  message: 'GET /back/posts 304 - - 81.010 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T23:02:58.730Z'
+}
+{
+  message: 'GET /back/posts 304 - - 40.201 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T23:02:58.806Z'
+}
+{
+  message: 'GET /back/users?withRoles=true 304 - - 42.727 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T23:02:58.808Z'
+}
+{
+  message: 'GET /back/users?withRoles=true 304 - - 41.843 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T23:03:04.998Z'
+}
+{
+  message: 'GET /back/users?withRoles=true 304 - - 42.334 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T23:03:05.061Z'
+}
+{
+  message: 'GET /back/posts 304 - - 39.829 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T23:03:10.910Z'
+}
+{
+  message: 'GET /back/posts 304 - - 39.012 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T23:03:10.998Z'
+}
+{
+  message: 'PUT /back/posts/2 200 14 - 89.697 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T23:03:13.314Z'
+}
+{
+  message: 'GET /back/posts 200 7471 - 39.372 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T23:03:13.374Z'
+}
+{
+  message: 'PUT /back/posts/11 200 14 - 131.378 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T23:08:57.947Z'
+}
+{
+  message: 'GET /back/posts 200 7471 - 40.052 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T23:08:58.009Z'
+}
+{
+  message: 'POST /back/users/passwordrenew 200 2 - 95.784 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T23:12:35.430Z'
+}
+{
+  message: 'POST /back/login 200 305 - 130.622 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T23:13:04.681Z'
+}
+{
+  message: 'GET /back/users?withRoles=true 304 - - 42.092 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T23:13:04.888Z'
+}
+{
+  message: 'GET /back/posts 304 - - 80.086 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T23:13:04.928Z'
+}
+{
+  message: 'GET /back/posts 304 - - 41.682 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T23:13:04.995Z'
+}
+{
+  message: 'GET /back/users?withRoles=true 304 - - 44.059 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T23:13:04.996Z'
+}
+{
+  message: 'GET /back/posts 304 - - 42.709 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T23:13:09.476Z'
+}
+{
+  message: 'GET /back/posts 304 - - 40.989 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T23:13:09.563Z'
+}
+{
+  message: 'PUT /back/posts/12 200 14 - 93.894 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T23:13:14.005Z'
+}
+{
+  message: 'GET /back/posts 200 7471 - 41.315 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T23:13:14.068Z'
+}
+{
+  message: 'POST /back/users/passwordrenew 200 2 - 90.013 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T23:17:41.666Z'
+}
+{
+  message: 'POST /back/login 200 305 - 128.594 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T23:18:00.450Z'
+}
+{
+  message: 'GET /back/users?withRoles=true 304 - - 41.389 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T23:18:00.704Z'
+}
+{
+  message: 'GET /back/posts 304 - - 79.445 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T23:18:00.743Z'
+}
+{
+  message: 'GET /back/posts 304 - - 39.621 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T23:18:00.816Z'
+}
+{
+  message: 'GET /back/users?withRoles=true 304 - - 45.164 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T23:18:00.821Z'
+}
+{
+  message: 'GET /back/posts 304 - - 41.366 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T23:18:17.476Z'
+}
+{
+  message: 'GET /back/posts 304 - - 42.228 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T23:18:17.572Z'
+}
+{
+  message: 'PUT /back/posts/3 200 14 - 93.299 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T23:18:20.326Z'
+}
+{
+  message: 'GET /back/posts 200 7471 - 41.472 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T23:18:20.388Z'
+}
+{
+  message: 'PUT /back/posts/1 200 14 - 145.831 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T23:18:52.913Z'
+}
+{
+  message: 'GET /back/posts 200 7471 - 40.508 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T23:18:52.975Z'
+}
+{
+  message: 'PUT /back/posts/21 200 14 - 158.929 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T23:19:16.369Z'
+}
+{
+  message: 'GET /back/posts 200 7471 - 41.684 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T23:19:16.437Z'
+}
+{
+  error: ReferenceError: MAILER_USER is not defined
+      at Object.<anonymous> (C:\Users\Aurel\Documents\GitHub\Projet3\lyon-p3-faq\api\library\mailer.js:10:15)
+      at Module._compile (internal/modules/cjs/loader.js:1137:30)
+      at Object.Module._extensions..js (internal/modules/cjs/loader.js:1157:10)
+      at Module.load (internal/modules/cjs/loader.js:985:32)
+      at Function.Module._load (internal/modules/cjs/loader.js:878:14)
+      at Module.require (internal/modules/cjs/loader.js:1025:19)
+      at require (internal/modules/cjs/helpers.js:72:18)
+      at Object.<anonymous> (C:\Users\Aurel\Documents\GitHub\Projet3\lyon-p3-faq\api\controllers\user.controller.js:4:16)
+      at Module._compile (internal/modules/cjs/loader.js:1137:30)
+      at Object.Module._extensions..js (internal/modules/cjs/loader.js:1157:10),
+  level: 'error',
+  message: 'uncaughtException: MAILER_USER is not defined\n' +
+    'ReferenceError: MAILER_USER is not defined\n' +
+    '    at Object.<anonymous> (C:\\Users\\Aurel\\Documents\\GitHub\\Projet3\\lyon-p3-faq\\api\\library\\mailer.js:10:15)\n' +
+    '    at Module._compile (internal/modules/cjs/loader.js:1137:30)\n' +
+    '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1157:10)\n' +
+    '    at Module.load (internal/modules/cjs/loader.js:985:32)\n' +
+    '    at Function.Module._load (internal/modules/cjs/loader.js:878:14)\n' +
+    '    at Module.require (internal/modules/cjs/loader.js:1025:19)\n' +
+    '    at require (internal/modules/cjs/helpers.js:72:18)\n' +
+    '    at Object.<anonymous> (C:\\Users\\Aurel\\Documents\\GitHub\\Projet3\\lyon-p3-faq\\api\\controllers\\user.controller.js:4:16)\n' +
+    '    at Module._compile (internal/modules/cjs/loader.js:1137:30)\n' +
+    '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1157:10)',
+  stack: 'ReferenceError: MAILER_USER is not defined\n' +
+    '    at Object.<anonymous> (C:\\Users\\Aurel\\Documents\\GitHub\\Projet3\\lyon-p3-faq\\api\\library\\mailer.js:10:15)\n' +
+    '    at Module._compile (internal/modules/cjs/loader.js:1137:30)\n' +
+    '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1157:10)\n' +
+    '    at Module.load (internal/modules/cjs/loader.js:985:32)\n' +
+    '    at Function.Module._load (internal/modules/cjs/loader.js:878:14)\n' +
+    '    at Module.require (internal/modules/cjs/loader.js:1025:19)\n' +
+    '    at require (internal/modules/cjs/helpers.js:72:18)\n' +
+    '    at Object.<anonymous> (C:\\Users\\Aurel\\Documents\\GitHub\\Projet3\\lyon-p3-faq\\api\\controllers\\user.controller.js:4:16)\n' +
+    '    at Module._compile (internal/modules/cjs/loader.js:1137:30)\n' +
+    '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1157:10)',
+  exception: true,
+  date: 'Fri Dec 11 2020 00:19:44 GMT+0100 (GMT+01:00)',
+  process: {
+    pid: 6260,
+    uid: null,
+    gid: null,
+    cwd: 'C:\\Users\\Aurel\\Documents\\GitHub\\Projet3\\lyon-p3-faq\\api',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v12.18.3',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'C:\\Users\\Aurel\\Documents\\GitHub\\Projet3\\lyon-p3-faq\\api\\bin\\start'
+    ],
+    memoryUsage: {
+      rss: 50192384,
+      heapTotal: 28831744,
+      heapUsed: 19073448,
+      external: 2185560,
+      arrayBuffers: 737651
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 71921 },
+  trace: [
+    {
+      column: 15,
+      file: 'C:\\Users\\Aurel\\Documents\\GitHub\\Projet3\\lyon-p3-faq\\api\\library\\mailer.js',
+      function: null,
+      line: 10,
+      method: null,
+      native: false
+    },
+    {
+      column: 30,
+      file: 'internal/modules/cjs/loader.js',
+      function: 'Module._compile',
+      line: 1137,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'internal/modules/cjs/loader.js',
+      function: 'Module._extensions..js',
+      line: 1157,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'internal/modules/cjs/loader.js',
+      function: 'Module.load',
+      line: 985,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 14,
+      file: 'internal/modules/cjs/loader.js',
+      function: 'Module._load',
+      line: 878,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'internal/modules/cjs/loader.js',
+      function: 'Module.require',
+      line: 1025,
+      method: 'require',
+      native: false
+    },
+    {
+      column: 18,
+      file: 'internal/modules/cjs/helpers.js',
+      function: 'require',
+      line: 72,
+      method: null,
+      native: false
+    },
+    {
+      column: 16,
+      file: 'C:\\Users\\Aurel\\Documents\\GitHub\\Projet3\\lyon-p3-faq\\api\\controllers\\user.controller.js',
+      function: null,
+      line: 4,
+      method: null,
+      native: false
+    },
+    {
+      column: 30,
+      file: 'internal/modules/cjs/loader.js',
+      function: 'Module._compile',
+      line: 1137,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'internal/modules/cjs/loader.js',
+      function: 'Module._extensions..js',
+      line: 1157,
+      method: '.js',
+      native: false
+    }
+  ],
+  timestamp: '2020-12-10T23:19:44.819Z'
+}
+{
+  message: 'PUT /back/posts/2 200 27 - 93.511 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T23:20:01.691Z'
+}
+{
+  message: 'GET /back/posts 200 7471 - 43.001 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T23:20:01.750Z'
+}
+{
+  message: 'PUT /back/posts/3 200 27 - 44.076 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T23:20:02.850Z'
+}
+{
+  message: 'GET /back/posts 200 7471 - 39.672 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T23:20:02.906Z'
+}
+{
+  message: 'PUT /back/posts/11 200 27 - 40.666 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T23:20:03.691Z'
+}
+{
+  message: 'GET /back/posts 200 7471 - 41.180 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T23:20:03.750Z'
+}
+{
+  message: 'PUT /back/posts/3 200 14 - 86.552 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T23:20:05.337Z'
+}
+{
+  message: 'GET /back/posts 200 7471 - 39.051 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T23:20:05.393Z'
+}
+{
+  message: 'PUT /back/posts/11 200 14 - 153.492 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T23:20:48.790Z'
+}
+{
+  message: 'GET /back/posts 200 7471 - 43.188 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T23:20:48.862Z'
+}
+{
+  message: 'PUT /back/posts/2 200 14 - 133.940 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T23:21:10.863Z'
+}
+{
+  message: 'GET /back/posts 200 7471 - 42.918 ms\n',
+  level: 'info',
+  timestamp: '2020-12-10T23:21:10.935Z'
+}

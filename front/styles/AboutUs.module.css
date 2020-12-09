@@ -1,0 +1,195 @@
+.teamintro {
+    background-color: white;
+    height: auto;
+    min-height: 100vh;
+    display: flex;
+}
+
+
+.leftwrapteam {
+    background-color: rgb(255, 255, 255);
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-right: 50px;
+    padding-left: 50px;
+    margin-top : 60px;
+    margin-left: 60px;
+    margin-bottom: 60px;
+    border-style: solid;
+    border-radius: 15px;
+    border-color: rgb(223, 223, 223);
+    border-width: 1px;
+}
+    
+.innerleftupwrap {
+    height: 10%;
+    width: 100%;
+    color: rgb(0, 0, 0);
+    font-size: 2em;
+    display: flex;
+    align-items: center;
+}
+
+.innerleftmidwrap {
+    height: 70%;
+    width: 100%;
+    color: rgb(0, 0, 0);
+    font-size: 5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+.innerleftbotwrap {
+    height: 10%;
+    width: 100%;
+    color: rgb(0, 0, 0);
+    font-size: 1em;
+    font-weight: 500;
+    text-align: right;
+}
+
+.rightwrapteam {
+ width: 60%;
+ display: grid;
+ grid-template-columns: 1fr 1fr 1fr;
+ grid-template-rows: 1fr 1fr;
+ gap: 0px 0px;
+ grid-template-areas:
+   ". . ."
+   ". . .";
+ padding: 40px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    margin: 20px;
+    width: 300px;
+    height: 442px;
+    overflow: hidden;
+    background-color: white ;
+    border-style: solid;
+    border-radius: 15px;
+    border-color: rgb(223, 223, 223);
+    border-width: 1px;
+
+}
+
+.imgcard {
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.description {
+    display: flex;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    align-items: center;
+}
+
+.description > h2 {
+    font-size : 1.2em;
+    font-weight: bold;
+    color :black;
+    padding-right: 16px;
+}
+
+.description >h4 {
+    color: grey;
+    font-size: 0.75em;
+}
+
+.bio {
+    text-align: justify;
+    font-size: 0.9em;
+}
+
+.social {
+    display: flex;
+    font-size: 22px;
+    padding: 20px;
+}
+
+.social >li {
+    padding: 20px;
+}
+
+@media screen and (max-width: 1775px) {
+    .rightwrapteam {
+        width: 60%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 0px 0px;
+        grid-template-areas:
+          ". . "
+          ". . ";
+        padding: 40px;
+       }
+    }
+
+
+@media screen and (max-width: 1170px) {
+        .rightwrapteam {
+            width: 60%;
+            display: flex;
+            flex-direction: column;
+            padding: 40px;
+           }
+        }
+
+@media screen and (max-width: 768px) {
+
+        .teamintro {
+            display: flex;
+            flex-direction: column;
+            padding: 20px ;
+        }
+
+        .leftwrapteam {
+            width: 100%;
+            margin : 0;
+        }
+
+        .innerleftupwrap {
+            height: 20%;
+            padding-top: 10px;
+            font-size: 1.5em;
+        }
+
+        .innerleftmidwrap {
+            height: 60%;
+            font-size: 3em;
+            display: flex;
+            flex-direction: row;
+            justify-content: left;
+        }
+
+        .innerleftmidwrap > span{
+            padding-right: 10px;
+        }
+
+        .innerleftbotwrap {
+            height: 20%;
+            font-size: 1.2em;
+            font-weight : 600;
+            padding-bottom: 10px;
+        }
+
+        .rightwrapteam {
+            display: flex;
+            flex-direction: column;
+            padding: 0;
+            width: 100%;
+            align-items: center;
+
+        }     
+
+}

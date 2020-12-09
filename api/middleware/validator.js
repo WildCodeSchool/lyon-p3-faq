@@ -30,15 +30,17 @@ exports.checkUser = [
 
 
 exports.checkupdatePassword = [
-  body("password").exists().notEmpty().isLength({ min: 8, max: 100 }),
-  body("mail").isEmail().normalizeEmail(),
+  body("password").exists().notEmpty().isLength({ min: 8, max: 100 }).withMessage("Password must be at least 5 chars long"),
+  body("mail").isEmail().withMessage("Email format is not valid")
+ ,
 
  
   (req, res, next) => {
     const errors = validationResult(req);
 
     if (!errors.isEmpty()) {
-      return res.status(400).send({ errors: errors.array() });
+      console.log("errors :",errors)
+      return res.status(400).send( errors);
     } else next();
   },
 ];
