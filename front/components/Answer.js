@@ -16,7 +16,7 @@ export default function Answer(props) {
   const notify = (msg) => toast(msg);
   const handleSubmit = (e) => {
     e.preventDefault();
-    fetch("http://localhost:3000/front/vote", {
+    fetch(process.env.API_URL+"/vote", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

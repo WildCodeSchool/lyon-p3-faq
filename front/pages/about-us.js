@@ -158,6 +158,6 @@ export default function Aboutus({ data }) {
 }
 
 export async function getServerSideProps() {
-  const data = await Fetch.fetchData("http://localhost:3000/front");
+  const data = await Fetch.fetchData(process.env.API_URL);
   return { props: { data } };
 }

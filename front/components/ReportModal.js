@@ -16,7 +16,7 @@ export default function Modal({ question, isShowing, hide }) {
   const notify = (msg) => toast(msg);
   const handleSubmit = (e) => {
     e.preventDefault();
-    fetch("http://localhost:3000/front/report", {
+    fetch(process.env.API_URL+"/report", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

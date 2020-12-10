@@ -12,7 +12,7 @@ export default function Modal({ isShowing, hide }) {
   const notify = (msg) => toast(msg);
   const handleSubmit = (e) => {
     e.preventDefault();
-    fetch("http://localhost:3000/front", {
+    fetch(process.env.API_URL, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
