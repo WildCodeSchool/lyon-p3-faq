@@ -6,12 +6,56 @@
   margin-bottom: 20px;
 }
 
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .texth2 {
   font-weight: bold;
   font-size: 1.5em ;
   margin-top: 20px;
   text-align: center;
  }
+
+ .searchbar {
+   display: flex;
+   flex-direction: row;
+   margin-top: 10px;
+   width: 80vw;
+   height: 5vh;
+   max-width: 1080px;
+   background-color: rgb(255, 255, 255);
+   border-style: solid;
+   border-width: 1px;
+   border-color: rgb(223, 223, 223);
+   border-radius: 10px;
+   align-items: center;
+   padding-left: 10px;
+   padding-right: 10px;
+ }
+
+.innersearchleft {
+  font-size: 1.2em;
+  width: 7%;
+  display: flex;
+  justify-content: center;
+}
+
+.innersearchmid {
+  padding-left: 10px;
+  width: 86%;
+}
+
+.innersearchright {
+  font-size: 1.2em;
+  display: flex;
+  justify-content: center;
+  width: 7%;
+}
+
+
 
 .wrapper {
   max-width: 1080px;
