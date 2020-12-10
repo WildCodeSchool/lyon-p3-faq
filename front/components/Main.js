@@ -19,7 +19,7 @@ export default function Main(props) {
             <FaIcons.FaSearch/>
             </div>
             <div className={styles.innersearchmid}>
-            <span>test</span>
+            <input type="text" placeholder="recherche" className={styles.searchinput}/>
             </div>
             <div className={styles.innersearchright}>
               <FaIcons.FaTimes/>

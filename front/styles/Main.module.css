@@ -47,6 +47,12 @@
   padding-left: 10px;
   width: 86%;
 }
+.searchinput {
+  border : none;
+  font-size: 0.9em;
+  font-weight: bold;
+  color : rgb(126, 126, 126)
+}
 
 .innersearchright {
   font-size: 1.2em;
