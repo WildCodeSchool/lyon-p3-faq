@@ -10,7 +10,7 @@ import {
   CCol,
   CRow
 } from '@coreui/react'
-import routes from '../../../routes'
+import routes from '../../../routes/routes'
 
 const Breadcrumbs = () => {
   return (
