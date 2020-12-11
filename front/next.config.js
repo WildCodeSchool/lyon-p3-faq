@@ -1,6 +1,6 @@
 module.exports = {
     env: {
-      API_URL: /* (╯°□°)╯︵ ┻━┻*/  
+      API_URL: /* (╯°v°)╯︵ ┻━┻ */
     },
   }
   

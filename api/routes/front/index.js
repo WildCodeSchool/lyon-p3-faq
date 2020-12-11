@@ -1,7 +1,6 @@
 const express = require("express");
 const router = express.Router();
-const db = require("../../datasource/mysql");
-const QuestionController = require("./controller");
+const QuestionController = require("../../controllers/front.controller");
 const rateLimit = require("express-rate-limit");
 
 const limit = rateLimit({

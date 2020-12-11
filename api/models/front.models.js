@@ -1,4 +1,4 @@
-const db = require("../../datasource/mysql");
+const db = require("../datasource/sql");
 
 class Question {
   static async getQuestions(id) {

@@ -32,5 +32,6 @@ export async function getServerSideProps({ params }) {
   const author = await Fetch.fetchData(
     process.env.API_URL+`/?id=${params.pid.split('-')[1]}`
   );
+  console.log(process.env.API_URL+`/?id=${params.pid.split('-')[1]}`)
   return { props: { data, author } };
 }

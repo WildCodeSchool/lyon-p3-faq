@@ -1,5 +1,5 @@
-const Question = require("./models");
-const logger = require("morgan");
+const Question = require("../models/front.models");
+const logger = require("../library/logger");
 
 class QuestionController {
   static async getAll(req, res) {
@@ -8,6 +8,8 @@ class QuestionController {
       res.send(listQuestions);
     } catch (err) {
       res.sendStatus(500);
+      console.log(err)
+      logger.error(err);
     }
   }
 
@@ -18,6 +20,7 @@ class QuestionController {
       );
       res.send(listQuestionsAnswered);
     } catch (err) {
+      logger.error(err);
       res.sendStatus(500);
     }
   }
@@ -60,7 +63,7 @@ class QuestionController {
       }
     } catch (err) {
       res.sendStatus(500);
-      console.log(err);
+      logger.error(err);
     }
   }
 
@@ -86,7 +89,7 @@ class QuestionController {
       }
     } catch (err) {
       res.sendStatus(500);
-      console.log(err);
+      logger.error(err);
     }
   }
 
@@ -104,7 +107,7 @@ class QuestionController {
       }
     } catch (err) {
       res.sendStatus(500);
-      console.log(err);
+      logger.error(err);
     }
   }
 }
