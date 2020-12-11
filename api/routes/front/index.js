@@ -1,6 +1,6 @@
 const express = require("express");
 const router = express.Router();
-const QuestionController = require("../../controllers/front.controller");
+const QuestionController = require("../../controllers/question.controller");
 const rateLimit = require("express-rate-limit");
 
 const limit = rateLimit({

@@ -1,4 +1,5 @@
-const Question = require("../models/front.models");
+const Question = require("../models/question.model");
+const User = require("../models/user.model");
 const logger = require("../library/logger");
 
 class QuestionController {
@@ -42,13 +43,8 @@ class QuestionController {
           req.body.form.contenu.length <= 300 &&
           req.body.form.pseudo.length <= 16
         ) {
-          const postedQuestion = await Question.postQuestion(
-            req.body.form.titre,
-            req.body.form.contenu,
-            req.body.form.pseudo,
-            req.body.form.mail,
-            IP
-          );
+          let user = await User.create({});
+          let question = await Question.create({ created_by: user.insertedId});
           res.sendStatus(201);
         } else if (
           req.body.form.titre.length > 100 ||
