@@ -1,4 +1,5 @@
-import React, { lazy } from 'react'
+import React, { lazy, useEffect, useContext, useState } from 'react'
+import { storeContext} from "../../context";
 import {
   CBadge,
   CButton,
@@ -16,10 +17,67 @@ import CIcon from '@coreui/icons-react'
 
 import MainChartExample from '../charts/MainChartExample.js'
 
+const axios = require("axios");
 const WidgetsDropdown = lazy(() => import('../widgets/WidgetsDropdown.js'))
 const WidgetsBrand = lazy(() => import('../widgets/WidgetsBrand.js'))
 
 const Dashboard = () => {
+
+  //Context
+const [currentUser, setCurrentUser] = useContext(storeContext);
+const [nbUsers,setNbUsers] = useState();
+const [usersData,setUsersData] = useState();
+const [postsData,setPostsData] = useState();
+const [nbPosts,setNbPosts] = useState();
+
+useEffect(
+  (e) => {
+   
+    axios
+      .get(`${process.env.REACT_APP_API_HOST}/back/users?withRoles=true`, {
+
+        headers : {authentication : currentUser.token}
+      })
+      .then(function (response) {
+        // handle success
+
+        setNbUsers(response.data.length);
+        setUsersData(response.data);
+
+     
+      })
+
+    
+      .catch(function (error) {
+        // handle error
+        console.log(error);
+      });
+
+
+      axios
+      .get(`${process.env.REACT_APP_API_HOST}/back/posts`, {
+
+        headers : {authentication : currentUser.token}
+      })
+      .then(function (response) {
+        // handle success
+
+        setNbPosts(response.data.length);
+        setPostsData(response.data);
+
+     
+      })
+
+    
+      .catch(function (error) {
+        // handle error
+        console.log(error);
+      });
+  },
+  [nbUsers]
+);
+ 
+
   return (
     <>
       <WidgetsDropdown />
@@ -107,13 +165,13 @@ const Dashboard = () => {
         </CCardFooter>
       </CCard>
 
-      <WidgetsBrand withCharts/>
+      
 
       <CRow>
         <CCol>
           <CCard>
             <CCardHeader>
-              Traffic {' & '} Sales
+              Statistiques
             </CCardHeader>
             <CCardBody>
               <CRow>
@@ -122,16 +180,16 @@ const Dashboard = () => {
                   <CRow>
                     <CCol sm="6">
                       <CCallout color="info">
-                        <small className="text-muted">New Clients</small>
+                        <small className="text-muted">Nombres utilisateurs</small>
                         <br />
-                        <strong className="h4">9,123</strong>
+                        <strong className="h4">{nbUsers}</strong>
                       </CCallout>
                     </CCol>
                     <CCol sm="6">
                       <CCallout color="danger">
-                        <small className="text-muted">Recurring Clients</small>
+                        <small className="text-muted">Nombre de posts</small>
                         <br />
-                        <strong className="h4">22,643</strong>
+                        <strong className="h4">{nbPosts}</strong>
                       </CCallout>
                     </CCol>
                   </CRow>

@@ -1,83 +1,53 @@
 const db = require("../datasource/mysql");
+const DB = require("../library/mysql.js");
+const table = "user";
+const fields = " name,mail,pass,ip_address,role_id,id";
 
-class UserModel {
-  static getAll() {
-    return new Promise((resolve, reject) => {
-      const query = "SELECT name,mail,pass,ip_address,role_id FROM user";
-      db.query(query, (err, result) => {
-        if (err) {
-          reject(err);
-        } else {
-          resolve(result);
-        }
-      });
-    });
+class User extends DB {
+  constructor(...args) {
+    super(...args);
   }
 
-  static one(id, method, fields) {
-    return new Promise((resolve, reject) => {
-      if (method === "DELETE") {
-        const queryField = "DELETE  FROM user WHERE id= ?";
-        db.query(queryField, id, (err, result) => {
-          if (err) {
-            reject(err);
-          } else {
-            resolve(result);
-          }
-        });
-      }
+  // Customized methods
+  async matchUser(field, cond) {
+    
+    let resultQuery = await this.query(
+      `SELECT COUNT(*) as count FROM user where ${field}= '${cond}' `
+    );
 
-      if (method === "GET") {
-        const queryField =
-          "SELECT name,mail,pass,ip_address,role_id FROM user WHERE id=?";
-        db.query(queryField, id, (err, result) => {
-          if (err) {
-            reject(err);
-          } else {
-            resolve(result);
-          }
-        });
-      }
-
-      if (method === "PUT") {
-        const queryField = "UPDATE user SET ? WHERE id= ?";
-        db.query(queryField, [fields, id], (err, result) => {
-          if (err) {
-            reject(err);
-          } else {
-            resolve(result);
-          }
-        });
-      }
-    });
+    return resultQuery;
   }
 
-  static match(id) {
-    return new Promise((resolve, reject) => {
-      const query = " SELECT COUNT(id) as count FROM user WHERE id= ?";
-      db.query(query, id, (err, result) => {
-        if (err) {
-          reject(err);
-        } else {
-          resolve(result);
-        }
-      });
-    });
+  async updatePwd(mail, fields) {
+    let query = ` UPDATE ${this.table} SET ? WHERE mail= ? `;
+    return this.query(query, fields, mail);
   }
 
-  static addOne(fields) {
-    return new Promise((resolve, reject) => {
-      const query =
-        "INSERT INTO user (name,mail,role_id,pass,ip_address) VALUES ? ";
-      db.query(query, [fields], (err, result) => {
-        if (err) {
-          reject(err);
-        } else {
-          resolve(result);
-        }
-      });
-    });
+  async getInfosUser(login, password) {
+    const WHERE_CLAUSE = `WHERE mail='${login}' AND pass='${password}'`;
+    let resultQuery = await this.query(
+      `SELECT ${this.fields}  FROM ${this.table} ${WHERE_CLAUSE}`
+    );
+
+    return resultQuery;
+  }
+
+  async checkLogin(login, password) {
+    const fields = " count(id) as count   ";
+    const WHERE_CLAUSE = `WHERE mail='${login}' AND pass='${password}'`;
+    let resultQuery = await this.query(
+      `SELECT COUNT(id) as count FROM ${this.table} ${WHERE_CLAUSE}`
+    );
+    return resultQuery;
+  }
+
+  async getUserWithRoles() {
+   
+    let resultQuery = await this.query(
+      "SELECT name,mail,pass,ip_address,role_id,user.id, role.nom as role FROM user JOIN role ON user.role_id=role.id"
+    );
+    return resultQuery;
   }
 }
 
-module.exports = UserModel;
+module.exports = new User(db, table, fields);

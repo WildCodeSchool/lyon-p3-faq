@@ -5,10 +5,11 @@ class QuestionController {
   static async getAll(req, res) {
     try {
       const listQuestions = await Question.getQuestions();
+      
       res.send(listQuestions);
     } catch (err) {
       res.sendStatus(500);
-      console.log(err);
+     
     }
   }
 
@@ -20,7 +21,7 @@ class QuestionController {
       res.send(listQuestionsAnswered);
     } catch (err) {
       res.sendStatus(500);
-      console.log(err);
+    
     }
   }
 
