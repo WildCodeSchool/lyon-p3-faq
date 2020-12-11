@@ -5,9 +5,8 @@ import {useState, useEffect} from "react";
 
 export default function SearchBar() {
 
-    const [search, setSearch] = useState("")
-
-
+    const [search, setSearch] = useState("");
+    
     return (
         <div className={styles.searchbar}>
             <div className={styles.innersearchleft}>
@@ -15,8 +14,6 @@ export default function SearchBar() {
             </div>
             <div className={styles.innersearchmid}>  
             <input 
-            value = {search}
-            onChange = {event => setSearch(event.target.value)}
             type="text" 
             placeholder="recherche" 
             className={styles.searchinput}
