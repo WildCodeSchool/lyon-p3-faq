@@ -36,9 +36,9 @@ setForm({...form, id:question})
     ? ReactDOM.createPortal(
         <>
           <div className={styles.overlay} onClick={hide}></div>
-          <div className={styles.modalPost}>
-            <h3>Signaler</h3>
-            <button type="button" onClick={hide}>
+          <div className={styles.modalPostR}>
+            <h3>Signaler cette réponse</h3>
+            <button type="button" onClick={hide} className={styles.quitbuttonr}>
               <span>&times;</span>
             </button>
             <form onSubmit={handleSubmit}>
@@ -57,7 +57,9 @@ setForm({...form, id:question})
                   </option>
                 </select>
               </div>
-              <input id="submit" type="submit" value="Envoyer" />
+              <div className={styles.wrapperbuttonr}>
+                <input id="submit" type="submit" value="Envoyer" className={styles.reportbutton} />
+              </div>
             </form>
           </div>
         </>,
