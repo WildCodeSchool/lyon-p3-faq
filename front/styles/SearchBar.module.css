@@ -30,7 +30,8 @@
    border : none;
    font-size: 0.9em;
    font-weight: bold;
-   color : rgb(126, 126, 126)
+   color : rgb(126, 126, 126);
+   width : 100%;
  }
  
  .innersearchright {
