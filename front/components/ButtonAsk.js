@@ -107,7 +107,7 @@ export default function Modal({ isShowing, hide }) {
                 </div>
                 <form onSubmit={handleSubmit}>
                   <div>
-                    <label className={styles.labelform} for="pseudo">Ton Pseudo</label>
+                    <label className={styles.labelform}>Ton Pseudo</label>
                     <input
                       placeholder="John Doe"
                       type="text"
@@ -119,7 +119,7 @@ export default function Modal({ isShowing, hide }) {
                     />
                   </div>
                   <div>
-                    <label className={styles.labelform} for="title"> Titre de ta question</label>
+                    <label className={styles.labelform}> Titre de ta question</label>
                     <input
                       placeholder="Votre question"
                       type="text"
@@ -131,7 +131,7 @@ export default function Modal({ isShowing, hide }) {
                     />
                   </div>
                   <div>
-                    <label className={styles.labelform} for="title"> Question complète</label>
+                    <label className={styles.labelform}> Question complète</label>
                     <textarea 
                       name="contenu"
                       type="text"
