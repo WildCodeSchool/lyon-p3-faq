@@ -8,7 +8,6 @@ class QuestionController {
       res.send(listQuestions);
     } catch (err) {
       res.sendStatus(500);
-      console.log(err)
       logger.error(err);
     }
   }
