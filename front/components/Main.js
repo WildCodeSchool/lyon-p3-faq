@@ -2,21 +2,29 @@ import React, { useEffect, useState } from "react";
 import styles from "../styles/Main.module.css";
 import Link from "next/link";
 import Error from "./Error";
-import SearchBar from "./SearchBar";
 
-export default function Main(props) {
+
+export default function Main(props, search) {
+
   const [questions, setQuestions] = useState({});
-
-
+ 
   useEffect(() => {
     setQuestions(props.questions.users);
   }, []);
+
+  // const filteredQuestions = Object.entries(questions).filter((titre) =>
+  //   Object.entries(questions)[0][1].toLowerCase().titre.includes(search.toLowerCase())
+  // );
+
+  const filteredQuestions = Object.entries(questions).filter(function(titre) {
+    return titre.toLowerCase().includes(search);
+  });
+
   return (
     <>
       <section className={styles.section}>
         <main className={styles.main}>
           <h2 className={styles.texth2}>Questions récentes</h2>
-          <SearchBar/>
           <div className={styles.wrapper}>
             {props.questions.error && <Error />}
             {!props.questions.error && props.questions.users && (
@@ -47,6 +55,8 @@ export default function Main(props) {
           </div>
         </main>
       </section>
+      {console.log(Object.entries(questions))}
+      {console.log(Object.entries(questions)[0][1].titre)}
     </>
   );
 }
