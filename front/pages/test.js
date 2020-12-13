@@ -1,7 +1,5 @@
 
 import SearchBar from "../components/SearchBar";
-import { useState, useEffect } from "react";
-
 
 
 export default function Test () {
@@ -10,6 +8,7 @@ export default function Test () {
         <>
     
         <SearchBar/>
+
         </>
     )
 }

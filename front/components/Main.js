@@ -7,15 +7,22 @@ import Error from "./Error";
 export default function Main(props, search) {
 
   const [questions, setQuestions] = useState({});
- 
+  
   useEffect(() => {
     setQuestions(props.questions.users);
   }, []);
 
-  // const filteredQuestions = questions.filter((titre) =>
-  //   questions[0][1].toLowerCase().titre.includes(search.toLowerCase())
-  // );
 
+//   console.log(questions.map(i=> [i.titre, i.id]));
+
+
+//   console.log(myTable.filter(i=>i[0].includes("CA")));
+
+
+// let myTable = questions.map(i=> [i.titre, i.id]);
+
+// let myTableB = myTable.filter(i=>i[0].includes("CA"));
+//  console.log(myTableB);
  
   return (
     <>
@@ -52,8 +59,6 @@ export default function Main(props, search) {
           </div>
         </main>
       </section>
-      {/* {console.log(questions[0].titre)} */}
-      {/* {console.log(Object.entries(questions)[0][1].titre)} */}
     </>
   );
 }
