@@ -1,6 +1,6 @@
 module.exports = {
     env: {
-      API_URL: /* (╯°v°)╯︵ ┻━┻ */
+      API_URL: "http://localhost:3002/front"
     },
   }
   

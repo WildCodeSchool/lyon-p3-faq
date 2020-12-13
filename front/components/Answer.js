@@ -16,7 +16,7 @@ export default function Answer(props) {
   const notify = (msg) => toast(msg);
   const handleSubmit = (e) => {
     e.preventDefault();
-    fetch(process.env.API_URL+"/vote", {
+    fetch(process.env.API_URL + "/vote", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -36,9 +36,9 @@ export default function Answer(props) {
   };
   useEffect(() => {
     props.questionAnswered.users != null
-      ? setQA(props.questionAnswered.users.res[0])
+      ? setQA(props.questionAnswered.users[0])
       : setQA(props.questionAnswered.users);
-    setVote({ ...vote, id: props.questionAnswered.users.res[0].question_id });
+    setVote({ ...vote, id: props.questionAnswered.users[0].question_id });
   }, []);
   return (
     <section className={styles.section}>
@@ -83,7 +83,7 @@ export default function Answer(props) {
                 Signaler
               </button>
               <ReportModal
-                question={props.questionAnswered.users.res[0].question_id}
+                question={props.questionAnswered.users[0].question_id}
                 isShowing={isShowing}
                 hide={toggle}
               />

@@ -1,23 +1,32 @@
 const Question = require("../models/question.model");
-const User = require("../models/user.model");
 const logger = require("../library/logger");
 
 class QuestionController {
   static async getAll(req, res) {
     try {
-      const listQuestions = await Question.getQuestions(req.query.id);
+      const listQuestions = await Question.get();
       res.send(listQuestions);
     } catch (err) {
       res.sendStatus(500);
       logger.error(err);
+      console.log(err);
+    }
+  }
+
+  static async getById(req, res) {
+    try {
+      const questionId = await Question.getId(parseInt(req.query.id));
+      res.send(questionId);
+    } catch (err) {
+      res.sendStatus(500);
+      logger.error(err);
+      console.log(err);
     }
   }
 
   static async getAllAnswered(req, res) {
     try {
-      const listQuestionsAnswered = await Question.getQuestionsAnswered(
-        req.query.id
-      );
+      const listQuestionsAnswered = await Question.getAnswered(req.query.id);
       res.send(listQuestionsAnswered);
     } catch (err) {
       logger.error(err);
@@ -43,8 +52,13 @@ class QuestionController {
           req.body.form.contenu.length <= 300 &&
           req.body.form.pseudo.length <= 16
         ) {
-          let user = await User.create({});
-          let question = await Question.create({ created_by: user.insertedId});
+          const postedQuestion = await Question.postQuestion(
+            req.body.form.titre,
+            req.body.form.contenu,
+            req.body.form.pseudo,
+            req.body.form.mail,
+            IP
+          );
           res.sendStatus(201);
         } else if (
           req.body.form.titre.length > 100 ||
@@ -58,50 +72,7 @@ class QuestionController {
       }
     } catch (err) {
       res.sendStatus(500);
-      logger.error(err);
-    }
-  }
-
-  static async report(req, res) {
-    const IP =
-      req.headers["x-forwarded-for"] ||
-      req.connection.remoteAddress ||
-      req.socket.remoteAddress;
-    try {
-      if (
-        IP === undefined ||
-        req.body.form.id === undefined ||
-        req.body.form.raison === undefined
-      ) {
-        res.sendStatus(400);
-      } else {
-        const reported = await Question.reportQuestion(
-          req.body.form.id,
-          IP,
-          req.body.form.raison
-        );
-        reported.isInsert === true ? res.sendStatus(201) : res.sendStatus(403);
-      }
-    } catch (err) {
-      res.sendStatus(500);
-      logger.error(err);
-    }
-  }
-
-  static async vote(req, res) {
-    const IP =
-      req.headers["x-forwarded-for"] ||
-      req.connection.remoteAddress ||
-      req.socket.remoteAddress;
-    try {
-      if (IP === undefined || req.body.vote.id === undefined) {
-        res.sendStatus(400);
-      } else {
-        const voted = await Question.upVote(req.body.vote.id, IP);
-        voted.isInsert === true ? res.sendStatus(201) : res.sendStatus(403);
-      }
-    } catch (err) {
-      res.sendStatus(500);
+      console.log(err)
       logger.error(err);
     }
   }

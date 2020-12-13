@@ -27,11 +27,10 @@ export default function Question({ data, author }) {
 
 export async function getServerSideProps({ params }) {
   const data = await Fetch.fetchData(
-    process.env.API_URL+`/answered/?id=${params.pid.split('-')[1]}`
+    process.env.API_URL + `/answered/?id=${params.pid.split("-")[1]}`
   );
   const author = await Fetch.fetchData(
-    process.env.API_URL+`/?id=${params.pid.split('-')[1]}`
+    process.env.API_URL + `/id/?id=${params.pid.split("-")[1]}`
   );
-  console.log(process.env.API_URL+`/?id=${params.pid.split('-')[1]}`)
   return { props: { data, author } };
 }
