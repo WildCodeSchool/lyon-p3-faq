@@ -8,7 +8,7 @@ export default function SearchBar({search, setSearch}) {
     }
 
     return (
-        <>
+        <div className={styles.mainwrap}>
         <div className={styles.searchbar}>
             <div className={styles.innersearchleft}>
             <FaIcons.FaSearch/>
@@ -26,7 +26,7 @@ export default function SearchBar({search, setSearch}) {
               <FaIcons.FaTimes/>
             </div>
         </div>
-        </>
+        </div>
     );
 };
 

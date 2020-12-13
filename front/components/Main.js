@@ -12,14 +12,11 @@ export default function Main(props, search) {
     setQuestions(props.questions.users);
   }, []);
 
-  // const filteredQuestions = Object.entries(questions).filter((titre) =>
-  //   Object.entries(questions)[0][1].toLowerCase().titre.includes(search.toLowerCase())
+  // const filteredQuestions = questions.filter((titre) =>
+  //   questions[0][1].toLowerCase().titre.includes(search.toLowerCase())
   // );
 
-  const filteredQuestions = Object.entries(questions).filter(function(titre) {
-    return titre.toLowerCase().includes(search);
-  });
-
+ 
   return (
     <>
       <section className={styles.section}>
@@ -55,8 +52,8 @@ export default function Main(props, search) {
           </div>
         </main>
       </section>
-      {console.log(Object.entries(questions))}
-      {console.log(Object.entries(questions)[0][1].titre)}
+      {/* {console.log(questions[0].titre)} */}
+      {/* {console.log(Object.entries(questions)[0][1].titre)} */}
     </>
   );
 }
