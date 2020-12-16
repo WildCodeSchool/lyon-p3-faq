@@ -125,7 +125,7 @@ export default function Modal({ isShowing, hide }) {
                     />
                   </div>
                   <div>
-                    <label className={styles.labelform} HtmlFor="pseudo">
+                    <label className={styles.labelform} htmlFor="pseudo">
                       Ton Pseudo
                     </label>
                     <input
@@ -140,7 +140,7 @@ export default function Modal({ isShowing, hide }) {
                     />
                   </div>
                   <div>
-                    <label className={styles.labelform} HtmlFor="title">
+                    <label className={styles.labelform} htmlFor="title">
                       Titre de ta question
                     </label>
                     <input
@@ -155,7 +155,7 @@ export default function Modal({ isShowing, hide }) {
                     />
                   </div>
                   <div>
-                    <label className={styles.labelform} HtmlFor="title">
+                    <label className={styles.labelform} htmlFor="title">
                       Question complète
                     </label>
                     <textarea
