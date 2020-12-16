@@ -55,7 +55,15 @@ background-color: white;
   padding-bottom: 5px;
   cursor: pointer;
   margin-right: 20px;
+  transition: all 0.55s ease;
 }
+
+.navbutton:hover {
+  background-color: #000;
+  color: #ffffff;
+  border-color: #fff;
+  border: 1px solid #fff;
+ }
 
 .navbar .menubar {
   position: absolute;

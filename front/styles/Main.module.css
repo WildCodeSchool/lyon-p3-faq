@@ -71,6 +71,13 @@
   font-size: 0.90em;
   white-space: nowrap;
   cursor: pointer;
+  transition: all 0.55s ease;
+}
+
+.RMbutton:hover {
+  background-color:rgb(22, 22, 22);
+  color: rgb(255, 245, 245);
+  
 }
 
 @media (max-width: 850px) {
