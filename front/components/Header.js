@@ -32,7 +32,7 @@ export default function Header(props) {
             ) : null}
           </>
             <Modal isShowing={isShowing} hide={toggle} />
-            <FaIcons.FaBars onClick={showSidebar} />
+            <FaIcons.FaBars onClick={showSidebar} className={styles.iconpointer}/>
           </div>
         </div>
 
@@ -43,14 +43,14 @@ export default function Header(props) {
         <ul className={styles["navmenuitems"]} onClick={showSidebar}>
 
             <li className={styles["navbartoggle"]}>
-                <FaIcons.FaRegTimesCircle/>
+                <FaIcons.FaRegTimesCircle className={styles.iconpointer}/>
             </li>
 
             {HeaderData.map((item, index) => {
               return (
                 <li key={index} className={styles["navtextA"]}>
                   
-                  <Link as={item.path} href={item.path}>
+                  <Link as={item.path} href={item.path} className={styles.iconpointer}>
                     <div>
                     {item.icon}
                     <span className={styles["myspan"]}>{item.title}</span>

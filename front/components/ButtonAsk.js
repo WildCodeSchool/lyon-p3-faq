@@ -98,7 +98,7 @@ export default function Modal({ isShowing, hide }) {
                 type="button"
                 onClick={hide}
               >
-                <span>&times;</span>
+                <span className={styles.crossbutton}>&times;</span>
               </button>
               <div className={styles.formwrap}>
                 <div className={styles.topwrappara}>

@@ -125,6 +125,7 @@
     display: flex;
     flex-direction: row;
     margin-left: 10px;
+    cursor: pointer;
 }
 
 .socialicons > li {
@@ -149,10 +150,6 @@
 }
 
 .formwrap {
-    border-radius: 15px;
-    border-style: solid;
-    border-width: 1px;
-    border-color: rgb(223, 223, 223);
     padding : 40px;
     height: 100%;
 }
@@ -226,7 +223,7 @@
 }
 
 .modalPost form div *:invalid {
-    border-bottom: 4px solid red;
+    border-bottom: 1px solid rgb(10, 59, 219);
 }
 
 .modalPost form div textarea {
@@ -376,9 +373,6 @@
     
     .formwrap {
         border-radius: 15px;
-        border-style: solid;
-        border-width: 1px;
-        border-color: rgb(223, 223, 223);
         padding : 10px;
         height: 100%;
     }
@@ -435,7 +429,7 @@
     }
 
     .modalPost form div *:invalid {
-        border-bottom: 2px solid rgb(255, 0, 0);
+        border-bottom: 1px solid rgb(10, 59, 219);
         border-radius: 0px;
     }
 

@@ -118,7 +118,7 @@
       border-radius:10px;
       background-color:black;
       color:white;
-      
+      cursor:pointer
     }
 
   @media (max-width: 768px) {
