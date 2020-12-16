@@ -5,10 +5,9 @@ import { useRouter } from "next/router";
 const Fetch = require("../utils/callAPI");
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-export default function Question({ data }) {
+export default function Question({ data, author }) {
   const router = useRouter();
   const { pid } = router.query;
-
   return (
     <>
       <Head>
@@ -20,7 +19,7 @@ export default function Question({ data }) {
         ></meta>
       </Head>
       <Header displayButton={true} errorHandler={data} />
-      <Answer questionAnswered={data} />
+      <Answer questionAnswered={data} asker={author} />
       <ToastContainer />
     </>
   );
@@ -28,7 +27,10 @@ export default function Question({ data }) {
 
 export async function getServerSideProps({ params }) {
   const data = await Fetch.fetchData(
-    `http://localhost:3000/front/answered/?id=${params.pid.substring(9)}`
+    process.env.API_URL + `/answered/?id=${params.pid.split("-")[1]}`
   );
-  return { props: { data } };
+  const author = await Fetch.fetchData(
+    process.env.API_URL + `/id/?id=${params.pid.split("-")[1]}`
+  );
+  return { props: { data, author } };
 }

@@ -7,9 +7,7 @@ class DB {
   }
 
   async query(query, ...params) {
-    
     return new Promise((resolve, reject) => {
-     
       db.query(query, params, (err, result) => {
         if (err) {
           reject(err);
@@ -20,20 +18,9 @@ class DB {
     });
   }
 
-  async queryt(...args) {
-    return new Promise((resolve, reject) => {
-      this.db.query(...args, (err, res) => {
-        if (err) reject(err);
-        else resolve(res);
-      });
-    });
-  }
-
   async read(WHERE_CLAUSE, id) {
-   
     if (WHERE_CLAUSE !== undefined || id !== undefined) {
       const query = `SELECT ${this.fields} FROM ${this.table} ${WHERE_CLAUSE} ${id}`;
-     
       return this.query(query);
     } else {
       const query = `SELECT ${this.fields} FROM ${this.table} `;
