@@ -118,6 +118,7 @@ background-color: white;
   border-style: solid;
   border-color : white;
   transition: color 0.55s ease, border-color 0.55s ease;
+  cursor: pointer;
  }
 
 .navmenuitems {
@@ -133,6 +134,7 @@ background-color: white;
   display : flex;
   justify-content: flex-end;
   align-items: center;
+  cursor: pointer;
 }
 
 .myspan {
@@ -144,6 +146,9 @@ background-color: white;
   white-space: nowrap;
 }
 
+.iconpointer {
+  cursor: pointer;
+}
 
 @media screen and (max-width: 768px) {
   .navbutton {
