@@ -13,6 +13,7 @@ export default function Answer(props) {
   const [vote, setVote] = useState({
     id: null,
   });
+
   const notify = (msg) => toast(msg);
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -34,19 +35,21 @@ export default function Answer(props) {
           : notify("Problème")
       );
   };
+
+  const users = props.questionAnswered;
   useEffect(() => {
-    props.questionAnswered.users != null && props.questionAnswered.users.length !==0
-      ? setQA(props.questionAnswered.users[0])
-      : setQA(props.questionAnswered.users);
-    if (props.questionAnswered.users.length > 0) {
-      setVote({ ...vote, id: props.questionAnswered.users[0].question_id });
+    users != null && users.length !==0
+      ? setQA(users[0])
+      : setQA(users);
+    if (users.length > 0) {
+      setVote({ ...vote, id: users[0].question_id });
     }
   }, []);
   return (
     <section className={styles.section}>
       <div className={styles.wrapper}>
         {props.questionAnswered.error && <Error />}
-        {!props.questionAnswered.error && props.questionAnswered.users && (
+        {!props.questionAnswered.error && users && (
           <div className={styles.box}>
             <Link as="/" href="/">
               <button className={styles.buttonQuestion}>
@@ -68,7 +71,6 @@ export default function Answer(props) {
             </div>
             <div className={styles.answer}>
               {QA.reponse}
-              <p></p>
               <span className={styles.author}>
                 <p>{QA.replyer}</p>
               </span>
@@ -85,7 +87,7 @@ export default function Answer(props) {
                 Signaler
               </button>
               <ReportModal
-                question={props.questionAnswered.users[0].question_id}
+                question={users[0].question_id}
                 isShowing={isShowing}
                 hide={toggle}
               />
