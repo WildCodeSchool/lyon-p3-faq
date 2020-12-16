@@ -38,6 +38,7 @@ export default function Answer(props) {
     props.questionAnswered.users != null && props.questionAnswered.users.length !==0
       ? setQA(props.questionAnswered.users[0])
       : setQA(props.questionAnswered.users);
+
     setVote({ ...vote, id: props.questionAnswered.users[0].question_id });
   }, []);
   return (
@@ -61,7 +62,7 @@ export default function Answer(props) {
               <h2 className={styles.h2}>{QA.titre}</h2>
               <p className={styles.p}>{QA.contenu}</p>
               <span>
-                <p className={styles.author}>{props.asker.users[0].asker}</p>
+                <p className={styles.author}>{props.asker.users !== null ? props.asker.users[0].asker:null}</p>
               </span>
             </div>
             <div className={styles.answer}>

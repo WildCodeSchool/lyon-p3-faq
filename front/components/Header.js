@@ -18,7 +18,7 @@ export default function Header(props) {
 
     <header>
       <div className={styles.navbar}>
-        
+
         <div className={styles.navcontainer}>
           <div className={styles.leftwrapnav}>
             <h1 className={styles.bigtittle}>
@@ -39,7 +39,7 @@ export default function Header(props) {
       </div>
 
       <nav className={sidebar ? styles["navmenuactive"] : styles["navmenu"] }>
-      
+
         <ul className={styles["navmenuitems"]} onClick={showSidebar}>
 
             <li className={styles["navbartoggle"]}>
@@ -48,19 +48,19 @@ export default function Header(props) {
 
             {HeaderData.map((item, index) => {
               return (
-                <li key={index} className={styles["navtextA"]}>
-                  
+                <li key={index} className={'noselect ' + styles["navtextA"]}>
+
                   <Link as={item.path} href={item.path} className={styles.iconpointer}>
                     <div>
-                    {item.icon}
-                    <span className={styles["myspan"]}>{item.title}</span>
+                        {item.icon}
+                        <span className={styles["myspan"]}>{item.title}</span>
                     </div>
                   </Link>
                 </li>
               );
             })}
 
-        </ul>        
+        </ul>
       </nav>
     </header>
   );
