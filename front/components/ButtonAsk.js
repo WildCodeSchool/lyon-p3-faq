@@ -110,6 +110,9 @@ export default function Modal({ isShowing, hide }) {
                 </div>
                 <form onSubmit={handleSubmit}>
                   <div>
+                    <label className={styles.labelform} htmlFor="email">
+                      Ton Email
+                    </label>
                     <input
                       placeholder="Votre mail"
                       type="email"
