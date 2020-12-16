@@ -51,6 +51,7 @@ export default function Answer(props) {
             <Link as="/" href="/">
               <button className={styles.buttonQuestion}>
                 <img
+                  className={styles.arrowcolor}
                   src="/leftarrowwhite.png"
                   height="25px"
                   width="25px"
