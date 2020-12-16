@@ -10,11 +10,12 @@ export default function Modal({ isShowing, hide }) {
     pseudo: null,
     titre: null,
     contenu: null,
+    mail: null,
   });
   const notify = (msg) => toast(msg);
   const handleSubmit = (e) => {
     e.preventDefault();
-    fetch("http://localhost:3000/front", {
+    fetch(process.env.API_URL, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -48,14 +49,16 @@ export default function Modal({ isShowing, hide }) {
                   Viens retrouver d'autres freelances / indépendant.e.s pendant
                   des rencontres mensuelles ou lors de workshops thématiques,
                   afin d'échanger autour de nos métiers et répondre ensemble aux
-                  questions que nous nous posons !
-                  Pour qui ? Les freelances du grand Lyon ! Tous les métiers
-                  sont acceptés : du web, de l'image, créatifs, conseil, etc.
-                  Alors rejoins-nous vite !
+                  questions que nous nous posons ! Pour qui ? Les freelances du
+                  grand Lyon ! Tous les métiers sont acceptés : du web, de
+                  l'image, créatifs, conseil, etc. Alors rejoins-nous vite !
                 </p>
               </div>
               <div className={styles.botwrap}>
-                <span className={styles.sociallist}> Retrouvez-nous sur : </span>
+                <span className={styles.sociallist}>
+                  {" "}
+                  Retrouvez-nous sur :{" "}
+                </span>
                 <ul className={styles.socialicons}>
                   <li>
                     <Link href="https://facebook.com">
@@ -107,7 +110,20 @@ export default function Modal({ isShowing, hide }) {
                 </div>
                 <form onSubmit={handleSubmit}>
                   <div>
-                    <label className={styles.labelform} for="pseudo">Ton Pseudo</label>
+                    <input
+                      placeholder="Votre mail"
+                      type="email"
+                      name="email"
+                      required
+                      onChange={(e) =>
+                        setForm({ ...form, mail: e.target.value })
+                      }
+                    />
+                  </div>
+                  <div>
+                    <label className={styles.labelform} for="pseudo">
+                      Ton Pseudo
+                    </label>
                     <input
                       placeholder="John Doe"
                       type="text"
@@ -119,7 +135,10 @@ export default function Modal({ isShowing, hide }) {
                     />
                   </div>
                   <div>
-                    <label className={styles.labelform} for="title"> Titre de ta question</label>
+                    <label className={styles.labelform} for="title">
+                      {" "}
+                      Titre de ta question
+                    </label>
                     <input
                       placeholder="Votre question"
                       type="text"
@@ -131,8 +150,11 @@ export default function Modal({ isShowing, hide }) {
                     />
                   </div>
                   <div>
-                    <label className={styles.labelform} for="title"> Question complète</label>
-                    <textarea 
+                    <label className={styles.labelform} for="title">
+                      {" "}
+                      Question complète
+                    </label>
+                    <textarea
                       name="contenu"
                       type="text"
                       placeholder="Explicitez ta question"
@@ -143,8 +165,12 @@ export default function Modal({ isShowing, hide }) {
                     ></textarea>
                   </div>
 
-                  <input className={styles.buttonsubmit} id="submit" type="submit" value="Envoyer" />
-          
+                  <input
+                    className={styles.buttonsubmit}
+                    id="submit"
+                    type="submit"
+                    value="Envoyer"
+                  />
                 </form>
               </div>
             </div>

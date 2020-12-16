@@ -26,15 +26,22 @@
   }
 
   .buttonQuestion {
-    display: inline-block;
+    display: flex;
     background-color: black;
     color: white;
     text-align: center;
-    width: 50px;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
     height: 45px;
     border-radius: 10px;
-    padding: 5px;
     cursor: pointer;
+    margin-bottom: 10px;
+  }
+
+  .buttonQuestion > span {
+    padding-left: 10px;
+    font-size: 0.75em;
   }
 
   .h2 {
@@ -81,15 +88,37 @@
     padding-top: 20px;
   }
 
+.thumbwrapper {
+  
+  position:absolute;
+    bottom:0;
+    left:0;
+    margin: 20px 0px 10px auto;
+    padding: 10px 10px;
+}
+
+.thumb{
+    padding-right: 10px;
+    font-size: 0.80em;
+    font-weight: bold;
+    margin-left: 20px;
+  }
+
+.thumbup {
+  font-size: 25px;
+  cursor:pointer;
+}
+
     .report{
       position:absolute;
       bottom:0;
       right:0;
-      margin: auto 15px 10px auto;
-      border-radius:5px;
+      margin: auto 10px 10px auto;
+      padding: 10px 10px;
+      border-radius:10px;
       background-color:black;
       color:white;
-      padding:5px;
+      
     }
 
   @media (max-width: 768px) {
@@ -97,6 +126,57 @@
     .section h2 {
       font-weight: bold;
       font-size: 1.3em ;
-      margin-top: 20px;
+      margin-top: 10px;
     }
+  }
+
+  @media (max-width: 470px) {
+  
+    .thumbwrapper {
+  
+      position:absolute;
+        bottom:40px;
+        left:0;
+        padding: 10px 10px;
+        white-space: nowrap;
+        margin-bottom: 30px;
+    }
+    
+    .thumb{
+        padding-right: 10px;
+        font-size: 0.80em;
+        font-weight: bold;
+        margin-left: 20px;
+      }
+    
+    .thumbup {
+      font-size: 25px;
+    }
+
+  }
+
+
+  @media (max-width: 350px) {
+  
+    .thumbwrapper {
+  
+      position:absolute;
+        bottom:40px;
+        left:0;
+        padding: 10px 10px;
+        white-space: nowrap;
+        margin-bottom: 20px;
+    }
+    
+    .thumb{
+        padding-right: 10px;
+        font-size: 0.80em;
+        font-weight: bold;
+        margin-left: 5px;
+      }
+    
+    .thumbup {
+      font-size: 25px;
+    }
+
   }
