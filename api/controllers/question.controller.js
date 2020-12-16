@@ -53,11 +53,11 @@ class QuestionController {
           req.body.form.pseudo.length <= 16
         ) {
           const postedQuestion = await Question.postQuestion(
-            req.body.form.titre,
-            req.body.form.contenu,
             req.body.form.pseudo,
             req.body.form.mail,
-            IP
+            IP,
+            req.body.form.titre,
+            req.body.form.contenu
           );
           res.sendStatus(201);
         } else if (
@@ -72,7 +72,7 @@ class QuestionController {
       }
     } catch (err) {
       res.sendStatus(500);
-      console.log(err)
+      console.log(err);
       logger.error(err);
     }
   }

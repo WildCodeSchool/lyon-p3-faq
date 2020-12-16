@@ -10,7 +10,7 @@ class Question extends DB {
 
   get() {
     const query =
-      "SELECT question.titre, question.contenu, question.id, user.name AS replyer, COUNT(upvote.id_reponse) AS voteup FROM question JOIN reponse ON question.id = reponse.question_id LEFT JOIN upvote ON reponse.question_id=upvote.id_reponse JOIN user ON user.id = reponse.created_by WHERE question.disabled_at IS NULL GROUP BY question.titre, question.contenu, question.id, reponse.created_by";
+      "SELECT question.titre, question.contenu, question.id, user.name AS replyer, COUNT(upvote.id_reponse) AS voteup FROM question JOIN reponse ON question.id = reponse.question_id LEFT JOIN upvote ON reponse.question_id=upvote.id_reponse JOIN user ON user.id = reponse.created_by WHERE question.disabled_at IS NULL AND publicated_at IS NOT NULL GROUP BY question.titre, question.contenu, question.id, reponse.created_by";
     return this.query(query);
   }
 
