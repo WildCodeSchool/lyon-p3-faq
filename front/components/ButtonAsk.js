@@ -114,6 +114,7 @@ export default function Modal({ isShowing, hide }) {
                       placeholder="Votre mail"
                       type="email"
                       name="email"
+                      id="email"
                       required
                       onChange={(e) =>
                         setForm({ ...form, mail: e.target.value })
@@ -121,13 +122,14 @@ export default function Modal({ isShowing, hide }) {
                     />
                   </div>
                   <div>
-                    <label className={styles.labelform} for="pseudo">
+                    <label className={styles.labelform} HtmlFor="pseudo">
                       Ton Pseudo
                     </label>
                     <input
                       placeholder="John Doe"
                       type="text"
                       name="pseudo"
+                      id="pseudo"
                       required
                       onChange={(e) =>
                         setForm({ ...form, pseudo: e.target.value })
@@ -135,14 +137,14 @@ export default function Modal({ isShowing, hide }) {
                     />
                   </div>
                   <div>
-                    <label className={styles.labelform} for="title">
-                      {" "}
+                    <label className={styles.labelform} HtmlFor="title">
                       Titre de ta question
                     </label>
                     <input
                       placeholder="Votre question"
                       type="text"
                       name="title"
+                      id="title"
                       required
                       onChange={(e) =>
                         setForm({ ...form, titre: e.target.value })
@@ -150,14 +152,15 @@ export default function Modal({ isShowing, hide }) {
                     />
                   </div>
                   <div>
-                    <label className={styles.labelform} for="title">
-                      {" "}
+                    <label className={styles.labelform} HtmlFor="title">
                       Question complète
                     </label>
                     <textarea
                       name="contenu"
                       type="text"
-                      placeholder="Explicitez ta question"
+                      placeholder="Explicitez ta question (max 300)"
+                      id="contenu"
+
                       required
                       onChange={(e) =>
                         setForm({ ...form, contenu: e.target.value })

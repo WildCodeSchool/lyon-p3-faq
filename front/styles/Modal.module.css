@@ -23,6 +23,61 @@
     top: 0;
 }
 
+.modalPostR {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    width: 50vw;
+    height: 50vh;
+    z-index: 3;
+    margin-top: 5vh;
+    border-radius: 15px;
+    position: absolute;
+    left: 25%;
+    transform: translate(-50%);
+    top: 0;
+    transform: translateY(50%);
+}
+
+.modalPostR > h3 {
+    font-size: 1.2em;
+    color : rgb(53, 53, 53);
+    margin-bottom: 10px;
+}
+
+.quitbuttonr {
+    position: absolute;
+    color : white;
+    font-size: 1.2em;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 20px;
+    right: 15px;
+    border-radius: 50%;
+    background-color: black;
+}
+
+.reportbutton {
+    padding: 15px 20px 15px 20px ;
+    background-color: rgb(0, 0, 0);
+    border-radius: 15px;
+    border : none;
+    color: white;
+    margin-top: 10px;
+}
+
+.wrapperbuttonr {
+    display: flex;
+    justify-content: center;
+    padding-right: 10px;
+    margin-top: 40px;
+}
+
 .leftwrap {
     background-image: url("../public/annie-spratt.jpg");
     background-size: cover;
@@ -360,7 +415,6 @@
         background-color: black;
         color: white;
         float: right;
-        padding : 10px;
     }
 
     .modalPost form * {
@@ -390,4 +444,59 @@
         padding: 10px;
     }
 
+}
+
+.modalPostR {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    width: 80vw;
+    height: 50vh;
+    z-index: 3;
+    margin-top: 5vh;
+    border-radius: 15px;
+    position: absolute;
+    left: 10%;
+    transform: translate(-50%);
+    top: 0;
+    transform: translateY(50%);
+}
+
+.modalPostR > h3 {
+    font-size: 1.2em;
+    color : rgb(53, 53, 53);
+    margin-bottom: 10px;
+}
+
+.quitbuttonr {
+    position: absolute;
+    color : white;
+    font-size: 1.2em;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 20px;
+    right: 15px;
+    border-radius: 50%;
+    background-color: black;
+}
+
+.reportbutton {
+    padding: 15px 20px 15px 20px ;
+    background-color: rgb(0, 0, 0);
+    border-radius: 15px;
+    border : none;
+    color: white;
+    margin-top: 10px;
+}
+
+.wrapperbuttonr {
+    display: flex;
+    justify-content: center;
+    padding-right: 10px;
+    margin-top: 40px;
 }
