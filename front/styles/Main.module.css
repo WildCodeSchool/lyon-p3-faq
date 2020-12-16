@@ -56,6 +56,10 @@
   justify-content: flex-end;
 }
 
+.wrapperAuthor > strong {
+  display: block;
+}
+
 .RMbutton {
   background-color: white;
   border-radius: 15px;
@@ -84,7 +88,7 @@
 
     .wrapperAuthor {
       white-space: nowrap;
-      display: flex;
+      display: block;
       flex-direction: column;
       align-items: flex-end;
     }
@@ -119,7 +123,7 @@
   }
 
   .wrapperAuthor {
-    display: flex;
+    display: block;
     align-items: center;
     flex-direction: row;
     justify-content: center;
@@ -146,7 +150,7 @@
   }
 
   .wrapperAuthor {
-    display: flex;
+    display: block;
     align-items: center;
     flex-direction: row;
     justify-content: center;
@@ -159,7 +163,7 @@
   }
 }
 
-@media (max-width: 450px) {
+@media (max-width: 520px) {
   .question span {
     text-align: center;
     margin-top: 10px;
@@ -167,7 +171,7 @@
   }
 
   .wrapperhelp {
-    display: flex;
+    display: block;
     text-align: center;
     margin-top: 5px;
     font-size : 0.80em;
@@ -180,10 +184,6 @@
     justify-content: flex-end;
     font-size : 0.80em;
   }
-
-}
-
-@media (max-width: 400px) {
 
   .body h2 {
     font-weight: bold;
