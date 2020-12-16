@@ -7,7 +7,7 @@ import ReportModal from "./ReportModal";
 import * as FaIcons from "react-icons/fa";
 import { toast } from "react-toastify";
 
-export default function Answer(props) {
+export default function Answer({questionAnswered, asker}) {
   const { isShowing, toggle } = useModal();
   const [QA, setQA] = useState({});
   const [vote, setVote] = useState({
@@ -36,20 +36,20 @@ export default function Answer(props) {
       );
   };
 
-  const users = props.questionAnswered;
   useEffect(() => {
-    users != null && users.length !==0
-      ? setQA(users[0])
-      : setQA(users);
-    if (users.length > 0) {
-      setVote({ ...vote, id: users[0].question_id });
+    questionAnswered.users != null && questionAnswered.users.length !==0
+      ? setQA(questionAnswered.users[0])
+      : setQA(questionAnswered.users);
+    if (questionAnswered.users.length > 0) {
+      setVote({ ...vote, id: questionAnswered.users[0].question_id });
     }
   }, []);
+  const questionId = questionAnswered.users[0].question_id;
   return (
     <section className={styles.section}>
       <div className={styles.wrapper}>
-        {props.questionAnswered.error && <Error />}
-        {!props.questionAnswered.error && users && (
+        {questionAnswered.error && <Error />}
+        {!questionAnswered.error && questionAnswered.users && (
           <div className={styles.box}>
             <Link as="/" href="/">
               <button className={styles.buttonQuestion}>
@@ -66,7 +66,7 @@ export default function Answer(props) {
               <h2 className={styles.h2}>{QA.titre}</h2>
               <p className={styles.p}>{QA.contenu}</p>
               <span>
-                <p className={styles.author}>{props.asker.users !== null ? props.asker.users[0].asker:null}</p>
+                <p className={styles.author}>{asker.users !== null ? asker.users[0].asker:null}</p>
               </span>
             </div>
             <div className={styles.answer}>
@@ -87,7 +87,7 @@ export default function Answer(props) {
                 Signaler
               </button>
               <ReportModal
-                question={users[0].question_id}
+                question={questionId}
                 isShowing={isShowing}
                 hide={toggle}
               />
