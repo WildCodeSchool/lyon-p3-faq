@@ -38,8 +38,9 @@ export default function Answer(props) {
     props.questionAnswered.users != null && props.questionAnswered.users.length !==0
       ? setQA(props.questionAnswered.users[0])
       : setQA(props.questionAnswered.users);
-
-    setVote({ ...vote, id: props.questionAnswered.users[0].question_id });
+    if (props.questionAnswered.users.length > 0) {
+      setVote({ ...vote, id: props.questionAnswered.users[0].question_id });
+    }
   }, []);
   return (
     <section className={styles.section}>
