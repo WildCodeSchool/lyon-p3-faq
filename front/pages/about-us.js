@@ -62,10 +62,10 @@ export default function Aboutus({ data }) {
             </span>
             
             <ul className={styles.social}>
-              <li><FaIcons.FaFacebookF/></li>
-              <li><FaIcons.FaGithub/></li>
-              <li><FaIcons.FaLinkedin/></li>
-              <li><FaIcons.FaSkype/></li>
+            <li><Link href="https://facebook.com"><div><FaIcons.FaFacebookF/></div></Link></li>
+              <li><Link href="https://github.com"><div><FaIcons.FaGithub/></div></Link></li>
+              <li><Link href="https://linkedin.com"><div><FaIcons.FaLinkedin/></div></Link></li>
+              <li><Link href="https://skype.com"><div><FaIcons.FaSkype/></div></Link></li>
             </ul>
           </div>
 
@@ -82,10 +82,10 @@ export default function Aboutus({ data }) {
             </span>
             
             <ul className={styles.social}>
-              <li><FaIcons.FaFacebookF/></li>
-              <li><FaIcons.FaGithub/></li>
-              <li><FaIcons.FaLinkedin/></li>
-              <li><FaIcons.FaSkype/></li>
+            <li><Link href="https://facebook.com"><div><FaIcons.FaFacebookF/></div></Link></li>
+              <li><Link href="https://github.com"><div><FaIcons.FaGithub/></div></Link></li>
+              <li><Link href="https://linkedin.com"><div><FaIcons.FaLinkedin/></div></Link></li>
+              <li><Link href="https://skype.com"><div><FaIcons.FaSkype/></div></Link></li>
             </ul>
           </div>
 
@@ -102,10 +102,10 @@ export default function Aboutus({ data }) {
             </span>
             
             <ul className={styles.social}>
-              <li><FaIcons.FaFacebookF/></li>
-              <li><FaIcons.FaGithub/></li>
-              <li><FaIcons.FaLinkedin/></li>
-              <li><FaIcons.FaSkype/></li>
+            <li><Link href="https://facebook.com"><div><FaIcons.FaFacebookF/></div></Link></li>
+              <li><Link href="https://github.com"><div><FaIcons.FaGithub/></div></Link></li>
+              <li><Link href="https://linkedin.com"><div><FaIcons.FaLinkedin/></div></Link></li>
+              <li><Link href="https://skype.com"><div><FaIcons.FaSkype/></div></Link></li>
             </ul>
           </div>
 
@@ -122,10 +122,10 @@ export default function Aboutus({ data }) {
             </span>
             
             <ul className={styles.social}>
-              <li><FaIcons.FaFacebookF/></li>
-              <li><FaIcons.FaGithub/></li>
-              <li><FaIcons.FaLinkedin/></li>
-              <li><FaIcons.FaSkype/></li>
+            <li><Link href="https://facebook.com"><div><FaIcons.FaFacebookF/></div></Link></li>
+              <li><Link href="https://github.com"><div><FaIcons.FaGithub/></div></Link></li>
+              <li><Link href="https://linkedin.com"><div><FaIcons.FaLinkedin/></div></Link></li>
+              <li><Link href="https://skype.com"><div><FaIcons.FaSkype/></div></Link></li>
             </ul>
           </div>
 
@@ -142,10 +142,10 @@ export default function Aboutus({ data }) {
             </span>
             
             <ul className={styles.social}>
-              <li><FaIcons.FaFacebookF/></li>
-              <li><FaIcons.FaGithub/></li>
-              <li><FaIcons.FaLinkedin/></li>
-              <li><FaIcons.FaSkype/></li>
+            <li><Link href="https://facebook.com"><div><FaIcons.FaFacebookF/></div></Link></li>
+              <li><Link href="https://github.com"><div><FaIcons.FaGithub/></div></Link></li>
+              <li><Link href="https://linkedin.com"><div><FaIcons.FaLinkedin/></div></Link></li>
+              <li><Link href="https://skype.com"><div><FaIcons.FaSkype/></div></Link></li>
             </ul>
           </div>
 
