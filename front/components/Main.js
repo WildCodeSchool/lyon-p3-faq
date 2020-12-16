@@ -4,7 +4,7 @@ import Link from "next/link";
 import Error from "./Error";
 export default function Main(props) {
   const [questions, setQuestions] = useState({});
-
+  console.log(props)
   useEffect(() => {
     setQuestions(props.questions.users);
   }, []);

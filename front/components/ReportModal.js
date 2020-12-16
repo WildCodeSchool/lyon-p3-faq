@@ -39,9 +39,9 @@ export default function Modal({ question, isShowing, hide }) {
     ? ReactDOM.createPortal(
         <>
           <div className={styles.overlay} onClick={hide}></div>
-          <div className={styles.modalPostR}>
-            <h3>Signaler cette réponse</h3>
-            <button type="button" onClick={hide} className={styles.quitbuttonr}>
+          <div className={styles.modalPost}>
+            <h3>Signaler</h3>
+            <button type="button" onClick={hide}>
               <span>&times;</span>
             </button>
             <form onSubmit={handleSubmit}>
@@ -60,9 +60,7 @@ export default function Modal({ question, isShowing, hide }) {
                   </option>
                 </select>
               </div>
-              <div className={styles.wrapperbuttonr}>
-                <input id="submit" type="submit" value="Envoyer" className={styles.reportbutton} />
-              </div>
+              <input id="submit" type="submit" value="Envoyer" />
             </form>
           </div>
         </>,
