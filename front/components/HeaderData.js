@@ -2,6 +2,13 @@ import * as FaIcons from "react-icons/fa";
 
 export const HeaderData = [
 
+    
+ {
+    title:"Basecamp",
+    path:"/basecamp",
+    icon: <FaIcons.FaCampground/>,
+    cName : "navtextA"
+},
     {
         title:"Home",
         path:"/",
