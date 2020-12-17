@@ -11,11 +11,11 @@ const { verifyToken} = require("../../services/jwt")
 
 /* Add a response*/
 
-router.post('/', PostController.addPost); //TODO : Add express-validator on this route
+router.post('/', verifyToken, PostController.addPost); //TODO : Add express-validator on this route
 
 /* Display all questions & answers (including questions without answers)*/
 
-router.get('/', PostController.getPosts);
+router.get('/',verifyToken, PostController.getPosts);
 
 /* Archive or publish question */
 

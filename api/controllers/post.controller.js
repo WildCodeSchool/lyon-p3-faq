@@ -3,6 +3,7 @@ const validator = require("../middleware/validator");
 const logger = require("../library/logger");
 const mailer = require("../library/mailer");
 const { mailOptions } = require("../datasource/mails");
+const search =require("../library/utils/search")
 
 const User = require("../models/user.model");
 const { Console } = require("winston/lib/winston/transports");
@@ -105,6 +106,14 @@ class PostController {
       const fields = [[question_id, contenu, created_by, created_at]];
 
       const queryResult = await Post.addResponse(fields);
+
+
+      const listQuestions = await Question.test();
+      const id=listQuestions[0].id;
+      const fieldSearch=search.stringSearch(listQuestions[0].titre+ ' ' +listQuestions[0].contenu+ ' ' +listQuestions[0].reponse);
+      const insert = await Question.test1(id, fieldSearch)
+
+      
 
       if (queryResult.affectedRows > 0) {
         res.send({ message: "Reponse successfully added" });
