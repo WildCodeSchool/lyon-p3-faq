@@ -6,9 +6,8 @@ class QuestionController {
   static async test(req, res) {
     try {
       const listQuestions = await Question.test();
-      const id=listQuestions[0].id
-      const fieldSearch=search.stringSearch(listQuestions[0].titre+listQuestions[0].contenu+listQuestions[0].reponse);
-      console.log(fieldSearch, id);
+      const id=listQuestions[0].id;
+      const fieldSearch=search.stringSearch(listQuestions[0].titre+ ' ' +listQuestions[0].contenu+ ' ' +listQuestions[0].reponse);
       const insert = await Question.test1(id, fieldSearch)
       res.send(listQuestions);
     } catch (err) {
