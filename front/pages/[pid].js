@@ -26,6 +26,7 @@ export default function Question({ data, author }) {
 }
 
 export async function getServerSideProps({ params }) {
+    console.log(params)
   const data = await Fetch.fetchData(
     process.env.API_URL + `/answered/?id=${params.pid.split("-")[1]}`
   );
