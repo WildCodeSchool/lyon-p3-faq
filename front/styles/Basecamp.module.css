@@ -15,6 +15,7 @@
 
 .herotitle {
     font-weight: bold;
+    cursor: default ;
 }
 
 .icons {
@@ -52,7 +53,14 @@
     font-size: 0.9em;
     align-items: center;
     font-weight: lighter;
+    cursor: pointer;
+    transition: all 0.55s ease;
 }
+
+.buttonwrap:hover {
+ filter : invert();
+}
+
 
 .firstsection {
     width: 100%;
@@ -85,10 +93,12 @@
     font-size: 2.2em;
     font-weight: bolder;
     white-space: nowrap;
+    cursor: default ;
 }
 
 .mainparagraph {
     text-align: justify;
+    cursor: default;
 }
 
 .githubwrap {
@@ -114,7 +124,15 @@ align-items: center;
     font-weight: bold;
     border-radius: 40px;
     cursor: pointer;
+    transition: all 0.55s ease;
 }
+
+.githubbutton:hover {
+ filter : invert();
+}
+
+
+
 
 
 /************************************************************/
@@ -170,24 +188,6 @@ align-items: center;
     position: relative;
 }
 
-.backbutton {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    width: 130px;
-    height: 40px;
-    border-radius: 15px;
-    background-color: black;
-    margin-bottom: 10px;
-}
-
-.backbutton > span {
-    font-size: 0.7em;
-    margin-left: 10px;
-}
-
 .versionmaj {
     height: 10%;
     width: 100%;
@@ -196,11 +196,6 @@ align-items: center;
     align-items: center;
     padding-right: 20px;
 }
-
-
-
-
-
 
 .ssinnerrightwrap {
     display: flex;
@@ -217,11 +212,13 @@ align-items: center;
     margin-bottom: 20px;
     font-weight: bold;
     color: rgb(32, 32, 32);
+    cursor: default ;
 }
 
 .ssmediumparagraph {
     font-weight: 1.1em;
     text-align: justify;
+    cursor: default ;
 }
 
 
@@ -259,6 +256,11 @@ align-items: center;
     width: 100%;
     flex-direction: row;
     font-size: 1.4rem;
+    cursor: default ;
+}
+
+.heroparagraph {
+    cursor: default ;
 }
 
 .customempbut {
@@ -270,7 +272,16 @@ align-items: center;
     display: flex;
     flex-direction: column;
     align-items: center;
+    cursor: pointer;
+    transition: all 0.55s ease;
 }
+
+.customempbut:hover {
+ background-color :rgb(32, 32, 32);
+ color : white;
+ border: solid 3px rgb(32, 32, 32);
+}
+
 
 .customfilbut {
     margin-top: 20px;
@@ -283,6 +294,14 @@ align-items: center;
     display: flex;
     flex-direction: column;
     align-items: center;
+    cursor: pointer;
+    transition: all 0.55s ease;
+}
+
+.customfilbut:hover {
+ background-color :rgb(221, 221, 221);
+ color : rgb(32, 32, 32);
+ border: solid 3px rgb(32, 32, 32);
 }
 
 .workinprogress {
@@ -291,11 +310,445 @@ align-items: center;
     justify-content: left;
 }
 
+/******************************************************/
+
+
 .fourthsection {
     height: 30vh;
-    background-color: lightcoral;
+    background-color: rgb(255, 255, 255);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+
+.buttonwrapfs {
+    display: flex;
+    flex-direction: row;
+}
+
+
+.mediumheadline {
+    color :rgb(32, 32, 32);
+    font-size: 3em;
+    font-weight: bold;
+    cursor: default ;
+    margin-bottom: 10px;
+}
+
+
+.freelancel {
+    display: flex ;
+    align-items: center;
+    padding: 10px 15px 10px 15px;
+    font-weight: bold;
+    border-radius: 40px;
+    background-color: rgb(231, 231, 231);
+    cursor: pointer;
+    transition: all 0.55s ease;
+    margin-left: 20px;
+}
+
+.freelancel:hover {
+ filter : invert();
+}
+
+.icons3 {
+    height: 35px;
+    color : white;
+}
+
+
+/******************************************************/
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 0.8em;
+    height: 80px;
+    background-color: rgb(32, 32, 32);
+    padding-top: 20px ;
+    padding-bottom: 20px;
+}
+
+.creditswrap {
+    display: flex;
+    flex-direction: row;
+}
+
+.spanfooter {
+    margin-right: 5px;
+}
+
+.ulfooter {
+    display: flex;
+    flex-direction: row;
+}
+
+.authordev {
+    font-weight: bold;
+    margin-right: 5px;
+    margin-left: 5px;
+    cursor: pointer;
+    transition: all 0.55s ease;
+}
+
+.authordev:hover {
+    color : rgb(214, 97, 97);
+}
+
+.spanwild {
+    margin-top: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.55s ease;
+}
+
+.spanwild:hover {
+    color : rgb(214, 97, 97);
+}
+
+
+@media (max-width: 850px) {
+    
+.mainwrapper {
+    width: 80vw;
+    margin-top: 40px;
+    margin-bottom: 60px;
+}
+
+.mainparagraph {
+    text-align: justify;
+    cursor: default;
+    font-size: 1.2em;
+}
+
+/************************/
+
+.ssinnerleftwrap {
+    display: none;
+    
+}
+
+.ssinnerrightwrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    height: 100%;
+    width: 100%;
+}
+
+.ssbigparagraph {
+    font-size: 3em;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: rgb(32, 32, 32);
+    cursor: default ;
+}
+
+.ssmediumparagraph {
+    font-weight: 1.1em;
+    text-align: justify;
+    cursor: default ;
+}
+
+/************************/
+
+.thirdsection {
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center ;
+}
+
+.middleleftwrap{
+    padding: 50px;
+    display: flex;
+    flex-direction: column ;
+    justify-content: center;
+    align-items : center; 
+    width: 100%;
+    font-size: 3em;
+    font-weight: bold;
+    color: rgb(32, 32, 32);
+}
+
+.middlerightwrap {
+    display: none;
+}
+
+.midbuttonwrap {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    font-size: 1.4rem;
+    cursor: default ;
+    justify-content: center;
+}
+
+.heroparagraph {
+    cursor: default ;
+}
+
+.customempbut {
+    margin-top: 20px;
+    border : solid ;
+    margin-right: 10px;
+    border-radius : 5px ;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.55s ease;
+}
+
+.customempbut:hover {
+ background-color :rgb(32, 32, 32);
+ color : white;
+ border: solid 3px rgb(32, 32, 32);
+}
+
+
+.customfilbut {
+    margin-top: 20px;
+    color: white;
+    border : solid ;
+    border-color: rgb(32, 32, 32);
+    border-radius : 5px ;
+    padding: 20px;
+    background-color:rgb(32, 32, 32);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.55s ease;
+}
+
+.customfilbut:hover {
+ background-color :rgb(221, 221, 221);
+ color : rgb(32, 32, 32);
+ border: solid 3px rgb(32, 32, 32);
+}
+
+.workinprogress {
+    display: flex;
+    font-size: 0.8rem;
+    justify-content: left;
+}
+
+/**************************/
+
+.fourthsection {
+    height: 30vh;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.buttonwrapfs {
+    display: flex;
+    flex-direction: row;
+}
+
+
+.mediumheadline {
+    color :rgb(32, 32, 32);
+    font-size: 2em;
+    font-weight: bold;
+    cursor: default ;
+    margin-bottom: 30px;
+}
+
+
+.freelancel {
+    display: flex ;
+    align-items: center;
+    padding: 10px 15px 10px 15px;
+    font-weight: bold;
+    border-radius: 40px;
+    background-color: rgb(231, 231, 231);
+    cursor: pointer;
+    transition: all 0.55s ease;
+    margin-left: 20px;
+}
+
+.freelancel:hover {
+ filter : invert();
+}
+
+.icons3 {
+    height: 35px;
+    color : white;
+}
+
+/******************************/
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 0.8em;
+    height: auto;
+    background-color: rgb(32, 32, 32);
+    padding-top: 30px ;
+    padding-bottom: 20px;
+}
+
+.creditswrap {
+    display: flex;
+    flex-direction: column;
+}
+
+.spanfooter {
+    text-align: center;
+}
+
+.ulfooter {
+    display: flex;
+    flex-direction: row;
+}
+
+.authordev {
+    font-weight: bold;
+    margin-right: 5px;
+    margin-left: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    transition: all 0.55s ease;
+}
+
+.authordev:hover {
+    color : rgb(214, 97, 97);
+}
+
+.spanwild {
+    margin-top: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.55s ease;
+}
+
+.spanwild:hover {
+    color : rgb(214, 97, 97);
+}
+
+}
+
+@media (max-width:500px){
+
+    .bigspan {
+        font-size: 1.5em;
+        font-weight: bolder;
+        white-space: nowrap;
+        cursor: default ;
+    }
+
+    /******************/
+
+    .secondsection {
+        height: auto;
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 20px;
+    }
+
+    .ssbigparagraph {
+        font-size: 2em;
+        margin-bottom: 20px;
+        font-weight: bold;
+        color: rgb(32, 32, 32);
+        cursor: default ;
+    }
+
+
+    /************************/
+
+    .middleleftwrap{
+        
+        display: flex;
+        flex-direction: column ;
+        justify-content: center;
+        align-items : center; 
+        width: 100%;
+        font-size: 2em;
+        font-weight: bold;
+        color: rgb(32, 32, 32);
+    }
+
+    .midbuttonwrap {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        font-size: 1.4rem;
+        cursor: default ;
+        justify-content: center;
+    }
+
+    /************************/
+
+
+    .fourthsection {
+        height: auto;
+        background-color: rgb(255, 255, 255);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-top:20px;
+        padding-bottom: 20px;
+    }
+    
+    .buttonwrapfs {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    
+    .mediumheadline {
+        color :rgb(32, 32, 32);
+        font-size: 2em;
+        font-weight: bold;
+        cursor: default ;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+   
+
+
+    .freelancel {
+        display: flex ;
+        align-items: center;
+        width: 100%;
+        padding: 10px 15px 10px 15px;
+        font-weight: bold;
+        border-radius: 40px;
+        background-color: rgb(231, 231, 231);
+        cursor: pointer;
+        transition: all 0.55s ease;
+        margin-top: 20px;
+    }
+    
+    .freelancel:hover {
+     filter : invert();
+    }
+    
+    .icons3 {
+        height: 35px;
+        color : white;
+    }
+
 }

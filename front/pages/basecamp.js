@@ -86,7 +86,7 @@ export default function Basecamp() {
 
       <section className={styles.thirdsection}>
         <div className={styles.middleleftwrap}>
-            <span>Des technologies fiables pour un gain de temps
+            <span className={styles.heroparagraph}>Des technologies fiables pour un gain de temps
                 maximal ! 🦾
             </span>
             <div className={styles.midbuttonwrap}>
@@ -104,11 +104,40 @@ export default function Basecamp() {
       </section>
 
       <section className={styles.fourthsection}>
-        <h1>Renforcez votre communauté </h1>
+        <span className={styles.mediumheadline}>Renforcez votre communauté </span>
         <div className={styles.buttonwrapfs}>
-            <div>Github</div>
-            <div>Démo</div>
+        <Link href="https://github.com/WildCodeSchool/lyon-p3-faq">
+                <button className={styles.githubbutton}>
+                  <FaIcons.FaGithub className={styles.icons2} />
+                  <span>Aller sur Github</span>
+                </button>
+              </Link>
+              <Link href="/">
+                <button className={styles.freelancel}>
+                  <img src="/logoFL.svg" className={styles.icons3} />
+                  <span>Freelance Lyonnais FAQ Démo</span>
+                </button>
+              </Link>
         </div>
+      </section>
+      <section className={styles.footer}>
+        <div className={styles.creditswrap}>
+        <span className={styles.spanfooter}>OpenFAQ est un projet open source réalisé par : </span>
+        <ul className={styles.ulfooter}>
+          <Link href="https://github.com/Tradou">
+            <li className={styles.authordev}>Trad AIDOUD</li>
+          </Link>
+          <Link href="https://github.com/Myst3k69">
+            <li className={styles.authordev}>Aurélien CHIREN</li>
+          </Link>
+          <Link href="https://github.com/IamNiters">
+            <li className={styles.authordev}>Ismaël BERNARD</li>
+          </Link>
+        </ul>
+        </div>
+        <Link href="https://www.wildcodeschool.com/fr-FR">
+        <span className={styles.spanwild}>WildCodeSchool 2020 </span>
+        </Link>
       </section>
     </>
   );
