@@ -9,7 +9,6 @@ class QuestionController {
     } catch (err) {
       res.sendStatus(500);
       logger.error(err);
-      console.log(err);
     }
   }
 
@@ -20,7 +19,6 @@ class QuestionController {
     } catch (err) {
       res.sendStatus(500);
       logger.error(err);
-      console.log(err);
     }
   }
 
