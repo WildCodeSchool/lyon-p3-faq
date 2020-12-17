@@ -41,13 +41,9 @@
 }
 
 .buttonQuestion:hover {
-  background-color:#fff;
-  color: rgb(19, 19, 19);
-  border: 1px solid rgb(22, 22, 22);
-}
-
-.arrowcolor:hover {
-  filter: invert();
+  
+  border: 1px solid rgb(221, 221, 221);
+  filter : invert();
 }
 
   .buttonQuestion > span {
