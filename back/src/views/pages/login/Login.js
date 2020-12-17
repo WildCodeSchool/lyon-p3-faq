@@ -35,6 +35,8 @@ const Login = () => {
   let history = useHistory();
 
   const handleLogin = () => {
+
+    
     axios
 
       .post(`${process.env.REACT_APP_API_HOST}/back/login`, {
@@ -42,6 +44,8 @@ const Login = () => {
         password: password,
       })
       .then(function (response) {
+
+       
         // handle success
         if (response.status == "200") {
           setCurrentUser({
@@ -51,7 +55,7 @@ const Login = () => {
             token: response.data.token,
             connected: true,
             name: response.data.userInfos.name,
-            role_id: response.data.role_id,
+            role_id: response.data.userInfos.role_id,
           });
           history.push("/dashboard");
         }
@@ -90,7 +94,11 @@ const Login = () => {
 
   return (
     <div className="c-app c-default-layout flex-row align-items-center">
+    {currentUser.role_id == 5? <Alert type="danger" message= "Vous n'avez pas les autorisations nécessaires pour accéder à l'espace d'administration"></Alert>:""}
+
+
       <CContainer>
+
         <CRow className="justify-content-center">
           <CCol md="8">
             {failAuth || forgottenPassword ? (

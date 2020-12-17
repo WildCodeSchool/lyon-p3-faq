@@ -58,7 +58,7 @@ history.push({ pathname :`/`});
         >
           <strong>Account</strong>
         </CDropdownItem>
-       {console.log("currentuser : ",currentUser)}
+      
         
         {/* TODO : Mettre le lien vers le bon profil avec les infos du user */}
         <CDropdownItem onClick={() => history.push({

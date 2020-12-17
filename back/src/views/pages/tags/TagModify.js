@@ -48,7 +48,7 @@ const BasicForms = (props) => {
   };
 
   const handleSubmit = () => {
-    console.log("handleSubmit");
+    
     tagsData.map( tag =>{
       
         if(tag.nom==props.match.params.nomtag){

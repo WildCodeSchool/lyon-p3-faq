@@ -4,6 +4,7 @@ import { storeContext } from "./context";
 import "./scss/style.scss";
 import PrivateRoute from "./routes/PrivateRoute"
 
+
 const loading = (
   <div className="pt-3 text-center">
     <div className="sk-spinner sk-spinner-pulse"></div>
@@ -46,7 +47,7 @@ class App extends Component {
               name="Register Page"
               render={(props) => <Renew {...props} />}
             />
-            <PrivateRoute
+            <Route
               exact
               path="/404"
               name="Page 404"

@@ -46,7 +46,7 @@ const BasicForms = (props) => {
         // handle success
 
         setRoleDatas(response.data);
-        console.log(response.data[0].nom);
+       
       })
       .catch(function (error) {
         // handle error
@@ -55,10 +55,7 @@ const BasicForms = (props) => {
   }, []);
 
   const handleSubmit = () => {
-    console.log(nom, prenom);
-    console.log(email);
-    console.log(typeCompte);
-    console.log(idToCreate);
+   
 
     axios
       .post(`${process.env.REACT_APP_API_HOST}/back/users`, {

@@ -34,7 +34,7 @@ const BasicForms = (props) => {
   let history = useHistory();
 
   let idPost = props.match.params.idpost;
-  console.log("idpost :", idPost);
+
 
   const [titreQuestion, setTitreQuestion] = useState("");
   const [question, setQuestion] = useState("");

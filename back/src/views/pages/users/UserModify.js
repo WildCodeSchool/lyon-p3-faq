@@ -61,7 +61,7 @@ const BasicForms = (props) => {
   `;
 
   useEffect(() => {
-    console.log(currentUser)
+   
     axios
       .get(`${process.env.REACT_APP_API_HOST}/back/users/roles`, {
 
@@ -77,7 +77,7 @@ const BasicForms = (props) => {
   }, []);
 
   const handleUpdate = (e) => {
-    console.log(currentUser)
+    
     axios
       .put(`${process.env.REACT_APP_API_HOST}/back/users/${idUser}`, {
         //data to update
@@ -106,7 +106,7 @@ const BasicForms = (props) => {
 
   const handleDelete = () => {
     setDanger(!danger);
-console.log(idUser)
+
     axios
       .delete(`${process.env.REACT_APP_API_HOST}/back/users/${idUser}`,
       { headers : {authentication : currentUser.token}}

@@ -1,5 +1,6 @@
-import React from 'react'
+import React, {useContext} from 'react'
 import { useSelector, useDispatch } from 'react-redux'
+import { storeContext } from "../context";
 import {
   CCreateElement,
   CSidebar,
@@ -16,10 +17,15 @@ import CIcon from '@coreui/icons-react'
 
 // sidebar nav config
 import navigation from './_nav'
+import navBasic from './_navBasic'
+
 
 const TheSidebar = () => {
   const dispatch = useDispatch()
   const show = useSelector(state => state.sidebarShow)
+
+  const [currentUser, setCurrentUser] = useContext(storeContext);
+ 
 
   return (
     <CSidebar
@@ -40,6 +46,7 @@ const TheSidebar = () => {
       </CSidebarBrand>
       <CSidebarNav>
 
+{currentUser.role_id >2 ? 
         <CCreateElement
           items={navigation}
           components={{
@@ -48,7 +55,26 @@ const TheSidebar = () => {
             CSidebarNavItem,
             CSidebarNavTitle
           }}
+        /> :
+        
+        <CCreateElement
+          items={navBasic}
+          components={{
+            CSidebarNavDivider,
+            CSidebarNavDropdown,
+            CSidebarNavItem,
+            CSidebarNavTitle
+          }}
         />
+        
+        
+        
+        
+        
+        
+        
+        
+        }
       </CSidebarNav>
       <CSidebarMinimizer className="c-d-md-down-none"/>
     </CSidebar>

@@ -66,6 +66,8 @@ const Tables = () => {
 
   // Loading datas
   useEffect(() => {
+
+    console.log("current context :", currentUser)
     axios
       .get(`${process.env.REACT_APP_API_HOST}/back/posts`, {
         headers: { authentication: currentUser.token },
@@ -99,7 +101,7 @@ const Tables = () => {
   }, [nbPosts, updatePostStatus]);
 
   const handleUpdatePost = (item) => {
-    console.log("item : ", item.id);
+   
 
     history.push({
       pathname: `/pages/posts/modifypost/${item.id}`,
@@ -109,7 +111,7 @@ const Tables = () => {
   };
 
   const handleUpdatePostStatus = (item, action) => {
-    console.log("item", item);
+   
     axios
       .put(
         `${process.env.REACT_APP_API_HOST}/back/posts/${item.id}`,
@@ -234,6 +236,8 @@ const Tables = () => {
                   actions: (item, index) => {
                     return (
                       <CCardBody>
+
+                        {currentUser.role_id>2? 
                         <CButton
                           size="sm"
                           color="info"
@@ -243,7 +247,7 @@ const Tables = () => {
                           }}
                         >
                           Modifier
-                        </CButton>
+                        </CButton> :null }
                         <CButton
                           size="sm"
                           color="success"
