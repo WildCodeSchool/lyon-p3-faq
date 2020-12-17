@@ -1,0 +1,301 @@
+.mynavbar {
+    display: flex;
+    height: 80px;
+    background-color: rgb(37, 37, 37);
+    align-items: center;
+    justify-content: center;
+}
+.navwrapper {
+    width: 90vw;
+    max-width: 1400px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.herotitle {
+    font-weight: bold;
+}
+
+.icons {
+    font-size: 25px;
+    color : white;
+    margin-right: 10px;
+}
+
+.icons2 {
+    font-size: 25px;
+    color :black;
+    margin-right: 10px;
+
+}
+
+.hwrapper {
+    display: flex;
+    width: 50%;
+    color : white ;
+    font-size: 1.2em;
+}
+
+.bwrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 50%;
+}
+
+.buttonwrap {
+    border-radius: 50px;
+    padding: 5px 15px 5px 15px;
+    display: flex;
+    flex-direction: row;
+    font-size: 0.9em;
+    align-items: center;
+    font-weight: lighter;
+}
+
+.firstsection {
+    width: 100%;
+    height: auto;
+    background-color: black;
+    color : white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(37, 37, 37);
+    background-image: url("../public/handz.png");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.mainwrapper {
+    width: 50vw;
+    margin-top: 60px;
+    margin-bottom: 80px;
+}
+
+.topwrap {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    margin-bottom: 80px;
+}
+
+.bigspan {
+    font-size: 2.2em;
+    font-weight: bolder;
+    white-space: nowrap;
+}
+
+.mainparagraph {
+    text-align: justify;
+}
+
+.githubwrap {
+    display: flex;
+    margin-top: 20px;
+    justify-content: right;
+}
+
+.versionwrap {
+display: flex;
+align-items: center;
+}
+
+.versionspan {
+    margin-right: 15px;
+    color : rgb(146, 146, 146)
+}
+
+.githubbutton {
+    display: flex;
+    align-items: center;
+    padding: 10px 15px 10px 15px;
+    font-weight: bold;
+    border-radius: 40px;
+    cursor: pointer;
+}
+
+
+/************************************************************/
+
+.secondsection {
+    height: 80vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ssmainwrap {
+    display: flex;
+    width: 80%;
+    height: 80%;
+}
+
+.ssinnerleftwrap {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapcard {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+    height:90%;
+    background-color: rgb(85, 85, 85);
+    border-radius: 15px 0 15px 0;
+}
+
+.screenimg {
+    height: 70%;
+    width: auto;
+    object-fit: cover;
+    z-index: 1;
+}
+
+.screenimg2 {
+    height:80% ;
+    width: auto ;
+    object-fit: cover;
+    z-index: 2;
+    margin-left: 10px;
+    position: relative;
+}
+
+.backbutton {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    width: 130px;
+    height: 40px;
+    border-radius: 15px;
+    background-color: black;
+    margin-bottom: 10px;
+}
+
+.backbutton > span {
+    font-size: 0.7em;
+    margin-left: 10px;
+}
+
+.versionmaj {
+    height: 10%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 20px;
+}
+
+
+
+
+
+
+.ssinnerrightwrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    padding-left: 30px;
+    height: 100%;
+    width: 50%;
+}
+
+.ssbigparagraph {
+    font-size: 3em;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: rgb(32, 32, 32);
+}
+
+.ssmediumparagraph {
+    font-weight: 1.1em;
+    text-align: justify;
+}
+
+
+/******************************************************/
+
+.thirdsection {
+    height: 50vh;
+    width: 100%;
+    background-color: rgb(243, 237, 237);
+    display: flex;
+    flex-direction: row;
+}
+
+.middleleftwrap{
+    padding: 50px;
+    display: flex;
+    flex-direction: column ;
+    justify-content: center;
+    align-items : center; 
+    width: 60%;
+    font-size: 3em;
+    font-weight: bold;
+    color: rgb(32, 32, 32);
+}
+
+.middlerightwrap {
+    width: 40%;
+    background-image: url("../public/rock.png");
+    background-position: bottom;
+    background-repeat: no-repeat;
+}
+
+.midbuttonwrap {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    font-size: 1.4rem;
+}
+
+.customempbut {
+    margin-top: 20px;
+    border : solid ;
+    margin-right: 10px;
+    border-radius : 5px ;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.customfilbut {
+    margin-top: 20px;
+    color: white;
+    border : solid ;
+    border-color: rgb(32, 32, 32);
+    border-radius : 5px ;
+    padding: 20px;
+    background-color:rgb(32, 32, 32);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.workinprogress {
+    display: flex;
+    font-size: 0.8rem;
+    justify-content: left;
+}
+
+.fourthsection {
+    height: 30vh;
+    background-color: lightcoral;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}

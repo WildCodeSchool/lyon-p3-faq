@@ -12,7 +12,7 @@ export const HeaderData = [
     {
         title:"Home",
         path:"/",
-        icon: <FaIcons.FaCampground/>,
+        icon: <FaIcons.FaHouzz/>,
         cName : "navtextA"
     },
     {
