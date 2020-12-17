@@ -30,6 +30,7 @@
     "mysql": "^2.18.1",
     "nodemailer": "^6.4.16",
     "snyk": "^1.425.3",
+    "utf8": "^3.0.0",
     "winston": "^3.3.3",
     "winston-daily-rotate-file": "^4.5.0",
     "xss-clean": "^0.1.1"

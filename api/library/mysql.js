@@ -8,11 +8,24 @@ class DB {
 
   async query(query, ...params) {
     return new Promise((resolve, reject) => {
+      console.log(params)
       db.query(query, params, (err, result) => {
         if (err) {
           reject(err);
         } else {
           resolve(result);
+        }
+      });
+    });
+  }
+
+  q(...args) {
+    return new Promise((resolve, reject) => {
+      db.query(...args, (err, results) => {
+        if (err) {
+          reject(err);
+        } else {
+          resolve(results);
         }
       });
     });
