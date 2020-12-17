@@ -16,7 +16,10 @@ class Post extends DB {
   addResponse(fields) {
     const query =
       "INSERT INTO reponse (question_id,contenu,created_by,created_at) VALUES ? ";
-    return this.query(query, fields);
+    return this.query(query, fields)
+    .then(res=> { 
+      const getDatas="SELECT question.titre, question.contenu, reponse.contenu FROM question JOIN reponse ON question.id=reponse.question_id WHERE reponse.question_id = 49"
+    });
   }
 
   addQuestion(fields) {
