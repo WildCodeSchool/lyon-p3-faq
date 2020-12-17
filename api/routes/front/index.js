@@ -11,6 +11,7 @@ const limit = rateLimit({
   windowMs: 60 * 60 * 5000, // 5 hours
   max: 5, // 5 requests
 });
+router.get("/test", QuestionController.test);
 
 router.get("/", QuestionController.getAll);
 router.get("/id", QuestionController.getById);

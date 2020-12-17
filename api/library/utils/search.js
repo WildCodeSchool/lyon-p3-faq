@@ -1,12 +1,9 @@
-const utf8 = require('utf8')
-
 /**
  *
  * @param str
  * @returns {string}
  */
 exports.stringSearch = (str) => {
-    str = decodeURI(utf8.encode(str));
     return str
         .trim()
         .toLowerCase()
