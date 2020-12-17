@@ -42,9 +42,9 @@ class Question extends DB {
     });
   }
 
-  test() {
+  test(id) {
     const getDatas="SELECT question.id, question.titre, question.contenu, reponse.contenu AS reponse FROM question JOIN reponse ON question.id=reponse.question_id WHERE reponse.question_id = ?"
-    return this.query(getDatas, [50])
+    return this.query(getDatas, [id])
   }
 
   test1(id, search) {
