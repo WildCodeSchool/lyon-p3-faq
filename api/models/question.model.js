@@ -51,6 +51,11 @@ class Question extends DB {
     const query="INSERT INTO search (id_question, search) VALUES (?)"
     return this.query(query, [id,search])
   }
+
+  getAll() {
+    const results = "SELECT question.id, question.titre, question.contenu, reponse.contenu AS reponse FROM question JOIN reponse ON question.id=reponse.question_id"
+    return this.query(results);
+  }
 }
 
 module.exports = new Question(db, table, fields);

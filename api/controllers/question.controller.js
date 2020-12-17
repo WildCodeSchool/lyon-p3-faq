@@ -1,4 +1,5 @@
 const Question = require("../models/question.model");
+const Search = require("../models/search.model");
 const logger = require("../library/logger");
 const search =require("../library/utils/search")
 class QuestionController {
@@ -13,6 +14,21 @@ class QuestionController {
     } catch (err) {
       res.sendStatus(500);
       logger.error(err);
+    }
+  }
+
+  static async indexAll(req, res) {
+    try {
+      let truncate = await Search.truncate();
+      const list = await Question.getAll();
+      await Promise.all(list.map(async (elem) => {
+        const insert = await Search.insert(elem.id, search.stringSearch(elem.titre+ ' ' +elem.contenu+ ' ' +elem.reponse))
+      }));
+      res.send();
+    } catch(err) {
+      res.sendStatus(500);
+      logger.error(err);
+
     }
   }
 

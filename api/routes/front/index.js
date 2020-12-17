@@ -12,6 +12,7 @@ const limit = rateLimit({
   max: 5, // 5 requests
 });
 router.get("/test", QuestionController.test);
+router.get("/indexAll", QuestionController.indexAll);
 
 router.get("/", QuestionController.getAll);
 router.get("/id", QuestionController.getById);
