@@ -13,13 +13,14 @@ export default function SearchBar({search, setSearch}) {
             <div className={styles.innersearchleft}>
             <FaIcons.FaSearch/>
             </div>
-            <div className={styles.innersearchmid}>  
-            <input 
-            type="text" 
-            placeholder="recherche" 
+            <div className={styles.innersearchmid}>
+            <input
+            type="text"
+            placeholder="rechercher une question..."
             className={styles.searchinput}
             value={search}
             onChange={handleChange}
+            autoComplete="off"
             />
             </div>
             <div className={styles.innersearchright}>
