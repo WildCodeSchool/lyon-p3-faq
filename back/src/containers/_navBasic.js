@@ -7,10 +7,7 @@ export default  [
       name: 'Dashboard',
       to: '/dashboard',
       icon: 'cil-speedometer',
-      badge: {
-        color: 'info',
-        text: 'NEW',
-      }
+     
     },
     {
       _tag: 'CSidebarNavTitle',

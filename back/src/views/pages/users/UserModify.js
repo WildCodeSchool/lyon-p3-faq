@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import styled from "styled-components";
+
 import {
   CButton,
   CCard,
@@ -227,6 +228,7 @@ const BasicForms = (props) => {
                 </CCol>
               </CFormGroup>
 
+{currentUser.role_id>3?
               <CFormGroup row>
                 <CCol md="3">
                   <CLabel htmlFor="select">Type compte</CLabel>
@@ -246,7 +248,7 @@ const BasicForms = (props) => {
                       : ""}
                   </CSelect>
                 </CCol>
-              </CFormGroup>
+              </CFormGroup> : null}
             </CForm>
           </CCardBody>
 
