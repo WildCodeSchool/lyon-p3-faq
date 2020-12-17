@@ -1,4 +1,7 @@
+import { storeContext } from "../context";
+import React, {  useContext } from "react";
 export default [
+
   {
     _tag: 'CSidebarNavItem',
     name: 'Dashboard',
@@ -35,6 +38,8 @@ export default [
         name: 'Posts',
         to: '/pages/posts',
       }
+
+      
      
     
  

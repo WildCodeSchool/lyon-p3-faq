@@ -56,7 +56,7 @@ const Dashboard = () => {
         .then(function (response) {
           // handle success
 
-          console.log("data: ", response.data);
+         
           setNbPosts(response.data.length);
           setPostsData(response.data);
           UnansweredPosts(response.data);

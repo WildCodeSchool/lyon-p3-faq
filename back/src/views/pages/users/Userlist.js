@@ -140,6 +140,11 @@ const [currentUser, setCurrentUser] = useContext(storeContext);
             </CRow>
 
             <CCardBody>
+
+
+
+
+              {currentUser.role_id >3 ? 
               <CDataTable
                 items={usersData}
                 fields={tableFields}
@@ -151,6 +156,7 @@ const [currentUser, setCurrentUser] = useContext(storeContext);
                 itemsPerPageSelect={{values : [20,50], "replaces default" :20, label:"Users par page"}}
                 tableFilter={filterTitle}
                 pagination
+              
                 clickableRows
                 sorter
                 onRowClick={(e) => selectUser(e)}
@@ -163,7 +169,33 @@ const [currentUser, setCurrentUser] = useContext(storeContext);
                     </td>
                   ),
                 }}
-              />
+              />:
+
+              <CDataTable
+                items={usersData}
+                fields={tableFields}
+                hover
+                striped
+                bordered
+                size="sm"
+                itemsPerPage={20}
+                itemsPerPageSelect={{values : [20,50], "replaces default" :20, label:"Users par page"}}
+                tableFilter={filterTitle}
+                pagination
+              
+               
+                sorter
+               
+                scopedSlots={{
+                  status: (item) => (
+                    <td>
+                      <CBadge color={getBadge(item.status)}>
+                        {item.status}
+                      </CBadge>
+                    </td>
+                  ),
+                }}
+              /> }
             </CCardBody>
           </CCard>
         </CCol>

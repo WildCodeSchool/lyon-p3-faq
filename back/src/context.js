@@ -9,7 +9,8 @@ export const ContextProvider = (props) => {
       password: null,
       id:1,
       token: null,
-      connected:false
+      connected:false,
+      role_id:""
     }
   );
 

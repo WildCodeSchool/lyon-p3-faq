@@ -99,7 +99,7 @@ const Testpage = () => {
   };
 
   const handleUpdatePost = (item) => {
-    console.log("item : ", item.id);
+ 
 
     history.push({
       pathname: `/pages/posts/modifypost/${item.id}`,
@@ -109,7 +109,7 @@ const Testpage = () => {
   };
 
   const handleUpdatePostStatus = (item, action) => {
-    console.log("item", item);
+    
     axios
       .put(`${process.env.REACT_APP_API_HOST}/back/posts/${item.id}`, {
         action: action,
