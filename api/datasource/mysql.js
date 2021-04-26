@@ -5,5 +5,5 @@ module.exports = mysql.createPool({
   password: process.env.MYSQL_PASSWORD,
   host: process.env.MYSQL_HOST,
   database: process.env.MYSQL_DATABASE,
-  localAddress: process.env.MYSQL_LOCALADDRESS,
+  // localAddress: process.env.MYSQL_LOCALADDRESS,
 });
